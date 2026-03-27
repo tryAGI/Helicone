@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace Helicone.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class BodyMappingTypeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Helicone.BodyMappingType>
+    {
+        /// <inheritdoc />
+        public override global::Helicone.BodyMappingType Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Helicone.BodyMappingTypeExtensions.ToEnum(stringValue) ?? default;
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Helicone.BodyMappingType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Helicone.BodyMappingType);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Helicone.BodyMappingType value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::Helicone.BodyMappingTypeExtensions.ToValueString(value));
+        }
+    }
+}

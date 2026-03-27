@@ -1,0 +1,45 @@
+
+#nullable enable
+
+namespace Helicone
+{
+    /// <summary>
+    /// From T, pick a set of properties whose keys are in the union K
+    /// </summary>
+    public sealed partial class PickFilterLeafExperiment
+    {
+        /// <summary>
+        /// Make all properties in T optional
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("experiment")]
+        public global::Helicone.PartialExperimentToOperators? Experiment { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PickFilterLeafExperiment" /> class.
+        /// </summary>
+        /// <param name="experiment">
+        /// Make all properties in T optional
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public PickFilterLeafExperiment(
+            global::Helicone.PartialExperimentToOperators? experiment)
+        {
+            this.Experiment = experiment;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PickFilterLeafExperiment" /> class.
+        /// </summary>
+        public PickFilterLeafExperiment()
+        {
+        }
+    }
+}

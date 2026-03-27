@@ -1,0 +1,45 @@
+
+#nullable enable
+
+namespace Helicone
+{
+    /// <summary>
+    /// From T, pick a set of properties whose keys are in the union K
+    /// </summary>
+    public sealed partial class PickFilterLeafPromptV2
+    {
+        /// <summary>
+        /// Make all properties in T optional
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prompt_v2")]
+        public global::Helicone.PartialPromptToOperators? PromptV2 { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PickFilterLeafPromptV2" /> class.
+        /// </summary>
+        /// <param name="promptV2">
+        /// Make all properties in T optional
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public PickFilterLeafPromptV2(
+            global::Helicone.PartialPromptToOperators? promptV2)
+        {
+            this.PromptV2 = promptV2;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PickFilterLeafPromptV2" /> class.
+        /// </summary>
+        public PickFilterLeafPromptV2()
+        {
+        }
+    }
+}
