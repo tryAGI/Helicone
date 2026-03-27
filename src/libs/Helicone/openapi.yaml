@@ -15023,7 +15023,7 @@
       "api_key": {
         "type": "http",
         "scheme": "bearer",
-        "description": "Bearer token authentication. Format: Bearer YOUR_API_KEY"
+        "description": "Bearer token authentication"
       }
     }
   },
