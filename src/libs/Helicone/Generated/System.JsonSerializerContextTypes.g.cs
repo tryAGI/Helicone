@@ -3,7 +3,7 @@
 
 #pragma warning disable CS0618 // Type or member is obsolete
 
-namespace Helicone
+namespace System
 {
     /// <summary>
     /// 
