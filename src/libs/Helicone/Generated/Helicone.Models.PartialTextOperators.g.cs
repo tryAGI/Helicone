@@ -17,12 +17,6 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
-        public string? Equals { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("like")]
         public string? Like { get; set; }
 
@@ -45,6 +39,12 @@ namespace Helicone
         public string? NotContains { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("eq")]
+        public string? Eq { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -54,28 +54,28 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="PartialTextOperators" /> class.
         /// </summary>
         /// <param name="notEquals"></param>
-        /// <param name="equals"></param>
         /// <param name="like"></param>
         /// <param name="ilike"></param>
         /// <param name="contains"></param>
         /// <param name="notContains"></param>
+        /// <param name="eq"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PartialTextOperators(
             string? notEquals,
-            string? equals,
             string? like,
             string? ilike,
             string? contains,
-            string? notContains)
+            string? notContains,
+            string? eq)
         {
             this.NotEquals = notEquals;
-            this.Equals = equals;
             this.Like = like;
             this.Ilike = ilike;
             this.Contains = contains;
             this.NotContains = notContains;
+            this.Eq = eq;
         }
 
         /// <summary>

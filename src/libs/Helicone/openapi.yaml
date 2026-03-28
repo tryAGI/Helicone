@@ -2130,9 +2130,6 @@
           "not-equals": {
             "type": "string"
           },
-          "equals": {
-            "type": "string"
-          },
           "like": {
             "type": "string"
           },
@@ -2143,6 +2140,9 @@
             "type": "string"
           },
           "not-contains": {
+            "type": "string"
+          },
+          "eq": {
             "type": "string"
           }
         },
@@ -2719,10 +2719,6 @@
             "type": "number",
             "format": "double"
           },
-          "equals": {
-            "type": "number",
-            "format": "double"
-          },
           "gte": {
             "type": "number",
             "format": "double"
@@ -2736,6 +2732,10 @@
             "format": "double"
           },
           "gt": {
+            "type": "number",
+            "format": "double"
+          },
+          "eq": {
             "type": "number",
             "format": "double"
           }
@@ -4154,9 +4154,6 @@
       },
       "Partial_TimestampOperators_": {
         "properties": {
-          "equals": {
-            "type": "string"
-          },
           "gte": {
             "type": "string"
           },
@@ -4167,6 +4164,9 @@
             "type": "string"
           },
           "gt": {
+            "type": "string"
+          },
+          "eq": {
             "type": "string"
           }
         },
@@ -4217,7 +4217,7 @@
       },
       "Partial_BooleanOperators_": {
         "properties": {
-          "equals": {
+          "eq": {
             "type": "boolean"
           }
         },
@@ -4244,10 +4244,6 @@
       },
       "Partial_TimestampOperatorsTyped_": {
         "properties": {
-          "equals": {
-            "type": "string",
-            "format": "date-time"
-          },
           "gte": {
             "type": "string",
             "format": "date-time"
@@ -4261,6 +4257,10 @@
             "format": "date-time"
           },
           "gt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "eq": {
             "type": "string",
             "format": "date-time"
           }
@@ -4335,12 +4335,12 @@
           },
           "property_key": {
             "properties": {
-              "equals": {
+              "eq": {
                 "type": "string"
               }
             },
             "required": [
-              "equals"
+              "eq"
             ],
             "type": "object"
           },
