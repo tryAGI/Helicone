@@ -23,7 +23,7 @@ var client = new HeliconeClient(apiKey); // HELICONE_API_KEY env var
 ## Key Files
 
 - `src/libs/Helicone/openapi.yaml` — OpenAPI spec (downloaded from Helicone/helicone)
-- `src/libs/Helicone/generate.sh` — Downloads spec, fixes equals→eq rename, runs autosdk with `--security-scheme Http:Header:Bearer`, fixes namespace
+- `src/libs/Helicone/generate.sh` — Downloads spec, runs autosdk with `--security-scheme Http:Header:Bearer`
 - `src/libs/Helicone/Generated/` — **Never edit** — auto-generated code (~2800 files)
 - `src/tests/IntegrationTests/Tests.cs` — Test helper with bearer auth
 - `src/tests/IntegrationTests/Examples/` — Example tests (also generate docs)
@@ -31,7 +31,6 @@ var client = new HeliconeClient(apiKey); // HELICONE_API_KEY env var
 ## Spec Notes
 
 - `--security-scheme Http:Header:Bearer` overrides the spec's apiKey auth at generation time (no jq auth patching needed)
-- Post-generation `sed` fix: replaces `namespace System` with `namespace Helicone` in `JsonSerializerContextTypes` (AutoSDK codegen bug)
 - Uses `--exclude-deprecated-operations` flag
 
 ## Sub-client Pattern
