@@ -32,5 +32,5 @@ autosdk generate openapi.yaml \
 
 # Fix 2: JsonSerializerContextTypes is generated in namespace System instead of Helicone
 for f in Generated/*JsonSerializerContextTypes*; do
-  [ -f "$f" ] && sed -i '' 's/^namespace System$/namespace Helicone/' "$f"
+  [ -f "$f" ] && sed 's/^namespace System$/namespace Helicone/' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
 done
