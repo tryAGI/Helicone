@@ -12,7 +12,7 @@ namespace Helicone
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
-        public new global::System.DateTime? Equals { get; set; }
+        public global::System.DateTime? EqualsValue { get; set; }
 
         /// <summary>
         /// 
@@ -47,7 +47,7 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="PartialTimestampOperatorsTyped" /> class.
         /// </summary>
-        /// <param name="equals"></param>
+        /// <param name="equalsValue"></param>
         /// <param name="gte"></param>
         /// <param name="lte"></param>
         /// <param name="lt"></param>
@@ -56,13 +56,13 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PartialTimestampOperatorsTyped(
-            global::System.DateTime? equals,
+            global::System.DateTime? equalsValue,
             global::System.DateTime? gte,
             global::System.DateTime? lte,
             global::System.DateTime? lt,
             global::System.DateTime? gt)
         {
-            this.Equals = equals;
+            this.EqualsValue = equalsValue;
             this.Gte = gte;
             this.Lte = lte;
             this.Lt = lt;

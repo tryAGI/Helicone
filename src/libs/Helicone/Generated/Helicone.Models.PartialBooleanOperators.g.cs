@@ -12,7 +12,7 @@ namespace Helicone
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
-        public new bool? Equals { get; set; }
+        public bool? EqualsValue { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -23,14 +23,14 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="PartialBooleanOperators" /> class.
         /// </summary>
-        /// <param name="equals"></param>
+        /// <param name="equalsValue"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PartialBooleanOperators(
-            bool? equals)
+            bool? equalsValue)
         {
-            this.Equals = equals;
+            this.EqualsValue = equalsValue;
         }
 
         /// <summary>

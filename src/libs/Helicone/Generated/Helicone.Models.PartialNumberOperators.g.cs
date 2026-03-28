@@ -18,7 +18,7 @@ namespace Helicone
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
-        public new double? Equals { get; set; }
+        public double? EqualsValue { get; set; }
 
         /// <summary>
         /// 
@@ -54,7 +54,7 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="PartialNumberOperators" /> class.
         /// </summary>
         /// <param name="notEquals"></param>
-        /// <param name="equals"></param>
+        /// <param name="equalsValue"></param>
         /// <param name="gte"></param>
         /// <param name="lte"></param>
         /// <param name="lt"></param>
@@ -64,14 +64,14 @@ namespace Helicone
 #endif
         public PartialNumberOperators(
             double? notEquals,
-            double? equals,
+            double? equalsValue,
             double? gte,
             double? lte,
             double? lt,
             double? gt)
         {
             this.NotEquals = notEquals;
-            this.Equals = equals;
+            this.EqualsValue = equalsValue;
             this.Gte = gte;
             this.Lte = lte;
             this.Lt = lt;

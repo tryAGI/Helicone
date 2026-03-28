@@ -18,7 +18,7 @@ namespace Helicone
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
-        public new string? Equals { get; set; }
+        public string? EqualsValue { get; set; }
 
         /// <summary>
         /// 
@@ -54,7 +54,7 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="PartialTextOperators" /> class.
         /// </summary>
         /// <param name="notEquals"></param>
-        /// <param name="equals"></param>
+        /// <param name="equalsValue"></param>
         /// <param name="like"></param>
         /// <param name="ilike"></param>
         /// <param name="contains"></param>
@@ -64,14 +64,14 @@ namespace Helicone
 #endif
         public PartialTextOperators(
             string? notEquals,
-            string? equals,
+            string? equalsValue,
             string? like,
             string? ilike,
             string? contains,
             string? notContains)
         {
             this.NotEquals = notEquals;
-            this.Equals = equals;
+            this.EqualsValue = equalsValue;
             this.Like = like;
             this.Ilike = ilike;
             this.Contains = contains;
