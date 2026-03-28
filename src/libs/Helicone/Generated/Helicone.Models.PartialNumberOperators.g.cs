@@ -17,6 +17,12 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
+        public new double? Equals { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gte")]
         public double? Gte { get; set; }
 
@@ -39,12 +45,6 @@ namespace Helicone
         public double? Gt { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("eq")]
-        public double? Eq { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -54,28 +54,28 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="PartialNumberOperators" /> class.
         /// </summary>
         /// <param name="notEquals"></param>
+        /// <param name="equals"></param>
         /// <param name="gte"></param>
         /// <param name="lte"></param>
         /// <param name="lt"></param>
         /// <param name="gt"></param>
-        /// <param name="eq"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PartialNumberOperators(
             double? notEquals,
+            double? equals,
             double? gte,
             double? lte,
             double? lt,
-            double? gt,
-            double? eq)
+            double? gt)
         {
             this.NotEquals = notEquals;
+            this.Equals = equals;
             this.Gte = gte;
             this.Lte = lte;
             this.Lt = lt;
             this.Gt = gt;
-            this.Eq = eq;
         }
 
         /// <summary>

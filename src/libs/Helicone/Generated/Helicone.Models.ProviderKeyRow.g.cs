@@ -46,7 +46,7 @@ namespace Helicone
         /// Construct a type with a set of properties K of type T
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
-        public object? Config { get; set; }
+        public global::Helicone.RecordStringAny? Config { get; set; }
 
         /// <summary>
         /// 
@@ -88,7 +88,7 @@ namespace Helicone
             string providerKeyName,
             bool softDelete,
             string? createdAt,
-            object? config,
+            global::Helicone.RecordStringAny? config,
             bool? byokEnabled,
             string? cuid)
         {

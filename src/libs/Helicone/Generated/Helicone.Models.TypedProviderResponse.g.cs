@@ -12,7 +12,7 @@ namespace Helicone
         /// Construct a type with a set of properties K of type T
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("json")]
-        public object? Json { get; set; }
+        public global::Helicone.RecordStringUnknown? Json { get; set; }
 
         /// <summary>
         /// 
@@ -57,7 +57,7 @@ namespace Helicone
         public TypedProviderResponse(
             double status,
             global::System.Collections.Generic.Dictionary<string, string> headers,
-            object? json,
+            global::Helicone.RecordStringUnknown? json,
             string? textBody)
         {
             this.Status = status;

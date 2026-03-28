@@ -190,7 +190,7 @@ namespace Helicone
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Helicone.ResultCreatePromptResponseString> CreatePromptAsync(
-            object metadata,
+            global::Helicone.RecordStringAny metadata,
             object prompt,
             string userDefinedId,
             global::System.Threading.CancellationToken cancellationToken = default)

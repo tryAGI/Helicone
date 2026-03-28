@@ -11,9 +11,9 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("eq")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Eq { get; set; }
+        public new required string Equals { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -24,14 +24,14 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="PartialRequestResponseRMTToOperatorsPropertyKey" /> class.
         /// </summary>
-        /// <param name="eq"></param>
+        /// <param name="equals"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PartialRequestResponseRMTToOperatorsPropertyKey(
-            string eq)
+            string equals)
         {
-            this.Eq = eq ?? throw new global::System.ArgumentNullException(nameof(eq));
+            this.Equals = equals ?? throw new global::System.ArgumentNullException(nameof(equals));
         }
 
         /// <summary>

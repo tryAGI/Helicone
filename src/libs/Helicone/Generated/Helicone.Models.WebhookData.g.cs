@@ -20,7 +20,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Config { get; set; }
+        public required global::Helicone.RecordStringAny Config { get; set; }
 
         /// <summary>
         /// 
@@ -47,7 +47,7 @@ namespace Helicone
 #endif
         public WebhookData(
             string destination,
-            object config,
+            global::Helicone.RecordStringAny config,
             bool? includeData)
         {
             this.Destination = destination ?? throw new global::System.ArgumentNullException(nameof(destination));

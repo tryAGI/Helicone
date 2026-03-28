@@ -191,7 +191,7 @@ namespace Helicone
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Helicone.AnyOf<global::Helicone.ResultSuccessUnknown, global::Helicone.ResultErrorUnknown>> NewWebhookAsync(
             string destination,
-            object config,
+            global::Helicone.RecordStringAny config,
             bool? includeData = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

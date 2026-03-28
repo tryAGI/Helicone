@@ -13,7 +13,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Meta { get; set; }
+        public required global::Helicone.RecordStringAny Meta { get; set; }
 
         /// <summary>
         /// 
@@ -63,7 +63,7 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ResultSuccessIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayDataItem(
-            object meta,
+            global::Helicone.RecordStringAny meta,
             string dataset,
             double numHypotheses,
             string createdAt,

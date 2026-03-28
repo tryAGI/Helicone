@@ -196,7 +196,7 @@ namespace Helicone
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Helicone.ResultNullString> AddScoresAsync(
             string requestId,
-            object scores,
+            global::Helicone.RecordStringNumberOrBooleanOrUndefined scores,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __request = new global::Helicone.ScoreRequest

@@ -20,7 +20,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("json")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Json { get; set; }
+        public required global::Helicone.RecordStringUnknown Json { get; set; }
 
         /// <summary>
         /// Construct a type with a set of properties K of type T
@@ -50,7 +50,7 @@ namespace Helicone
 #endif
         public TypedProviderRequest(
             string url,
-            object json,
+            global::Helicone.RecordStringUnknown json,
             global::System.Collections.Generic.Dictionary<string, string> meta)
         {
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));

@@ -11,6 +11,12 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
+        public new string? Equals { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gte")]
         public string? Gte { get; set; }
 
@@ -33,12 +39,6 @@ namespace Helicone
         public string? Gt { get; set; }
 
         /// <summary>
-        /// 
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("eq")]
-        public string? Eq { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -47,26 +47,26 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="PartialTimestampOperators" /> class.
         /// </summary>
+        /// <param name="equals"></param>
         /// <param name="gte"></param>
         /// <param name="lte"></param>
         /// <param name="lt"></param>
         /// <param name="gt"></param>
-        /// <param name="eq"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PartialTimestampOperators(
+            string? equals,
             string? gte,
             string? lte,
             string? lt,
-            string? gt,
-            string? eq)
+            string? gt)
         {
+            this.Equals = equals;
             this.Gte = gte;
             this.Lte = lte;
             this.Lt = lt;
             this.Gt = gt;
-            this.Eq = eq;
         }
 
         /// <summary>

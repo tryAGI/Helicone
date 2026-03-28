@@ -34,7 +34,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rows")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<object> Rows { get; set; }
+        public required global::System.Collections.Generic.IList<global::Helicone.RecordStringAny> Rows { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -56,7 +56,7 @@ namespace Helicone
             double rowCount,
             double size,
             double elapsedMilliseconds,
-            global::System.Collections.Generic.IList<object> rows)
+            global::System.Collections.Generic.IList<global::Helicone.RecordStringAny> rows)
         {
             this.RowCount = rowCount;
             this.Size = size;

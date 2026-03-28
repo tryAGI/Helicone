@@ -26,7 +26,7 @@ namespace Helicone
         /// Construct a type with a set of properties K of type T
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
-        public object? Meta { get; set; }
+        public global::Helicone.RecordStringAny? Meta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,7 +48,7 @@ namespace Helicone
         public HeliconeEventData(
             string name,
             global::Helicone.HeliconeEventDataType type,
-            object? meta)
+            global::Helicone.RecordStringAny? meta)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Type = type;

@@ -20,7 +20,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentMetadata")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object ExperimentMetadata { get; set; }
+        public required global::Helicone.RecordStringAny ExperimentMetadata { get; set; }
 
         /// <summary>
         /// 
@@ -48,13 +48,13 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promptSubversionMetadata")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object PromptSubversionMetadata { get; set; }
+        public required global::Helicone.RecordStringAny PromptSubversionMetadata { get; set; }
 
         /// <summary>
         /// Construct a type with a set of properties K of type T
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentTableMetadata")]
-        public object? ExperimentTableMetadata { get; set; }
+        public global::Helicone.RecordStringAny? ExperimentTableMetadata { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -83,12 +83,12 @@ namespace Helicone
 #endif
         public CreateExperimentTableParams(
             string datasetId,
-            object experimentMetadata,
+            global::Helicone.RecordStringAny experimentMetadata,
             string promptVersionId,
             string newHeliconeTemplate,
             bool isMajorVersion,
-            object promptSubversionMetadata,
-            object? experimentTableMetadata)
+            global::Helicone.RecordStringAny promptSubversionMetadata,
+            global::Helicone.RecordStringAny? experimentTableMetadata)
         {
             this.DatasetId = datasetId ?? throw new global::System.ArgumentNullException(nameof(datasetId));
             this.ExperimentMetadata = experimentMetadata ?? throw new global::System.ArgumentNullException(nameof(experimentMetadata));

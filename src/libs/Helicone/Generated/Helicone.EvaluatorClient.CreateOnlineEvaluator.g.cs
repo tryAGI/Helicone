@@ -196,7 +196,7 @@ namespace Helicone
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Helicone.ResultNullString> CreateOnlineEvaluatorAsync(
             string evaluatorId,
-            object config,
+            global::Helicone.RecordStringAny config,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __request = new global::Helicone.CreateOnlineEvaluatorParams

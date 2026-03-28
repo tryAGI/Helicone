@@ -12,7 +12,7 @@ namespace Helicone
         /// Construct a type with a set of properties K of type T
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public object? Metadata { get; set; }
+        public global::Helicone.RecordStringAny? Metadata { get; set; }
 
         /// <summary>
         /// 
@@ -62,7 +62,7 @@ namespace Helicone
         public ExperimentTableColumnCell(
             double rowIndex,
             string id,
-            object? metadata,
+            global::Helicone.RecordStringAny? metadata,
             string? value,
             string? requestId)
         {

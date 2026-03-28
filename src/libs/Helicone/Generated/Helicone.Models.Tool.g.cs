@@ -25,7 +25,7 @@ namespace Helicone
         /// Construct a type with a set of properties K of type T
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parameters")]
-        public object? Parameters { get; set; }
+        public global::Helicone.RecordStringAny? Parameters { get; set; }
 
         /// <summary>
         /// 
@@ -54,7 +54,7 @@ namespace Helicone
         public Tool(
             string name,
             string? description,
-            object? parameters,
+            global::Helicone.RecordStringAny? parameters,
             bool? strict)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

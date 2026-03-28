@@ -33,7 +33,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inputs")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Inputs { get; set; }
+        public required global::Helicone.RecordStringAny Inputs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -56,7 +56,7 @@ namespace Helicone
         public ResultSuccessInputsRecordStringAnyPromptIdStringVersionIdStringEnvironmentStringOrNullOrNullData(
             string versionId,
             string promptId,
-            object inputs,
+            global::Helicone.RecordStringAny inputs,
             string? environment)
         {
             this.VersionId = versionId ?? throw new global::System.ArgumentNullException(nameof(versionId));

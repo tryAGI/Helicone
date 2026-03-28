@@ -82,7 +82,7 @@ namespace Helicone
         /// Construct a type with a set of properties K of type T
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public object? Metadata { get; set; }
+        public global::Helicone.RecordStringAny? Metadata { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -120,7 +120,7 @@ namespace Helicone
             string createdAt,
             string lastUsed,
             global::System.Collections.Generic.IList<string> versions,
-            object? metadata)
+            global::Helicone.RecordStringAny? metadata)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.UserDefinedId = userDefinedId ?? throw new global::System.ArgumentNullException(nameof(userDefinedId));

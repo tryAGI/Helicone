@@ -46,7 +46,7 @@ namespace Helicone
         /// Construct a type with a set of properties K of type T
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public object? Metadata { get; set; }
+        public global::Helicone.RecordStringAny? Metadata { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -74,7 +74,7 @@ namespace Helicone
             string columnType,
             global::System.Collections.Generic.IList<global::Helicone.ExperimentTableColumnCell> cells,
             string? hypothesisId,
-            object? metadata)
+            global::Helicone.RecordStringAny? metadata)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ColumnName = columnName ?? throw new global::System.ArgumentNullException(nameof(columnName));

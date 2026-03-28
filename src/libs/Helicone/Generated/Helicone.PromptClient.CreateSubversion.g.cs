@@ -202,7 +202,7 @@ namespace Helicone
             string promptVersionId,
             object newHeliconeTemplate,
             bool? isMajorVersion = default,
-            object? metadata = default,
+            global::Helicone.RecordStringAny? metadata = default,
             string? experimentId = default,
             string? bumpForMajorPromptVersionId = default,
             global::System.Threading.CancellationToken cancellationToken = default)

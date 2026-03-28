@@ -13,7 +13,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Config { get; set; }
+        public required global::Helicone.RecordStringAny Config { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,7 +31,7 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateOnlineEvaluatorParams(
-            object config)
+            global::Helicone.RecordStringAny config)
         {
             this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
         }

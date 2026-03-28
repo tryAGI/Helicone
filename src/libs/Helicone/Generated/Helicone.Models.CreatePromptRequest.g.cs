@@ -13,7 +13,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Metadata { get; set; }
+        public required global::Helicone.RecordStringAny Metadata { get; set; }
 
         /// <summary>
         /// 
@@ -47,7 +47,7 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreatePromptRequest(
-            object metadata,
+            global::Helicone.RecordStringAny metadata,
             object prompt,
             string userDefinedId)
         {

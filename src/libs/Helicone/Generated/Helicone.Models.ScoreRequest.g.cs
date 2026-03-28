@@ -13,7 +13,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scores")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Scores { get; set; }
+        public required global::Helicone.RecordStringNumberOrBooleanOrUndefined Scores { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,7 +31,7 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ScoreRequest(
-            object scores)
+            global::Helicone.RecordStringNumberOrBooleanOrUndefined scores)
         {
             this.Scores = scores ?? throw new global::System.ArgumentNullException(nameof(scores));
         }

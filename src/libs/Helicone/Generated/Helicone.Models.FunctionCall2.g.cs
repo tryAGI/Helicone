@@ -26,7 +26,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("arguments")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Arguments { get; set; }
+        public required global::Helicone.RecordStringAny Arguments { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,7 +47,7 @@ namespace Helicone
 #endif
         public FunctionCall2(
             string name,
-            object arguments,
+            global::Helicone.RecordStringAny arguments,
             string? id)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

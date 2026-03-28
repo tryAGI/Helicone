@@ -35,7 +35,7 @@ namespace Helicone
             object newHeliconeTemplate,
             string parentPromptVersionId,
             bool? isMajorVersion = default,
-            object? metadata = default,
+            global::Helicone.RecordStringAny? metadata = default,
             string? requestExperimentId = default,
             string? bumpForMajorPromptVersionId = default,
             global::System.Threading.CancellationToken cancellationToken = default);

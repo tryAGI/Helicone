@@ -34,12 +34,12 @@ namespace Helicone
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Helicone.ResultTableIdStringExperimentIdStringString> CreateNewExperimentTableAsync(
             string datasetId,
-            object experimentMetadata,
+            global::Helicone.RecordStringAny experimentMetadata,
             string promptVersionId,
             string newHeliconeTemplate,
             bool isMajorVersion,
-            object promptSubversionMetadata,
-            object? experimentTableMetadata = default,
+            global::Helicone.RecordStringAny promptSubversionMetadata,
+            global::Helicone.RecordStringAny? experimentTableMetadata = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

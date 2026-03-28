@@ -13,7 +13,7 @@ namespace Helicone
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parameters")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Parameters { get; set; }
+        public required global::Helicone.RecordStringUnknown Parameters { get; set; }
 
         /// <summary>
         /// 
@@ -47,7 +47,7 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public Prompt2025VersionPromptBodyToolFunction(
-            object parameters,
+            global::Helicone.RecordStringUnknown parameters,
             string description,
             string name)
         {
