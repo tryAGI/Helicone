@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-dotnet tool update --global autosdk.cli --prerelease || dotnet tool install --global autosdk.cli --prerelease
+dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
-curl -o openapi.yaml https://raw.githubusercontent.com/Helicone/helicone/main/docs/swagger.json
+curl --fail --silent --show-error -o openapi.yaml https://raw.githubusercontent.com/Helicone/helicone/main/docs/swagger.json
 
 # Fix 1: Rename "equals" property to "eq" in operator schemas to avoid CS0108 (shadowing object.Equals())
 jq '
