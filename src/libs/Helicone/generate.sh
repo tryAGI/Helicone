@@ -3,7 +3,7 @@ set -euo pipefail
 
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
-curl --fail --silent --show-error -o openapi.yaml https://raw.githubusercontent.com/Helicone/helicone/main/docs/swagger.json
+curl --fail --silent --show-error -L -o openapi.yaml https://raw.githubusercontent.com/Helicone/helicone/main/docs/swagger.json
 
 # Fix 1: Rename "equals" property to "eq" in operator schemas to avoid CS0108 (shadowing object.Equals())
 jq '
