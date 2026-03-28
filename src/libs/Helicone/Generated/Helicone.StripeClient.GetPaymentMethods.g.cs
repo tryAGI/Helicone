@@ -101,7 +101,7 @@ namespace Helicone
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Helicone.PaymentMethod>), JsonSerializerContext) as global::System.Collections.Generic.IList<global::Helicone.PaymentMethod> ??
+                        (global::System.Collections.Generic.IList<global::Helicone.PaymentMethod>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Helicone.PaymentMethod>), JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -132,7 +132,7 @@ namespace Helicone
                     ).ConfigureAwait(false);
 
                     return
-                        await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Helicone.PaymentMethod>), JsonSerializerContext).ConfigureAwait(false) as global::System.Collections.Generic.IList<global::Helicone.PaymentMethod> ??
+                        (global::System.Collections.Generic.IList<global::Helicone.PaymentMethod>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Helicone.PaymentMethod>), JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
