@@ -37,9 +37,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="TypedTiming" /> class.
         /// </summary>
-        /// <param name="timeToFirstToken"></param>
         /// <param name="startTime"></param>
         /// <param name="endTime"></param>
+        /// <param name="timeToFirstToken"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -48,9 +48,9 @@ namespace Helicone
             string endTime,
             double? timeToFirstToken)
         {
+            this.TimeToFirstToken = timeToFirstToken;
             this.StartTime = startTime ?? throw new global::System.ArgumentNullException(nameof(startTime));
             this.EndTime = endTime ?? throw new global::System.ArgumentNullException(nameof(endTime));
-            this.TimeToFirstToken = timeToFirstToken;
         }
 
         /// <summary>

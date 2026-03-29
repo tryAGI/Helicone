@@ -90,8 +90,8 @@ namespace Helicone
         /// <param name="majorVersion"></param>
         /// <param name="minorVersion"></param>
         /// <param name="commitMessage"></param>
-        /// <param name="environments"></param>
         /// <param name="createdAt"></param>
+        /// <param name="environments"></param>
         /// <param name="s3Url"></param>
         /// <param name="promptBody"></param>
 #if NET7_0_OR_GREATER
@@ -115,8 +115,8 @@ namespace Helicone
             this.MajorVersion = majorVersion;
             this.MinorVersion = minorVersion;
             this.CommitMessage = commitMessage ?? throw new global::System.ArgumentNullException(nameof(commitMessage));
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Environments = environments;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.S3Url = s3Url;
             this.PromptBody = promptBody;
         }

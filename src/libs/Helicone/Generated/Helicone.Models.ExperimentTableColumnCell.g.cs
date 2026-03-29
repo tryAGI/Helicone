@@ -49,13 +49,13 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ExperimentTableColumnCell" /> class.
         /// </summary>
+        /// <param name="rowIndex"></param>
+        /// <param name="id"></param>
         /// <param name="metadata">
         /// Construct a type with a set of properties K of type T
         /// </param>
         /// <param name="value"></param>
         /// <param name="requestId"></param>
-        /// <param name="rowIndex"></param>
-        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -66,11 +66,11 @@ namespace Helicone
             string? value,
             string? requestId)
         {
-            this.RowIndex = rowIndex;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Metadata = metadata;
             this.Value = value;
             this.RequestId = requestId;
+            this.RowIndex = rowIndex;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

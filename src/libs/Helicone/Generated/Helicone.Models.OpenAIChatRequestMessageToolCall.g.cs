@@ -38,9 +38,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="OpenAIChatRequestMessageToolCall" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="function"></param>
         /// <param name="id"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,9 +49,9 @@ namespace Helicone
             string id,
             global::Helicone.OpenAIChatRequestMessageToolCallType type)
         {
+            this.Type = type;
             this.Function = function ?? throw new global::System.ArgumentNullException(nameof(function));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Type = type;
         }
 
         /// <summary>

@@ -43,10 +43,10 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ModelSpendPricing" /> class.
         /// </summary>
-        /// <param name="cacheWritePer1M"></param>
-        /// <param name="cacheReadPer1M"></param>
         /// <param name="outputPer1M"></param>
         /// <param name="inputPer1M"></param>
+        /// <param name="cacheWritePer1M"></param>
+        /// <param name="cacheReadPer1M"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -56,10 +56,10 @@ namespace Helicone
             double? cacheWritePer1M,
             double? cacheReadPer1M)
         {
-            this.OutputPer1M = outputPer1M;
-            this.InputPer1M = inputPer1M;
             this.CacheWritePer1M = cacheWritePer1M;
             this.CacheReadPer1M = cacheReadPer1M;
+            this.OutputPer1M = outputPer1M;
+            this.InputPer1M = inputPer1M;
         }
 
         /// <summary>

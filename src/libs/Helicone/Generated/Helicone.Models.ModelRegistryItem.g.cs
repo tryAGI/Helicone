@@ -102,12 +102,12 @@ namespace Helicone
         /// <param name="author"></param>
         /// <param name="contextLength"></param>
         /// <param name="endpoints"></param>
-        /// <param name="maxOutput"></param>
-        /// <param name="trainingDate"></param>
-        /// <param name="description"></param>
         /// <param name="inputModalities"></param>
         /// <param name="outputModalities"></param>
         /// <param name="supportedParameters"></param>
+        /// <param name="maxOutput"></param>
+        /// <param name="trainingDate"></param>
+        /// <param name="description"></param>
         /// <param name="pinnedVersionOfModel"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -131,12 +131,12 @@ namespace Helicone
             this.Author = author ?? throw new global::System.ArgumentNullException(nameof(author));
             this.ContextLength = contextLength;
             this.Endpoints = endpoints ?? throw new global::System.ArgumentNullException(nameof(endpoints));
-            this.InputModalities = inputModalities ?? throw new global::System.ArgumentNullException(nameof(inputModalities));
-            this.OutputModalities = outputModalities ?? throw new global::System.ArgumentNullException(nameof(outputModalities));
-            this.SupportedParameters = supportedParameters ?? throw new global::System.ArgumentNullException(nameof(supportedParameters));
             this.MaxOutput = maxOutput;
             this.TrainingDate = trainingDate;
             this.Description = description;
+            this.InputModalities = inputModalities ?? throw new global::System.ArgumentNullException(nameof(inputModalities));
+            this.OutputModalities = outputModalities ?? throw new global::System.ArgumentNullException(nameof(outputModalities));
+            this.SupportedParameters = supportedParameters ?? throw new global::System.ArgumentNullException(nameof(supportedParameters));
             this.PinnedVersionOfModel = pinnedVersionOfModel;
         }
 

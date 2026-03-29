@@ -43,14 +43,14 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="TypedProviderResponse" /> class.
         /// </summary>
-        /// <param name="json">
-        /// Construct a type with a set of properties K of type T
-        /// </param>
-        /// <param name="textBody"></param>
         /// <param name="status"></param>
         /// <param name="headers">
         /// Construct a type with a set of properties K of type T
         /// </param>
+        /// <param name="json">
+        /// Construct a type with a set of properties K of type T
+        /// </param>
+        /// <param name="textBody"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -60,10 +60,10 @@ namespace Helicone
             global::Helicone.RecordStringUnknown? json,
             string? textBody)
         {
-            this.Status = status;
-            this.Headers = headers ?? throw new global::System.ArgumentNullException(nameof(headers));
             this.Json = json;
             this.TextBody = textBody;
+            this.Status = status;
+            this.Headers = headers ?? throw new global::System.ArgumentNullException(nameof(headers));
         }
 
         /// <summary>

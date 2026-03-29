@@ -72,8 +72,8 @@ namespace Helicone
         /// <param name="id"></param>
         /// <param name="providerName"></param>
         /// <param name="providerKeyName"></param>
-        /// <param name="createdAt"></param>
         /// <param name="softDelete"></param>
+        /// <param name="createdAt"></param>
         /// <param name="config">
         /// Construct a type with a set of properties K of type T
         /// </param>
@@ -95,8 +95,8 @@ namespace Helicone
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ProviderName = providerName ?? throw new global::System.ArgumentNullException(nameof(providerName));
             this.ProviderKeyName = providerKeyName ?? throw new global::System.ArgumentNullException(nameof(providerKeyName));
-            this.SoftDelete = softDelete;
             this.CreatedAt = createdAt;
+            this.SoftDelete = softDelete;
             this.Config = config;
             this.ByokEnabled = byokEnabled;
             this.Cuid = cuid;

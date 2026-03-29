@@ -36,9 +36,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="EvaluatorConfig" /> class.
         /// </summary>
+        /// <param name="evaluatorScoringType"></param>
         /// <param name="evaluatorCodeTemplate"></param>
         /// <param name="evaluatorLlmTemplate"></param>
-        /// <param name="evaluatorScoringType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -47,9 +47,9 @@ namespace Helicone
             string? evaluatorCodeTemplate,
             string? evaluatorLlmTemplate)
         {
-            this.EvaluatorScoringType = evaluatorScoringType ?? throw new global::System.ArgumentNullException(nameof(evaluatorScoringType));
             this.EvaluatorCodeTemplate = evaluatorCodeTemplate;
             this.EvaluatorLlmTemplate = evaluatorLlmTemplate;
+            this.EvaluatorScoringType = evaluatorScoringType ?? throw new global::System.ArgumentNullException(nameof(evaluatorScoringType));
         }
 
         /// <summary>

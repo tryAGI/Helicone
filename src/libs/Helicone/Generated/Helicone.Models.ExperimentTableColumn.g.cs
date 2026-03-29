@@ -60,8 +60,8 @@ namespace Helicone
         /// <param name="id"></param>
         /// <param name="columnName"></param>
         /// <param name="columnType"></param>
-        /// <param name="hypothesisId"></param>
         /// <param name="cells"></param>
+        /// <param name="hypothesisId"></param>
         /// <param name="metadata">
         /// Construct a type with a set of properties K of type T
         /// </param>
@@ -79,8 +79,8 @@ namespace Helicone
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ColumnName = columnName ?? throw new global::System.ArgumentNullException(nameof(columnName));
             this.ColumnType = columnType ?? throw new global::System.ArgumentNullException(nameof(columnType));
-            this.Cells = cells ?? throw new global::System.ArgumentNullException(nameof(cells));
             this.HypothesisId = hypothesisId;
+            this.Cells = cells ?? throw new global::System.ArgumentNullException(nameof(cells));
             this.Metadata = metadata;
         }
 

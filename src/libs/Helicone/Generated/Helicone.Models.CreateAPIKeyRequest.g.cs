@@ -31,8 +31,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateAPIKeyRequest" /> class.
         /// </summary>
-        /// <param name="keyPermissions"></param>
         /// <param name="apiKeyName"></param>
+        /// <param name="keyPermissions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Helicone
             string apiKeyName,
             global::Helicone.CreateAPIKeyRequestKeyPermissions? keyPermissions)
         {
-            this.ApiKeyName = apiKeyName ?? throw new global::System.ArgumentNullException(nameof(apiKeyName));
             this.KeyPermissions = keyPermissions;
+            this.ApiKeyName = apiKeyName ?? throw new global::System.ArgumentNullException(nameof(apiKeyName));
         }
 
         /// <summary>

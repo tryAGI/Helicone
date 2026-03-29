@@ -30,8 +30,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="LLMRequestBodyResponseFormat" /> class.
         /// </summary>
-        /// <param name="jsonSchema"></param>
         /// <param name="type"></param>
+        /// <param name="jsonSchema"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace Helicone
             string type,
             object? jsonSchema)
         {
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.JsonSchema = jsonSchema;
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
         }
 
         /// <summary>

@@ -55,9 +55,9 @@ namespace Helicone
         /// </summary>
         /// <param name="filter"></param>
         /// <param name="timeFilter"></param>
-        /// <param name="dbIncrement"></param>
         /// <param name="timeZoneDifference"></param>
         /// <param name="metric"></param>
+        /// <param name="dbIncrement"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -70,9 +70,9 @@ namespace Helicone
         {
             this.Filter = filter;
             this.TimeFilter = timeFilter ?? throw new global::System.ArgumentNullException(nameof(timeFilter));
+            this.DbIncrement = dbIncrement;
             this.TimeZoneDifference = timeZoneDifference;
             this.Metric = metric ?? throw new global::System.ArgumentNullException(nameof(metric));
-            this.DbIncrement = dbIncrement;
         }
 
         /// <summary>

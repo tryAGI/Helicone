@@ -83,10 +83,10 @@ namespace Helicone
         /// <param name="createdAt"></param>
         /// <param name="status"></param>
         /// <param name="model"></param>
-        /// <param name="parentPromptVersion"></param>
-        /// <param name="promptVersion"></param>
         /// <param name="promptVersionId"></param>
         /// <param name="id"></param>
+        /// <param name="parentPromptVersion"></param>
+        /// <param name="promptVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -106,10 +106,10 @@ namespace Helicone
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
             this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
-            this.PromptVersionId = promptVersionId ?? throw new global::System.ArgumentNullException(nameof(promptVersionId));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ParentPromptVersion = parentPromptVersion;
             this.PromptVersion = promptVersion;
+            this.PromptVersionId = promptVersionId ?? throw new global::System.ArgumentNullException(nameof(promptVersionId));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

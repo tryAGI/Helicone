@@ -49,11 +49,11 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="OpenAIChatRequestMessage" /> class.
         /// </summary>
+        /// <param name="role"></param>
         /// <param name="toolCalls"></param>
         /// <param name="toolCallId"></param>
         /// <param name="name"></param>
         /// <param name="content"></param>
-        /// <param name="role"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -64,11 +64,11 @@ namespace Helicone
             string? name,
             global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>? content)
         {
-            this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
             this.ToolCalls = toolCalls;
             this.ToolCallId = toolCallId;
             this.Name = name;
             this.Content = content;
+            this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
         }
 
         /// <summary>

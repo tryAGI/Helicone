@@ -62,10 +62,10 @@ namespace Helicone
         /// Simplified interface for the OpenAI Chat request format
         /// </param>
         /// <param name="commitMessage"></param>
-        /// <param name="environment"></param>
         /// <param name="newMajorVersion"></param>
         /// <param name="promptVersionId"></param>
         /// <param name="promptId"></param>
+        /// <param name="environment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -79,10 +79,10 @@ namespace Helicone
         {
             this.PromptBody = promptBody ?? throw new global::System.ArgumentNullException(nameof(promptBody));
             this.CommitMessage = commitMessage ?? throw new global::System.ArgumentNullException(nameof(commitMessage));
+            this.Environment = environment;
             this.NewMajorVersion = newMajorVersion;
             this.PromptVersionId = promptVersionId ?? throw new global::System.ArgumentNullException(nameof(promptVersionId));
             this.PromptId = promptId ?? throw new global::System.ArgumentNullException(nameof(promptId));
-            this.Environment = environment;
         }
 
         /// <summary>

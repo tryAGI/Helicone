@@ -44,10 +44,10 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ResultSuccessScoreNumberInputStringOutputStringGroundTruth63StringData" /> class.
         /// </summary>
-        /// <param name="groundTruth"></param>
         /// <param name="output"></param>
         /// <param name="input"></param>
         /// <param name="score"></param>
+        /// <param name="groundTruth"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -57,10 +57,10 @@ namespace Helicone
             double score,
             string? groundTruth)
         {
+            this.GroundTruth = groundTruth;
             this.Output = output ?? throw new global::System.ArgumentNullException(nameof(output));
             this.Input = input ?? throw new global::System.ArgumentNullException(nameof(input));
             this.Score = score;
-            this.GroundTruth = groundTruth;
         }
 
         /// <summary>

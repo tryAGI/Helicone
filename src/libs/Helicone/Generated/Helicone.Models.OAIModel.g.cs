@@ -46,9 +46,9 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="OAIModel" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="object"></param>
         /// <param name="created"></param>
         /// <param name="ownedBy"></param>
+        /// <param name="object"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -59,9 +59,9 @@ namespace Helicone
             global::Helicone.OAIModelObject @object)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Object = @object;
             this.Created = created;
             this.OwnedBy = ownedBy ?? throw new global::System.ArgumentNullException(nameof(ownedBy));
-            this.Object = @object;
         }
 
         /// <summary>

@@ -98,10 +98,10 @@ namespace Helicone
         /// <param name="completionTokens"></param>
         /// <param name="cacheReadTokens"></param>
         /// <param name="cacheWriteTokens"></param>
-        /// <param name="pricing"></param>
         /// <param name="subtotal"></param>
         /// <param name="discountPercent"></param>
         /// <param name="total"></param>
+        /// <param name="pricing"></param>
         /// <param name="cacheAdjustment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -125,10 +125,10 @@ namespace Helicone
             this.CompletionTokens = completionTokens;
             this.CacheReadTokens = cacheReadTokens;
             this.CacheWriteTokens = cacheWriteTokens;
+            this.Pricing = pricing;
             this.Subtotal = subtotal;
             this.DiscountPercent = discountPercent;
             this.Total = total;
-            this.Pricing = pricing;
             this.CacheAdjustment = cacheAdjustment;
         }
 

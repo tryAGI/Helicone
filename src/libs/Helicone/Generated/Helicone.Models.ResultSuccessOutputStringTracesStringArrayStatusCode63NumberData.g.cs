@@ -37,9 +37,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ResultSuccessOutputStringTracesStringArrayStatusCode63NumberData" /> class.
         /// </summary>
-        /// <param name="statusCode"></param>
         /// <param name="traces"></param>
         /// <param name="output"></param>
+        /// <param name="statusCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -48,9 +48,9 @@ namespace Helicone
             string output,
             double? statusCode)
         {
+            this.StatusCode = statusCode;
             this.Traces = traces ?? throw new global::System.ArgumentNullException(nameof(traces));
             this.Output = output ?? throw new global::System.ArgumentNullException(nameof(output));
-            this.StatusCode = statusCode;
         }
 
         /// <summary>

@@ -66,9 +66,9 @@ namespace Helicone
         /// </summary>
         /// <param name="search"></param>
         /// <param name="timeFilter"></param>
-        /// <param name="nameEquals"></param>
         /// <param name="timezoneDifference"></param>
         /// <param name="filter"></param>
+        /// <param name="nameEquals"></param>
         /// <param name="offset"></param>
         /// <param name="limit"></param>
 #if NET7_0_OR_GREATER
@@ -85,9 +85,9 @@ namespace Helicone
         {
             this.Search = search ?? throw new global::System.ArgumentNullException(nameof(search));
             this.TimeFilter = timeFilter ?? throw new global::System.ArgumentNullException(nameof(timeFilter));
+            this.NameEquals = nameEquals;
             this.TimezoneDifference = timezoneDifference;
             this.Filter = filter;
-            this.NameEquals = nameEquals;
             this.Offset = offset;
             this.Limit = limit;
         }

@@ -60,9 +60,9 @@ namespace Helicone
         /// <param name="enabled"></param>
         /// <param name="thresholdCents"></param>
         /// <param name="topoffAmountCents"></param>
+        /// <param name="consecutiveFailures"></param>
         /// <param name="stripePaymentMethodId"></param>
         /// <param name="lastTopoffAt"></param>
-        /// <param name="consecutiveFailures"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -77,9 +77,9 @@ namespace Helicone
             this.Enabled = enabled;
             this.ThresholdCents = thresholdCents;
             this.TopoffAmountCents = topoffAmountCents;
-            this.ConsecutiveFailures = consecutiveFailures;
             this.StripePaymentMethodId = stripePaymentMethodId;
             this.LastTopoffAt = lastTopoffAt;
+            this.ConsecutiveFailures = consecutiveFailures;
         }
 
         /// <summary>

@@ -49,11 +49,11 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateExperimentColumnRequest" /> class.
         /// </summary>
+        /// <param name="columnType"></param>
+        /// <param name="columnName"></param>
         /// <param name="inputKeys"></param>
         /// <param name="promptVersionId"></param>
         /// <param name="hypothesisId"></param>
-        /// <param name="columnType"></param>
-        /// <param name="columnName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -64,11 +64,11 @@ namespace Helicone
             string? promptVersionId,
             string? hypothesisId)
         {
-            this.ColumnType = columnType ?? throw new global::System.ArgumentNullException(nameof(columnType));
-            this.ColumnName = columnName ?? throw new global::System.ArgumentNullException(nameof(columnName));
             this.InputKeys = inputKeys;
             this.PromptVersionId = promptVersionId;
             this.HypothesisId = hypothesisId;
+            this.ColumnType = columnType ?? throw new global::System.ArgumentNullException(nameof(columnType));
+            this.ColumnName = columnName ?? throw new global::System.ArgumentNullException(nameof(columnName));
         }
 
         /// <summary>

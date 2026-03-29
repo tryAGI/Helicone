@@ -37,11 +37,11 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="InsertDatasetRowRequest" /> class.
         /// </summary>
-        /// <param name="originalColumnId"></param>
         /// <param name="inputs">
         /// Construct a type with a set of properties K of type T
         /// </param>
         /// <param name="inputRecordId"></param>
+        /// <param name="originalColumnId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -50,9 +50,9 @@ namespace Helicone
             string inputRecordId,
             string? originalColumnId)
         {
+            this.OriginalColumnId = originalColumnId;
             this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
             this.InputRecordId = inputRecordId ?? throw new global::System.ArgumentNullException(nameof(inputRecordId));
-            this.OriginalColumnId = originalColumnId;
         }
 
         /// <summary>

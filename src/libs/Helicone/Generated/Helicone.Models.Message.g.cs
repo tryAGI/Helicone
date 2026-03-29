@@ -171,6 +171,7 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="Message" /> class.
         /// </summary>
+        /// <param name="type2"></param>
         /// <param name="endingEventId"></param>
         /// <param name="triggerEventId"></param>
         /// <param name="startTimestamp"></param>
@@ -195,7 +196,6 @@ namespace Helicone
         /// <param name="instruction"></param>
         /// <param name="role"></param>
         /// <param name="id"></param>
-        /// <param name="type2"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -226,7 +226,6 @@ namespace Helicone
             global::Helicone.AnyOf<string, global::Helicone.MessageRole?>? role,
             string? id)
         {
-            this.Type2 = type2;
             this.EndingEventId = endingEventId;
             this.TriggerEventId = triggerEventId;
             this.StartTimestamp = startTimestamp;
@@ -251,6 +250,7 @@ namespace Helicone
             this.Instruction = instruction;
             this.Role = role;
             this.Id = id;
+            this.Type2 = type2;
         }
 
         /// <summary>

@@ -36,9 +36,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="OrgDiscount" /> class.
         /// </summary>
+        /// <param name="percent"></param>
         /// <param name="provider"></param>
         /// <param name="model"></param>
-        /// <param name="percent"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -47,9 +47,9 @@ namespace Helicone
             string? provider,
             string? model)
         {
-            this.Percent = percent;
             this.Provider = provider;
             this.Model = model;
+            this.Percent = percent;
         }
 
         /// <summary>

@@ -62,8 +62,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="HeliconeEventVectorDB" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="operation"></param>
+        /// <param name="type"></param>
         /// <param name="text"></param>
         /// <param name="vector"></param>
         /// <param name="topK"></param>
@@ -81,8 +81,8 @@ namespace Helicone
             global::Helicone.HeliconeEventVectorDBFilter? filter,
             string? databaseName)
         {
-            this.Operation = operation;
             this.Type = type;
+            this.Operation = operation;
             this.Text = text;
             this.Vector = vector;
             this.TopK = topK;

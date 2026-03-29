@@ -317,21 +317,28 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="HeliconeRequest" /> class.
         /// </summary>
-        /// <param name="responseId"></param>
-        /// <param name="responseCreatedAt"></param>
-        /// <param name="responseBody"></param>
         /// <param name="responseStatus"></param>
-        /// <param name="responseModel"></param>
         /// <param name="requestId"></param>
         /// <param name="requestCreatedAt"></param>
         /// <param name="requestBody"></param>
         /// <param name="requestPath"></param>
+        /// <param name="provider"></param>
+        /// <param name="properties">
+        /// Construct a type with a set of properties K of type T
+        /// </param>
+        /// <param name="assets"></param>
+        /// <param name="targetUrl"></param>
+        /// <param name="model"></param>
+        /// <param name="cacheEnabled"></param>
+        /// <param name="responseId"></param>
+        /// <param name="responseCreatedAt"></param>
+        /// <param name="responseBody"></param>
+        /// <param name="responseModel"></param>
         /// <param name="requestUserId"></param>
         /// <param name="requestProperties"></param>
         /// <param name="requestModel"></param>
         /// <param name="modelOverride"></param>
         /// <param name="heliconeUser"></param>
-        /// <param name="provider"></param>
         /// <param name="delayMs"></param>
         /// <param name="timeToFirstToken"></param>
         /// <param name="totalTokens"></param>
@@ -355,14 +362,7 @@ namespace Helicone
         /// <param name="assetUrls"></param>
         /// <param name="scores"></param>
         /// <param name="costUSD"></param>
-        /// <param name="properties">
-        /// Construct a type with a set of properties K of type T
-        /// </param>
-        /// <param name="assets"></param>
-        /// <param name="targetUrl"></param>
-        /// <param name="model"></param>
         /// <param name="cacheReferenceId"></param>
-        /// <param name="cacheEnabled"></param>
         /// <param name="updatedAt"></param>
         /// <param name="requestReferrer"></param>
         /// <param name="aiGatewayBodyMapping"></param>
@@ -420,26 +420,21 @@ namespace Helicone
             string? aiGatewayBodyMapping,
             string? storageLocation)
         {
+            this.ResponseId = responseId;
+            this.ResponseCreatedAt = responseCreatedAt;
+            this.ResponseBody = responseBody;
             this.ResponseStatus = responseStatus;
+            this.ResponseModel = responseModel;
             this.RequestId = requestId ?? throw new global::System.ArgumentNullException(nameof(requestId));
             this.RequestCreatedAt = requestCreatedAt ?? throw new global::System.ArgumentNullException(nameof(requestCreatedAt));
             this.RequestBody = requestBody ?? throw new global::System.ArgumentNullException(nameof(requestBody));
             this.RequestPath = requestPath ?? throw new global::System.ArgumentNullException(nameof(requestPath));
-            this.Provider = provider;
-            this.Properties = properties ?? throw new global::System.ArgumentNullException(nameof(properties));
-            this.Assets = assets ?? throw new global::System.ArgumentNullException(nameof(assets));
-            this.TargetUrl = targetUrl ?? throw new global::System.ArgumentNullException(nameof(targetUrl));
-            this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
-            this.CacheEnabled = cacheEnabled;
-            this.ResponseId = responseId;
-            this.ResponseCreatedAt = responseCreatedAt;
-            this.ResponseBody = responseBody;
-            this.ResponseModel = responseModel;
             this.RequestUserId = requestUserId;
             this.RequestProperties = requestProperties;
             this.RequestModel = requestModel;
             this.ModelOverride = modelOverride;
             this.HeliconeUser = heliconeUser;
+            this.Provider = provider;
             this.DelayMs = delayMs;
             this.TimeToFirstToken = timeToFirstToken;
             this.TotalTokens = totalTokens;
@@ -463,7 +458,12 @@ namespace Helicone
             this.AssetUrls = assetUrls;
             this.Scores = scores;
             this.CostUSD = costUSD;
+            this.Properties = properties ?? throw new global::System.ArgumentNullException(nameof(properties));
+            this.Assets = assets ?? throw new global::System.ArgumentNullException(nameof(assets));
+            this.TargetUrl = targetUrl ?? throw new global::System.ArgumentNullException(nameof(targetUrl));
+            this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
             this.CacheReferenceId = cacheReferenceId;
+            this.CacheEnabled = cacheEnabled;
             this.UpdatedAt = updatedAt;
             this.RequestReferrer = requestReferrer;
             this.AiGatewayBodyMapping = aiGatewayBodyMapping;

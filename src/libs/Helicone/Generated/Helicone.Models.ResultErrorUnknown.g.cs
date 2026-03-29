@@ -30,8 +30,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ResultErrorUnknown" /> class.
         /// </summary>
-        /// <param name="data"></param>
         /// <param name="error"></param>
+        /// <param name="data"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace Helicone
             object error,
             double? data)
         {
-            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
             this.Data = data;
+            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
         }
 
         /// <summary>

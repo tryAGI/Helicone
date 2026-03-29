@@ -42,12 +42,12 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="OpenAIChatRequestToolFunction" /> class.
         /// </summary>
+        /// <param name="name"></param>
         /// <param name="strict"></param>
         /// <param name="parameters">
         /// Construct a type with a set of properties K of type T
         /// </param>
         /// <param name="description"></param>
-        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -57,10 +57,10 @@ namespace Helicone
             global::Helicone.RecordStringAny? parameters,
             string? description)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Strict = strict;
             this.Parameters = parameters;
             this.Description = description;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

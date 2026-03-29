@@ -50,8 +50,8 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="CreateEvaluatorParams" /> class.
         /// </summary>
         /// <param name="scoringType"></param>
-        /// <param name="llmTemplate"></param>
         /// <param name="name"></param>
+        /// <param name="llmTemplate"></param>
         /// <param name="codeTemplate"></param>
         /// <param name="lastMileConfig"></param>
 #if NET7_0_OR_GREATER
@@ -65,8 +65,8 @@ namespace Helicone
             object? lastMileConfig)
         {
             this.ScoringType = scoringType ?? throw new global::System.ArgumentNullException(nameof(scoringType));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.LlmTemplate = llmTemplate;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CodeTemplate = codeTemplate;
             this.LastMileConfig = lastMileConfig;
         }

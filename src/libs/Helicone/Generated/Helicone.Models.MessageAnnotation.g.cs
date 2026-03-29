@@ -44,9 +44,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="MessageAnnotation" /> class.
         /// </summary>
-        /// <param name="content"></param>
         /// <param name="title"></param>
         /// <param name="url"></param>
+        /// <param name="content"></param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -57,9 +57,9 @@ namespace Helicone
             string? content,
             global::Helicone.MessageAnnotationType type)
         {
+            this.Content = content;
             this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.Content = content;
             this.Type = type;
         }
 

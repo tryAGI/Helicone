@@ -37,11 +37,11 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="FunctionCall2" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="arguments">
         /// Construct a type with a set of properties K of type T
         /// </param>
+        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -50,9 +50,9 @@ namespace Helicone
             global::Helicone.RecordStringAny arguments,
             string? id)
         {
+            this.Id = id;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Arguments = arguments ?? throw new global::System.ArgumentNullException(nameof(arguments));
-            this.Id = id;
         }
 
         /// <summary>

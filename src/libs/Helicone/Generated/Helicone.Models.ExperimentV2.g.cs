@@ -60,9 +60,9 @@ namespace Helicone
         /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="originalPromptVersion"></param>
+        /// <param name="createdAt"></param>
         /// <param name="copiedOriginalPromptVersion"></param>
         /// <param name="inputKeys"></param>
-        /// <param name="createdAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -77,9 +77,9 @@ namespace Helicone
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.OriginalPromptVersion = originalPromptVersion ?? throw new global::System.ArgumentNullException(nameof(originalPromptVersion));
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.CopiedOriginalPromptVersion = copiedOriginalPromptVersion;
             this.InputKeys = inputKeys;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
         }
 
         /// <summary>
