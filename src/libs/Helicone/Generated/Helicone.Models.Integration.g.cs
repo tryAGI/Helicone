@@ -43,10 +43,10 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="Integration" /> class.
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="integrationName"></param>
         /// <param name="settings"></param>
         /// <param name="active"></param>
-        /// <param name="id"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -56,10 +56,10 @@ namespace Helicone
             global::Helicone.Json? settings,
             bool? active)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.IntegrationName = integrationName;
             this.Settings = settings;
             this.Active = active;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

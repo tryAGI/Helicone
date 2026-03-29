@@ -111,14 +111,14 @@ namespace Helicone
         /// <param name="contextLength"></param>
         /// <param name="maxCompletionTokens"></param>
         /// <param name="ptbEnabled"></param>
-        /// <param name="version"></param>
-        /// <param name="unsupportedParameters"></param>
         /// <param name="modelConfig"></param>
         /// <param name="userConfig"></param>
         /// <param name="provider"></param>
         /// <param name="author"></param>
         /// <param name="providerModelId"></param>
         /// <param name="supportedParameters"></param>
+        /// <param name="version"></param>
+        /// <param name="unsupportedParameters"></param>
         /// <param name="priority"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -142,14 +142,14 @@ namespace Helicone
             this.ContextLength = contextLength;
             this.MaxCompletionTokens = maxCompletionTokens;
             this.PtbEnabled = ptbEnabled;
+            this.Version = version;
+            this.UnsupportedParameters = unsupportedParameters;
             this.ModelConfig = modelConfig ?? throw new global::System.ArgumentNullException(nameof(modelConfig));
             this.UserConfig = userConfig ?? throw new global::System.ArgumentNullException(nameof(userConfig));
             this.Provider = provider;
             this.Author = author;
             this.ProviderModelId = providerModelId ?? throw new global::System.ArgumentNullException(nameof(providerModelId));
             this.SupportedParameters = supportedParameters ?? throw new global::System.ArgumentNullException(nameof(supportedParameters));
-            this.Version = version;
-            this.UnsupportedParameters = unsupportedParameters;
             this.Priority = priority;
         }
 

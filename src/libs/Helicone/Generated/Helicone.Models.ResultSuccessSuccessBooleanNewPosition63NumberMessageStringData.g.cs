@@ -38,8 +38,8 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="ResultSuccessSuccessBooleanNewPosition63NumberMessageStringData" /> class.
         /// </summary>
         /// <param name="message"></param>
-        /// <param name="newPosition"></param>
         /// <param name="success"></param>
+        /// <param name="newPosition"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,8 +49,8 @@ namespace Helicone
             double? newPosition)
         {
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
-            this.Success = success;
             this.NewPosition = newPosition;
+            this.Success = success;
         }
 
         /// <summary>

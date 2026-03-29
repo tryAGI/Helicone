@@ -37,8 +37,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="HeliconeEventData" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="name"></param>
+        /// <param name="type"></param>
         /// <param name="meta">
         /// Construct a type with a set of properties K of type T
         /// </param>
@@ -50,8 +50,8 @@ namespace Helicone
             global::Helicone.HeliconeEventDataType type,
             global::Helicone.RecordStringAny? meta)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Type = type;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Meta = meta;
         }
 

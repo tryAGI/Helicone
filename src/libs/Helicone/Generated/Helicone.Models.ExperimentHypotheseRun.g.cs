@@ -50,13 +50,13 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ExperimentHypotheseRun" /> class.
         /// </summary>
-        /// <param name="request"></param>
         /// <param name="scores">
         /// Construct a type with a set of properties K of type T
         /// </param>
-        /// <param name="response"></param>
         /// <param name="resultRequestId"></param>
         /// <param name="datasetRowId"></param>
+        /// <param name="request"></param>
+        /// <param name="response"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -67,11 +67,11 @@ namespace Helicone
             global::Helicone.RequestObj? request,
             global::Helicone.ResponseObj? response)
         {
+            this.Request = request;
             this.Scores = scores ?? throw new global::System.ArgumentNullException(nameof(scores));
+            this.Response = response;
             this.ResultRequestId = resultRequestId ?? throw new global::System.ArgumentNullException(nameof(resultRequestId));
             this.DatasetRowId = datasetRowId ?? throw new global::System.ArgumentNullException(nameof(datasetRowId));
-            this.Request = request;
-            this.Response = response;
         }
 
         /// <summary>

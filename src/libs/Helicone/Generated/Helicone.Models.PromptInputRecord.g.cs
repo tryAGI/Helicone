@@ -81,13 +81,13 @@ namespace Helicone
         /// <param name="inputs">
         /// Construct a type with a set of properties K of type T
         /// </param>
-        /// <param name="datasetRowId"></param>
         /// <param name="sourceRequest"></param>
         /// <param name="promptVersion"></param>
         /// <param name="createdAt"></param>
+        /// <param name="autoPromptInputs"></param>
+        /// <param name="datasetRowId"></param>
         /// <param name="responseBody"></param>
         /// <param name="requestBody"></param>
-        /// <param name="autoPromptInputs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -104,13 +104,13 @@ namespace Helicone
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
+            this.DatasetRowId = datasetRowId;
             this.SourceRequest = sourceRequest ?? throw new global::System.ArgumentNullException(nameof(sourceRequest));
             this.PromptVersion = promptVersion ?? throw new global::System.ArgumentNullException(nameof(promptVersion));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.AutoPromptInputs = autoPromptInputs ?? throw new global::System.ArgumentNullException(nameof(autoPromptInputs));
-            this.DatasetRowId = datasetRowId;
             this.ResponseBody = responseBody;
             this.RequestBody = requestBody;
+            this.AutoPromptInputs = autoPromptInputs ?? throw new global::System.ArgumentNullException(nameof(autoPromptInputs));
         }
 
         /// <summary>

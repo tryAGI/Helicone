@@ -36,9 +36,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateExperimentTableRowWithCellsBatchRequestRowCell" /> class.
         /// </summary>
+        /// <param name="columnId"></param>
         /// <param name="metadata"></param>
         /// <param name="value"></param>
-        /// <param name="columnId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -47,9 +47,9 @@ namespace Helicone
             object? metadata,
             string? value)
         {
-            this.ColumnId = columnId ?? throw new global::System.ArgumentNullException(nameof(columnId));
             this.Metadata = metadata;
             this.Value = value;
+            this.ColumnId = columnId ?? throw new global::System.ArgumentNullException(nameof(columnId));
         }
 
         /// <summary>

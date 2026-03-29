@@ -148,17 +148,17 @@ namespace Helicone
         /// <param name="contextLength"></param>
         /// <param name="maxCompletionTokens"></param>
         /// <param name="ptbEnabled"></param>
-        /// <param name="version"></param>
-        /// <param name="unsupportedParameters"></param>
         /// <param name="providerModelId"></param>
         /// <param name="provider"></param>
         /// <param name="author"></param>
         /// <param name="supportedParameters"></param>
-        /// <param name="supportedPlugins"></param>
-        /// <param name="rateLimits"></param>
         /// <param name="endpointConfigs">
         /// Construct a type with a set of properties K of type T
         /// </param>
+        /// <param name="version"></param>
+        /// <param name="unsupportedParameters"></param>
+        /// <param name="supportedPlugins"></param>
+        /// <param name="rateLimits"></param>
         /// <param name="crossRegion"></param>
         /// <param name="priority"></param>
         /// <param name="quantization"></param>
@@ -193,15 +193,15 @@ namespace Helicone
             this.ContextLength = contextLength;
             this.MaxCompletionTokens = maxCompletionTokens;
             this.PtbEnabled = ptbEnabled;
+            this.Version = version;
+            this.UnsupportedParameters = unsupportedParameters;
             this.ProviderModelId = providerModelId ?? throw new global::System.ArgumentNullException(nameof(providerModelId));
             this.Provider = provider;
             this.Author = author;
             this.SupportedParameters = supportedParameters ?? throw new global::System.ArgumentNullException(nameof(supportedParameters));
-            this.EndpointConfigs = endpointConfigs ?? throw new global::System.ArgumentNullException(nameof(endpointConfigs));
-            this.Version = version;
-            this.UnsupportedParameters = unsupportedParameters;
             this.SupportedPlugins = supportedPlugins;
             this.RateLimits = rateLimits;
+            this.EndpointConfigs = endpointConfigs ?? throw new global::System.ArgumentNullException(nameof(endpointConfigs));
             this.CrossRegion = crossRegion;
             this.Priority = priority;
             this.Quantization = quantization;

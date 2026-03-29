@@ -48,11 +48,11 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateExperimentCellRequest" /> class.
         /// </summary>
+        /// <param name="cellId"></param>
         /// <param name="updateInputs"></param>
         /// <param name="metadata"></param>
         /// <param name="value"></param>
         /// <param name="status"></param>
-        /// <param name="cellId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -63,11 +63,11 @@ namespace Helicone
             string? value,
             string? status)
         {
-            this.CellId = cellId ?? throw new global::System.ArgumentNullException(nameof(cellId));
             this.UpdateInputs = updateInputs;
             this.Metadata = metadata;
             this.Value = value;
             this.Status = status;
+            this.CellId = cellId ?? throw new global::System.ArgumentNullException(nameof(cellId));
         }
 
         /// <summary>

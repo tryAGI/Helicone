@@ -37,11 +37,11 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="PromptVersiosQueryParamsCompiled" /> class.
         /// </summary>
-        /// <param name="filter"></param>
-        /// <param name="includeExperimentVersions"></param>
         /// <param name="inputs">
         /// Construct a type with a set of properties K of type T
         /// </param>
+        /// <param name="filter"></param>
+        /// <param name="includeExperimentVersions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -50,9 +50,9 @@ namespace Helicone
             global::Helicone.PromptVersionsFilterNode? filter,
             bool? includeExperimentVersions)
         {
-            this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
             this.Filter = filter;
             this.IncludeExperimentVersions = includeExperimentVersions;
+            this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
         }
 
         /// <summary>

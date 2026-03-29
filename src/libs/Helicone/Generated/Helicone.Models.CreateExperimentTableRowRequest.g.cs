@@ -36,11 +36,11 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateExperimentTableRowRequest" /> class.
         /// </summary>
+        /// <param name="promptVersionId"></param>
         /// <param name="inputs">
         /// Construct a type with a set of properties K of type T
         /// </param>
         /// <param name="sourceRequest"></param>
-        /// <param name="promptVersionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,9 +49,9 @@ namespace Helicone
             global::System.Collections.Generic.Dictionary<string, string>? inputs,
             string? sourceRequest)
         {
-            this.PromptVersionId = promptVersionId ?? throw new global::System.ArgumentNullException(nameof(promptVersionId));
             this.Inputs = inputs;
             this.SourceRequest = sourceRequest;
+            this.PromptVersionId = promptVersionId ?? throw new global::System.ArgumentNullException(nameof(promptVersionId));
         }
 
         /// <summary>

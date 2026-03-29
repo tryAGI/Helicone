@@ -30,8 +30,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="GetPrompt2025VersionsRequest" /> class.
         /// </summary>
-        /// <param name="majorVersion"></param>
         /// <param name="promptId"></param>
+        /// <param name="majorVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace Helicone
             string promptId,
             double? majorVersion)
         {
-            this.PromptId = promptId ?? throw new global::System.ArgumentNullException(nameof(promptId));
             this.MajorVersion = majorVersion;
+            this.PromptId = promptId ?? throw new global::System.ArgumentNullException(nameof(promptId));
         }
 
         /// <summary>

@@ -30,8 +30,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="OpenAIChatRequestToolChoiceEnum" /> class.
         /// </summary>
-        /// <param name="function"></param>
         /// <param name="type"></param>
+        /// <param name="function"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace Helicone
             string type,
             global::Helicone.OpenAIChatRequestToolChoiceEnumFunction? function)
         {
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Function = function;
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
         }
 
         /// <summary>

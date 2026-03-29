@@ -51,13 +51,13 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateExperimentTableRowWithCellsBatchRequestRow" /> class.
         /// </summary>
-        /// <param name="sourceRequest"></param>
         /// <param name="cells"></param>
         /// <param name="datasetId"></param>
         /// <param name="inputs">
         /// Construct a type with a set of properties K of type T
         /// </param>
         /// <param name="inputRecordId"></param>
+        /// <param name="sourceRequest"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -68,11 +68,11 @@ namespace Helicone
             string inputRecordId,
             string? sourceRequest)
         {
+            this.SourceRequest = sourceRequest;
             this.Cells = cells ?? throw new global::System.ArgumentNullException(nameof(cells));
             this.DatasetId = datasetId ?? throw new global::System.ArgumentNullException(nameof(datasetId));
             this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
             this.InputRecordId = inputRecordId ?? throw new global::System.ArgumentNullException(nameof(inputRecordId));
-            this.SourceRequest = sourceRequest;
         }
 
         /// <summary>

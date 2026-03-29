@@ -44,10 +44,10 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="TestInput" /> class.
         /// </summary>
-        /// <param name="promptTemplate"></param>
         /// <param name="inputs"></param>
         /// <param name="outputBody"></param>
         /// <param name="inputBody"></param>
+        /// <param name="promptTemplate"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -57,10 +57,10 @@ namespace Helicone
             string inputBody,
             string? promptTemplate)
         {
+            this.PromptTemplate = promptTemplate;
             this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
             this.OutputBody = outputBody ?? throw new global::System.ArgumentNullException(nameof(outputBody));
             this.InputBody = inputBody ?? throw new global::System.ArgumentNullException(nameof(inputBody));
-            this.PromptTemplate = promptTemplate;
         }
 
         /// <summary>

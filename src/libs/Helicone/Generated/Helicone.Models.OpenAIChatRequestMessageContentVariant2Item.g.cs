@@ -36,9 +36,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="OpenAIChatRequestMessageContentVariant2Item" /> class.
         /// </summary>
+        /// <param name="type"></param>
         /// <param name="imageUrl"></param>
         /// <param name="text"></param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -47,9 +47,9 @@ namespace Helicone
             global::Helicone.OpenAIChatRequestMessageContentVariant2ItemImageUrl? imageUrl,
             string? text)
         {
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.ImageUrl = imageUrl;
             this.Text = text;
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
         }
 
         /// <summary>

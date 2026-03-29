@@ -42,10 +42,10 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayData" /> class.
         /// </summary>
+        /// <param name="success"></param>
         /// <param name="sharedPlatforms"></param>
         /// <param name="alreadyOnList"></param>
         /// <param name="position"></param>
-        /// <param name="success"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -55,10 +55,10 @@ namespace Helicone
             bool? alreadyOnList,
             double? position)
         {
-            this.Success = success;
             this.SharedPlatforms = sharedPlatforms;
             this.AlreadyOnList = alreadyOnList;
             this.Position = position;
+            this.Success = success;
         }
 
         /// <summary>

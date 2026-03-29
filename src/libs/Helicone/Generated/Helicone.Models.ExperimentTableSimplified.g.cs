@@ -62,8 +62,8 @@ namespace Helicone
         /// <param name="name"></param>
         /// <param name="experimentId"></param>
         /// <param name="createdAt"></param>
-        /// <param name="metadata"></param>
         /// <param name="columns"></param>
+        /// <param name="metadata"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -79,8 +79,8 @@ namespace Helicone
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ExperimentId = experimentId ?? throw new global::System.ArgumentNullException(nameof(experimentId));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.Columns = columns ?? throw new global::System.ArgumentNullException(nameof(columns));
             this.Metadata = metadata;
+            this.Columns = columns ?? throw new global::System.ArgumentNullException(nameof(columns));
         }
 
         /// <summary>

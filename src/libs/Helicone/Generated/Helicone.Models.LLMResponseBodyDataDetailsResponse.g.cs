@@ -53,10 +53,10 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="LLMResponseBodyDataDetailsResponse" /> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="type"></param>
         /// <param name="metadata"></param>
         /// <param name="message"></param>
         /// <param name="status"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -68,10 +68,10 @@ namespace Helicone
             global::Helicone.LLMResponseBodyDataDetailsResponseType type)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Type = type;
             this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
-            this.Type = type;
         }
 
         /// <summary>

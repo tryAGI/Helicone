@@ -63,9 +63,9 @@ namespace Helicone
         /// </param>
         /// <param name="byokEnabled"></param>
         /// <param name="providerKeyName"></param>
-        /// <param name="providerSecretKey"></param>
         /// <param name="providerKey"></param>
         /// <param name="providerName"></param>
+        /// <param name="providerSecretKey"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -80,9 +80,9 @@ namespace Helicone
             this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
             this.ByokEnabled = byokEnabled;
             this.ProviderKeyName = providerKeyName ?? throw new global::System.ArgumentNullException(nameof(providerKeyName));
+            this.ProviderSecretKey = providerSecretKey;
             this.ProviderKey = providerKey ?? throw new global::System.ArgumentNullException(nameof(providerKey));
             this.ProviderName = providerName ?? throw new global::System.ArgumentNullException(nameof(providerName));
-            this.ProviderSecretKey = providerSecretKey;
         }
 
         /// <summary>

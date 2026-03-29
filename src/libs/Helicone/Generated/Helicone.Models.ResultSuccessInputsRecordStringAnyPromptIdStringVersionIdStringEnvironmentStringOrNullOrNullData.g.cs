@@ -44,12 +44,12 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ResultSuccessInputsRecordStringAnyPromptIdStringVersionIdStringEnvironmentStringOrNullOrNullData" /> class.
         /// </summary>
-        /// <param name="environment"></param>
         /// <param name="versionId"></param>
         /// <param name="promptId"></param>
         /// <param name="inputs">
         /// Construct a type with a set of properties K of type T
         /// </param>
+        /// <param name="environment"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -59,10 +59,10 @@ namespace Helicone
             global::Helicone.RecordStringAny inputs,
             string? environment)
         {
+            this.Environment = environment;
             this.VersionId = versionId ?? throw new global::System.ArgumentNullException(nameof(versionId));
             this.PromptId = promptId ?? throw new global::System.ArgumentNullException(nameof(promptId));
             this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
-            this.Environment = environment;
         }
 
         /// <summary>

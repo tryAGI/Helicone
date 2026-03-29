@@ -64,13 +64,13 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="HeliconeDataset" /> class.
         /// </summary>
-        /// <param name="createdAt"></param>
         /// <param name="datasetType"></param>
         /// <param name="id"></param>
-        /// <param name="meta"></param>
-        /// <param name="name"></param>
         /// <param name="organization"></param>
         /// <param name="requestsCount"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="meta"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -83,13 +83,13 @@ namespace Helicone
             global::Helicone.Json? meta,
             string? name)
         {
+            this.CreatedAt = createdAt;
             this.DatasetType = datasetType ?? throw new global::System.ArgumentNullException(nameof(datasetType));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Organization = organization ?? throw new global::System.ArgumentNullException(nameof(organization));
-            this.RequestsCount = requestsCount;
-            this.CreatedAt = createdAt;
             this.Meta = meta;
             this.Name = name;
+            this.Organization = organization ?? throw new global::System.ArgumentNullException(nameof(organization));
+            this.RequestsCount = requestsCount;
         }
 
         /// <summary>

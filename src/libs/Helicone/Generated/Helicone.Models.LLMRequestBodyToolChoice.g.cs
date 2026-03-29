@@ -31,8 +31,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="LLMRequestBodyToolChoice" /> class.
         /// </summary>
-        /// <param name="name"></param>
         /// <param name="type"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Helicone
             global::Helicone.LLMRequestBodyToolChoiceType type,
             string? name)
         {
-            this.Type = type;
             this.Name = name;
+            this.Type = type;
         }
 
         /// <summary>

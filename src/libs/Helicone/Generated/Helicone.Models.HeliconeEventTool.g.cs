@@ -38,9 +38,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="HeliconeEventTool" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="toolName"></param>
         /// <param name="input"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,9 +49,9 @@ namespace Helicone
             object input,
             global::Helicone.HeliconeEventToolType type)
         {
+            this.Type = type;
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
             this.Input = input ?? throw new global::System.ArgumentNullException(nameof(input));
-            this.Type = type;
         }
 
         /// <summary>

@@ -36,9 +36,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="ModelPricingCacheMultipliers" /> class.
         /// </summary>
+        /// <param name="cachedInput"></param>
         /// <param name="write1h"></param>
         /// <param name="write5m"></param>
-        /// <param name="cachedInput"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -47,9 +47,9 @@ namespace Helicone
             double? write1h,
             double? write5m)
         {
-            this.CachedInput = cachedInput;
             this.Write1h = write1h;
             this.Write5m = write5m;
+            this.CachedInput = cachedInput;
         }
 
         /// <summary>

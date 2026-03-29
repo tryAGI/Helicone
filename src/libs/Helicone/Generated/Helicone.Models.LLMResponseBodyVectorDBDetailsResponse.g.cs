@@ -57,12 +57,12 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="LLMResponseBodyVectorDBDetailsResponse" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="metadata"></param>
-        /// <param name="actualSimilarity"></param>
-        /// <param name="similarityThreshold"></param>
         /// <param name="message"></param>
         /// <param name="status"></param>
+        /// <param name="type"></param>
+        /// <param name="actualSimilarity"></param>
+        /// <param name="similarityThreshold"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -74,12 +74,12 @@ namespace Helicone
             double? actualSimilarity,
             double? similarityThreshold)
         {
-            this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
-            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
-            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
             this.Type = type;
+            this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
             this.ActualSimilarity = actualSimilarity;
             this.SimilarityThreshold = similarityThreshold;
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
+            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
         }
 
         /// <summary>

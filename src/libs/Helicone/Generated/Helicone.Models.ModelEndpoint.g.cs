@@ -58,9 +58,9 @@ namespace Helicone
         /// </summary>
         /// <param name="provider"></param>
         /// <param name="providerSlug"></param>
+        /// <param name="pricing"></param>
         /// <param name="endpoint"></param>
         /// <param name="supportsPtb"></param>
-        /// <param name="pricing"></param>
         /// <param name="pricingTiers"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -75,9 +75,9 @@ namespace Helicone
         {
             this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.ProviderSlug = providerSlug ?? throw new global::System.ArgumentNullException(nameof(providerSlug));
-            this.Pricing = pricing ?? throw new global::System.ArgumentNullException(nameof(pricing));
             this.Endpoint = endpoint;
             this.SupportsPtb = supportsPtb;
+            this.Pricing = pricing ?? throw new global::System.ArgumentNullException(nameof(pricing));
             this.PricingTiers = pricingTiers;
         }
 

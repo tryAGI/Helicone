@@ -54,12 +54,6 @@ namespace Helicone
         /// <param name="token">
         /// The token.
         /// </param>
-        /// <param name="bytes">
-        /// A list of integers representing the UTF-8 bytes representation of the token.<br/>
-        /// Useful in instances where characters are represented by multiple tokens and<br/>
-        /// their byte representations must be combined to generate the correct text<br/>
-        /// representation. Can be `null` if there is no bytes representation for the token.
-        /// </param>
         /// <param name="logprob">
         /// The log probability of this token, if it is within the top 20 most likely<br/>
         /// tokens. Otherwise, the value `-9999.0` is used to signify that the token is very<br/>
@@ -69,6 +63,12 @@ namespace Helicone
         /// List of the most likely tokens and their log probability, at this token<br/>
         /// position. In rare cases, there may be fewer than the number of requested<br/>
         /// `top_logprobs` returned.
+        /// </param>
+        /// <param name="bytes">
+        /// A list of integers representing the UTF-8 bytes representation of the token.<br/>
+        /// Useful in instances where characters are represented by multiple tokens and<br/>
+        /// their byte representations must be combined to generate the correct text<br/>
+        /// representation. Can be `null` if there is no bytes representation for the token.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -80,9 +80,9 @@ namespace Helicone
             global::System.Collections.Generic.IList<double>? bytes)
         {
             this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
+            this.Bytes = bytes;
             this.Logprob = logprob;
             this.TopLogprobs = topLogprobs ?? throw new global::System.ArgumentNullException(nameof(topLogprobs));
-            this.Bytes = bytes;
         }
 
         /// <summary>

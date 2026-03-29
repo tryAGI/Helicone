@@ -30,10 +30,10 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="TestInputInputs" /> class.
         /// </summary>
-        /// <param name="autoInputs">
+        /// <param name="inputs">
         /// Construct a type with a set of properties K of type T
         /// </param>
-        /// <param name="inputs">
+        /// <param name="autoInputs">
         /// Construct a type with a set of properties K of type T
         /// </param>
 #if NET7_0_OR_GREATER
@@ -43,8 +43,8 @@ namespace Helicone
             global::System.Collections.Generic.Dictionary<string, string> inputs,
             global::System.Collections.Generic.Dictionary<string, string>? autoInputs)
         {
-            this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
             this.AutoInputs = autoInputs;
+            this.Inputs = inputs ?? throw new global::System.ArgumentNullException(nameof(inputs));
         }
 
         /// <summary>

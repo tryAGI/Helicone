@@ -125,6 +125,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="Response" /> class.
         /// </summary>
+        /// <param name="type"></param>
+        /// <param name="role"></param>
+        /// <param name="type2"></param>
         /// <param name="contentArray"></param>
         /// <param name="detail"></param>
         /// <param name="filename"></param>
@@ -137,11 +140,8 @@ namespace Helicone
         /// <param name="toolCallId"></param>
         /// <param name="toolCalls"></param>
         /// <param name="text"></param>
-        /// <param name="type"></param>
         /// <param name="name"></param>
-        /// <param name="role"></param>
         /// <param name="id"></param>
-        /// <param name="type2"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -164,9 +164,6 @@ namespace Helicone
             string? name,
             string? id)
         {
-            this.Type = type;
-            this.Role = role;
-            this.Type2 = type2;
             this.ContentArray = contentArray;
             this.Detail = detail;
             this.Filename = filename;
@@ -179,8 +176,11 @@ namespace Helicone
             this.ToolCallId = toolCallId;
             this.ToolCalls = toolCalls;
             this.Text = text;
+            this.Type = type;
             this.Name = name;
+            this.Role = role;
             this.Id = id;
+            this.Type2 = type2;
         }
 
         /// <summary>

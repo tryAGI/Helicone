@@ -30,8 +30,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="GetInputsRequest" /> class.
         /// </summary>
-        /// <param name="random"></param>
         /// <param name="limit"></param>
+        /// <param name="random"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -39,8 +39,8 @@ namespace Helicone
             double limit,
             bool? random)
         {
-            this.Limit = limit;
             this.Random = random;
+            this.Limit = limit;
         }
 
         /// <summary>

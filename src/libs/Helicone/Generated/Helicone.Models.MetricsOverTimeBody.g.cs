@@ -48,8 +48,8 @@ namespace Helicone
         /// </summary>
         /// <param name="timeFilter"></param>
         /// <param name="filter"></param>
-        /// <param name="dbIncrement"></param>
         /// <param name="timeZoneDifference"></param>
+        /// <param name="dbIncrement"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -61,8 +61,8 @@ namespace Helicone
         {
             this.TimeFilter = timeFilter ?? throw new global::System.ArgumentNullException(nameof(timeFilter));
             this.Filter = filter;
-            this.TimeZoneDifference = timeZoneDifference;
             this.DbIncrement = dbIncrement;
+            this.TimeZoneDifference = timeZoneDifference;
         }
 
         /// <summary>

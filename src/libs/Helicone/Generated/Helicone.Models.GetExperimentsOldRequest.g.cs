@@ -31,8 +31,8 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="GetExperimentsOldRequest" /> class.
         /// </summary>
-        /// <param name="include"></param>
         /// <param name="filter"></param>
+        /// <param name="include"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Helicone
             global::Helicone.ExperimentFilterNode filter,
             global::Helicone.IncludeExperimentKeys? include)
         {
-            this.Filter = filter;
             this.Include = include;
+            this.Filter = filter;
         }
 
         /// <summary>

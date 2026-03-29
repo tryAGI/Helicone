@@ -60,11 +60,11 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="LLMResponseBodyToolDetailsResponse" /> class.
         /// </summary>
         /// <param name="toolName"></param>
-        /// <param name="type"></param>
         /// <param name="metadata"></param>
         /// <param name="tips"></param>
         /// <param name="message"></param>
         /// <param name="status"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -77,11 +77,11 @@ namespace Helicone
             global::Helicone.LLMResponseBodyToolDetailsResponseType type)
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
+            this.Type = type;
             this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
             this.Tips = tips ?? throw new global::System.ArgumentNullException(nameof(tips));
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
-            this.Type = type;
         }
 
         /// <summary>

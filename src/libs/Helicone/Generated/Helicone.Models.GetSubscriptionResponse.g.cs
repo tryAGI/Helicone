@@ -66,12 +66,12 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="GetSubscriptionResponse" /> class.
         /// </summary>
         /// <param name="items"></param>
-        /// <param name="trialEnd"></param>
         /// <param name="id"></param>
         /// <param name="currentPeriodStart"></param>
         /// <param name="currentPeriodEnd"></param>
         /// <param name="cancelAtPeriodEnd"></param>
         /// <param name="status"></param>
+        /// <param name="trialEnd"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -85,12 +85,12 @@ namespace Helicone
             double? trialEnd)
         {
             this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
+            this.TrialEnd = trialEnd;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CurrentPeriodStart = currentPeriodStart;
             this.CurrentPeriodEnd = currentPeriodEnd;
             this.CancelAtPeriodEnd = cancelAtPeriodEnd;
             this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
-            this.TrialEnd = trialEnd;
         }
 
         /// <summary>

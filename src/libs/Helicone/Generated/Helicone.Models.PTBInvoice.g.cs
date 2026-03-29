@@ -85,14 +85,14 @@ namespace Helicone
         /// </summary>
         /// <param name="id"></param>
         /// <param name="organizationId"></param>
-        /// <param name="stripeInvoiceId"></param>
-        /// <param name="hostedInvoiceUrl"></param>
         /// <param name="startDate"></param>
         /// <param name="endDate"></param>
         /// <param name="amountCents"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="stripeInvoiceId"></param>
+        /// <param name="hostedInvoiceUrl"></param>
         /// <param name="subtotalCents"></param>
         /// <param name="notes"></param>
-        /// <param name="createdAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -110,14 +110,14 @@ namespace Helicone
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.OrganizationId = organizationId ?? throw new global::System.ArgumentNullException(nameof(organizationId));
+            this.StripeInvoiceId = stripeInvoiceId;
+            this.HostedInvoiceUrl = hostedInvoiceUrl;
             this.StartDate = startDate ?? throw new global::System.ArgumentNullException(nameof(startDate));
             this.EndDate = endDate ?? throw new global::System.ArgumentNullException(nameof(endDate));
             this.AmountCents = amountCents;
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.StripeInvoiceId = stripeInvoiceId;
-            this.HostedInvoiceUrl = hostedInvoiceUrl;
             this.SubtotalCents = subtotalCents;
             this.Notes = notes;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
         }
 
         /// <summary>

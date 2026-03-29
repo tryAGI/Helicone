@@ -37,9 +37,9 @@ namespace Helicone
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateExperimentCellRequest" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="rowIndex"></param>
         /// <param name="columnId"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -48,9 +48,9 @@ namespace Helicone
             string columnId,
             string? value)
         {
+            this.Value = value;
             this.RowIndex = rowIndex;
             this.ColumnId = columnId ?? throw new global::System.ArgumentNullException(nameof(columnId));
-            this.Value = value;
         }
 
         /// <summary>

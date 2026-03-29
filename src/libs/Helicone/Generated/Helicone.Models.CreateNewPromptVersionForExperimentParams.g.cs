@@ -56,13 +56,13 @@ namespace Helicone
         /// Initializes a new instance of the <see cref="CreateNewPromptVersionForExperimentParams" /> class.
         /// </summary>
         /// <param name="newHeliconeTemplate"></param>
+        /// <param name="parentPromptVersionId"></param>
         /// <param name="isMajorVersion"></param>
         /// <param name="metadata">
         /// Construct a type with a set of properties K of type T
         /// </param>
         /// <param name="experimentId"></param>
         /// <param name="bumpForMajorPromptVersionId"></param>
-        /// <param name="parentPromptVersionId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -75,11 +75,11 @@ namespace Helicone
             string? bumpForMajorPromptVersionId)
         {
             this.NewHeliconeTemplate = newHeliconeTemplate ?? throw new global::System.ArgumentNullException(nameof(newHeliconeTemplate));
-            this.ParentPromptVersionId = parentPromptVersionId ?? throw new global::System.ArgumentNullException(nameof(parentPromptVersionId));
             this.IsMajorVersion = isMajorVersion;
             this.Metadata = metadata;
             this.ExperimentId = experimentId;
             this.BumpForMajorPromptVersionId = bumpForMajorPromptVersionId;
+            this.ParentPromptVersionId = parentPromptVersionId ?? throw new global::System.ArgumentNullException(nameof(parentPromptVersionId));
         }
 
         /// <summary>

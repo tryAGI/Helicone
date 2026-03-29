@@ -78,8 +78,8 @@ namespace Helicone
         /// <param name="evaluatorsUsage"></param>
         /// <param name="experimentsUsage"></param>
         /// <param name="total"></param>
-        /// <param name="tax"></param>
         /// <param name="subtotal"></param>
+        /// <param name="tax"></param>
         /// <param name="discount"></param>
         /// <param name="lines"></param>
         /// <param name="nextPaymentAttempt"></param>
@@ -101,8 +101,8 @@ namespace Helicone
             this.EvaluatorsUsage = evaluatorsUsage ?? throw new global::System.ArgumentNullException(nameof(evaluatorsUsage));
             this.ExperimentsUsage = experimentsUsage ?? throw new global::System.ArgumentNullException(nameof(experimentsUsage));
             this.Total = total;
-            this.Subtotal = subtotal;
             this.Tax = tax;
+            this.Subtotal = subtotal;
             this.Discount = discount;
             this.Lines = lines;
             this.NextPaymentAttempt = nextPaymentAttempt;
