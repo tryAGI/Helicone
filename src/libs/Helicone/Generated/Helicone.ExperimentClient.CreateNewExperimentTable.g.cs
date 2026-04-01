@@ -207,7 +207,6 @@ namespace Helicone
             global::Helicone.RecordStringAny? experimentTableMetadata = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.CreateExperimentTableParams
             {
                 DatasetId = datasetId,

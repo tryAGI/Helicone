@@ -195,7 +195,6 @@ namespace Helicone
             string userDefinedId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.CreatePromptRequest
             {
                 Metadata = metadata,

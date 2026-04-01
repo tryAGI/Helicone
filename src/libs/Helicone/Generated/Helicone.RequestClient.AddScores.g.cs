@@ -199,7 +199,6 @@ namespace Helicone
             global::Helicone.RecordStringNumberOrBooleanOrUndefined scores,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.ScoreRequest
             {
                 Scores = scores,

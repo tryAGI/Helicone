@@ -199,7 +199,6 @@ namespace Helicone
             string promptVersionId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.RunHypothesisRequest
             {
                 InputRecordId = inputRecordId,

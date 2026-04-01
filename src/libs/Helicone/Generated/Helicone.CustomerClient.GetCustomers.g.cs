@@ -187,7 +187,6 @@ namespace Helicone
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Helicone.Customer>> GetCustomersAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new object
             {
             };

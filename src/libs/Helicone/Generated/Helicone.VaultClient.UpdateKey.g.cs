@@ -201,7 +201,6 @@ namespace Helicone
             string? key = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.UpdateKeyRequest
             {
                 Active = active,

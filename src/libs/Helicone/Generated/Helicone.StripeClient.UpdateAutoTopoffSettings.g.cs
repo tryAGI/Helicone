@@ -195,7 +195,6 @@ namespace Helicone
             string stripePaymentMethodId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.UpdateAutoTopoffSettingsRequest
             {
                 Enabled = enabled,

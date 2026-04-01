@@ -197,7 +197,6 @@ namespace Helicone
             string previousProductionVersionId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.PromotePromptVersionToProductionRequest
             {
                 PreviousProductionVersionId = previousProductionVersionId,

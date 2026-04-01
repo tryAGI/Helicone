@@ -193,7 +193,6 @@ namespace Helicone
             global::Helicone.UserFilterNode filter,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.GetUserMetricsOverviewRequest
             {
                 UseInterquartile = useInterquartile,

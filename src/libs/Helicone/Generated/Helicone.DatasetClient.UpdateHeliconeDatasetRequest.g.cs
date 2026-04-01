@@ -207,7 +207,6 @@ namespace Helicone
             global::Helicone.Json? requestBody = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.UpdateHeliconeDatasetRequestRequest
             {
                 ResponseBody = responseBody,
