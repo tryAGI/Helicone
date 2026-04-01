@@ -189,6 +189,7 @@ namespace Helicone
             global::Helicone.UpgradeToProRequestUiMode? uiMode = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.UpgradeToProRequest
             {
                 Addons = addons,

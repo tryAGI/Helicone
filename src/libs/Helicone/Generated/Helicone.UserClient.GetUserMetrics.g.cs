@@ -199,6 +199,7 @@ namespace Helicone
             global::Helicone.SortLeafUsers? sort = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.UserMetricsQueryParams
             {
                 Filter = filter,

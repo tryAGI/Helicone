@@ -199,6 +199,7 @@ namespace Helicone
             global::System.Collections.Generic.IList<string> addRequests,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.MutateDatasetRequest
             {
                 RemoveRequests = removeRequests,

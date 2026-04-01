@@ -199,6 +199,7 @@ namespace Helicone
             global::System.Collections.Generic.Dictionary<string, string> inputs,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.AddManualRowToExperimentRequest
             {
                 Inputs = inputs,

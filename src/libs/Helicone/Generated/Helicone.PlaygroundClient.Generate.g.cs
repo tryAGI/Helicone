@@ -185,6 +185,7 @@ namespace Helicone
         public async global::System.Threading.Tasks.Task<global::Helicone.ResultChatCompletionOrContentStringReasoningStringCallsAnyString> GenerateAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>
             {
             };

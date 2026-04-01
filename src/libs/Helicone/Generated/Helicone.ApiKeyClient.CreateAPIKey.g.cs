@@ -191,6 +191,7 @@ namespace Helicone
             global::Helicone.CreateAPIKeyRequestKeyPermissions? keyPermissions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.CreateAPIKeyRequest
             {
                 KeyPermissions = keyPermissions,

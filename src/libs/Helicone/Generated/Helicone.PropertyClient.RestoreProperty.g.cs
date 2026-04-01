@@ -189,6 +189,7 @@ namespace Helicone
             string key,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.RestorePropertyRequest
             {
                 Key = key,

@@ -199,6 +199,7 @@ namespace Helicone
             global::Helicone.SessionFilterNode? filter = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.SessionNameQueryParams
             {
                 NameContains = nameContains,

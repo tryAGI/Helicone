@@ -201,6 +201,7 @@ namespace Helicone
             string sql,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.CreateSavedQueryRequest
             {
                 Name = name,

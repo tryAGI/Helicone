@@ -174,6 +174,7 @@ namespace Helicone
             global::System.Collections.Generic.IList<global::Helicone.OTELTraceResourceSpan> resourceSpans,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.OTELTrace
             {
                 ResourceSpans = resourceSpans,

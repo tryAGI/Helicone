@@ -195,6 +195,7 @@ namespace Helicone
             global::Helicone.CountryMetricsBodyTimeFilter timeFilter,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.CountryMetricsBody
             {
                 Filter = filter,

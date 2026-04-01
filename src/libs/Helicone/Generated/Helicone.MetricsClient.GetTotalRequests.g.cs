@@ -191,6 +191,7 @@ namespace Helicone
             global::Helicone.MetricsFilterBodyTimeFilter timeFilter,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.MetricsFilterBody
             {
                 Filter = filter,
