@@ -187,7 +187,6 @@ namespace Helicone
         public async global::System.Threading.Tasks.Task<global::Helicone.ResultEvaluatorResultArrayString> QueryEvaluatorsAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new object
             {
             };

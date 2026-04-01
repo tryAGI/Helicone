@@ -197,7 +197,6 @@ namespace Helicone
             global::System.Collections.Generic.IList<string> tags,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.UpdatePrompt2025TagsRequest
             {
                 Tags = tags,

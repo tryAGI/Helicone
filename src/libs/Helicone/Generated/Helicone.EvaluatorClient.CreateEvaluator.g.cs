@@ -197,7 +197,6 @@ namespace Helicone
             object? lastMileConfig = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.CreateEvaluatorParams
             {
                 ScoringType = scoringType,

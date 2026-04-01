@@ -189,7 +189,6 @@ namespace Helicone
             global::Helicone.PromptsFilterNode filter,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.PromptsQueryParams
             {
                 Filter = filter,

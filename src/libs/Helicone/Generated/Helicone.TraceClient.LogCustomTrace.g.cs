@@ -172,7 +172,6 @@ namespace Helicone
         public async global::System.Threading.Tasks.Task LogCustomTraceAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new object
             {
             };

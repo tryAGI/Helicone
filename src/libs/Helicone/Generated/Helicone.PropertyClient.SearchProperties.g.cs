@@ -197,7 +197,6 @@ namespace Helicone
             string searchTerm,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.SearchPropertiesRequest
             {
                 SearchTerm = searchTerm,

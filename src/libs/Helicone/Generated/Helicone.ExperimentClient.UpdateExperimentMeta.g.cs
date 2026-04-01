@@ -193,7 +193,6 @@ namespace Helicone
             string experimentId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.UpdateExperimentMetaRequest
             {
                 Meta = meta,

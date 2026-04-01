@@ -195,7 +195,6 @@ namespace Helicone
             global::Helicone.ProviderQueryParamsTimeFilter timeFilter,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.ProviderQueryParams
             {
                 Filter = filter,

@@ -199,7 +199,6 @@ namespace Helicone
             global::Helicone.RecordStringAny config,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Helicone.CreateOnlineEvaluatorParams
             {
                 Config = config,
