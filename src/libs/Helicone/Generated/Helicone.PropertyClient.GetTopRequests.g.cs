@@ -197,6 +197,7 @@ namespace Helicone
             global::Helicone.TimeFilterRequestTimeFilter timeFilter,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.TimeFilterRequest
             {
                 TimeFilter = timeFilter,

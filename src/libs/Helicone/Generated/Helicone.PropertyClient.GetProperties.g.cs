@@ -187,6 +187,7 @@ namespace Helicone
         public async global::System.Threading.Tasks.Task<global::Helicone.ResultPropertyArrayString> GetPropertiesAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new object
             {
             };

@@ -201,6 +201,7 @@ namespace Helicone
             double? limit = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.SessionQueryParams
             {
                 Search = search,

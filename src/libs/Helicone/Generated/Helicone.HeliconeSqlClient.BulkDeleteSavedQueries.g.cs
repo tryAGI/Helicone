@@ -191,6 +191,7 @@ namespace Helicone
             global::System.Collections.Generic.IList<string> ids,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.BulkDeleteSavedQueriesRequest
             {
                 Ids = ids,

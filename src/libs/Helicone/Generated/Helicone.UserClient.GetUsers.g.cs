@@ -191,6 +191,7 @@ namespace Helicone
             global::Helicone.UserQueryParamsTimeFilter? timeFilter = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.UserQueryParams
             {
                 UserIds = userIds,

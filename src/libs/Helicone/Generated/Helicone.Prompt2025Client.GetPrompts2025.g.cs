@@ -195,6 +195,7 @@ namespace Helicone
             string search,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.GetPrompts2025Request
             {
                 PageSize = pageSize,

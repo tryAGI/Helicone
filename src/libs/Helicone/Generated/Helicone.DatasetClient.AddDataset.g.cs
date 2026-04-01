@@ -195,6 +195,7 @@ namespace Helicone
             global::Helicone.DatasetMetadata? meta = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.NewDatasetParams
             {
                 DatasetName = datasetName,

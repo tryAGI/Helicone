@@ -189,6 +189,7 @@ namespace Helicone
             string sessionUUID,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.GetApiKeyRequest
             {
                 SessionUUID = sessionUUID,

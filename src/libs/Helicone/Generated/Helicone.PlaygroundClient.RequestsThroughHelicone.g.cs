@@ -189,6 +189,7 @@ namespace Helicone
             bool requestsThroughHelicone,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.RequestsThroughHeliconeRequest
             {
                 RequestsThroughHelicone = requestsThroughHelicone,

@@ -197,6 +197,7 @@ namespace Helicone
             global::System.Collections.Generic.IList<global::Helicone.CreateExperimentTableRowWithCellsBatchRequestRow> rows,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Helicone.CreateExperimentTableRowWithCellsBatchRequest
             {
                 Rows = rows,
