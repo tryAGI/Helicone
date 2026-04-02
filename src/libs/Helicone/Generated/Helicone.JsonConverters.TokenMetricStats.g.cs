@@ -12,8 +12,7 @@ namespace Helicone.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -49,9 +48,7 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.MetricStats), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.MetricStats> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.MetricStats).Name}");
-                        metricStats = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        metricStats = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.MetricStats>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -64,9 +61,7 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.TokenMetricStatsVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.TokenMetricStatsVariant2> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.TokenMetricStatsVariant2).Name}");
-                        tokenMetricStatsVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        tokenMetricStatsVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.TokenMetricStatsVariant2>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -81,9 +76,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.MetricStats), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.MetricStats> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.MetricStats).Name}");
-                    metricStats = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    metricStats = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.MetricStats>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -94,9 +87,7 @@ namespace Helicone.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.TokenMetricStatsVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.TokenMetricStatsVariant2> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.TokenMetricStatsVariant2).Name}");
-                    tokenMetricStatsVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    tokenMetricStatsVariant2 = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.TokenMetricStatsVariant2>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -121,20 +112,15 @@ namespace Helicone.JsonConverters
             global::Helicone.TokenMetricStats value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsMetricStats)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.MetricStats), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.MetricStats?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.MetricStats).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MetricStats!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MetricStats, typeof(global::Helicone.MetricStats), options);
             }
             else if (value.IsTokenMetricStatsVariant2)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.TokenMetricStatsVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.TokenMetricStatsVariant2?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.TokenMetricStatsVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TokenMetricStatsVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TokenMetricStatsVariant2, typeof(global::Helicone.TokenMetricStatsVariant2), options);
             }
         }
     }

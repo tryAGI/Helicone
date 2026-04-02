@@ -12,8 +12,7 @@ namespace Helicone.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -47,9 +46,7 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ChatCompletionMessageFunctionToolCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ChatCompletionMessageFunctionToolCall> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ChatCompletionMessageFunctionToolCall).Name}");
-                        function = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        function = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ChatCompletionMessageFunctionToolCall>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -62,9 +59,7 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ChatCompletionMessageCustomToolCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ChatCompletionMessageCustomToolCall> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ChatCompletionMessageCustomToolCall).Name}");
-                        custom = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        custom = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ChatCompletionMessageCustomToolCall>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -79,9 +74,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ChatCompletionMessageFunctionToolCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ChatCompletionMessageFunctionToolCall> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ChatCompletionMessageFunctionToolCall).Name}");
-                    function = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    function = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ChatCompletionMessageFunctionToolCall>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -92,9 +85,7 @@ namespace Helicone.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ChatCompletionMessageCustomToolCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ChatCompletionMessageCustomToolCall> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ChatCompletionMessageCustomToolCall).Name}");
-                    custom = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    custom = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ChatCompletionMessageCustomToolCall>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -119,20 +110,15 @@ namespace Helicone.JsonConverters
             global::Helicone.ChatCompletionMessageToolCall value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsFunction)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ChatCompletionMessageFunctionToolCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ChatCompletionMessageFunctionToolCall?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ChatCompletionMessageFunctionToolCall).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Function!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Function, typeof(global::Helicone.ChatCompletionMessageFunctionToolCall), options);
             }
             else if (value.IsCustom)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ChatCompletionMessageCustomToolCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ChatCompletionMessageCustomToolCall?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ChatCompletionMessageCustomToolCall).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Custom!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Custom, typeof(global::Helicone.ChatCompletionMessageCustomToolCall), options);
             }
         }
     }

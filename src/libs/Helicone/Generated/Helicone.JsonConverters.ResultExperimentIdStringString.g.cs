@@ -12,8 +12,7 @@ namespace Helicone.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -45,9 +44,7 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultSuccessExperimentIdString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultSuccessExperimentIdString> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultSuccessExperimentIdString).Name}");
-                        success = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        success = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ResultSuccessExperimentIdString>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -60,9 +57,7 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultErrorString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultErrorString> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultErrorString).Name}");
-                        error = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        error = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ResultErrorString>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -77,9 +72,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultSuccessExperimentIdString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultSuccessExperimentIdString> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultSuccessExperimentIdString).Name}");
-                    success = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    success = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ResultSuccessExperimentIdString>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -90,9 +83,7 @@ namespace Helicone.JsonConverters
 
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultErrorString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultErrorString> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultErrorString).Name}");
-                    error = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    error = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ResultErrorString>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -117,20 +108,15 @@ namespace Helicone.JsonConverters
             global::Helicone.ResultExperimentIdStringString value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsSuccess)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultSuccessExperimentIdString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultSuccessExperimentIdString?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultSuccessExperimentIdString).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Success!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Success, typeof(global::Helicone.ResultSuccessExperimentIdString), options);
             }
             else if (value.IsError)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultErrorString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultErrorString?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultErrorString).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Error!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Error, typeof(global::Helicone.ResultErrorString), options);
             }
         }
     }

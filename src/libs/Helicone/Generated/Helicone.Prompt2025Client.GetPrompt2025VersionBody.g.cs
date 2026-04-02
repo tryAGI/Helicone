@@ -107,7 +107,7 @@ namespace Helicone
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Helicone.ResultPrompt2025Version91PromptBody93String.FromJson(__content, JsonSerializerContext) ??
+                        global::Helicone.ResultPrompt2025Version91PromptBody93String.FromJson(__content, JsonSerializerOptions) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -138,7 +138,7 @@ namespace Helicone
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Helicone.ResultPrompt2025Version91PromptBody93String.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        await global::Helicone.ResultPrompt2025Version91PromptBody93String.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
