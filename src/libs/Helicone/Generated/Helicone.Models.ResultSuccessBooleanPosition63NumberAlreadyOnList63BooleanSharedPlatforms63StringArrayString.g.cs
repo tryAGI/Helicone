@@ -13,35 +13,35 @@ namespace Helicone
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray? Value1 { get; init; }
+        public global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray? ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray { get; init; }
 #else
-        public global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray? Value1 { get; }
+        public global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray? ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray => ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ResultErrorString? Value2 { get; init; }
+        public global::Helicone.ResultErrorString? Error { get; init; }
 #else
-        public global::Helicone.ResultErrorString? Value2 { get; }
+        public global::Helicone.ResultErrorString? Error { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsError => Error != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,14 +50,14 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?(ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayString @this) => @this.Value1;
+        public static implicit operator global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?(ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayString @this) => @this.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray;
 
         /// <summary>
         /// 
         /// </summary>
         public ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayString(global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray? value)
         {
-            Value1 = value;
+            ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray = value;
         }
 
         /// <summary>
@@ -68,42 +68,42 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ResultErrorString?(ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayString @this) => @this.Value2;
+        public static implicit operator global::Helicone.ResultErrorString?(ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayString @this) => @this.Error;
 
         /// <summary>
         /// 
         /// </summary>
         public ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayString(global::Helicone.ResultErrorString? value)
         {
-            Value2 = value;
+            Error = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayString(
-            global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray? value1,
-            global::Helicone.ResultErrorString? value2
+            global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray? resultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray,
+            global::Helicone.ResultErrorString? error
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray = resultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray;
+            Error = error;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            Error as object ??
+            ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?.ToString() ??
+            Error?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace Helicone
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2;
+            return IsResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray || IsError;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?, TResult>? value1 = null,
-            global::System.Func<global::Helicone.ResultErrorString?, TResult>? value2 = null,
+            global::System.Func<global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?, TResult>? resultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray = null,
+            global::System.Func<global::Helicone.ResultErrorString?, TResult>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray && resultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray != null)
             {
-                return value1(Value1!);
+                return resultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray(ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsError && error != null)
             {
-                return value2(Value2!);
+                return error(Error!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?>? value1 = null,
-            global::System.Action<global::Helicone.ResultErrorString?>? value2 = null,
+            global::System.Action<global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?>? resultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray = null,
+            global::System.Action<global::Helicone.ResultErrorString?>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray)
             {
-                value1?.Invoke(Value1!);
+                resultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?.Invoke(ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray!);
             }
-            else if (IsValue2)
+            else if (IsError)
             {
-                value2?.Invoke(Value2!);
+                error?.Invoke(Error!);
             }
         }
 
@@ -169,9 +169,9 @@ namespace Helicone
         {
             var fields = new object?[]
             {
-                Value1,
+                ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray,
                 typeof(global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray),
-                Value2,
+                Error,
                 typeof(global::Helicone.ResultErrorString),
             };
             const int offset = unchecked((int)2166136261);
@@ -189,8 +189,8 @@ namespace Helicone
         public bool Equals(ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayString other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray?>.Default.Equals(ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray, other.ResultSuccessSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArray) &&
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Error, other.Error) 
                 ;
         }
 

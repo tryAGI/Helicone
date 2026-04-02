@@ -13,52 +13,52 @@ namespace Helicone
         /// From T, pick a set of properties whose keys are in the union K
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.PickFilterLeafExperiment? Value1 { get; init; }
+        public global::Helicone.PickFilterLeafExperiment? PickLeaf { get; init; }
 #else
-        public global::Helicone.PickFilterLeafExperiment? Value1 { get; }
+        public global::Helicone.PickFilterLeafExperiment? PickLeaf { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PickLeaf))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsPickLeaf => PickLeaf != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ExperimentFilterBranch? Value2 { get; init; }
+        public global::Helicone.ExperimentFilterBranch? Branch { get; init; }
 #else
-        public global::Helicone.ExperimentFilterBranch? Value2 { get; }
+        public global::Helicone.ExperimentFilterBranch? Branch { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Branch))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsBranch => Branch != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ExperimentFilterNodeEnum? Value3 { get; init; }
+        public global::Helicone.ExperimentFilterNodeEnum? Enum { get; init; }
 #else
-        public global::Helicone.ExperimentFilterNodeEnum? Value3 { get; }
+        public global::Helicone.ExperimentFilterNodeEnum? Enum { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value3))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
 #endif
-        public bool IsValue3 => Value3 != null;
+        public bool IsEnum => Enum != null;
         /// <summary>
         /// 
         /// </summary>
@@ -67,14 +67,14 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.PickFilterLeafExperiment?(ExperimentFilterNode @this) => @this.Value1;
+        public static implicit operator global::Helicone.PickFilterLeafExperiment?(ExperimentFilterNode @this) => @this.PickLeaf;
 
         /// <summary>
         /// 
         /// </summary>
         public ExperimentFilterNode(global::Helicone.PickFilterLeafExperiment? value)
         {
-            Value1 = value;
+            PickLeaf = value;
         }
 
         /// <summary>
@@ -85,14 +85,14 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ExperimentFilterBranch?(ExperimentFilterNode @this) => @this.Value2;
+        public static implicit operator global::Helicone.ExperimentFilterBranch?(ExperimentFilterNode @this) => @this.Branch;
 
         /// <summary>
         /// 
         /// </summary>
         public ExperimentFilterNode(global::Helicone.ExperimentFilterBranch? value)
         {
-            Value2 = value;
+            Branch = value;
         }
 
         /// <summary>
@@ -103,46 +103,46 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ExperimentFilterNodeEnum?(ExperimentFilterNode @this) => @this.Value3;
+        public static implicit operator global::Helicone.ExperimentFilterNodeEnum?(ExperimentFilterNode @this) => @this.Enum;
 
         /// <summary>
         /// 
         /// </summary>
         public ExperimentFilterNode(global::Helicone.ExperimentFilterNodeEnum? value)
         {
-            Value3 = value;
+            Enum = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public ExperimentFilterNode(
-            global::Helicone.PickFilterLeafExperiment? value1,
-            global::Helicone.ExperimentFilterBranch? value2,
-            global::Helicone.ExperimentFilterNodeEnum? value3
+            global::Helicone.PickFilterLeafExperiment? pickLeaf,
+            global::Helicone.ExperimentFilterBranch? branch,
+            global::Helicone.ExperimentFilterNodeEnum? @enum
             )
         {
-            Value1 = value1;
-            Value2 = value2;
-            Value3 = value3;
+            PickLeaf = pickLeaf;
+            Branch = branch;
+            Enum = @enum;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value3 as object ??
-            Value2 as object ??
-            Value1 as object 
+            Enum as object ??
+            Branch as object ??
+            PickLeaf as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() ??
-            Value3?.ToValueString() 
+            PickLeaf?.ToString() ??
+            Branch?.ToString() ??
+            Enum?.ToValueString() 
             ;
 
         /// <summary>
@@ -150,16 +150,16 @@ namespace Helicone
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2 || IsValue3;
+            return IsPickLeaf || IsBranch || IsEnum;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.PickFilterLeafExperiment?, TResult>? value1 = null,
-            global::System.Func<global::Helicone.ExperimentFilterBranch?, TResult>? value2 = null,
-            global::System.Func<global::Helicone.ExperimentFilterNodeEnum?, TResult>? value3 = null,
+            global::System.Func<global::Helicone.PickFilterLeafExperiment?, TResult>? pickLeaf = null,
+            global::System.Func<global::Helicone.ExperimentFilterBranch?, TResult>? branch = null,
+            global::System.Func<global::Helicone.ExperimentFilterNodeEnum?, TResult>? @enum = null,
             bool validate = true)
         {
             if (validate)
@@ -167,17 +167,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsPickLeaf && pickLeaf != null)
             {
-                return value1(Value1!);
+                return pickLeaf(PickLeaf!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsBranch && branch != null)
             {
-                return value2(Value2!);
+                return branch(Branch!);
             }
-            else if (IsValue3 && value3 != null)
+            else if (IsEnum && @enum != null)
             {
-                return value3(Value3!);
+                return @enum(Enum!);
             }
 
             return default(TResult);
@@ -187,9 +187,9 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.PickFilterLeafExperiment?>? value1 = null,
-            global::System.Action<global::Helicone.ExperimentFilterBranch?>? value2 = null,
-            global::System.Action<global::Helicone.ExperimentFilterNodeEnum?>? value3 = null,
+            global::System.Action<global::Helicone.PickFilterLeafExperiment?>? pickLeaf = null,
+            global::System.Action<global::Helicone.ExperimentFilterBranch?>? branch = null,
+            global::System.Action<global::Helicone.ExperimentFilterNodeEnum?>? @enum = null,
             bool validate = true)
         {
             if (validate)
@@ -197,17 +197,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsPickLeaf)
             {
-                value1?.Invoke(Value1!);
+                pickLeaf?.Invoke(PickLeaf!);
             }
-            else if (IsValue2)
+            else if (IsBranch)
             {
-                value2?.Invoke(Value2!);
+                branch?.Invoke(Branch!);
             }
-            else if (IsValue3)
+            else if (IsEnum)
             {
-                value3?.Invoke(Value3!);
+                @enum?.Invoke(Enum!);
             }
         }
 
@@ -218,11 +218,11 @@ namespace Helicone
         {
             var fields = new object?[]
             {
-                Value1,
+                PickLeaf,
                 typeof(global::Helicone.PickFilterLeafExperiment),
-                Value2,
+                Branch,
                 typeof(global::Helicone.ExperimentFilterBranch),
-                Value3,
+                Enum,
                 typeof(global::Helicone.ExperimentFilterNodeEnum),
             };
             const int offset = unchecked((int)2166136261);
@@ -240,9 +240,9 @@ namespace Helicone
         public bool Equals(ExperimentFilterNode other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.PickFilterLeafExperiment?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ExperimentFilterBranch?>.Default.Equals(Value2, other.Value2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ExperimentFilterNodeEnum?>.Default.Equals(Value3, other.Value3) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.PickFilterLeafExperiment?>.Default.Equals(PickLeaf, other.PickLeaf) &&
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ExperimentFilterBranch?>.Default.Equals(Branch, other.Branch) &&
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ExperimentFilterNodeEnum?>.Default.Equals(Enum, other.Enum) 
                 ;
         }
 

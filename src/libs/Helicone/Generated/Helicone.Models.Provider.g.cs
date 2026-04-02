@@ -13,52 +13,52 @@ namespace Helicone
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ProviderName? Value1 { get; init; }
+        public global::Helicone.ProviderName? Name { get; init; }
 #else
-        public global::Helicone.ProviderName? Value1 { get; }
+        public global::Helicone.ProviderName? Name { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Name))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsName => Name != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ModelProviderName? Value2 { get; init; }
+        public global::Helicone.ModelProviderName? ModelName { get; init; }
 #else
-        public global::Helicone.ModelProviderName? Value2 { get; }
+        public global::Helicone.ModelProviderName? ModelName { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ModelName))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsModelName => ModelName != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ProviderEnum? Value3 { get; init; }
+        public global::Helicone.ProviderEnum? Enum { get; init; }
 #else
-        public global::Helicone.ProviderEnum? Value3 { get; }
+        public global::Helicone.ProviderEnum? Enum { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value3))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
 #endif
-        public bool IsValue3 => Value3 != null;
+        public bool IsEnum => Enum != null;
         /// <summary>
         /// 
         /// </summary>
@@ -67,14 +67,14 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ProviderName?(Provider @this) => @this.Value1;
+        public static implicit operator global::Helicone.ProviderName?(Provider @this) => @this.Name;
 
         /// <summary>
         /// 
         /// </summary>
         public Provider(global::Helicone.ProviderName? value)
         {
-            Value1 = value;
+            Name = value;
         }
 
         /// <summary>
@@ -85,14 +85,14 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ModelProviderName?(Provider @this) => @this.Value2;
+        public static implicit operator global::Helicone.ModelProviderName?(Provider @this) => @this.ModelName;
 
         /// <summary>
         /// 
         /// </summary>
         public Provider(global::Helicone.ModelProviderName? value)
         {
-            Value2 = value;
+            ModelName = value;
         }
 
         /// <summary>
@@ -103,46 +103,46 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ProviderEnum?(Provider @this) => @this.Value3;
+        public static implicit operator global::Helicone.ProviderEnum?(Provider @this) => @this.Enum;
 
         /// <summary>
         /// 
         /// </summary>
         public Provider(global::Helicone.ProviderEnum? value)
         {
-            Value3 = value;
+            Enum = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public Provider(
-            global::Helicone.ProviderName? value1,
-            global::Helicone.ModelProviderName? value2,
-            global::Helicone.ProviderEnum? value3
+            global::Helicone.ProviderName? name,
+            global::Helicone.ModelProviderName? modelName,
+            global::Helicone.ProviderEnum? @enum
             )
         {
-            Value1 = value1;
-            Value2 = value2;
-            Value3 = value3;
+            Name = name;
+            ModelName = modelName;
+            Enum = @enum;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value3 as object ??
-            Value2 as object ??
-            Value1 as object 
+            Enum as object ??
+            ModelName as object ??
+            Name as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToValueString() ??
-            Value2?.ToValueString() ??
-            Value3?.ToValueString() 
+            Name?.ToValueString() ??
+            ModelName?.ToValueString() ??
+            Enum?.ToValueString() 
             ;
 
         /// <summary>
@@ -150,16 +150,16 @@ namespace Helicone
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2 || IsValue3;
+            return IsName || IsModelName || IsEnum;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.ProviderName?, TResult>? value1 = null,
-            global::System.Func<global::Helicone.ModelProviderName?, TResult>? value2 = null,
-            global::System.Func<global::Helicone.ProviderEnum?, TResult>? value3 = null,
+            global::System.Func<global::Helicone.ProviderName?, TResult>? name = null,
+            global::System.Func<global::Helicone.ModelProviderName?, TResult>? modelName = null,
+            global::System.Func<global::Helicone.ProviderEnum?, TResult>? @enum = null,
             bool validate = true)
         {
             if (validate)
@@ -167,17 +167,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsName && name != null)
             {
-                return value1(Value1!);
+                return name(Name!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsModelName && modelName != null)
             {
-                return value2(Value2!);
+                return modelName(ModelName!);
             }
-            else if (IsValue3 && value3 != null)
+            else if (IsEnum && @enum != null)
             {
-                return value3(Value3!);
+                return @enum(Enum!);
             }
 
             return default(TResult);
@@ -187,9 +187,9 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.ProviderName?>? value1 = null,
-            global::System.Action<global::Helicone.ModelProviderName?>? value2 = null,
-            global::System.Action<global::Helicone.ProviderEnum?>? value3 = null,
+            global::System.Action<global::Helicone.ProviderName?>? name = null,
+            global::System.Action<global::Helicone.ModelProviderName?>? modelName = null,
+            global::System.Action<global::Helicone.ProviderEnum?>? @enum = null,
             bool validate = true)
         {
             if (validate)
@@ -197,17 +197,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsName)
             {
-                value1?.Invoke(Value1!);
+                name?.Invoke(Name!);
             }
-            else if (IsValue2)
+            else if (IsModelName)
             {
-                value2?.Invoke(Value2!);
+                modelName?.Invoke(ModelName!);
             }
-            else if (IsValue3)
+            else if (IsEnum)
             {
-                value3?.Invoke(Value3!);
+                @enum?.Invoke(Enum!);
             }
         }
 
@@ -218,11 +218,11 @@ namespace Helicone
         {
             var fields = new object?[]
             {
-                Value1,
+                Name,
                 typeof(global::Helicone.ProviderName),
-                Value2,
+                ModelName,
                 typeof(global::Helicone.ModelProviderName),
-                Value3,
+                Enum,
                 typeof(global::Helicone.ProviderEnum),
             };
             const int offset = unchecked((int)2166136261);
@@ -240,9 +240,9 @@ namespace Helicone
         public bool Equals(Provider other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ProviderName?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ModelProviderName?>.Default.Equals(Value2, other.Value2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ProviderEnum?>.Default.Equals(Value3, other.Value3) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ProviderName?>.Default.Equals(Name, other.Name) &&
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ModelProviderName?>.Default.Equals(ModelName, other.ModelName) &&
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ProviderEnum?>.Default.Equals(Enum, other.Enum) 
                 ;
         }
 
