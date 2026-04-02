@@ -13,35 +13,35 @@ namespace Helicone
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString? Value1 { get; init; }
+        public global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString? ResultSuccessSuccessBooleanNewPosition63NumberMessageString { get; init; }
 #else
-        public global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString? Value1 { get; }
+        public global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString? ResultSuccessSuccessBooleanNewPosition63NumberMessageString { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ResultSuccessSuccessBooleanNewPosition63NumberMessageString))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsResultSuccessSuccessBooleanNewPosition63NumberMessageString => ResultSuccessSuccessBooleanNewPosition63NumberMessageString != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.ResultErrorString? Value2 { get; init; }
+        public global::Helicone.ResultErrorString? Error { get; init; }
 #else
-        public global::Helicone.ResultErrorString? Value2 { get; }
+        public global::Helicone.ResultErrorString? Error { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsError => Error != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,14 +50,14 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString?(ResultSuccessBooleanNewPosition63NumberMessageStringString @this) => @this.Value1;
+        public static implicit operator global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString?(ResultSuccessBooleanNewPosition63NumberMessageStringString @this) => @this.ResultSuccessSuccessBooleanNewPosition63NumberMessageString;
 
         /// <summary>
         /// 
         /// </summary>
         public ResultSuccessBooleanNewPosition63NumberMessageStringString(global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString? value)
         {
-            Value1 = value;
+            ResultSuccessSuccessBooleanNewPosition63NumberMessageString = value;
         }
 
         /// <summary>
@@ -68,42 +68,42 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.ResultErrorString?(ResultSuccessBooleanNewPosition63NumberMessageStringString @this) => @this.Value2;
+        public static implicit operator global::Helicone.ResultErrorString?(ResultSuccessBooleanNewPosition63NumberMessageStringString @this) => @this.Error;
 
         /// <summary>
         /// 
         /// </summary>
         public ResultSuccessBooleanNewPosition63NumberMessageStringString(global::Helicone.ResultErrorString? value)
         {
-            Value2 = value;
+            Error = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public ResultSuccessBooleanNewPosition63NumberMessageStringString(
-            global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString? value1,
-            global::Helicone.ResultErrorString? value2
+            global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString? resultSuccessSuccessBooleanNewPosition63NumberMessageString,
+            global::Helicone.ResultErrorString? error
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            ResultSuccessSuccessBooleanNewPosition63NumberMessageString = resultSuccessSuccessBooleanNewPosition63NumberMessageString;
+            Error = error;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            Error as object ??
+            ResultSuccessSuccessBooleanNewPosition63NumberMessageString as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            ResultSuccessSuccessBooleanNewPosition63NumberMessageString?.ToString() ??
+            Error?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace Helicone
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 || IsValue2;
+            return IsResultSuccessSuccessBooleanNewPosition63NumberMessageString || IsError;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString?, TResult>? value1 = null,
-            global::System.Func<global::Helicone.ResultErrorString?, TResult>? value2 = null,
+            global::System.Func<global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString?, TResult>? resultSuccessSuccessBooleanNewPosition63NumberMessageString = null,
+            global::System.Func<global::Helicone.ResultErrorString?, TResult>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsResultSuccessSuccessBooleanNewPosition63NumberMessageString && resultSuccessSuccessBooleanNewPosition63NumberMessageString != null)
             {
-                return value1(Value1!);
+                return resultSuccessSuccessBooleanNewPosition63NumberMessageString(ResultSuccessSuccessBooleanNewPosition63NumberMessageString!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsError && error != null)
             {
-                return value2(Value2!);
+                return error(Error!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString?>? value1 = null,
-            global::System.Action<global::Helicone.ResultErrorString?>? value2 = null,
+            global::System.Action<global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString?>? resultSuccessSuccessBooleanNewPosition63NumberMessageString = null,
+            global::System.Action<global::Helicone.ResultErrorString?>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsResultSuccessSuccessBooleanNewPosition63NumberMessageString)
             {
-                value1?.Invoke(Value1!);
+                resultSuccessSuccessBooleanNewPosition63NumberMessageString?.Invoke(ResultSuccessSuccessBooleanNewPosition63NumberMessageString!);
             }
-            else if (IsValue2)
+            else if (IsError)
             {
-                value2?.Invoke(Value2!);
+                error?.Invoke(Error!);
             }
         }
 
@@ -169,9 +169,9 @@ namespace Helicone
         {
             var fields = new object?[]
             {
-                Value1,
+                ResultSuccessSuccessBooleanNewPosition63NumberMessageString,
                 typeof(global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString),
-                Value2,
+                Error,
                 typeof(global::Helicone.ResultErrorString),
             };
             const int offset = unchecked((int)2166136261);
@@ -189,8 +189,8 @@ namespace Helicone
         public bool Equals(ResultSuccessBooleanNewPosition63NumberMessageStringString other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultSuccessSuccessBooleanNewPosition63NumberMessageString?>.Default.Equals(ResultSuccessSuccessBooleanNewPosition63NumberMessageString, other.ResultSuccessSuccessBooleanNewPosition63NumberMessageString) &&
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Error, other.Error) 
                 ;
         }
 

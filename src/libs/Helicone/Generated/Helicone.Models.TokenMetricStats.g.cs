@@ -13,35 +13,35 @@ namespace Helicone
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.MetricStats? Value1 { get; init; }
+        public global::Helicone.MetricStats? MetricStats { get; init; }
 #else
-        public global::Helicone.MetricStats? Value1 { get; }
+        public global::Helicone.MetricStats? MetricStats { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MetricStats))]
 #endif
-        public bool IsValue1 => Value1 != null;
+        public bool IsMetricStats => MetricStats != null;
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Helicone.TokenMetricStatsVariant2? Value2 { get; init; }
+        public global::Helicone.TokenMetricStatsVariant2? TokenMetricStatsVariant2 { get; init; }
 #else
-        public global::Helicone.TokenMetricStatsVariant2? Value2 { get; }
+        public global::Helicone.TokenMetricStatsVariant2? TokenMetricStatsVariant2 { get; }
 #endif
 
         /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Value2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TokenMetricStatsVariant2))]
 #endif
-        public bool IsValue2 => Value2 != null;
+        public bool IsTokenMetricStatsVariant2 => TokenMetricStatsVariant2 != null;
         /// <summary>
         /// 
         /// </summary>
@@ -50,14 +50,14 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.MetricStats?(TokenMetricStats @this) => @this.Value1;
+        public static implicit operator global::Helicone.MetricStats?(TokenMetricStats @this) => @this.MetricStats;
 
         /// <summary>
         /// 
         /// </summary>
         public TokenMetricStats(global::Helicone.MetricStats? value)
         {
-            Value1 = value;
+            MetricStats = value;
         }
 
         /// <summary>
@@ -68,42 +68,42 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public static implicit operator global::Helicone.TokenMetricStatsVariant2?(TokenMetricStats @this) => @this.Value2;
+        public static implicit operator global::Helicone.TokenMetricStatsVariant2?(TokenMetricStats @this) => @this.TokenMetricStatsVariant2;
 
         /// <summary>
         /// 
         /// </summary>
         public TokenMetricStats(global::Helicone.TokenMetricStatsVariant2? value)
         {
-            Value2 = value;
+            TokenMetricStatsVariant2 = value;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TokenMetricStats(
-            global::Helicone.MetricStats? value1,
-            global::Helicone.TokenMetricStatsVariant2? value2
+            global::Helicone.MetricStats? metricStats,
+            global::Helicone.TokenMetricStatsVariant2? tokenMetricStatsVariant2
             )
         {
-            Value1 = value1;
-            Value2 = value2;
+            MetricStats = metricStats;
+            TokenMetricStatsVariant2 = tokenMetricStatsVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public object? Object =>
-            Value2 as object ??
-            Value1 as object 
+            TokenMetricStatsVariant2 as object ??
+            MetricStats as object 
             ;
 
         /// <summary>
         /// 
         /// </summary>
         public override string? ToString() =>
-            Value1?.ToString() ??
-            Value2?.ToString() 
+            MetricStats?.ToString() ??
+            TokenMetricStatsVariant2?.ToString() 
             ;
 
         /// <summary>
@@ -111,15 +111,15 @@ namespace Helicone
         /// </summary>
         public bool Validate()
         {
-            return IsValue1 && IsValue2;
+            return IsMetricStats && IsTokenMetricStatsVariant2;
         }
 
         /// <summary>
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.MetricStats?, TResult>? value1 = null,
-            global::System.Func<global::Helicone.TokenMetricStatsVariant2?, TResult>? value2 = null,
+            global::System.Func<global::Helicone.MetricStats?, TResult>? metricStats = null,
+            global::System.Func<global::Helicone.TokenMetricStatsVariant2?, TResult>? tokenMetricStatsVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -127,13 +127,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1 && value1 != null)
+            if (IsMetricStats && metricStats != null)
             {
-                return value1(Value1!);
+                return metricStats(MetricStats!);
             }
-            else if (IsValue2 && value2 != null)
+            else if (IsTokenMetricStatsVariant2 && tokenMetricStatsVariant2 != null)
             {
-                return value2(Value2!);
+                return tokenMetricStatsVariant2(TokenMetricStatsVariant2!);
             }
 
             return default(TResult);
@@ -143,8 +143,8 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.MetricStats?>? value1 = null,
-            global::System.Action<global::Helicone.TokenMetricStatsVariant2?>? value2 = null,
+            global::System.Action<global::Helicone.MetricStats?>? metricStats = null,
+            global::System.Action<global::Helicone.TokenMetricStatsVariant2?>? tokenMetricStatsVariant2 = null,
             bool validate = true)
         {
             if (validate)
@@ -152,13 +152,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsValue1)
+            if (IsMetricStats)
             {
-                value1?.Invoke(Value1!);
+                metricStats?.Invoke(MetricStats!);
             }
-            else if (IsValue2)
+            else if (IsTokenMetricStatsVariant2)
             {
-                value2?.Invoke(Value2!);
+                tokenMetricStatsVariant2?.Invoke(TokenMetricStatsVariant2!);
             }
         }
 
@@ -169,9 +169,9 @@ namespace Helicone
         {
             var fields = new object?[]
             {
-                Value1,
+                MetricStats,
                 typeof(global::Helicone.MetricStats),
-                Value2,
+                TokenMetricStatsVariant2,
                 typeof(global::Helicone.TokenMetricStatsVariant2),
             };
             const int offset = unchecked((int)2166136261);
@@ -189,8 +189,8 @@ namespace Helicone
         public bool Equals(TokenMetricStats other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.MetricStats?>.Default.Equals(Value1, other.Value1) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.TokenMetricStatsVariant2?>.Default.Equals(Value2, other.Value2) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.MetricStats?>.Default.Equals(MetricStats, other.MetricStats) &&
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.TokenMetricStatsVariant2?>.Default.Equals(TokenMetricStatsVariant2, other.TokenMetricStatsVariant2) 
                 ;
         }
 

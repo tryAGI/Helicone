@@ -66,9 +66,9 @@ namespace Helicone.JsonConverters
             if (__score1 > __bestScore) { __bestScore = __score1; __bestIndex = 1; }
             if (__score2 > __bestScore) { __bestScore = __score2; __bestIndex = 2; }
 
-            global::Helicone.ProviderName? value1 = default;
-            global::Helicone.ModelProviderName? value2 = default;
-            global::Helicone.ProviderEnum? value3 = default;
+            global::Helicone.ProviderName? name = default;
+            global::Helicone.ModelProviderName? modelName = default;
+            global::Helicone.ProviderEnum? @enum = default;
             if (__bestIndex >= 0)
             {
                 if (__bestIndex == 0)
@@ -78,7 +78,7 @@ namespace Helicone.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ProviderName), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ProviderName> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ProviderName).Name}");
-                        value1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        name = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -95,7 +95,7 @@ namespace Helicone.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ModelProviderName), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ModelProviderName> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ModelProviderName).Name}");
-                        value2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        modelName = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -112,7 +112,7 @@ namespace Helicone.JsonConverters
 
                         var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ProviderEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ProviderEnum> ??
                                        throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ProviderEnum).Name}");
-                        value3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        @enum = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -123,14 +123,14 @@ namespace Helicone.JsonConverters
                 }
             }
 
-            if (value1 == null && value2 == null && value3 == null)
+            if (name == null && modelName == null && @enum == null)
             {
                 try
                 {
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ProviderName), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ProviderName> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ProviderName).Name}");
-                    value1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    name = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -144,7 +144,7 @@ namespace Helicone.JsonConverters
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ModelProviderName), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ModelProviderName> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ModelProviderName).Name}");
-                    value2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    modelName = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -158,7 +158,7 @@ namespace Helicone.JsonConverters
 
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ProviderEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ProviderEnum> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ProviderEnum).Name}");
-                    value3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    @enum = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -169,11 +169,11 @@ namespace Helicone.JsonConverters
             }
 
             var __value = new global::Helicone.Provider(
-                value1,
+                name,
 
-                value2,
+                modelName,
 
-                value3
+                @enum
                 );
 
             return __value;
@@ -188,23 +188,23 @@ namespace Helicone.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsValue1)
+            if (value.IsName)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ProviderName), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ProviderName> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ProviderName).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value1!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Name!.Value, typeInfo);
             }
-            else if (value.IsValue2)
+            else if (value.IsModelName)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ModelProviderName), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ModelProviderName> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ModelProviderName).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ModelName!.Value, typeInfo);
             }
-            else if (value.IsValue3)
+            else if (value.IsEnum)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ProviderEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ProviderEnum> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ProviderEnum).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Value3!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum!.Value, typeInfo);
             }
         }
     }
