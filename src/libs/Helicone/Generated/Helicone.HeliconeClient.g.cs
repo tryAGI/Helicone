@@ -142,8 +142,6 @@ namespace Helicone
                     new global::Helicone.JsonConverters.UserFilterBranchOperatorNullableJsonConverter(),
                     new global::Helicone.JsonConverters.PSizeJsonConverter(),
                     new global::Helicone.JsonConverters.PSizeNullableJsonConverter(),
-                    new global::Helicone.JsonConverters.StatsTimeFrameJsonConverter(),
-                    new global::Helicone.JsonConverters.StatsTimeFrameNullableJsonConverter(),
                     new global::Helicone.JsonConverters.SessionFilterNodeEnumJsonConverter(),
                     new global::Helicone.JsonConverters.SessionFilterNodeEnumNullableJsonConverter(),
                     new global::Helicone.JsonConverters.SessionFilterBranchOperatorJsonConverter(),
@@ -216,8 +214,6 @@ namespace Helicone
                     new global::Helicone.JsonConverters.EvalFilterBranchOperatorNullableJsonConverter(),
                     new global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsJsonConverter(),
                     new global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsNullableJsonConverter(),
-                    new global::Helicone.JsonConverters.TrackShareRequestPlatformJsonConverter(),
-                    new global::Helicone.JsonConverters.TrackShareRequestPlatformNullableJsonConverter(),
                     new global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusJsonConverter(),
                     new global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusNullableJsonConverter(),
                     new global::Helicone.JsonConverters.AddOnsProductTypeJsonConverter(),
@@ -287,22 +283,12 @@ namespace Helicone
                     new global::Helicone.JsonConverters.ResultHasDataBooleanStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultSuccessBooleanMessageStringStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultSuccessBooleanPosition63NumberAlreadyOnList63BooleanSharedPlatforms63StringArrayStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultIsOnWaitlistBooleanStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultCountNumberStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultSuccessBooleanNewPosition63NumberMessageStringStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultDecryptedProviderKeyArrayStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultDecryptedProviderKeyStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayStringJsonConverter(),
                     new global::Helicone.JsonConverters.UserFilterNodeJsonConverter(),
                     new global::Helicone.JsonConverters.ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultModelUsageResponseStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultMarketShareResponseStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultProviderUsageResponseStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultAuthorStatsResponseStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultProviderStatsResponseStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultModelStatsResponseStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultSessionResultArrayStringJsonConverter(),
                     new global::Helicone.JsonConverters.SessionFilterNodeJsonConverter(),
                     new global::Helicone.JsonConverters.ResultSessionsAggregateMetricsStringJsonConverter(),
@@ -369,7 +355,6 @@ namespace Helicone
                     new global::Helicone.JsonConverters.ResultSpendBreakdownResponseStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultPTBInvoiceArrayStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultOrgDiscountArrayStringJsonConverter(),
-                    new global::Helicone.JsonConverters.ResultIdNumberActiveBooleanTitleStringMessageStringCreatedAtStringUpdatedAtStringArrayStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultInAppThreadStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultSuccessBooleanStringJsonConverter(),
                     new global::Helicone.JsonConverters.ResultThreadSummaryArrayStringJsonConverter(),
@@ -411,15 +396,6 @@ namespace Helicone
             };
         #pragma warning restore CS0618 // Type or member is obsolete
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public AdminAlertBannerClient AdminAlertBanner => new AdminAlertBannerClient(HttpClient, authorizations: Authorizations)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerOptions = JsonSerializerOptions,
-        };
 
         /// <summary>
         /// 
@@ -649,15 +625,6 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public StatsClient Stats => new StatsClient(HttpClient, authorizations: Authorizations)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerOptions = JsonSerializerOptions,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
         public StatusClient Status => new StatusClient(HttpClient, authorizations: Authorizations)
         {
             ReadResponseAsString = ReadResponseAsString,
@@ -704,15 +671,6 @@ namespace Helicone
         /// 
         /// </summary>
         public VaultClient Vault => new VaultClient(HttpClient, authorizations: Authorizations)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerOptions = JsonSerializerOptions,
-        };
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public WaitlistClient Waitlist => new WaitlistClient(HttpClient, authorizations: Authorizations)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerOptions = JsonSerializerOptions,
