@@ -42,11 +42,6 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public AdminAlertBannerClient AdminAlertBanner { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public AgentClient Agent { get; }
 
         /// <summary>
@@ -172,11 +167,6 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public StatsClient Stats { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public StatusClient Status { get; }
 
         /// <summary>
@@ -203,11 +193,6 @@ namespace Helicone
         /// 
         /// </summary>
         public VaultClient Vault { get; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public WaitlistClient Waitlist { get; }
 
         /// <summary>
         /// 
