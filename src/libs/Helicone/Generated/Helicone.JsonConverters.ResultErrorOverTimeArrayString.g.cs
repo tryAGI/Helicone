@@ -12,7 +12,8 @@ namespace Helicone.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -44,7 +45,9 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        success = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ResultSuccessErrorOverTimeArray>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultSuccessErrorOverTimeArray), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultSuccessErrorOverTimeArray> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultSuccessErrorOverTimeArray).Name}");
+                        success = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -57,7 +60,9 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        resultErrorString = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ResultErrorString>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultErrorString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultErrorString> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultErrorString).Name}");
+                        resultErrorString = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -72,7 +77,9 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
-                    success = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ResultSuccessErrorOverTimeArray>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultSuccessErrorOverTimeArray), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultSuccessErrorOverTimeArray> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultSuccessErrorOverTimeArray).Name}");
+                    success = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -83,7 +90,9 @@ namespace Helicone.JsonConverters
 
                 try
                 {
-                    resultErrorString = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.ResultErrorString>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultErrorString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultErrorString> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultErrorString).Name}");
+                    resultErrorString = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -108,15 +117,20 @@ namespace Helicone.JsonConverters
             global::Helicone.ResultErrorOverTimeArrayString value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsSuccess)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Success, typeof(global::Helicone.ResultSuccessErrorOverTimeArray), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultSuccessErrorOverTimeArray), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultSuccessErrorOverTimeArray?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultSuccessErrorOverTimeArray).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Success!, typeInfo);
             }
             else if (value.IsResultErrorString)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ResultErrorString, typeof(global::Helicone.ResultErrorString), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultErrorString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultErrorString?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultErrorString).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ResultErrorString!, typeInfo);
             }
         }
     }
