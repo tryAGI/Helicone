@@ -12,7 +12,8 @@ namespace Helicone.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -47,7 +48,9 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        pickLeafPrompts = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.PickFilterLeafPromptsVersions>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafPromptsVersions), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafPromptsVersions> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafPromptsVersions).Name}");
+                        pickLeafPrompts = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -60,7 +63,9 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        branch = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.PromptVersionsFilterBranch>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PromptVersionsFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PromptVersionsFilterBranch> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PromptVersionsFilterBranch).Name}");
+                        branch = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -73,7 +78,9 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        @enum = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.PromptVersionsFilterNodeEnum>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PromptVersionsFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PromptVersionsFilterNodeEnum> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PromptVersionsFilterNodeEnum).Name}");
+                        @enum = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -88,7 +95,9 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
-                    pickLeafPrompts = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.PickFilterLeafPromptsVersions>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafPromptsVersions), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafPromptsVersions> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafPromptsVersions).Name}");
+                    pickLeafPrompts = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -99,7 +108,9 @@ namespace Helicone.JsonConverters
 
                 try
                 {
-                    branch = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.PromptVersionsFilterBranch>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PromptVersionsFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PromptVersionsFilterBranch> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PromptVersionsFilterBranch).Name}");
+                    branch = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -110,7 +121,9 @@ namespace Helicone.JsonConverters
 
                 try
                 {
-                    @enum = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.PromptVersionsFilterNodeEnum>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PromptVersionsFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PromptVersionsFilterNodeEnum> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PromptVersionsFilterNodeEnum).Name}");
+                    @enum = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -137,19 +150,26 @@ namespace Helicone.JsonConverters
             global::Helicone.PromptVersionsFilterNode value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsPickLeafPrompts)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLeafPrompts, typeof(global::Helicone.PickFilterLeafPromptsVersions), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafPromptsVersions), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafPromptsVersions?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafPromptsVersions).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLeafPrompts!, typeInfo);
             }
             else if (value.IsBranch)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Branch, typeof(global::Helicone.PromptVersionsFilterBranch), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PromptVersionsFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PromptVersionsFilterBranch?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PromptVersionsFilterBranch).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Branch!, typeInfo);
             }
             else if (value.IsEnum)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum, typeof(global::Helicone.PromptVersionsFilterNodeEnum), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PromptVersionsFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PromptVersionsFilterNodeEnum> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PromptVersionsFilterNodeEnum).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum!.Value, typeInfo);
             }
         }
     }

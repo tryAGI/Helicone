@@ -12,7 +12,8 @@ namespace Helicone.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -48,7 +49,9 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        pickLeafUsersViewOrRequestResponseRmt = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt).Name}");
+                        pickLeafUsersViewOrRequestResponseRmt = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -61,7 +64,9 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        branch = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.UserFilterBranch>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.UserFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.UserFilterBranch> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.UserFilterBranch).Name}");
+                        branch = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -74,7 +79,9 @@ namespace Helicone.JsonConverters
                 {
                     try
                     {
-                        @enum = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.UserFilterNodeEnum>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.UserFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.UserFilterNodeEnum> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.UserFilterNodeEnum).Name}");
+                        @enum = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -89,7 +96,9 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
-                    pickLeafUsersViewOrRequestResponseRmt = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt).Name}");
+                    pickLeafUsersViewOrRequestResponseRmt = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -100,7 +109,9 @@ namespace Helicone.JsonConverters
 
                 try
                 {
-                    branch = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.UserFilterBranch>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.UserFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.UserFilterBranch> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.UserFilterBranch).Name}");
+                    branch = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -111,7 +122,9 @@ namespace Helicone.JsonConverters
 
                 try
                 {
-                    @enum = global::System.Text.Json.JsonSerializer.Deserialize<global::Helicone.UserFilterNodeEnum>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.UserFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.UserFilterNodeEnum> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.UserFilterNodeEnum).Name}");
+                    @enum = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -138,19 +151,26 @@ namespace Helicone.JsonConverters
             global::Helicone.UserFilterNode value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsPickLeafUsersViewOrRequestResponseRmt)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLeafUsersViewOrRequestResponseRmt, typeof(global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLeafUsersViewOrRequestResponseRmt!, typeInfo);
             }
             else if (value.IsBranch)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Branch, typeof(global::Helicone.UserFilterBranch), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.UserFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.UserFilterBranch?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.UserFilterBranch).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Branch!, typeInfo);
             }
             else if (value.IsEnum)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum, typeof(global::Helicone.UserFilterNodeEnum), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.UserFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.UserFilterNodeEnum> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.UserFilterNodeEnum).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum!.Value, typeInfo);
             }
         }
     }
