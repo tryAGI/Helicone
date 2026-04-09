@@ -5,6 +5,25 @@ namespace Helicone
 {
     public partial class CreditsClient
     {
+
+
+        private static readonly global::Helicone.EndPointSecurityRequirement s_ListTokenUsagePaymentsSecurityRequirement0 =
+            new global::Helicone.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Helicone.EndPointAuthorizationRequirement[]
+                {                    new global::Helicone.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Helicone.EndPointSecurityRequirement[] s_ListTokenUsagePaymentsSecurityRequirements =
+            new global::Helicone.EndPointSecurityRequirement[]
+            {                s_ListTokenUsagePaymentsSecurityRequirement0,
+            };
         partial void PrepareListTokenUsagePaymentsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref double? page,
@@ -42,13 +61,19 @@ namespace Helicone
                 page: ref page,
                 pageSize: ref pageSize);
 
+
+            var __authorizations = global::Helicone.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListTokenUsagePaymentsSecurityRequirements,
+                operationName: "ListTokenUsagePaymentsAsync");
+
             var __pathBuilder = new global::Helicone.PathBuilder(
                 path: "/v1/credits/payments",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("page", page?.ToString())
                 .AddOptionalParameter("pageSize", pageSize?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -58,7 +83,7 @@ namespace Helicone
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

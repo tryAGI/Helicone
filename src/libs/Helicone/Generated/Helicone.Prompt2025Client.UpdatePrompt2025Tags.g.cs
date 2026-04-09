@@ -5,6 +5,25 @@ namespace Helicone
 {
     public partial class Prompt2025Client
     {
+
+
+        private static readonly global::Helicone.EndPointSecurityRequirement s_UpdatePrompt2025TagsSecurityRequirement0 =
+            new global::Helicone.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Helicone.EndPointAuthorizationRequirement[]
+                {                    new global::Helicone.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Helicone.EndPointSecurityRequirement[] s_UpdatePrompt2025TagsSecurityRequirements =
+            new global::Helicone.EndPointSecurityRequirement[]
+            {                s_UpdatePrompt2025TagsSecurityRequirement0,
+            };
         partial void PrepareUpdatePrompt2025TagsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string promptId,
@@ -45,9 +64,15 @@ namespace Helicone
                 promptId: ref promptId,
                 request: request);
 
+
+            var __authorizations = global::Helicone.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_UpdatePrompt2025TagsSecurityRequirements,
+                operationName: "UpdatePrompt2025TagsAsync");
+
             var __pathBuilder = new global::Helicone.PathBuilder(
                 path: $"/v1/prompt-2025/id/{promptId}/tags",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -57,7 +82,7 @@ namespace Helicone
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

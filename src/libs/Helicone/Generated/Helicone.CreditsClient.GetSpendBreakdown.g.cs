@@ -5,6 +5,25 @@ namespace Helicone
 {
     public partial class CreditsClient
     {
+
+
+        private static readonly global::Helicone.EndPointSecurityRequirement s_GetSpendBreakdownSecurityRequirement0 =
+            new global::Helicone.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Helicone.EndPointAuthorizationRequirement[]
+                {                    new global::Helicone.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Helicone.EndPointSecurityRequirement[] s_GetSpendBreakdownSecurityRequirements =
+            new global::Helicone.EndPointSecurityRequirement[]
+            {                s_GetSpendBreakdownSecurityRequirement0,
+            };
         partial void PrepareGetSpendBreakdownArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::Helicone.GetSpendBreakdownTimeRange? timeRange,
@@ -47,6 +66,12 @@ namespace Helicone
                 startDate: ref startDate,
                 endDate: ref endDate);
 
+
+            var __authorizations = global::Helicone.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetSpendBreakdownSecurityRequirements,
+                operationName: "GetSpendBreakdownAsync");
+
             var __pathBuilder = new global::Helicone.PathBuilder(
                 path: "/v1/credits/spend/breakdown",
                 baseUri: HttpClient.BaseAddress); 
@@ -54,7 +79,7 @@ namespace Helicone
                 .AddOptionalParameter("timeRange", timeRange?.ToValueString())
                 .AddOptionalParameter("startDate", startDate)
                 .AddOptionalParameter("endDate", endDate) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -64,7 +89,7 @@ namespace Helicone
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

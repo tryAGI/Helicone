@@ -6,6 +6,7 @@ namespace Helicone
     public sealed partial class HeliconeClient
     {
         /// <inheritdoc cref="HeliconeClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Helicone.EndPointAuthorization}?, bool)"/>
+
         public HeliconeClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,
