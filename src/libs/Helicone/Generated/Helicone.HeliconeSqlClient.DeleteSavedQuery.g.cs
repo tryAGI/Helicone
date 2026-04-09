@@ -5,6 +5,25 @@ namespace Helicone
 {
     public partial class HeliconeSqlClient
     {
+
+
+        private static readonly global::Helicone.EndPointSecurityRequirement s_DeleteSavedQuerySecurityRequirement0 =
+            new global::Helicone.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Helicone.EndPointAuthorizationRequirement[]
+                {                    new global::Helicone.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Helicone.EndPointSecurityRequirement[] s_DeleteSavedQuerySecurityRequirements =
+            new global::Helicone.EndPointSecurityRequirement[]
+            {                s_DeleteSavedQuerySecurityRequirement0,
+            };
         partial void PrepareDeleteSavedQueryArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string queryId);
@@ -38,9 +57,15 @@ namespace Helicone
                 httpClient: HttpClient,
                 queryId: ref queryId);
 
+
+            var __authorizations = global::Helicone.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteSavedQuerySecurityRequirements,
+                operationName: "DeleteSavedQueryAsync");
+
             var __pathBuilder = new global::Helicone.PathBuilder(
                 path: $"/v1/helicone-sql/saved-query/{queryId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -50,7 +75,7 @@ namespace Helicone
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

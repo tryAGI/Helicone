@@ -5,6 +5,25 @@ namespace Helicone
 {
     public partial class Prompt2025Client
     {
+
+
+        private static readonly global::Helicone.EndPointSecurityRequirement s_GetPrompt2025InputsSecurityRequirement0 =
+            new global::Helicone.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Helicone.EndPointAuthorizationRequirement[]
+                {                    new global::Helicone.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Helicone.EndPointSecurityRequirement[] s_GetPrompt2025InputsSecurityRequirements =
+            new global::Helicone.EndPointSecurityRequirement[]
+            {                s_GetPrompt2025InputsSecurityRequirement0,
+            };
         partial void PrepareGetPrompt2025InputsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string promptId,
@@ -47,12 +66,18 @@ namespace Helicone
                 versionId: ref versionId,
                 requestId: ref requestId);
 
+
+            var __authorizations = global::Helicone.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetPrompt2025InputsSecurityRequirements,
+                operationName: "GetPrompt2025InputsAsync");
+
             var __pathBuilder = new global::Helicone.PathBuilder(
                 path: $"/v1/prompt-2025/id/{promptId}/{versionId}/inputs",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddRequiredParameter("requestId", requestId) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -62,7 +87,7 @@ namespace Helicone
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

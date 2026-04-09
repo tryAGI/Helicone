@@ -5,6 +5,25 @@ namespace Helicone
 {
     public partial class StatusClient
     {
+
+
+        private static readonly global::Helicone.EndPointSecurityRequirement s_GetProviderStatusSecurityRequirement0 =
+            new global::Helicone.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Helicone.EndPointAuthorizationRequirement[]
+                {                    new global::Helicone.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Helicone.EndPointSecurityRequirement[] s_GetProviderStatusSecurityRequirements =
+            new global::Helicone.EndPointSecurityRequirement[]
+            {                s_GetProviderStatusSecurityRequirement0,
+            };
         partial void PrepareGetProviderStatusArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string provider,
@@ -42,12 +61,18 @@ namespace Helicone
                 provider: ref provider,
                 timeFrame: ref timeFrame);
 
+
+            var __authorizations = global::Helicone.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetProviderStatusSecurityRequirements,
+                operationName: "GetProviderStatusAsync");
+
             var __pathBuilder = new global::Helicone.PathBuilder(
                 path: $"/v1/public/status/provider/{provider}",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddRequiredParameter("timeFrame", timeFrame.ToValueString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -57,7 +82,7 @@ namespace Helicone
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

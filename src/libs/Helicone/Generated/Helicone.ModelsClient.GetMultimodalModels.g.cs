@@ -5,6 +5,25 @@ namespace Helicone
 {
     public partial class ModelsClient
     {
+
+
+        private static readonly global::Helicone.EndPointSecurityRequirement s_GetMultimodalModelsSecurityRequirement0 =
+            new global::Helicone.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Helicone.EndPointAuthorizationRequirement[]
+                {                    new global::Helicone.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Helicone.EndPointSecurityRequirement[] s_GetMultimodalModelsSecurityRequirements =
+            new global::Helicone.EndPointSecurityRequirement[]
+            {                s_GetMultimodalModelsSecurityRequirement0,
+            };
         partial void PrepareGetMultimodalModelsArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareGetMultimodalModelsRequest(
@@ -32,9 +51,15 @@ namespace Helicone
             PrepareGetMultimodalModelsArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::Helicone.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetMultimodalModelsSecurityRequirements,
+                operationName: "GetMultimodalModelsAsync");
+
             var __pathBuilder = new global::Helicone.PathBuilder(
                 path: "/v1/models/multimodal",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -44,7 +69,7 @@ namespace Helicone
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

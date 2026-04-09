@@ -5,6 +5,25 @@ namespace Helicone
 {
     public partial class RequestClient
     {
+
+
+        private static readonly global::Helicone.EndPointSecurityRequirement s_GetRequestAssetByIdSecurityRequirement0 =
+            new global::Helicone.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Helicone.EndPointAuthorizationRequirement[]
+                {                    new global::Helicone.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Helicone.EndPointSecurityRequirement[] s_GetRequestAssetByIdSecurityRequirements =
+            new global::Helicone.EndPointSecurityRequirement[]
+            {                s_GetRequestAssetByIdSecurityRequirement0,
+            };
         partial void PrepareGetRequestAssetByIdArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string requestId,
@@ -42,9 +61,15 @@ namespace Helicone
                 requestId: ref requestId,
                 assetId: ref assetId);
 
+
+            var __authorizations = global::Helicone.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetRequestAssetByIdSecurityRequirements,
+                operationName: "GetRequestAssetByIdAsync");
+
             var __pathBuilder = new global::Helicone.PathBuilder(
                 path: $"/v1/request/{requestId}/assets/{assetId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -54,7 +79,7 @@ namespace Helicone
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
