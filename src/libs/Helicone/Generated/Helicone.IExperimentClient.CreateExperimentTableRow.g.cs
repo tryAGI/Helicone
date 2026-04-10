@@ -9,12 +9,14 @@ namespace Helicone
         /// </summary>
         /// <param name="experimentTableId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Helicone.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Helicone.ResultNullString> CreateExperimentTableRowAsync(
             string experimentTableId,
 
             global::Helicone.CreateExperimentTableRowRequest request,
+            global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// 
@@ -25,6 +27,7 @@ namespace Helicone
         /// </param>
         /// <param name="sourceRequest"></param>
         /// <param name="promptVersionId"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Helicone.ResultNullString> CreateExperimentTableRowAsync(
@@ -32,6 +35,7 @@ namespace Helicone
             string promptVersionId,
             global::System.Collections.Generic.Dictionary<string, string>? inputs = default,
             string? sourceRequest = default,
+            global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
