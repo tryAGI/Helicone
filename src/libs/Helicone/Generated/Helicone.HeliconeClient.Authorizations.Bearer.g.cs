@@ -25,6 +25,7 @@ namespace Helicone
             Authorizations.Add(new global::Helicone.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "HttpBearer",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,
