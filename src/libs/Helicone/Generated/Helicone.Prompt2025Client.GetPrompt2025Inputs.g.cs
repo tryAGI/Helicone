@@ -6,6 +6,19 @@ namespace Helicone
     public partial class Prompt2025Client
     {
 
+        private static readonly global::Helicone.AutoSDKServer[] s_GetPrompt2025InputsServers = new global::Helicone.AutoSDKServer[]
+        {            new global::Helicone.AutoSDKServer(
+                id: "https-api-helicone-ai",
+                name: "api.helicone.ai",
+                url: "https://api.helicone.ai/",
+                description: ""),
+            new global::Helicone.AutoSDKServer(
+                id: "http-localhost",
+                name: "localhost",
+                url: "http://localhost:8585/",
+                description: ""),
+        };
+
 
         private static readonly global::Helicone.EndPointSecurityRequirement s_GetPrompt2025InputsSecurityRequirement0 =
             new global::Helicone.EndPointSecurityRequirement
@@ -93,7 +106,9 @@ namespace Helicone
             {
                             var __pathBuilder = new global::Helicone.PathBuilder(
                                 path: $"/v1/prompt-2025/id/{promptId}/{versionId}/inputs",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_GetPrompt2025InputsServers,
+                                defaultBaseUrl: "https://api.helicone.ai/")); 
                             __pathBuilder
                                 .AddRequiredParameter("requestId", requestId) 
                                 ;

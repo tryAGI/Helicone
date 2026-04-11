@@ -6,6 +6,19 @@ namespace Helicone
     public partial class EvalsClient
     {
 
+        private static readonly global::Helicone.AutoSDKServer[] s_QueryScoreDistributionsServers = new global::Helicone.AutoSDKServer[]
+        {            new global::Helicone.AutoSDKServer(
+                id: "https-api-helicone-ai",
+                name: "api.helicone.ai",
+                url: "https://api.helicone.ai/",
+                description: ""),
+            new global::Helicone.AutoSDKServer(
+                id: "http-localhost",
+                name: "localhost",
+                url: "http://localhost:8585/",
+                description: ""),
+        };
+
 
         private static readonly global::Helicone.EndPointSecurityRequirement s_QueryScoreDistributionsSecurityRequirement0 =
             new global::Helicone.EndPointSecurityRequirement
@@ -86,7 +99,9 @@ namespace Helicone
             {
                             var __pathBuilder = new global::Helicone.PathBuilder(
                                 path: "/v1/evals/score-distributions/query",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: ResolveBaseUri(
+                                servers: s_QueryScoreDistributionsServers,
+                                defaultBaseUrl: "https://api.helicone.ai/"));
                             var __path = __pathBuilder.ToString();
                 __path = global::Helicone.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,

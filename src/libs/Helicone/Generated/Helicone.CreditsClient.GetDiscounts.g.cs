@@ -6,6 +6,19 @@ namespace Helicone
     public partial class CreditsClient
     {
 
+        private static readonly global::Helicone.AutoSDKServer[] s_GetDiscountsServers = new global::Helicone.AutoSDKServer[]
+        {            new global::Helicone.AutoSDKServer(
+                id: "https-api-helicone-ai",
+                name: "api.helicone.ai",
+                url: "https://api.helicone.ai/",
+                description: ""),
+            new global::Helicone.AutoSDKServer(
+                id: "http-localhost",
+                name: "localhost",
+                url: "http://localhost:8585/",
+                description: ""),
+        };
+
 
         private static readonly global::Helicone.EndPointSecurityRequirement s_GetDiscountsSecurityRequirement0 =
             new global::Helicone.EndPointSecurityRequirement
@@ -78,7 +91,9 @@ namespace Helicone
             {
                             var __pathBuilder = new global::Helicone.PathBuilder(
                                 path: "/v1/credits/discounts",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: ResolveBaseUri(
+                                servers: s_GetDiscountsServers,
+                                defaultBaseUrl: "https://api.helicone.ai/"));
                             var __path = __pathBuilder.ToString();
                 __path = global::Helicone.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,

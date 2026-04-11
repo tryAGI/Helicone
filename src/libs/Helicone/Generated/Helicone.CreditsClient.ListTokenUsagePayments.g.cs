@@ -6,6 +6,19 @@ namespace Helicone
     public partial class CreditsClient
     {
 
+        private static readonly global::Helicone.AutoSDKServer[] s_ListTokenUsagePaymentsServers = new global::Helicone.AutoSDKServer[]
+        {            new global::Helicone.AutoSDKServer(
+                id: "https-api-helicone-ai",
+                name: "api.helicone.ai",
+                url: "https://api.helicone.ai/",
+                description: ""),
+            new global::Helicone.AutoSDKServer(
+                id: "http-localhost",
+                name: "localhost",
+                url: "http://localhost:8585/",
+                description: ""),
+        };
+
 
         private static readonly global::Helicone.EndPointSecurityRequirement s_ListTokenUsagePaymentsSecurityRequirement0 =
             new global::Helicone.EndPointSecurityRequirement
@@ -88,7 +101,9 @@ namespace Helicone
             {
                             var __pathBuilder = new global::Helicone.PathBuilder(
                                 path: "/v1/credits/payments",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_ListTokenUsagePaymentsServers,
+                                defaultBaseUrl: "https://api.helicone.ai/")); 
                             __pathBuilder
                                 .AddOptionalParameter("page", page?.ToString())
                                 .AddOptionalParameter("pageSize", pageSize?.ToString()) 

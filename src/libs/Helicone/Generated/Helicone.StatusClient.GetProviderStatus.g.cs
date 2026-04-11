@@ -6,6 +6,19 @@ namespace Helicone
     public partial class StatusClient
     {
 
+        private static readonly global::Helicone.AutoSDKServer[] s_GetProviderStatusServers = new global::Helicone.AutoSDKServer[]
+        {            new global::Helicone.AutoSDKServer(
+                id: "https-api-helicone-ai",
+                name: "api.helicone.ai",
+                url: "https://api.helicone.ai/",
+                description: ""),
+            new global::Helicone.AutoSDKServer(
+                id: "http-localhost",
+                name: "localhost",
+                url: "http://localhost:8585/",
+                description: ""),
+        };
+
 
         private static readonly global::Helicone.EndPointSecurityRequirement s_GetProviderStatusSecurityRequirement0 =
             new global::Helicone.EndPointSecurityRequirement
@@ -88,7 +101,9 @@ namespace Helicone
             {
                             var __pathBuilder = new global::Helicone.PathBuilder(
                                 path: $"/v1/public/status/provider/{provider}",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_GetProviderStatusServers,
+                                defaultBaseUrl: "https://api.helicone.ai/")); 
                             __pathBuilder
                                 .AddRequiredParameter("timeFrame", timeFrame.ToValueString()) 
                                 ;
