@@ -6,6 +6,19 @@ namespace Helicone
     public partial class RequestClient
     {
 
+        private static readonly global::Helicone.AutoSDKServer[] s_GetRequestByIdServers = new global::Helicone.AutoSDKServer[]
+        {            new global::Helicone.AutoSDKServer(
+                id: "https-api-helicone-ai",
+                name: "api.helicone.ai",
+                url: "https://api.helicone.ai/",
+                description: ""),
+            new global::Helicone.AutoSDKServer(
+                id: "http-localhost",
+                name: "localhost",
+                url: "http://localhost:8585/",
+                description: ""),
+        };
+
 
         private static readonly global::Helicone.EndPointSecurityRequirement s_GetRequestByIdSecurityRequirement0 =
             new global::Helicone.EndPointSecurityRequirement
@@ -90,7 +103,9 @@ namespace Helicone
             {
                             var __pathBuilder = new global::Helicone.PathBuilder(
                                 path: $"/v1/request/{requestId}",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_GetRequestByIdServers,
+                                defaultBaseUrl: "https://api.helicone.ai/")); 
                             __pathBuilder
                                 .AddOptionalParameter("includeBody", includeBody?.ToString().ToLowerInvariant()) 
                                 ;
