@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareCreateExperimentTableRowBatchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId,
+                    experimentId: experimentId!,
                     request: request);
 
                 return __httpRequest;

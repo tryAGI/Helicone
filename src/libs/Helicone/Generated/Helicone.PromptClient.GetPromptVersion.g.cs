@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareGetPromptVersionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptVersionId: promptVersionId);
+                    promptVersionId: promptVersionId!);
 
                 return __httpRequest;
             }

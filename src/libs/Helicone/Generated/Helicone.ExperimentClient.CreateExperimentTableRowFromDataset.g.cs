@@ -144,8 +144,8 @@ namespace Helicone
                 PrepareCreateExperimentTableRowFromDatasetRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId,
-                    datasetId: datasetId);
+                    experimentId: experimentId!,
+                    datasetId: datasetId!);
 
                 return __httpRequest;
             }

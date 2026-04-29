@@ -140,7 +140,7 @@ namespace Helicone
                 PrepareDeleteSavedQueryRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    queryId: queryId);
+                    queryId: queryId!);
 
                 return __httpRequest;
             }

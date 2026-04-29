@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareDeletePrompt2025Request(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptId: promptId);
+                    promptId: promptId!);
 
                 return __httpRequest;
             }

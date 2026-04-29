@@ -134,7 +134,7 @@ namespace Helicone
                 PrepareDeletePromptRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptId: promptId);
+                    promptId: promptId!);
 
                 return __httpRequest;
             }

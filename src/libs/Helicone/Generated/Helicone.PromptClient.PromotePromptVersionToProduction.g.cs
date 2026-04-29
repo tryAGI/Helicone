@@ -153,7 +153,7 @@ namespace Helicone
                 PreparePromotePromptVersionToProductionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptVersionId: promptVersionId,
+                    promptVersionId: promptVersionId!,
                     request: request);
 
                 return __httpRequest;

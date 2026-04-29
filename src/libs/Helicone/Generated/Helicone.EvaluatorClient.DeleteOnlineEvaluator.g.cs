@@ -144,8 +144,8 @@ namespace Helicone
                 PrepareDeleteOnlineEvaluatorRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    evaluatorId: evaluatorId,
-                    onlineEvaluatorId: onlineEvaluatorId);
+                    evaluatorId: evaluatorId!,
+                    onlineEvaluatorId: onlineEvaluatorId!);
 
                 return __httpRequest;
             }

@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareTestWebhookRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    webhookId: webhookId);
+                    webhookId: webhookId!);
 
                 return __httpRequest;
             }

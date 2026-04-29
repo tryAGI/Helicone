@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareGetExperimentTableByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentTableId: experimentTableId);
+                    experimentTableId: experimentTableId!);
 
                 return __httpRequest;
             }

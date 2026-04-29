@@ -158,8 +158,8 @@ namespace Helicone
                 PrepareUpdateHeliconeDatasetRequestRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetId: datasetId,
-                    requestId: requestId,
+                    datasetId: datasetId!,
+                    requestId: requestId!,
                     request: request);
 
                 return __httpRequest;

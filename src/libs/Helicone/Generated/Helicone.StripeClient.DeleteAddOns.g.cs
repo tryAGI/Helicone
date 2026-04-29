@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareDeleteAddOnsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    productType: productType);
+                    productType: productType!);
 
                 return __httpRequest;
             }

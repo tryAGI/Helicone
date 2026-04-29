@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareGetPromptRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptId: promptId,
+                    promptId: promptId!,
                     request: request);
 
                 return __httpRequest;

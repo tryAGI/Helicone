@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareUpdateAPIKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    apiKeyId: apiKeyId,
+                    apiKeyId: apiKeyId!,
                     request: request);
 
                 return __httpRequest;

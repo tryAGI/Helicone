@@ -158,8 +158,8 @@ namespace Helicone
                 PrepareCreateDatasetRowRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetId: datasetId,
-                    promptVersionId: promptVersionId,
+                    datasetId: datasetId!,
+                    promptVersionId: promptVersionId!,
                     request: request);
 
                 return __httpRequest;

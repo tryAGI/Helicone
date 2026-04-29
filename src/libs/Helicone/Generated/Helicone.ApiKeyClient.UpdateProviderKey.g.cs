@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareUpdateProviderKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    providerKeyId: providerKeyId,
+                    providerKeyId: providerKeyId!,
                     request: request);
 
                 return __httpRequest;

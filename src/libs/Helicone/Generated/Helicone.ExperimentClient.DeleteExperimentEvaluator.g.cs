@@ -144,8 +144,8 @@ namespace Helicone
                 PrepareDeleteExperimentEvaluatorRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId,
-                    evaluatorId: evaluatorId);
+                    experimentId: experimentId!,
+                    evaluatorId: evaluatorId!);
 
                 return __httpRequest;
             }

@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareGetExperimentEvaluators2Request(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId);
+                    experimentId: experimentId!);
 
                 return __httpRequest;
             }

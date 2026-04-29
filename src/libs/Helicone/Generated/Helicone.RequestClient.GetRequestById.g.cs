@@ -149,7 +149,7 @@ namespace Helicone
                 PrepareGetRequestByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    requestId: requestId,
+                    requestId: requestId!,
                     includeBody: includeBody);
 
                 return __httpRequest;

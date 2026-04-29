@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareDeleteHeliconeDatasetRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    datasetId: datasetId);
+                    datasetId: datasetId!);
 
                 return __httpRequest;
             }

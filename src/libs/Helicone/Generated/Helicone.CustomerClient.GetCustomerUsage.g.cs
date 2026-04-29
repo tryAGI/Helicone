@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareGetCustomerUsageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    customerId: customerId,
+                    customerId: customerId!,
                     request: request);
 
                 return __httpRequest;
