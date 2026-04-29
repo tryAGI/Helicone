@@ -152,9 +152,9 @@ namespace Helicone
                 PrepareGetPrompt2025InputsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptId: promptId,
-                    versionId: versionId,
-                    requestId: requestId);
+                    promptId: promptId!,
+                    versionId: versionId!,
+                    requestId: requestId!);
 
                 return __httpRequest;
             }

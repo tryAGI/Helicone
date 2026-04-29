@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareUpdateIntegrationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationId: integrationId,
+                    integrationId: integrationId!,
                     request: request);
 
                 return __httpRequest;

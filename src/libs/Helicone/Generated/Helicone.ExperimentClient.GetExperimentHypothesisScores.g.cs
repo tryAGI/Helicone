@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareGetExperimentHypothesisScoresRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    hypothesisId: hypothesisId);
+                    hypothesisId: hypothesisId!);
 
                 return __httpRequest;
             }

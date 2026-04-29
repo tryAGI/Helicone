@@ -144,8 +144,8 @@ namespace Helicone
                 PrepareDeleteExperimentTableRowRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentTableId: experimentTableId,
-                    rowIndex: rowIndex);
+                    experimentTableId: experimentTableId!,
+                    rowIndex: rowIndex!);
 
                 return __httpRequest;
             }

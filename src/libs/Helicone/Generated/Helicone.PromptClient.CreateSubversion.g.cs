@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareCreateSubversionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptVersionId: promptVersionId,
+                    promptVersionId: promptVersionId!,
                     request: request);
 
                 return __httpRequest;

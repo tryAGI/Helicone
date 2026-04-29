@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareUpdatePrompt2025TagsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    promptId: promptId,
+                    promptId: promptId!,
                     request: request);
 
                 return __httpRequest;

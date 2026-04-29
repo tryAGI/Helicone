@@ -149,9 +149,9 @@ namespace Helicone
                 PrepareGetExperimentScoreRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId,
-                    requestId: requestId,
-                    scoreKey: scoreKey);
+                    experimentId: experimentId!,
+                    requestId: requestId!,
+                    scoreKey: scoreKey!);
 
                 return __httpRequest;
             }

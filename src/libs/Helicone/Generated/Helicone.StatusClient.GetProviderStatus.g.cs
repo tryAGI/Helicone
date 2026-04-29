@@ -147,8 +147,8 @@ namespace Helicone
                 PrepareGetProviderStatusRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    provider: provider,
-                    timeFrame: timeFrame);
+                    provider: provider!,
+                    timeFrame: timeFrame!);
 
                 return __httpRequest;
             }

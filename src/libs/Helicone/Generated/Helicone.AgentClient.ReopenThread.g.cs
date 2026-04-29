@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareReopenThreadRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sessionId: sessionId);
+                    sessionId: sessionId!);
 
                 return __httpRequest;
             }

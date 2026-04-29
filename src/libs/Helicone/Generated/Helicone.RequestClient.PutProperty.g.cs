@@ -153,7 +153,7 @@ namespace Helicone
                 PreparePutPropertyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    requestId: requestId,
+                    requestId: requestId!,
                     request: request);
 
                 return __httpRequest;

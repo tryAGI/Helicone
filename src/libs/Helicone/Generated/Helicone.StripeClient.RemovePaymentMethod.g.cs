@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareRemovePaymentMethodRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    paymentMethodId: paymentMethodId);
+                    paymentMethodId: paymentMethodId!);
 
                 return __httpRequest;
             }

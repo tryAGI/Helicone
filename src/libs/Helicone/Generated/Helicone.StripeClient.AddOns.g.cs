@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareAddOnsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    productType: productType);
+                    productType: productType!);
 
                 return __httpRequest;
             }

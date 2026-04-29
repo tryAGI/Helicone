@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareGetKeyByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    providerKeyId: providerKeyId);
+                    providerKeyId: providerKeyId!);
 
                 return __httpRequest;
             }

@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareCreateNewPromptVersionForExperimentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    experimentId: experimentId,
+                    experimentId: experimentId!,
                     request: request);
 
                 return __httpRequest;

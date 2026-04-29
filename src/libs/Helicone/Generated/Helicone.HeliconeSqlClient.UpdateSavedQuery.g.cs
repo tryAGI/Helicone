@@ -154,7 +154,7 @@ namespace Helicone
                 PrepareUpdateSavedQueryRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    queryId: queryId,
+                    queryId: queryId!,
                     request: request);
 
                 return __httpRequest;

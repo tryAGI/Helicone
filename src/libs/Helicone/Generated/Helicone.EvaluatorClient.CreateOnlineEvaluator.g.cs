@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareCreateOnlineEvaluatorRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    evaluatorId: evaluatorId,
+                    evaluatorId: evaluatorId!,
                     request: request);
 
                 return __httpRequest;

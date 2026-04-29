@@ -154,7 +154,7 @@ namespace Helicone
                 PrepareSearchPaymentIntentsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    searchKind: searchKind,
+                    searchKind: searchKind!,
                     limit: limit,
                     page: page);
 

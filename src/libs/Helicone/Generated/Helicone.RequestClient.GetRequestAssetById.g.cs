@@ -144,8 +144,8 @@ namespace Helicone
                 PrepareGetRequestAssetByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    requestId: requestId,
-                    assetId: assetId);
+                    requestId: requestId!,
+                    assetId: assetId!);
 
                 return __httpRequest;
             }

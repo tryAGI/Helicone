@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareGetTopRequestsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    propertyKey: propertyKey,
+                    propertyKey: propertyKey!,
                     request: request);
 
                 return __httpRequest;

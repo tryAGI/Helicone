@@ -153,7 +153,7 @@ namespace Helicone
                 PrepareGetPromptVersionsCompiledRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    userDefinedId: userDefinedId,
+                    userDefinedId: userDefinedId!,
                     request: request);
 
                 return __httpRequest;

@@ -139,7 +139,7 @@ namespace Helicone
                 PrepareGetIntegrationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationId: integrationId);
+                    integrationId: integrationId!);
 
                 return __httpRequest;
             }
