@@ -45,7 +45,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public AgentClient Agent => new AgentClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AgentClient Agent => new AgentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -55,7 +55,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public ApiKeyClient ApiKey => new ApiKeyClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ApiKeyClient ApiKey => new ApiKeyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -65,7 +65,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public ComparisonClient Comparison => new ComparisonClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ComparisonClient Comparison => new ComparisonClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -75,7 +75,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public CreditsClient Credits => new CreditsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public CreditsClient Credits => new CreditsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -85,7 +85,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public CustomerClient Customer => new CustomerClient(HttpClient, authorizations: Authorizations, options: Options)
+        public CustomerClient Customer => new CustomerClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -95,7 +95,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public DashboardClient Dashboard => new DashboardClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DashboardClient Dashboard => new DashboardClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -105,7 +105,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public DatasetClient Dataset => new DatasetClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DatasetClient Dataset => new DatasetClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -115,7 +115,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public EvalsClient Evals => new EvalsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public EvalsClient Evals => new EvalsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -125,7 +125,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public EvaluatorClient Evaluator => new EvaluatorClient(HttpClient, authorizations: Authorizations, options: Options)
+        public EvaluatorClient Evaluator => new EvaluatorClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -135,7 +135,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public ExperimentClient Experiment => new ExperimentClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ExperimentClient Experiment => new ExperimentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -145,7 +145,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public HeliconeSqlClient HeliconeSql => new HeliconeSqlClient(HttpClient, authorizations: Authorizations, options: Options)
+        public HeliconeSqlClient HeliconeSql => new HeliconeSqlClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -155,7 +155,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public IntegrationClient Integration => new IntegrationClient(HttpClient, authorizations: Authorizations, options: Options)
+        public IntegrationClient Integration => new IntegrationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -165,7 +165,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public MetricsClient Metrics => new MetricsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public MetricsClient Metrics => new MetricsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -175,7 +175,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public ModelRegistryClient ModelRegistry => new ModelRegistryClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ModelRegistryClient ModelRegistry => new ModelRegistryClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -185,7 +185,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public ModelsClient Models => new ModelsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ModelsClient Models => new ModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -195,7 +195,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public PiClient Pi => new PiClient(HttpClient, authorizations: Authorizations, options: Options)
+        public PiClient Pi => new PiClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -205,7 +205,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public PlaygroundClient Playground => new PlaygroundClient(HttpClient, authorizations: Authorizations, options: Options)
+        public PlaygroundClient Playground => new PlaygroundClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -215,7 +215,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public PromptClient Prompt => new PromptClient(HttpClient, authorizations: Authorizations, options: Options)
+        public PromptClient Prompt => new PromptClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -225,7 +225,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public Prompt2025Client Prompt2025 => new Prompt2025Client(HttpClient, authorizations: Authorizations, options: Options)
+        public Prompt2025Client Prompt2025 => new Prompt2025Client(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -235,7 +235,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public Prompt2025V2Client Prompt2025V2 => new Prompt2025V2Client(HttpClient, authorizations: Authorizations, options: Options)
+        public Prompt2025V2Client Prompt2025V2 => new Prompt2025V2Client(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -245,7 +245,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public PropertyClient Property => new PropertyClient(HttpClient, authorizations: Authorizations, options: Options)
+        public PropertyClient Property => new PropertyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -255,7 +255,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public ProvidersClient Providers => new ProvidersClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ProvidersClient Providers => new ProvidersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -265,7 +265,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public RequestClient Request => new RequestClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RequestClient Request => new RequestClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -275,7 +275,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public SecurityClient Security => new SecurityClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SecurityClient Security => new SecurityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -285,7 +285,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public SessionClient Session => new SessionClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SessionClient Session => new SessionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -295,7 +295,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public StatusClient Status => new StatusClient(HttpClient, authorizations: Authorizations, options: Options)
+        public StatusClient Status => new StatusClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -305,7 +305,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public StripeClient Stripe => new StripeClient(HttpClient, authorizations: Authorizations, options: Options)
+        public StripeClient Stripe => new StripeClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -315,7 +315,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public TestClient Test => new TestClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TestClient Test => new TestClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -325,7 +325,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public TraceClient Trace => new TraceClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TraceClient Trace => new TraceClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -335,7 +335,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public UserClient User => new UserClient(HttpClient, authorizations: Authorizations, options: Options)
+        public UserClient User => new UserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -345,7 +345,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public VaultClient Vault => new VaultClient(HttpClient, authorizations: Authorizations, options: Options)
+        public VaultClient Vault => new VaultClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -355,7 +355,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public WebhooksClient Webhooks => new WebhooksClient(HttpClient, authorizations: Authorizations, options: Options)
+        public WebhooksClient Webhooks => new WebhooksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -365,7 +365,7 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
-        public WrappedClient Wrapped => new WrappedClient(HttpClient, authorizations: Authorizations, options: Options)
+        public WrappedClient Wrapped => new WrappedClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -433,10 +433,10 @@ namespace Helicone
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public HeliconeClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Helicone.EndPointAuthorization>? authorizations = null,
-            global::Helicone.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Helicone.EndPointAuthorization>? authorizations,
+            global::Helicone.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

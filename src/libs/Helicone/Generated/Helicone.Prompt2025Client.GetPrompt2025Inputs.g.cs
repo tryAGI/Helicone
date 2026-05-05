@@ -74,6 +74,32 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await GetPrompt2025InputsAsResponseAsync(
+                promptId: promptId,
+                versionId: versionId,
+                requestId: requestId,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="promptId"></param>
+        /// <param name="versionId"></param>
+        /// <param name="requestId"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Helicone.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Helicone.AutoSDKHttpResponse<global::Helicone.ResultPrompt2025InputString>> GetPrompt2025InputsAsResponseAsync(
+            string promptId,
+            string versionId,
+            string requestId,
+            global::Helicone.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareGetPrompt2025InputsArguments(
@@ -104,13 +130,14 @@ namespace Helicone
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Helicone.PathBuilder(
                                 path: $"/v1/prompt-2025/id/{promptId}/{versionId}/inputs",
                                 baseUri: ResolveBaseUri(
                                 servers: s_GetPrompt2025InputsServers,
-                                defaultBaseUrl: "https://api.helicone.ai/")); 
+                                defaultBaseUrl: "https://api.helicone.ai/"));
                             __pathBuilder
-                                .AddRequiredParameter("requestId", requestId) 
+                                .AddRequiredParameter("requestId", requestId)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Helicone.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -184,6 +211,8 @@ namespace Helicone
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -194,6 +223,11 @@ namespace Helicone
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Helicone.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Helicone.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -211,6 +245,8 @@ namespace Helicone
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -220,8 +256,7 @@ namespace Helicone
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Helicone.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -230,6 +265,11 @@ namespace Helicone
                         __attempt < __maxAttempts &&
                         global::Helicone.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Helicone.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Helicone.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Helicone.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -246,14 +286,15 @@ namespace Helicone
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Helicone.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -293,6 +334,8 @@ namespace Helicone
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -313,6 +356,8 @@ namespace Helicone
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
 
@@ -337,9 +382,13 @@ namespace Helicone
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        global::Helicone.ResultPrompt2025InputString.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Helicone.ResultPrompt2025InputString.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Helicone.AutoSDKHttpResponse<global::Helicone.ResultPrompt2025InputString>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Helicone.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -367,9 +416,13 @@ namespace Helicone
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        await global::Helicone.ResultPrompt2025InputString.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Helicone.ResultPrompt2025InputString.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Helicone.AutoSDKHttpResponse<global::Helicone.ResultPrompt2025InputString>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Helicone.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

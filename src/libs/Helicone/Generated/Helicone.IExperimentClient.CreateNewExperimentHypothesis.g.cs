@@ -19,6 +19,18 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Helicone.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Helicone.AutoSDKHttpResponse<global::Helicone.ResultHypothesisIdStringString>> CreateNewExperimentHypothesisAsResponseAsync(
+
+            global::Helicone.CreateNewExperimentHypothesisRequest request,
+            global::Helicone.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="status"></param>
         /// <param name="providerKeyId"></param>
         /// <param name="promptVersion"></param>
