@@ -1,5 +1,4 @@
 #pragma warning disable CS3002 // Return type is not CLS-compliant
-using System.Text.Json;
 using Microsoft.Extensions.AI;
 
 namespace Helicone;
@@ -33,12 +32,12 @@ public static class HeliconeToolExtensions
                     },
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
-                return JsonSerializer.Serialize(new
+                return new
                 {
                     total_cost = response.Success?.Data,
                     start_date = startDate,
                     end_date = endDate,
-                });
+                };
             },
             name: "GetTotalCost",
             description: "Gets the total cost of LLM API calls within a time range. Provide ISO 8601 start and end dates (e.g., '2026-03-01T00:00:00Z'). Returns the total cost in USD.");
@@ -68,12 +67,12 @@ public static class HeliconeToolExtensions
                     },
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
-                return JsonSerializer.Serialize(new
+                return new
                 {
                     total_requests = response.Success?.Data,
                     start_date = startDate,
                     end_date = endDate,
-                });
+                };
             },
             name: "GetTotalRequests",
             description: "Gets the total number of LLM API requests within a time range. Provide ISO 8601 start and end dates. Returns the request count.");
@@ -103,12 +102,12 @@ public static class HeliconeToolExtensions
                     },
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
-                return JsonSerializer.Serialize(new
+                return new
                 {
                     average_latency_ms = response.Success?.Data,
                     start_date = startDate,
                     end_date = endDate,
-                });
+                };
             },
             name: "GetAverageLatency",
             description: "Gets the average latency of LLM API requests in milliseconds within a time range. Provide ISO 8601 start and end dates.");
@@ -139,7 +138,7 @@ public static class HeliconeToolExtensions
                     },
                     cancellationToken: cancellationToken).ConfigureAwait(false);
 
-                return JsonSerializer.Serialize(response.Success);
+                return response.Success;
             },
             name: "ListPrompts",
             description: "Lists prompts managed in Helicone. Optionally filter by search term. Returns prompt names, descriptions, tags, and version counts.");
