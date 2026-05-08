@@ -29,6 +29,19 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPickLeafRequestOrPromptsVersions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.PickFilterLeafRequestOrPromptsVersions? value)
+        {
+            value = PickLeafRequestOrPromptsVersions;
+            return IsPickLeafRequestOrPromptsVersions;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DatasetFilterBranch? Branch { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickBranch(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.DatasetFilterBranch? value)
+        {
+            value = Branch;
+            return IsBranch;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DatasetFilterNodeEnum? Enum { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
 #endif
         public bool IsEnum => Enum != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickEnum(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.DatasetFilterNodeEnum? value)
+        {
+            value = Enum;
+            return IsEnum;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -157,8 +196,8 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.PickFilterLeafRequestOrPromptsVersions?, TResult>? pickLeafRequestOrPromptsVersions = null,
-            global::System.Func<global::Helicone.DatasetFilterBranch?, TResult>? branch = null,
+            global::System.Func<global::Helicone.PickFilterLeafRequestOrPromptsVersions, TResult>? pickLeafRequestOrPromptsVersions = null,
+            global::System.Func<global::Helicone.DatasetFilterBranch, TResult>? branch = null,
             global::System.Func<global::Helicone.DatasetFilterNodeEnum?, TResult>? @enum = null,
             bool validate = true)
         {
@@ -187,8 +226,38 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.PickFilterLeafRequestOrPromptsVersions?>? pickLeafRequestOrPromptsVersions = null,
-            global::System.Action<global::Helicone.DatasetFilterBranch?>? branch = null,
+            global::System.Action<global::Helicone.PickFilterLeafRequestOrPromptsVersions>? pickLeafRequestOrPromptsVersions = null,
+
+            global::System.Action<global::Helicone.DatasetFilterBranch>? branch = null,
+
+            global::System.Action<global::Helicone.DatasetFilterNodeEnum?>? @enum = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPickLeafRequestOrPromptsVersions)
+            {
+                pickLeafRequestOrPromptsVersions?.Invoke(PickLeafRequestOrPromptsVersions!);
+            }
+            else if (IsBranch)
+            {
+                branch?.Invoke(Branch!);
+            }
+            else if (IsEnum)
+            {
+                @enum?.Invoke(Enum!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.PickFilterLeafRequestOrPromptsVersions>? pickLeafRequestOrPromptsVersions = null,
+            global::System.Action<global::Helicone.DatasetFilterBranch>? branch = null,
             global::System.Action<global::Helicone.DatasetFilterNodeEnum?>? @enum = null,
             bool validate = true)
         {
