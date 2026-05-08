@@ -29,6 +29,19 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPickLeafRequestResponseRmt(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.PickFilterLeafRequestResponseRmt? value)
+        {
+            value = PickLeafRequestResponseRmt;
+            return IsPickLeafRequestResponseRmt;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.EvalFilterBranch? Branch { get; init; }
 #else
@@ -46,6 +59,19 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickBranch(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.EvalFilterBranch? value)
+        {
+            value = Branch;
+            return IsBranch;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.EvalFilterNodeEnum? Enum { get; init; }
 #else
@@ -59,6 +85,19 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
 #endif
         public bool IsEnum => Enum != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickEnum(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.EvalFilterNodeEnum? value)
+        {
+            value = Enum;
+            return IsEnum;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -157,8 +196,8 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.PickFilterLeafRequestResponseRmt?, TResult>? pickLeafRequestResponseRmt = null,
-            global::System.Func<global::Helicone.EvalFilterBranch?, TResult>? branch = null,
+            global::System.Func<global::Helicone.PickFilterLeafRequestResponseRmt, TResult>? pickLeafRequestResponseRmt = null,
+            global::System.Func<global::Helicone.EvalFilterBranch, TResult>? branch = null,
             global::System.Func<global::Helicone.EvalFilterNodeEnum?, TResult>? @enum = null,
             bool validate = true)
         {
@@ -187,8 +226,38 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.PickFilterLeafRequestResponseRmt?>? pickLeafRequestResponseRmt = null,
-            global::System.Action<global::Helicone.EvalFilterBranch?>? branch = null,
+            global::System.Action<global::Helicone.PickFilterLeafRequestResponseRmt>? pickLeafRequestResponseRmt = null,
+
+            global::System.Action<global::Helicone.EvalFilterBranch>? branch = null,
+
+            global::System.Action<global::Helicone.EvalFilterNodeEnum?>? @enum = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPickLeafRequestResponseRmt)
+            {
+                pickLeafRequestResponseRmt?.Invoke(PickLeafRequestResponseRmt!);
+            }
+            else if (IsBranch)
+            {
+                branch?.Invoke(Branch!);
+            }
+            else if (IsEnum)
+            {
+                @enum?.Invoke(Enum!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.PickFilterLeafRequestResponseRmt>? pickLeafRequestResponseRmt = null,
+            global::System.Action<global::Helicone.EvalFilterBranch>? branch = null,
             global::System.Action<global::Helicone.EvalFilterNodeEnum?>? @enum = null,
             bool validate = true)
         {
