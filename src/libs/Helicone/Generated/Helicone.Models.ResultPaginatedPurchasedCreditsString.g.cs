@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultPaginatedPurchasedCreditsString FromSuccess(global::Helicone.ResultSuccessPaginatedPurchasedCredits? value) => new ResultPaginatedPurchasedCreditsString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultPaginatedPurchasedCreditsString(global::Helicone.ResultErrorString value) => new ResultPaginatedPurchasedCreditsString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultPaginatedPurchasedCreditsString FromError(global::Helicone.ResultErrorString? value) => new ResultPaginatedPurchasedCreditsString(value);
 
         /// <summary>
         /// 

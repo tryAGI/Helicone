@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultProviderMetricArrayString FromSuccess(global::Helicone.ResultSuccessProviderMetricArray? value) => new ResultProviderMetricArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultProviderMetricArrayString(global::Helicone.ResultErrorString value) => new ResultProviderMetricArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultProviderMetricArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultProviderMetricArrayString(value);
 
         /// <summary>
         /// 

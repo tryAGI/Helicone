@@ -119,6 +119,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static UserFilterNode FromPickLeafUsersViewOrRequestResponseRmt(global::Helicone.PickFilterLeafUsersViewOrRequestResponseRmt? value) => new UserFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UserFilterNode(global::Helicone.UserFilterBranch value) => new UserFilterNode((global::Helicone.UserFilterBranch?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static UserFilterNode FromBranch(global::Helicone.UserFilterBranch? value) => new UserFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator UserFilterNode(global::Helicone.UserFilterNodeEnum value) => new UserFilterNode((global::Helicone.UserFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static UserFilterNode FromEnum(global::Helicone.UserFilterNodeEnum? value) => new UserFilterNode(value);
 
         /// <summary>
         /// 

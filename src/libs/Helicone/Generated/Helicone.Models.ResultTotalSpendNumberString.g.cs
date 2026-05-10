@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultTotalSpendNumberString FromSuccess(global::Helicone.ResultSuccessTotalSpendNumber? value) => new ResultTotalSpendNumberString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultTotalSpendNumberString(global::Helicone.ResultErrorString value) => new ResultTotalSpendNumberString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultTotalSpendNumberString FromError(global::Helicone.ResultErrorString? value) => new ResultTotalSpendNumberString(value);
 
         /// <summary>
         /// 

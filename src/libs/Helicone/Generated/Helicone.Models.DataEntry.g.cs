@@ -149,6 +149,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static DataEntry FromDataEntryVariant1(global::Helicone.DataEntryVariant1? value) => new DataEntry(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DataEntry(global::Helicone.DataEntryVariant2 value) => new DataEntry((global::Helicone.DataEntryVariant2?)value);
 
         /// <summary>
@@ -163,6 +168,11 @@ namespace Helicone
         {
             DataEntryVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DataEntry FromDataEntryVariant2(global::Helicone.DataEntryVariant2? value) => new DataEntry(value);
 
         /// <summary>
         /// 
@@ -185,6 +195,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static DataEntry FromDataEntryVariant3(global::Helicone.DataEntryVariant3? value) => new DataEntry(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DataEntry(global::Helicone.DataEntryVariant4 value) => new DataEntry((global::Helicone.DataEntryVariant4?)value);
 
         /// <summary>
@@ -199,6 +214,11 @@ namespace Helicone
         {
             DataEntryVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DataEntry FromDataEntryVariant4(global::Helicone.DataEntryVariant4? value) => new DataEntry(value);
 
         /// <summary>
         /// 

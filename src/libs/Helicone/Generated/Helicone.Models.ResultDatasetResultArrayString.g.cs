@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultDatasetResultArrayString FromSuccess(global::Helicone.ResultSuccessDatasetResultArray? value) => new ResultDatasetResultArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultDatasetResultArrayString(global::Helicone.ResultErrorString value) => new ResultDatasetResultArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultDatasetResultArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultDatasetResultArrayString(value);
 
         /// <summary>
         /// 

@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayString FromSuccess(global::Helicone.ResultSuccessRequestCountHistogramRowArrayUserCostHistogramRowArray? value) => new ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayString(global::Helicone.ResultErrorString value) => new ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayString(value);
 
         /// <summary>
         /// 

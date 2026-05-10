@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultTokensPerRequestString FromSuccess(global::Helicone.ResultSuccessTokensPerRequest? value) => new ResultTokensPerRequestString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultTokensPerRequestString(global::Helicone.ResultErrorString value) => new ResultTokensPerRequestString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultTokensPerRequestString FromError(global::Helicone.ResultErrorString? value) => new ResultTokensPerRequestString(value);
 
         /// <summary>
         /// 

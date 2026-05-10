@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultScoreNumberInputStringOutputStringGroundTruth63StringString FromSuccess(global::Helicone.ResultSuccessScoreNumberInputStringOutputStringGroundTruth63String? value) => new ResultScoreNumberInputStringOutputStringGroundTruth63StringString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultScoreNumberInputStringOutputStringGroundTruth63StringString(global::Helicone.ResultErrorString value) => new ResultScoreNumberInputStringOutputStringGroundTruth63StringString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultScoreNumberInputStringOutputStringGroundTruth63StringString FromError(global::Helicone.ResultErrorString? value) => new ResultScoreNumberInputStringOutputStringGroundTruth63StringString(value);
 
         /// <summary>
         /// 

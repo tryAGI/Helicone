@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static LastMileConfigForm FromBase(global::Helicone.BaseLastMileConfigForm? value) => new LastMileConfigForm(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LastMileConfigForm(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2> value) => new LastMileConfigForm((global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             LastMileConfigFormVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LastMileConfigForm FromLastMileConfigFormVariant2(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>? value) => new LastMileConfigForm(value);
 
         /// <summary>
         /// 

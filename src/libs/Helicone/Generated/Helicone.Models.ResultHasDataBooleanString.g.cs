@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultHasDataBooleanString FromSuccess(global::Helicone.ResultSuccessHasDataBoolean? value) => new ResultHasDataBooleanString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultHasDataBooleanString(global::Helicone.ResultErrorString value) => new ResultHasDataBooleanString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultHasDataBooleanString FromError(global::Helicone.ResultErrorString? value) => new ResultHasDataBooleanString(value);
 
         /// <summary>
         /// 

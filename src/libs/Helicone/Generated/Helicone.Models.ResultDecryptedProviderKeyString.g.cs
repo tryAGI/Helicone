@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultDecryptedProviderKeyString FromSuccess(global::Helicone.ResultSuccessDecryptedProviderKey? value) => new ResultDecryptedProviderKeyString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultDecryptedProviderKeyString(global::Helicone.ResultErrorString value) => new ResultDecryptedProviderKeyString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultDecryptedProviderKeyString FromError(global::Helicone.ResultErrorString? value) => new ResultDecryptedProviderKeyString(value);
 
         /// <summary>
         /// 

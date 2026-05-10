@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultQuantilesArrayString FromSuccess(global::Helicone.ResultSuccessQuantilesArray? value) => new ResultQuantilesArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultQuantilesArrayString(global::Helicone.ResultErrorString value) => new ResultQuantilesArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultQuantilesArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultQuantilesArrayString(value);
 
         /// <summary>
         /// 

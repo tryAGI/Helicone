@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultEvaluatorScoreString FromSuccess(global::Helicone.ResultSuccessEvaluatorScore? value) => new ResultEvaluatorScoreString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultEvaluatorScoreString(global::Helicone.ResultErrorString value) => new ResultEvaluatorScoreString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultEvaluatorScoreString FromError(global::Helicone.ResultErrorString? value) => new ResultEvaluatorScoreString(value);
 
         /// <summary>
         /// 

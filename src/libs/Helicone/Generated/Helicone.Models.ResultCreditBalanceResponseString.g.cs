@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultCreditBalanceResponseString FromSuccess(global::Helicone.ResultSuccessCreditBalanceResponse? value) => new ResultCreditBalanceResponseString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultCreditBalanceResponseString(global::Helicone.ResultErrorString value) => new ResultCreditBalanceResponseString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultCreditBalanceResponseString FromError(global::Helicone.ResultErrorString? value) => new ResultCreditBalanceResponseString(value);
 
         /// <summary>
         /// 

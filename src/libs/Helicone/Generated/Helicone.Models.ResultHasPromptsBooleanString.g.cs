@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultHasPromptsBooleanString FromSuccess(global::Helicone.ResultSuccessHasPromptsBoolean? value) => new ResultHasPromptsBooleanString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultHasPromptsBooleanString(global::Helicone.ResultErrorString value) => new ResultHasPromptsBooleanString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultHasPromptsBooleanString FromError(global::Helicone.ResultErrorString? value) => new ResultHasPromptsBooleanString(value);
 
         /// <summary>
         /// 

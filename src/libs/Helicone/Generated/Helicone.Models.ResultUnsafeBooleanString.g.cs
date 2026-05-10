@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultUnsafeBooleanString FromSuccess(global::Helicone.ResultSuccessUnsafeBoolean? value) => new ResultUnsafeBooleanString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultUnsafeBooleanString(global::Helicone.ResultErrorString value) => new ResultUnsafeBooleanString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultUnsafeBooleanString FromError(global::Helicone.ResultErrorString? value) => new ResultUnsafeBooleanString(value);
 
         /// <summary>
         /// 

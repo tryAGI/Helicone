@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultWrappedStatsString FromSuccess(global::Helicone.ResultSuccessWrappedStats? value) => new ResultWrappedStatsString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultWrappedStatsString(global::Helicone.ResultErrorString value) => new ResultWrappedStatsString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultWrappedStatsString FromError(global::Helicone.ResultErrorString? value) => new ResultWrappedStatsString(value);
 
         /// <summary>
         /// 

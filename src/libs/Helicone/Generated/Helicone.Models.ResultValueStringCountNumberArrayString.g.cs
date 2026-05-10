@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultValueStringCountNumberArrayString FromSuccess(global::Helicone.ResultSuccessValueStringCountNumberArray? value) => new ResultValueStringCountNumberArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultValueStringCountNumberArrayString(global::Helicone.ResultErrorString value) => new ResultValueStringCountNumberArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultValueStringCountNumberArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultValueStringCountNumberArrayString(value);
 
         /// <summary>
         /// 

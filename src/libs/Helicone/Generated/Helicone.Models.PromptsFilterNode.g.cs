@@ -119,6 +119,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static PromptsFilterNode FromPickLeafPromptV2(global::Helicone.PickFilterLeafPromptV2? value) => new PromptsFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptsFilterNode(global::Helicone.PromptsFilterBranch value) => new PromptsFilterNode((global::Helicone.PromptsFilterBranch?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static PromptsFilterNode FromBranch(global::Helicone.PromptsFilterBranch? value) => new PromptsFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptsFilterNode(global::Helicone.PromptsFilterNodeEnum value) => new PromptsFilterNode((global::Helicone.PromptsFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptsFilterNode FromEnum(global::Helicone.PromptsFilterNodeEnum? value) => new PromptsFilterNode(value);
 
         /// <summary>
         /// 

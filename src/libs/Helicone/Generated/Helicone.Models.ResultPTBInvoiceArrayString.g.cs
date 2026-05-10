@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultPTBInvoiceArrayString FromSuccess(global::Helicone.ResultSuccessPTBInvoiceArray? value) => new ResultPTBInvoiceArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultPTBInvoiceArrayString(global::Helicone.ResultErrorString value) => new ResultPTBInvoiceArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultPTBInvoiceArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultPTBInvoiceArrayString(value);
 
         /// <summary>
         /// 

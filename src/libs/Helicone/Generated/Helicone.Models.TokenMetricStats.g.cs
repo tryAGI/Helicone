@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static TokenMetricStats FromMetricStats(global::Helicone.MetricStats? value) => new TokenMetricStats(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TokenMetricStats(global::Helicone.TokenMetricStatsVariant2 value) => new TokenMetricStats((global::Helicone.TokenMetricStatsVariant2?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             TokenMetricStatsVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TokenMetricStats FromTokenMetricStatsVariant2(global::Helicone.TokenMetricStatsVariant2? value) => new TokenMetricStats(value);
 
         /// <summary>
         /// 

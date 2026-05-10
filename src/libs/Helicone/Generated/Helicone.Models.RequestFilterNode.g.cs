@@ -119,6 +119,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static RequestFilterNode FromPickLeafFeedbackOrResponsePropertiesValuesRmtSessions(global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt? value) => new RequestFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RequestFilterNode(global::Helicone.RequestFilterBranch value) => new RequestFilterNode((global::Helicone.RequestFilterBranch?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static RequestFilterNode FromBranch(global::Helicone.RequestFilterBranch? value) => new RequestFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RequestFilterNode(global::Helicone.RequestFilterNodeEnum value) => new RequestFilterNode((global::Helicone.RequestFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RequestFilterNode FromEnum(global::Helicone.RequestFilterNodeEnum? value) => new RequestFilterNode(value);
 
         /// <summary>
         /// 

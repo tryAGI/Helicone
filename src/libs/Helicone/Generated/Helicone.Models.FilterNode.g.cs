@@ -149,6 +149,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static FilterNode FromPartialTablesAndViews(global::Helicone.PartialTablesAndViews? value) => new FilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FilterNode(global::Helicone.FilterBranch value) => new FilterNode((global::Helicone.FilterBranch?)value);
 
         /// <summary>
@@ -167,6 +172,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static FilterNode FromBranch(global::Helicone.FilterBranch? value) => new FilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FilterNode(global::Helicone.FilterNodeEnum2 value) => new FilterNode((global::Helicone.FilterNodeEnum2?)value);
 
         /// <summary>
@@ -181,6 +191,11 @@ namespace Helicone
         {
             Enum2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FilterNode FromEnum2(global::Helicone.FilterNodeEnum2? value) => new FilterNode(value);
 
         /// <summary>
         /// 
