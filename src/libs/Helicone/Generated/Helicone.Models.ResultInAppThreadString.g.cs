@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultInAppThreadString FromSuccess(global::Helicone.ResultSuccessInAppThread? value) => new ResultInAppThreadString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultInAppThreadString(global::Helicone.ResultErrorString value) => new ResultInAppThreadString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultInAppThreadString FromError(global::Helicone.ResultErrorString? value) => new ResultInAppThreadString(value);
 
         /// <summary>
         /// 

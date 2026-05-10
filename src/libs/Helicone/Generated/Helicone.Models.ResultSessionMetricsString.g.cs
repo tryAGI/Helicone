@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultSessionMetricsString FromSuccess(global::Helicone.ResultSuccessSessionMetrics? value) => new ResultSessionMetricsString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultSessionMetricsString(global::Helicone.ResultErrorString value) => new ResultSessionMetricsString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultSessionMetricsString FromError(global::Helicone.ResultErrorString? value) => new ResultSessionMetricsString(value);
 
         /// <summary>
         /// 

@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayString FromSuccess(global::Helicone.ResultSuccessCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArray? value) => new ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayString(global::Helicone.ResultErrorString value) => new ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayString(value);
 
         /// <summary>
         /// 

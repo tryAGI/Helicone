@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultOutputStringTracesStringArrayStatusCode63NumberString FromSuccess(global::Helicone.ResultSuccessOutputStringTracesStringArrayStatusCode63Number? value) => new ResultOutputStringTracesStringArrayStatusCode63NumberString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultOutputStringTracesStringArrayStatusCode63NumberString(global::Helicone.ResultErrorString value) => new ResultOutputStringTracesStringArrayStatusCode63NumberString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultOutputStringTracesStringArrayStatusCode63NumberString FromError(global::Helicone.ResultErrorString? value) => new ResultOutputStringTracesStringArrayStatusCode63NumberString(value);
 
         /// <summary>
         /// 

@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultClickHouseTableSchemaArrayString FromSuccess(global::Helicone.ResultSuccessClickHouseTableSchemaArray? value) => new ResultClickHouseTableSchemaArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultClickHouseTableSchemaArrayString(global::Helicone.ResultErrorString value) => new ResultClickHouseTableSchemaArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultClickHouseTableSchemaArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultClickHouseTableSchemaArrayString(value);
 
         /// <summary>
         /// 

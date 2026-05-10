@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultSpendBreakdownResponseString FromSuccess(global::Helicone.ResultSuccessSpendBreakdownResponse? value) => new ResultSpendBreakdownResponseString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultSpendBreakdownResponseString(global::Helicone.ResultErrorString value) => new ResultSpendBreakdownResponseString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultSpendBreakdownResponseString FromError(global::Helicone.ResultErrorString? value) => new ResultSpendBreakdownResponseString(value);
 
         /// <summary>
         /// 

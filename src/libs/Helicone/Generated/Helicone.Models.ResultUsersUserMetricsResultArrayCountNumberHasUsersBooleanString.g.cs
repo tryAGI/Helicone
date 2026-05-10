@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanString FromSuccess(global::Helicone.ResultSuccessUsersUserMetricsResultArrayCountNumberHasUsersBoolean? value) => new ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanString(global::Helicone.ResultErrorString value) => new ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanString FromError(global::Helicone.ResultErrorString? value) => new ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanString(value);
 
         /// <summary>
         /// 

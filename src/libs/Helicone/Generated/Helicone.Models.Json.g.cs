@@ -179,6 +179,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static Json FromJsonVariant1(string? value) => new Json(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Json(double value) => new Json((double?)value);
 
         /// <summary>
@@ -193,6 +198,11 @@ namespace Helicone
         {
             JsonVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Json FromJsonVariant2(double? value) => new Json(value);
 
         /// <summary>
         /// 
@@ -215,6 +225,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static Json FromJsonVariant3(bool? value) => new Json(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Json(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?> value) => new Json((global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>?)value);
 
         /// <summary>
@@ -229,6 +244,11 @@ namespace Helicone
         {
             JsonVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Json FromJsonVariant4(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>? value) => new Json(value);
 
         /// <summary>
         /// 

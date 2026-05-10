@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayString FromSuccess(global::Helicone.ResultSuccessPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArray? value) => new ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayString(global::Helicone.ResultErrorString value) => new ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayString(value);
 
         /// <summary>
         /// 

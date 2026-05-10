@@ -119,6 +119,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static DatasetFilterNode FromPickLeafRequestOrPromptsVersions(global::Helicone.PickFilterLeafRequestOrPromptsVersions? value) => new DatasetFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DatasetFilterNode(global::Helicone.DatasetFilterBranch value) => new DatasetFilterNode((global::Helicone.DatasetFilterBranch?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static DatasetFilterNode FromBranch(global::Helicone.DatasetFilterBranch? value) => new DatasetFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DatasetFilterNode(global::Helicone.DatasetFilterNodeEnum value) => new DatasetFilterNode((global::Helicone.DatasetFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DatasetFilterNode FromEnum(global::Helicone.DatasetFilterNodeEnum? value) => new DatasetFilterNode(value);
 
         /// <summary>
         /// 

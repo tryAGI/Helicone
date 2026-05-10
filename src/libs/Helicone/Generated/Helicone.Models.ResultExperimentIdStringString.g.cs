@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultExperimentIdStringString FromSuccess(global::Helicone.ResultSuccessExperimentIdString? value) => new ResultExperimentIdStringString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultExperimentIdStringString(global::Helicone.ResultErrorString value) => new ResultExperimentIdStringString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultExperimentIdStringString FromError(global::Helicone.ResultErrorString? value) => new ResultExperimentIdStringString(value);
 
         /// <summary>
         /// 

@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultChatCompletionOrContentStringReasoningStringCallsAnyString FromSuccess(global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAny? value) => new ResultChatCompletionOrContentStringReasoningStringCallsAnyString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultChatCompletionOrContentStringReasoningStringCallsAnyString(global::Helicone.ResultErrorString value) => new ResultChatCompletionOrContentStringReasoningStringCallsAnyString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultChatCompletionOrContentStringReasoningStringCallsAnyString FromError(global::Helicone.ResultErrorString? value) => new ResultChatCompletionOrContentStringReasoningStringCallsAnyString(value);
 
         /// <summary>
         /// 

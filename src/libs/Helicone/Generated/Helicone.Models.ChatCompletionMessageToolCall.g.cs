@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ChatCompletionMessageToolCall FromFunction(global::Helicone.ChatCompletionMessageFunctionToolCall? value) => new ChatCompletionMessageToolCall(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatCompletionMessageToolCall(global::Helicone.ChatCompletionMessageCustomToolCall value) => new ChatCompletionMessageToolCall((global::Helicone.ChatCompletionMessageCustomToolCall?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Custom = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatCompletionMessageToolCall FromCustom(global::Helicone.ChatCompletionMessageCustomToolCall? value) => new ChatCompletionMessageToolCall(value);
 
         /// <summary>
         /// 

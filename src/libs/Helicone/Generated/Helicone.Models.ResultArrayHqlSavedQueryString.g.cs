@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultArrayHqlSavedQueryString FromSuccess(global::Helicone.ResultSuccessArrayHqlSavedQuery? value) => new ResultArrayHqlSavedQueryString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultArrayHqlSavedQueryString(global::Helicone.ResultErrorString value) => new ResultArrayHqlSavedQueryString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultArrayHqlSavedQueryString FromError(global::Helicone.ResultErrorString? value) => new ResultArrayHqlSavedQueryString(value);
 
         /// <summary>
         /// 

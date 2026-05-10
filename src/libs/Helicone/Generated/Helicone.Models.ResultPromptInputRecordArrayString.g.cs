@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultPromptInputRecordArrayString FromSuccess(global::Helicone.ResultSuccessPromptInputRecordArray? value) => new ResultPromptInputRecordArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultPromptInputRecordArrayString(global::Helicone.ResultErrorString value) => new ResultPromptInputRecordArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultPromptInputRecordArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultPromptInputRecordArrayString(value);
 
         /// <summary>
         /// 

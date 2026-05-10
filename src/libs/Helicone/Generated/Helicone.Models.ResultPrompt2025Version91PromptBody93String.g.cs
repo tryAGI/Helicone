@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultPrompt2025Version91PromptBody93String FromSuccess(global::Helicone.ResultSuccessPrompt2025Version91PromptBody93? value) => new ResultPrompt2025Version91PromptBody93String(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultPrompt2025Version91PromptBody93String(global::Helicone.ResultErrorString value) => new ResultPrompt2025Version91PromptBody93String((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultPrompt2025Version91PromptBody93String FromError(global::Helicone.ResultErrorString? value) => new ResultPrompt2025Version91PromptBody93String(value);
 
         /// <summary>
         /// 

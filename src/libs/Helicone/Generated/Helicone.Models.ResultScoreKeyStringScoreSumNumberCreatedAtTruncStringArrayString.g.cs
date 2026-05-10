@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayString FromSuccess(global::Helicone.ResultSuccessScoreKeyStringScoreSumNumberCreatedAtTruncStringArray? value) => new ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayString(global::Helicone.ResultErrorString value) => new ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayString(value);
 
         /// <summary>
         /// 

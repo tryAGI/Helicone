@@ -119,6 +119,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static RequestClickhouseFilterNode FromPickLeafResponseRmt(global::Helicone.PickFilterLeafRequestResponseRmt? value) => new RequestClickhouseFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RequestClickhouseFilterNode(global::Helicone.RequestClickhouseFilterBranch value) => new RequestClickhouseFilterNode((global::Helicone.RequestClickhouseFilterBranch?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static RequestClickhouseFilterNode FromBranch(global::Helicone.RequestClickhouseFilterBranch? value) => new RequestClickhouseFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RequestClickhouseFilterNode(global::Helicone.RequestClickhouseFilterNodeEnum value) => new RequestClickhouseFilterNode((global::Helicone.RequestClickhouseFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RequestClickhouseFilterNode FromEnum(global::Helicone.RequestClickhouseFilterNodeEnum? value) => new RequestClickhouseFilterNode(value);
 
         /// <summary>
         /// 

@@ -119,6 +119,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ExperimentFilterNode FromPickLeaf(global::Helicone.PickFilterLeafExperiment? value) => new ExperimentFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExperimentFilterNode(global::Helicone.ExperimentFilterBranch value) => new ExperimentFilterNode((global::Helicone.ExperimentFilterBranch?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ExperimentFilterNode FromBranch(global::Helicone.ExperimentFilterBranch? value) => new ExperimentFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExperimentFilterNode(global::Helicone.ExperimentFilterNodeEnum value) => new ExperimentFilterNode((global::Helicone.ExperimentFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExperimentFilterNode FromEnum(global::Helicone.ExperimentFilterNodeEnum? value) => new ExperimentFilterNode(value);
 
         /// <summary>
         /// 

@@ -119,6 +119,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static Provider FromName(global::Helicone.ProviderName? value) => new Provider(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Provider(global::Helicone.ModelProviderName value) => new Provider((global::Helicone.ModelProviderName?)value);
 
         /// <summary>
@@ -137,6 +142,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static Provider FromModelName(global::Helicone.ModelProviderName? value) => new Provider(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Provider(global::Helicone.ProviderEnum value) => new Provider((global::Helicone.ProviderEnum?)value);
 
         /// <summary>
@@ -151,6 +161,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Provider FromEnum(global::Helicone.ProviderEnum? value) => new Provider(value);
 
         /// <summary>
         /// 

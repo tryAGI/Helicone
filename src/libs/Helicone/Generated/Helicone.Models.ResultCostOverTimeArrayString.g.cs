@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultCostOverTimeArrayString FromSuccess(global::Helicone.ResultSuccessCostOverTimeArray? value) => new ResultCostOverTimeArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultCostOverTimeArrayString(global::Helicone.ResultErrorString value) => new ResultCostOverTimeArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultCostOverTimeArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultCostOverTimeArrayString(value);
 
         /// <summary>
         /// 

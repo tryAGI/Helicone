@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultLatencyOverTimeArrayString FromSuccess(global::Helicone.ResultSuccessLatencyOverTimeArray? value) => new ResultLatencyOverTimeArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultLatencyOverTimeArrayString(global::Helicone.ResultErrorString value) => new ResultLatencyOverTimeArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultLatencyOverTimeArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultLatencyOverTimeArrayString(value);
 
         /// <summary>
         /// 

@@ -89,6 +89,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayString FromSuccess(global::Helicone.ResultSuccessIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArray? value) => new ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayString(global::Helicone.ResultErrorString value) => new ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +108,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayString(value);
 
         /// <summary>
         /// 
