@@ -88,5 +88,6 @@ namespace Helicone
         public UserMetricsQueryParams()
         {
         }
+
     }
 }

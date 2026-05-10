@@ -40,5 +40,6 @@ namespace Helicone
         public GetPrompt2025VersionRequest()
         {
         }
+
     }
 }

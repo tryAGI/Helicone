@@ -96,5 +96,6 @@ namespace Helicone
         public HeliconeEventVectorDB()
         {
         }
+
     }
 }

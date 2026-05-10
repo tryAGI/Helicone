@@ -107,5 +107,6 @@ namespace Helicone
         public ThreadSummary()
         {
         }
+
     }
 }

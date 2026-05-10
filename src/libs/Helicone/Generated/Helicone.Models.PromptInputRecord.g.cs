@@ -119,5 +119,6 @@ namespace Helicone
         public PromptInputRecord()
         {
         }
+
     }
 }

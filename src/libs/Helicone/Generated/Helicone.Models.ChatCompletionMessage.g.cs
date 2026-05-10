@@ -112,5 +112,6 @@ namespace Helicone
         public ChatCompletionMessage()
         {
         }
+
     }
 }

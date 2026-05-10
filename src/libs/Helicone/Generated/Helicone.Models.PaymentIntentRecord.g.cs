@@ -97,5 +97,6 @@ namespace Helicone
         public PaymentIntentRecord()
         {
         }
+
     }
 }
