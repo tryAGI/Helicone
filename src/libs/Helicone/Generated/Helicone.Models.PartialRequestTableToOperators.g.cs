@@ -162,5 +162,6 @@ namespace Helicone
         public PartialRequestTableToOperators()
         {
         }
+
     }
 }

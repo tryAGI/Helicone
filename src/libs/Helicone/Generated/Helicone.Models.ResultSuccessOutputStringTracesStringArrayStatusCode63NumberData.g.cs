@@ -59,5 +59,6 @@ namespace Helicone
         public ResultSuccessOutputStringTracesStringArrayStatusCode63NumberData()
         {
         }
+
     }
 }

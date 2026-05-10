@@ -49,5 +49,6 @@ namespace Helicone
         public ResultSuccessHasPromptsBoolean()
         {
         }
+
     }
 }

@@ -85,5 +85,6 @@ namespace Helicone
         public PartialPropertyWithResponseV1ToOperators()
         {
         }
+
     }
 }

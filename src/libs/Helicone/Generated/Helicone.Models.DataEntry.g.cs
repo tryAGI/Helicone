@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.DataEntryVariant1 PickDataEntryVariant1() => IsDataEntryVariant1
+            ? DataEntryVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DataEntryVariant2? DataEntryVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Helicone
             value = DataEntryVariant2;
             return IsDataEntryVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.DataEntryVariant2 PickDataEntryVariant2() => IsDataEntryVariant2
+            ? DataEntryVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.DataEntryVariant3 PickDataEntryVariant3() => IsDataEntryVariant3
+            ? DataEntryVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DataEntryVariant4? DataEntryVariant4 { get; init; }
 #else
@@ -128,6 +149,13 @@ namespace Helicone
             value = DataEntryVariant4;
             return IsDataEntryVariant4;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.DataEntryVariant4 PickDataEntryVariant4() => IsDataEntryVariant4
+            ? DataEntryVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

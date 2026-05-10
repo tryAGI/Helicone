@@ -54,5 +54,6 @@ namespace Helicone
         public ChatCompletionMessageCustomToolCallCustom()
         {
         }
+
     }
 }

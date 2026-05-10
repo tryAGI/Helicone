@@ -87,5 +87,6 @@ namespace Helicone
         public ModelEndpoint()
         {
         }
+
     }
 }

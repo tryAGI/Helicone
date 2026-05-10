@@ -157,5 +157,6 @@ namespace Helicone
         public ModelPricing()
         {
         }
+
     }
 }

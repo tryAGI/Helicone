@@ -40,5 +40,6 @@ namespace Helicone
         public UpdatePrompt2025TagsRequest()
         {
         }
+
     }
 }

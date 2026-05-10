@@ -70,5 +70,6 @@ namespace Helicone
         public GetPrompts2025Request()
         {
         }
+
     }
 }

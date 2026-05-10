@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt PickPickLeafFeedbackOrResponsePropertiesValuesRmtSessions() => IsPickLeafFeedbackOrResponsePropertiesValuesRmtSessions
+            ? PickLeafFeedbackOrResponsePropertiesValuesRmtSessions!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafFeedbackOrResponsePropertiesValuesRmtSessions' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.RequestFilterBranch? Branch { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.RequestFilterBranch PickBranch() => IsBranch
+            ? Branch!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.RequestFilterNodeEnum? Enum { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Helicone
             value = Enum;
             return IsEnum;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.RequestFilterNodeEnum PickEnum() => IsEnum
+            ? Enum!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

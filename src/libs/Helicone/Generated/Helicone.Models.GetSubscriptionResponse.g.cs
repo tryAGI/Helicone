@@ -99,5 +99,6 @@ namespace Helicone
         public GetSubscriptionResponse()
         {
         }
+
     }
 }

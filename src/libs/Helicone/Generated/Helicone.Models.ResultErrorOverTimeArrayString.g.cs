@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.ResultSuccessErrorOverTimeArray PickSuccess() => IsSuccess
+            ? Success!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? ResultErrorString { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Helicone
             value = ResultErrorString;
             return IsResultErrorString;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ResultErrorString PickResultErrorString() => IsResultErrorString
+            ? ResultErrorString!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ResultErrorString' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

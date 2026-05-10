@@ -59,5 +59,6 @@ namespace Helicone
         public TypedTiming()
         {
         }
+
     }
 }
