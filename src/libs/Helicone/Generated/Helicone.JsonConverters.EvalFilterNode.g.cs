@@ -140,6 +140,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafRequestResponseRmt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafRequestResponseRmt> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafRequestResponseRmt).Name}");
                     pickLeafRequestResponseRmt = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -150,9 +151,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (pickLeafRequestResponseRmt == null && branch == null && @enum == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.EvalFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.EvalFilterBranch> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.EvalFilterBranch).Name}");
                     branch = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -163,9 +168,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (pickLeafRequestResponseRmt == null && branch == null && @enum == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.EvalFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.EvalFilterNodeEnum> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.EvalFilterNodeEnum).Name}");
                     @enum = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

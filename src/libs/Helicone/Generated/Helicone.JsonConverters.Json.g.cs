@@ -198,7 +198,10 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (jsonVariant1 == null && jsonVariant2 == null && jsonVariant3 == null && jsonVariant4 == null && jsonVariant5 == null)
+            {
                 try
                 {
 
@@ -212,7 +215,10 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (jsonVariant1 == null && jsonVariant2 == null && jsonVariant3 == null && jsonVariant4 == null && jsonVariant5 == null)
+            {
                 try
                 {
 
@@ -226,7 +232,10 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (jsonVariant1 == null && jsonVariant2 == null && jsonVariant3 == null && jsonVariant4 == null && jsonVariant5 == null)
+            {
                 try
                 {
 
@@ -240,7 +249,10 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (jsonVariant1 == null && jsonVariant2 == null && jsonVariant3 == null && jsonVariant4 == null && jsonVariant5 == null)
+            {
                 try
                 {
 

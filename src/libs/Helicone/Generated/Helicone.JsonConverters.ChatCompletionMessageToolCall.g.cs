@@ -91,6 +91,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ChatCompletionMessageFunctionToolCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ChatCompletionMessageFunctionToolCall> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ChatCompletionMessageFunctionToolCall).Name}");
                     function = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -101,9 +102,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (function == null && custom == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ChatCompletionMessageCustomToolCall), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ChatCompletionMessageCustomToolCall> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ChatCompletionMessageCustomToolCall).Name}");
                     custom = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
