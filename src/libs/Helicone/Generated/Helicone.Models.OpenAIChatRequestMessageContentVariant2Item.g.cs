@@ -58,5 +58,6 @@ namespace Helicone
         public OpenAIChatRequestMessageContentVariant2Item()
         {
         }
+
     }
 }

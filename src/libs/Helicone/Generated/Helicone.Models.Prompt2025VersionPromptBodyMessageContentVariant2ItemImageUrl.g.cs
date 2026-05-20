@@ -40,5 +40,6 @@ namespace Helicone
         public Prompt2025VersionPromptBodyMessageContentVariant2ItemImageUrl()
         {
         }
+
     }
 }

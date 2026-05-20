@@ -61,5 +61,6 @@ namespace Helicone
         public PromptVersiosQueryParamsCompiled()
         {
         }
+
     }
 }

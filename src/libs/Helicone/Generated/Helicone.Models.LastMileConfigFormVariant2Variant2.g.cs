@@ -51,5 +51,6 @@ namespace Helicone
         public LastMileConfigFormVariant2Variant2()
         {
         }
+
     }
 }

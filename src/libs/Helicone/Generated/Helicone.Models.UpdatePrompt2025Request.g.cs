@@ -91,5 +91,6 @@ namespace Helicone
         public UpdatePrompt2025Request()
         {
         }
+
     }
 }

@@ -117,6 +117,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.DataEntryVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.DataEntryVariant1> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.DataEntryVariant1).Name}");
                     dataEntryVariant1 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -127,9 +128,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (dataEntryVariant1 == null && dataEntryVariant2 == null && dataEntryVariant3 == null && dataEntryVariant4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.DataEntryVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.DataEntryVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.DataEntryVariant2).Name}");
                     dataEntryVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -140,9 +145,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (dataEntryVariant1 == null && dataEntryVariant2 == null && dataEntryVariant3 == null && dataEntryVariant4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.DataEntryVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.DataEntryVariant3> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.DataEntryVariant3).Name}");
                     dataEntryVariant3 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -153,9 +162,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (dataEntryVariant1 == null && dataEntryVariant2 == null && dataEntryVariant3 == null && dataEntryVariant4 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.DataEntryVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.DataEntryVariant4> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.DataEntryVariant4).Name}");
                     dataEntryVariant4 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

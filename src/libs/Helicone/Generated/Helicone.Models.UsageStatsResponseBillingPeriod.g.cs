@@ -70,5 +70,6 @@ namespace Helicone
         public UsageStatsResponseBillingPeriod()
         {
         }
+
     }
 }

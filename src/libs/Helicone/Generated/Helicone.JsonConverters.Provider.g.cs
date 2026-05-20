@@ -138,7 +138,10 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (name == null && modelName == null && @enum == null)
+            {
                 try
                 {
 
@@ -152,7 +155,10 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (name == null && modelName == null && @enum == null)
+            {
                 try
                 {
 

@@ -29,6 +29,26 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSuccess(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ResultSuccessErrorOverTimeArray? value)
+        {
+            value = Success;
+            return IsSuccess;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ResultSuccessErrorOverTimeArray PickSuccess() => IsSuccess
+            ? Success!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? ResultErrorString { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ResultErrorString))]
 #endif
         public bool IsResultErrorString => ResultErrorString != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickResultErrorString(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ResultErrorString? value)
+        {
+            value = ResultErrorString;
+            return IsResultErrorString;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ResultErrorString PickResultErrorString() => IsResultErrorString
+            ? ResultErrorString!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ResultErrorString' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultErrorOverTimeArrayString FromSuccess(global::Helicone.ResultSuccessErrorOverTimeArray? value) => new ResultErrorOverTimeArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultErrorOverTimeArrayString(global::Helicone.ResultErrorString value) => new ResultErrorOverTimeArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Helicone
         {
             ResultErrorString = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultErrorOverTimeArrayString FromResultErrorString(global::Helicone.ResultErrorString? value) => new ResultErrorOverTimeArrayString(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.ResultSuccessErrorOverTimeArray?, TResult>? success = null,
-            global::System.Func<global::Helicone.ResultErrorString?, TResult>? resultErrorString = null,
+            global::System.Func<global::Helicone.ResultSuccessErrorOverTimeArray, TResult>? success = null,
+            global::System.Func<global::Helicone.ResultErrorString, TResult>? resultErrorString = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.ResultSuccessErrorOverTimeArray?>? success = null,
-            global::System.Action<global::Helicone.ResultErrorString?>? resultErrorString = null,
+            global::System.Action<global::Helicone.ResultSuccessErrorOverTimeArray>? success = null,
+
+            global::System.Action<global::Helicone.ResultErrorString>? resultErrorString = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSuccess)
+            {
+                success?.Invoke(Success!);
+            }
+            else if (IsResultErrorString)
+            {
+                resultErrorString?.Invoke(ResultErrorString!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.ResultSuccessErrorOverTimeArray>? success = null,
+            global::System.Action<global::Helicone.ResultErrorString>? resultErrorString = null,
             bool validate = true)
         {
             if (validate)

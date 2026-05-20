@@ -84,5 +84,6 @@ namespace Helicone
         public ChatCompletionAudio()
         {
         }
+
     }
 }

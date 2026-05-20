@@ -105,6 +105,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafExperiment), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafExperiment> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafExperiment).Name}");
                     pickLeaf = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -115,9 +116,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (pickLeaf == null && branch == null && @enum == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ExperimentFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ExperimentFilterBranch> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ExperimentFilterBranch).Name}");
                     branch = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -128,9 +133,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (pickLeaf == null && branch == null && @enum == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ExperimentFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ExperimentFilterNodeEnum> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ExperimentFilterNodeEnum).Name}");
                     @enum = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

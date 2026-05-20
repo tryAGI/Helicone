@@ -131,5 +131,6 @@ namespace Helicone
         public SimplifiedPricing()
         {
         }
+
     }
 }

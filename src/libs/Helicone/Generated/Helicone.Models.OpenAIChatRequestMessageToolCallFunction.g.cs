@@ -50,5 +50,6 @@ namespace Helicone
         public OpenAIChatRequestMessageToolCallFunction()
         {
         }
+
     }
 }

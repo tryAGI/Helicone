@@ -80,5 +80,6 @@ namespace Helicone
         public Quantiles()
         {
         }
+
     }
 }

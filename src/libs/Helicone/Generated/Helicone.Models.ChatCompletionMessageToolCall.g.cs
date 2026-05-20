@@ -27,6 +27,26 @@ namespace Helicone
         public bool IsFunction => Function != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickFunction(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ChatCompletionMessageFunctionToolCall? value)
+        {
+            value = Function;
+            return IsFunction;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ChatCompletionMessageFunctionToolCall PickFunction() => IsFunction
+            ? Function!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
+
+        /// <summary>
         /// A call to a custom tool created by the model.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +62,26 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Custom))]
 #endif
         public bool IsCustom => Custom != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCustom(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ChatCompletionMessageCustomToolCall? value)
+        {
+            value = Custom;
+            return IsCustom;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ChatCompletionMessageCustomToolCall PickCustom() => IsCustom
+            ? Custom!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Custom' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ChatCompletionMessageToolCall FromFunction(global::Helicone.ChatCompletionMessageFunctionToolCall? value) => new ChatCompletionMessageToolCall(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ChatCompletionMessageToolCall(global::Helicone.ChatCompletionMessageCustomToolCall value) => new ChatCompletionMessageToolCall((global::Helicone.ChatCompletionMessageCustomToolCall?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Helicone
         {
             Custom = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ChatCompletionMessageToolCall FromCustom(global::Helicone.ChatCompletionMessageCustomToolCall? value) => new ChatCompletionMessageToolCall(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.ChatCompletionMessageFunctionToolCall?, TResult>? function = null,
-            global::System.Func<global::Helicone.ChatCompletionMessageCustomToolCall?, TResult>? custom = null,
+            global::System.Func<global::Helicone.ChatCompletionMessageFunctionToolCall, TResult>? function = null,
+            global::System.Func<global::Helicone.ChatCompletionMessageCustomToolCall, TResult>? custom = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.ChatCompletionMessageFunctionToolCall?>? function = null,
-            global::System.Action<global::Helicone.ChatCompletionMessageCustomToolCall?>? custom = null,
+            global::System.Action<global::Helicone.ChatCompletionMessageFunctionToolCall>? function = null,
+
+            global::System.Action<global::Helicone.ChatCompletionMessageCustomToolCall>? custom = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsFunction)
+            {
+                function?.Invoke(Function!);
+            }
+            else if (IsCustom)
+            {
+                custom?.Invoke(Custom!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.ChatCompletionMessageFunctionToolCall>? function = null,
+            global::System.Action<global::Helicone.ChatCompletionMessageCustomToolCall>? custom = null,
             bool validate = true)
         {
             if (validate)

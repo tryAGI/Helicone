@@ -29,6 +29,26 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickDataEntryVariant1(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.DataEntryVariant1? value)
+        {
+            value = DataEntryVariant1;
+            return IsDataEntryVariant1;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.DataEntryVariant1 PickDataEntryVariant1() => IsDataEntryVariant1
+            ? DataEntryVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DataEntryVariant2? DataEntryVariant2 { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DataEntryVariant2))]
 #endif
         public bool IsDataEntryVariant2 => DataEntryVariant2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDataEntryVariant2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.DataEntryVariant2? value)
+        {
+            value = DataEntryVariant2;
+            return IsDataEntryVariant2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.DataEntryVariant2 PickDataEntryVariant2() => IsDataEntryVariant2
+            ? DataEntryVariant2!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickDataEntryVariant3(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.DataEntryVariant3? value)
+        {
+            value = DataEntryVariant3;
+            return IsDataEntryVariant3;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.DataEntryVariant3 PickDataEntryVariant3() => IsDataEntryVariant3
+            ? DataEntryVariant3!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DataEntryVariant4? DataEntryVariant4 { get; init; }
 #else
@@ -76,6 +136,26 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DataEntryVariant4))]
 #endif
         public bool IsDataEntryVariant4 => DataEntryVariant4 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDataEntryVariant4(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.DataEntryVariant4? value)
+        {
+            value = DataEntryVariant4;
+            return IsDataEntryVariant4;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.DataEntryVariant4 PickDataEntryVariant4() => IsDataEntryVariant4
+            ? DataEntryVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant4' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -93,6 +173,11 @@ namespace Helicone
         {
             DataEntryVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DataEntry FromDataEntryVariant1(global::Helicone.DataEntryVariant1? value) => new DataEntry(value);
 
         /// <summary>
         /// 
@@ -115,6 +200,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static DataEntry FromDataEntryVariant2(global::Helicone.DataEntryVariant2? value) => new DataEntry(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DataEntry(global::Helicone.DataEntryVariant3 value) => new DataEntry((global::Helicone.DataEntryVariant3?)value);
 
         /// <summary>
@@ -133,6 +223,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static DataEntry FromDataEntryVariant3(global::Helicone.DataEntryVariant3? value) => new DataEntry(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator DataEntry(global::Helicone.DataEntryVariant4 value) => new DataEntry((global::Helicone.DataEntryVariant4?)value);
 
         /// <summary>
@@ -147,6 +242,11 @@ namespace Helicone
         {
             DataEntryVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DataEntry FromDataEntryVariant4(global::Helicone.DataEntryVariant4? value) => new DataEntry(value);
 
         /// <summary>
         /// 
@@ -196,10 +296,10 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.DataEntryVariant1?, TResult>? dataEntryVariant1 = null,
-            global::System.Func<global::Helicone.DataEntryVariant2?, TResult>? dataEntryVariant2 = null,
-            global::System.Func<global::Helicone.DataEntryVariant3?, TResult>? dataEntryVariant3 = null,
-            global::System.Func<global::Helicone.DataEntryVariant4?, TResult>? dataEntryVariant4 = null,
+            global::System.Func<global::Helicone.DataEntryVariant1, TResult>? dataEntryVariant1 = null,
+            global::System.Func<global::Helicone.DataEntryVariant2, TResult>? dataEntryVariant2 = null,
+            global::System.Func<global::Helicone.DataEntryVariant3, TResult>? dataEntryVariant3 = null,
+            global::System.Func<global::Helicone.DataEntryVariant4, TResult>? dataEntryVariant4 = null,
             bool validate = true)
         {
             if (validate)
@@ -231,10 +331,46 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.DataEntryVariant1?>? dataEntryVariant1 = null,
-            global::System.Action<global::Helicone.DataEntryVariant2?>? dataEntryVariant2 = null,
-            global::System.Action<global::Helicone.DataEntryVariant3?>? dataEntryVariant3 = null,
-            global::System.Action<global::Helicone.DataEntryVariant4?>? dataEntryVariant4 = null,
+            global::System.Action<global::Helicone.DataEntryVariant1>? dataEntryVariant1 = null,
+
+            global::System.Action<global::Helicone.DataEntryVariant2>? dataEntryVariant2 = null,
+
+            global::System.Action<global::Helicone.DataEntryVariant3>? dataEntryVariant3 = null,
+
+            global::System.Action<global::Helicone.DataEntryVariant4>? dataEntryVariant4 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsDataEntryVariant1)
+            {
+                dataEntryVariant1?.Invoke(DataEntryVariant1!);
+            }
+            else if (IsDataEntryVariant2)
+            {
+                dataEntryVariant2?.Invoke(DataEntryVariant2!);
+            }
+            else if (IsDataEntryVariant3)
+            {
+                dataEntryVariant3?.Invoke(DataEntryVariant3!);
+            }
+            else if (IsDataEntryVariant4)
+            {
+                dataEntryVariant4?.Invoke(DataEntryVariant4!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.DataEntryVariant1>? dataEntryVariant1 = null,
+            global::System.Action<global::Helicone.DataEntryVariant2>? dataEntryVariant2 = null,
+            global::System.Action<global::Helicone.DataEntryVariant3>? dataEntryVariant3 = null,
+            global::System.Action<global::Helicone.DataEntryVariant4>? dataEntryVariant4 = null,
             bool validate = true)
         {
             if (validate)

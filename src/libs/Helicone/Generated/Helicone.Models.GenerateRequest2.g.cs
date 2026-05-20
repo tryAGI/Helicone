@@ -48,5 +48,6 @@ namespace Helicone
         public GenerateRequest2()
         {
         }
+
     }
 }

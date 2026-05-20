@@ -82,6 +82,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.MetricStats), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.MetricStats> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.MetricStats).Name}");
                     metricStats = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -92,9 +93,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (metricStats == null && tokenMetricStatsVariant2 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.TokenMetricStatsVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.TokenMetricStatsVariant2> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.TokenMetricStatsVariant2).Name}");
                     tokenMetricStatsVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

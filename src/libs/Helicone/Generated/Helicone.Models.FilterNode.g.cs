@@ -29,6 +29,26 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPartialTablesAndViews(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.PartialTablesAndViews? value)
+        {
+            value = PartialTablesAndViews;
+            return IsPartialTablesAndViews;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.PartialTablesAndViews PickPartialTablesAndViews() => IsPartialTablesAndViews
+            ? PartialTablesAndViews!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PartialTablesAndViews' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.FilterBranch? Branch { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Branch))]
 #endif
         public bool IsBranch => Branch != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickBranch(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.FilterBranch? value)
+        {
+            value = Branch;
+            return IsBranch;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.FilterBranch PickBranch() => IsBranch
+            ? Branch!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -63,6 +103,26 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickEnum(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out object? value)
+        {
+            value = Enum;
+            return IsEnum;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object PickEnum() => IsEnum
+            ? Enum!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.FilterNodeEnum2? Enum2 { get; init; }
 #else
@@ -76,6 +136,26 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum2))]
 #endif
         public bool IsEnum2 => Enum2 != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickEnum2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.FilterNodeEnum2? value)
+        {
+            value = Enum2;
+            return IsEnum2;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.FilterNodeEnum2 PickEnum2() => IsEnum2
+            ? Enum2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Enum2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -93,6 +173,11 @@ namespace Helicone
         {
             PartialTablesAndViews = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FilterNode FromPartialTablesAndViews(global::Helicone.PartialTablesAndViews? value) => new FilterNode(value);
 
         /// <summary>
         /// 
@@ -115,6 +200,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static FilterNode FromBranch(global::Helicone.FilterBranch? value) => new FilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FilterNode(global::Helicone.FilterNodeEnum2 value) => new FilterNode((global::Helicone.FilterNodeEnum2?)value);
 
         /// <summary>
@@ -129,6 +219,11 @@ namespace Helicone
         {
             Enum2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FilterNode FromEnum2(global::Helicone.FilterNodeEnum2? value) => new FilterNode(value);
 
         /// <summary>
         /// 
@@ -178,9 +273,9 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.PartialTablesAndViews?, TResult>? partialTablesAndViews = null,
-            global::System.Func<global::Helicone.FilterBranch?, TResult>? branch = null,
-            global::System.Func<object?, TResult>? @enum = null,
+            global::System.Func<global::Helicone.PartialTablesAndViews, TResult>? partialTablesAndViews = null,
+            global::System.Func<global::Helicone.FilterBranch, TResult>? branch = null,
+            global::System.Func<object, TResult>? @enum = null,
             global::System.Func<global::Helicone.FilterNodeEnum2?, TResult>? enum2 = null,
             bool validate = true)
         {
@@ -213,9 +308,45 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.PartialTablesAndViews?>? partialTablesAndViews = null,
-            global::System.Action<global::Helicone.FilterBranch?>? branch = null,
-            global::System.Action<object?>? @enum = null,
+            global::System.Action<global::Helicone.PartialTablesAndViews>? partialTablesAndViews = null,
+
+            global::System.Action<global::Helicone.FilterBranch>? branch = null,
+
+            global::System.Action<object>? @enum = null,
+
+            global::System.Action<global::Helicone.FilterNodeEnum2?>? enum2 = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPartialTablesAndViews)
+            {
+                partialTablesAndViews?.Invoke(PartialTablesAndViews!);
+            }
+            else if (IsBranch)
+            {
+                branch?.Invoke(Branch!);
+            }
+            else if (IsEnum)
+            {
+                @enum?.Invoke(Enum!);
+            }
+            else if (IsEnum2)
+            {
+                enum2?.Invoke(Enum2!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.PartialTablesAndViews>? partialTablesAndViews = null,
+            global::System.Action<global::Helicone.FilterBranch>? branch = null,
+            global::System.Action<object>? @enum = null,
             global::System.Action<global::Helicone.FilterNodeEnum2?>? enum2 = null,
             bool validate = true)
         {

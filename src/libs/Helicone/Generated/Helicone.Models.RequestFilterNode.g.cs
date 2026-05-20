@@ -29,6 +29,26 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickPickLeafFeedbackOrResponsePropertiesValuesRmtSessions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt? value)
+        {
+            value = PickLeafFeedbackOrResponsePropertiesValuesRmtSessions;
+            return IsPickLeafFeedbackOrResponsePropertiesValuesRmtSessions;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt PickPickLeafFeedbackOrResponsePropertiesValuesRmtSessions() => IsPickLeafFeedbackOrResponsePropertiesValuesRmtSessions
+            ? PickLeafFeedbackOrResponsePropertiesValuesRmtSessions!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafFeedbackOrResponsePropertiesValuesRmtSessions' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.RequestFilterBranch? Branch { get; init; }
 #else
@@ -46,6 +66,26 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickBranch(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.RequestFilterBranch? value)
+        {
+            value = Branch;
+            return IsBranch;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.RequestFilterBranch PickBranch() => IsBranch
+            ? Branch!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.RequestFilterNodeEnum? Enum { get; init; }
 #else
@@ -59,6 +99,26 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
 #endif
         public bool IsEnum => Enum != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickEnum(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.RequestFilterNodeEnum? value)
+        {
+            value = Enum;
+            return IsEnum;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.RequestFilterNodeEnum PickEnum() => IsEnum
+            ? Enum!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -76,6 +136,11 @@ namespace Helicone
         {
             PickLeafFeedbackOrResponsePropertiesValuesRmtSessions = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RequestFilterNode FromPickLeafFeedbackOrResponsePropertiesValuesRmtSessions(global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt? value) => new RequestFilterNode(value);
 
         /// <summary>
         /// 
@@ -98,6 +163,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static RequestFilterNode FromBranch(global::Helicone.RequestFilterBranch? value) => new RequestFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RequestFilterNode(global::Helicone.RequestFilterNodeEnum value) => new RequestFilterNode((global::Helicone.RequestFilterNodeEnum?)value);
 
         /// <summary>
@@ -112,6 +182,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RequestFilterNode FromEnum(global::Helicone.RequestFilterNodeEnum? value) => new RequestFilterNode(value);
 
         /// <summary>
         /// 
@@ -157,8 +232,8 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt?, TResult>? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions = null,
-            global::System.Func<global::Helicone.RequestFilterBranch?, TResult>? branch = null,
+            global::System.Func<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt, TResult>? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions = null,
+            global::System.Func<global::Helicone.RequestFilterBranch, TResult>? branch = null,
             global::System.Func<global::Helicone.RequestFilterNodeEnum?, TResult>? @enum = null,
             bool validate = true)
         {
@@ -187,8 +262,38 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt?>? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions = null,
-            global::System.Action<global::Helicone.RequestFilterBranch?>? branch = null,
+            global::System.Action<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt>? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions = null,
+
+            global::System.Action<global::Helicone.RequestFilterBranch>? branch = null,
+
+            global::System.Action<global::Helicone.RequestFilterNodeEnum?>? @enum = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsPickLeafFeedbackOrResponsePropertiesValuesRmtSessions)
+            {
+                pickLeafFeedbackOrResponsePropertiesValuesRmtSessions?.Invoke(PickLeafFeedbackOrResponsePropertiesValuesRmtSessions!);
+            }
+            else if (IsBranch)
+            {
+                branch?.Invoke(Branch!);
+            }
+            else if (IsEnum)
+            {
+                @enum?.Invoke(Enum!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt>? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions = null,
+            global::System.Action<global::Helicone.RequestFilterBranch>? branch = null,
             global::System.Action<global::Helicone.RequestFilterNodeEnum?>? @enum = null,
             bool validate = true)
         {

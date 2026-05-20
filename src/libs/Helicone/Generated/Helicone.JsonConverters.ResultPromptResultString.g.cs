@@ -96,6 +96,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultSuccessPromptResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultSuccessPromptResult> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultSuccessPromptResult).Name}");
                     success = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -106,9 +107,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (success == null && error == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultErrorString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultErrorString> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultErrorString).Name}");
                     error = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

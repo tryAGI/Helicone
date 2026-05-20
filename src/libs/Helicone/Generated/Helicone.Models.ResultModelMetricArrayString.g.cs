@@ -29,6 +29,26 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSuccess(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ResultSuccessModelMetricArray? value)
+        {
+            value = Success;
+            return IsSuccess;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ResultSuccessModelMetricArray PickSuccess() => IsSuccess
+            ? Success!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? Error { get; init; }
 #else
@@ -42,6 +62,26 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
 #endif
         public bool IsError => Error != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ResultErrorString? value)
+        {
+            value = Error;
+            return IsError;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ResultErrorString PickError() => IsError
+            ? Error!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -63,6 +103,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultModelMetricArrayString FromSuccess(global::Helicone.ResultSuccessModelMetricArray? value) => new ResultModelMetricArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultModelMetricArrayString(global::Helicone.ResultErrorString value) => new ResultModelMetricArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -77,6 +122,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultModelMetricArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultModelMetricArrayString(value);
 
         /// <summary>
         /// 
@@ -118,8 +168,8 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.ResultSuccessModelMetricArray?, TResult>? success = null,
-            global::System.Func<global::Helicone.ResultErrorString?, TResult>? error = null,
+            global::System.Func<global::Helicone.ResultSuccessModelMetricArray, TResult>? success = null,
+            global::System.Func<global::Helicone.ResultErrorString, TResult>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +193,32 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.ResultSuccessModelMetricArray?>? success = null,
-            global::System.Action<global::Helicone.ResultErrorString?>? error = null,
+            global::System.Action<global::Helicone.ResultSuccessModelMetricArray>? success = null,
+
+            global::System.Action<global::Helicone.ResultErrorString>? error = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSuccess)
+            {
+                success?.Invoke(Success!);
+            }
+            else if (IsError)
+            {
+                error?.Invoke(Error!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.ResultSuccessModelMetricArray>? success = null,
+            global::System.Action<global::Helicone.ResultErrorString>? error = null,
             bool validate = true)
         {
             if (validate)
