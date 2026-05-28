@@ -717,6 +717,12 @@ namespace Helicone
 
             typeof(global::Helicone.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArray), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_c61c916e4634eed4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_3dc749edd663c095")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_4cfba64094b5bdd5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -732,10 +738,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultErrorString))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultIdStringProviderNameStringString), TypeInfoPropertyName = "ResultIdStringProviderNameStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateProviderKeyRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArray), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_c61c916e4634eed4")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_3dc749edd663c095")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_4cfba64094b5bdd5")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.EvaluatorResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessEvaluatorResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultEvaluatorResultString), TypeInfoPropertyName = "ResultEvaluatorResultString2")]
@@ -1215,6 +1217,727 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessProviderMetricArray))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ProviderMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultProviderMetricArrayString), TypeInfoPropertyName = "ResultProviderMetricArrayString2")]
+    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+            typeof(global::Helicone.JsonConverters.DataEntryVariant1TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant1TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant2TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant2TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant3ContentJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant3ContentNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant3TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant3TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant4ContentJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant4ContentNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant4TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant4TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant1TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant1TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant2TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant2TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvaluatorStatsRecentTrendJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvaluatorStatsRecentTrendNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2JsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2NullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestVerbosityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestVerbosityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UpgradeToProRequestUiModeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UpgradeToProRequestUiModeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UpgradeToTeamBundleRequestUiModeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UpgradeToTeamBundleRequestUiModeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SortDirectionJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SortDirectionNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderNameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderNameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelProviderNameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelProviderNameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LlmTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LlmTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageAnnotationTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageAnnotationTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageRoleJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageRoleNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageType2JsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageType2NullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventToolTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventToolTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventVectorDBTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventVectorDBTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventVectorDBOperationJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventVectorDBOperationNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventDataTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventDataTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyReasoningEffortJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyReasoningEffortNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyVerbosityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyVerbosityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyToolChoiceTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyToolChoiceTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseRoleJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseRoleNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseType2JsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseType2NullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyDataDetailsResponseTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyDataDetailsResponseTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyVectorDBDetailsResponseTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyVectorDBDetailsResponseTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyToolDetailsResponseTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyToolDetailsResponseTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PSizeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PSizeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionNameQueryParamsPSizeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionNameQueryParamsPSizeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionMetricsQueryParamsPSizeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionMetricsQueryParamsPSizeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TimeFrameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TimeFrameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterNodeEnum2JsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterNodeEnum2NullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TimeIncrementJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TimeIncrementNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageAnnotationTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageAnnotationTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageFunctionToolCallTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageFunctionToolCallTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageCustomToolCallTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageCustomToolCallTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageRoleJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageRoleNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionChoiceFinishReasonJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionChoiceFinishReasonNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionObjectJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionObjectNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionServiceTierJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionServiceTierNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AuthorNameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AuthorNameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.StandardParameterJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.StandardParameterNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PluginIdJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PluginIdNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.BodyMappingTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.BodyMappingTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseFormatJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseFormatNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelProviderConfigQuantizationJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelProviderConfigQuantizationNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.InputModalityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.InputModalityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OutputModalityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OutputModalityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelCapabilityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelCapabilityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OAIModelObjectJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OAIModelObjectNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OAIModelsResponseObjectJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OAIModelsResponseObjectNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.NewDatasetParamsDatasetTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.NewDatasetParamsDatasetTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AddOnsProductTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AddOnsProductTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DeleteAddOnsProductTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DeleteAddOnsProductTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.GetSpendBreakdownTimeRangeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.GetSpendBreakdownTimeRangeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DeleteProviderKeyResponseVariant1ProviderNameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DeleteProviderKeyResponseVariant1ProviderNameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIdStringProviderNameStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorResultStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorExperimentArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultOnlineEvaluatorByEvaluatorIdArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultOutputStringTracesStringArrayStatusCode63NumberStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorScoreStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultScoreNumberInputStringOutputStringGroundTruth63StringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorStatsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025StringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025InputStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptCreateResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultNumberStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025ArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025VersionStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025VersionArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionCountsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025Version91PromptBody93StringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHasPromptsBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptsResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptResultStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCreatePromptResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultMetadataRecordStringAnyStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionResultStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptInputRecordArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionResultCompiledStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionResultFilledStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentV2ArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExtendedExperimentDataStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.JsonJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentV2PromptVersionArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultRecordStringScoreV2StringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultScoreV2OrNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultArrayIntegrationStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIntegrationStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultArrayIdStringNameStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeRequestArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeRequestStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultInputsRecordStringAnyPromptIdStringVersionIdStringEnvironmentStringOrNullOrNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeRequestAssetStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultWrappedStatsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHasDataBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSuccessBooleanMessageStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultDecryptedProviderKeyArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultDecryptedProviderKeyStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSessionResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSessionsAggregateMetricsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSessionNameResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSessionMetricsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultStringOrNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultProviderMetricsArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultProviderMetricsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultProviderMetricArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPropertyArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultValueStringCostNumberArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultValueStringCountNumberArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageToolCallJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultChatCompletionOrContentStringReasoningStringCallsAnyStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultApiKeyStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCostNumberCreatedAtTruncStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultModelRegistryResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TokenMetricStatsJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultModelArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTokensPerRequestStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultRequestsOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCostOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTokensOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultLatencyOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTimeToFirstTokenOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultUsersOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultThreatsOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultErrorOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultModelMetricArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCountryDataArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultQuantilesArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultUnsafeBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultClickHouseTableSchemaArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExecuteSqlResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultArrayHqlSavedQueryStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHqlSavedQueryOrNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultVoidStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHqlSavedQueryArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHqlSavedQueryStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTableIdStringExperimentIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentTableStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentTableSimplifiedStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentTableSimplifiedArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHypothesisIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultRunsCountNumberScoresRecordStringScoreStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultDatasetIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultDatasetResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeDatasetRowArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeDatasetArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvalArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultScoreDistributionArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCreditBalanceResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPaginatedPurchasedCreditsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTotalSpendNumberStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSpendBreakdownResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPTBInvoiceArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultOrgDiscountArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultInAppThreadStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSuccessBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultThreadSummaryArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.OpenAIChatRequestFunctionCall>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<double?, global::System.DateTime?, string>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.MessageRole?>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>),
+
+            typeof(global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.MetricsData, global::Helicone.ProviderMetricsMetrics>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<double?, global::System.DateTime?, string>),
+
+            typeof(global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>),
+
+            typeof(global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>),
+
+            typeof(global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DecryptedProviderKey, global::Helicone.GetProviderKeyResponse2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateProviderKeyResponseVariant1, global::Helicone.CreateProviderKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Helicone.ProviderKeyRow>, global::Helicone.GetProviderKeysResponse2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateAPIKeyResponseVariant1, global::Helicone.CreateAPIKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateProxyKeyResponseVariant1, global::Helicone.CreateProxyKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DeleteAPIKeyResponseVariant1, global::Helicone.DeleteAPIKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.UpdateAPIKeyResponseVariant1, global::Helicone.UpdateAPIKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultSuccessUnknown, global::Helicone.ResultErrorUnknown>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ValidationResult, object>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.HidePropertyResponse2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.RestorePropertyResponse2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessUnknown>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>),
+
+            typeof(global::Helicone.JsonConverters.UnixTimestampJsonConverter),
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArray), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_c61c916e4634eed4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_3dc749edd663c095")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_4cfba64094b5bdd5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialUserMetricsToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialUserApiKeysTableToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialPropertiesTableToOperators))]
@@ -1709,6 +2432,727 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateCloudGatewayCheckoutSessionResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.LLMUsage>))]
+    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+            typeof(global::Helicone.JsonConverters.DataEntryVariant1TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant1TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant2TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant2TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant3ContentJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant3ContentNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant3TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant3TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant4ContentJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant4ContentNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant4TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryVariant4TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant1TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant1TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant2TypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant2TypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvaluatorStatsRecentTrendJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvaluatorStatsRecentTrendNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2JsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2NullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestVerbosityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OpenAIChatRequestVerbosityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UpgradeToProRequestUiModeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UpgradeToProRequestUiModeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UpgradeToTeamBundleRequestUiModeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UpgradeToTeamBundleRequestUiModeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SortDirectionJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SortDirectionNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderNameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderNameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelProviderNameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelProviderNameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LlmTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LlmTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageAnnotationTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageAnnotationTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageRoleJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageRoleNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageType2JsonConverter),
+
+            typeof(global::Helicone.JsonConverters.MessageType2NullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventToolTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventToolTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventVectorDBTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventVectorDBTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventVectorDBOperationJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventVectorDBOperationNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventDataTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.HeliconeEventDataTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyReasoningEffortJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyReasoningEffortNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyVerbosityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyVerbosityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyToolChoiceTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMRequestBodyToolChoiceTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseRoleJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseRoleNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseType2JsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseType2NullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyDataDetailsResponseTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyDataDetailsResponseTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyVectorDBDetailsResponseTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyVectorDBDetailsResponseTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyToolDetailsResponseTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LLMResponseBodyToolDetailsResponseTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PSizeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PSizeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionNameQueryParamsPSizeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionNameQueryParamsPSizeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionMetricsQueryParamsPSizeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionMetricsQueryParamsPSizeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TimeFrameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TimeFrameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterNodeEnum2JsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterNodeEnum2NullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TimeIncrementJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TimeIncrementNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageAnnotationTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageAnnotationTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageFunctionToolCallTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageFunctionToolCallTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageCustomToolCallTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageCustomToolCallTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageRoleJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageRoleNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionChoiceFinishReasonJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionChoiceFinishReasonNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionObjectJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionObjectNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionServiceTierJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionServiceTierNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AuthorNameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AuthorNameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.StandardParameterJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.StandardParameterNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PluginIdJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PluginIdNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.BodyMappingTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.BodyMappingTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseFormatJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResponseFormatNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelProviderConfigQuantizationJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelProviderConfigQuantizationNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.InputModalityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.InputModalityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OutputModalityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OutputModalityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelCapabilityJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ModelCapabilityNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OAIModelObjectJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OAIModelObjectNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OAIModelsResponseObjectJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.OAIModelsResponseObjectNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.NewDatasetParamsDatasetTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.NewDatasetParamsDatasetTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterNodeEnumJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterNodeEnumNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterBranchOperatorJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterBranchOperatorNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AddOnsProductTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AddOnsProductTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DeleteAddOnsProductTypeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DeleteAddOnsProductTypeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.GetSpendBreakdownTimeRangeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.GetSpendBreakdownTimeRangeNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DeleteProviderKeyResponseVariant1ProviderNameJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DeleteProviderKeyResponseVariant1ProviderNameNullableJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIdStringProviderNameStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorResultStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorExperimentArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultOnlineEvaluatorByEvaluatorIdArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultOutputStringTracesStringArrayStatusCode63NumberStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorScoreStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultScoreNumberInputStringOutputStringGroundTruth63StringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DataEntryJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.LastMileConfigFormJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvaluatorStatsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025StringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025InputStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptCreateResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultNumberStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025ArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025VersionStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025VersionArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionCountsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPrompt2025Version91PromptBody93StringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHasPromptsBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptsResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptsFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptResultStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCreatePromptResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultMetadataRecordStringAnyStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionResultStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptInputRecordArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.PromptVersionsFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionResultCompiledStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPromptVersionResultFilledStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentV2ArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExtendedExperimentDataStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.JsonJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentV2PromptVersionArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultRecordStringScoreV2StringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultScoreV2OrNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultArrayIntegrationStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIntegrationStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultArrayIdStringNameStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ProviderJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeRequestArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeRequestStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultInputsRecordStringAnyPromptIdStringVersionIdStringEnvironmentStringOrNullOrNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeRequestAssetStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultWrappedStatsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHasDataBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSuccessBooleanMessageStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultDecryptedProviderKeyArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultDecryptedProviderKeyStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.UserFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSessionResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.SessionFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSessionsAggregateMetricsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSessionNameResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSessionMetricsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultStringOrNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultProviderMetricsArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultProviderMetricsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultProviderMetricArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.FilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.RequestClickhouseFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPropertyArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultValueStringCostNumberArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultValueStringCountNumberArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ChatCompletionMessageToolCallJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultChatCompletionOrContentStringReasoningStringCallsAnyStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultApiKeyStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCostNumberCreatedAtTruncStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultModelRegistryResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.TokenMetricStatsJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultModelArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTokensPerRequestStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultRequestsOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCostOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTokensOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultLatencyOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTimeToFirstTokenOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultUsersOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultThreatsOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultErrorOverTimeArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultModelMetricArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCountryDataArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultQuantilesArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultUnsafeBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultClickHouseTableSchemaArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExecuteSqlResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultArrayHqlSavedQueryStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHqlSavedQueryOrNullStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultVoidStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHqlSavedQueryArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHqlSavedQueryStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTableIdStringExperimentIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentTableStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentTableSimplifiedStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentTableSimplifiedArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHypothesisIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultRunsCountNumberScoresRecordStringScoreStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultExperimentArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ExperimentFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultDatasetIdStringStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.DatasetFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultDatasetResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeDatasetRowArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultHeliconeDatasetArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultEvalArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.EvalFilterNodeJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultScoreDistributionArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultCreditBalanceResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPaginatedPurchasedCreditsStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultTotalSpendNumberStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSpendBreakdownResponseStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultPTBInvoiceArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultOrgDiscountArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultInAppThreadStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultSuccessBooleanStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.ResultThreadSummaryArrayStringJsonConverter),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.OpenAIChatRequestFunctionCall>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<double?, global::System.DateTime?, string>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.MessageRole?>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>),
+
+            typeof(global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.MetricsData, global::Helicone.ProviderMetricsMetrics>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<double?, global::System.DateTime?, string>),
+
+            typeof(global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>),
+
+            typeof(global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>),
+
+            typeof(global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DecryptedProviderKey, global::Helicone.GetProviderKeyResponse2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateProviderKeyResponseVariant1, global::Helicone.CreateProviderKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Helicone.ProviderKeyRow>, global::Helicone.GetProviderKeysResponse2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateAPIKeyResponseVariant1, global::Helicone.CreateAPIKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateProxyKeyResponseVariant1, global::Helicone.CreateProxyKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DeleteAPIKeyResponseVariant1, global::Helicone.DeleteAPIKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.UpdateAPIKeyResponseVariant1, global::Helicone.UpdateAPIKeyResponseVariant2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultSuccessUnknown, global::Helicone.ResultErrorUnknown>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ValidationResult, object>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.HidePropertyResponse2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.RestorePropertyResponse2>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessUnknown>),
+
+            typeof(global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>),
+
+            typeof(global::Helicone.JsonConverters.UnixTimestampJsonConverter),
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArray), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_c61c916e4634eed4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_3dc749edd663c095")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_4cfba64094b5bdd5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponseDiscount))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponseDiscountCoupon))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponseLines))]
@@ -1734,7 +3178,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessUnknown>), TypeInfoPropertyName = "AnyOfResultErrorStringResultSuccessUnknown2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>), TypeInfoPropertyName = "AnyOfResultErrorUnknownResultSuccessAny2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Customer>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.EvaluatorResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.EvaluatorExperiment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OnlineEvaluatorByEvaluatorId>))]
@@ -1871,7 +3314,404 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.GetSubscriptionResponseItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PaymentMethod>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Customer>))]
+    internal sealed partial class SourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
+            SourceGenerationContextChunk0.Default,
+
+            SourceGenerationContextChunk1.Default,
+
+            SourceGenerationContextChunk2.Default
+            );
+
+        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SourceGenerationContext Default { get; } = new(DefaultOptions);
+
+        private SourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
+            : base(options)
+        {
+        }
+
+        /// <inheritdoc />
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
+
+        /// <inheritdoc />
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
+        {
+            return Resolver.GetTypeInfo(type, Options);
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant3ContentJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant3ContentNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant3TypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant3TypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant4ContentJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant4ContentNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant4TypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryVariant4TypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant1TypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant2TypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LastMileConfigFormVariant2Variant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.EvaluatorStatsRecentTrendJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.EvaluatorStatsRecentTrendNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestToolTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestToolTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2JsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2NullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestVerbosityJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OpenAIChatRequestVerbosityNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptsFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptsFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptsFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptsFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UpgradeToProRequestUiModeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UpgradeToProRequestUiModeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UpgradeToTeamBundleRequestUiModeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UpgradeToTeamBundleRequestUiModeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SortDirectionJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SortDirectionNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ProviderNameJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ProviderNameNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ModelProviderNameJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ModelProviderNameNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ProviderEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ProviderEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LlmTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LlmTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.MessageAnnotationTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.MessageAnnotationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.MessageTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.MessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.MessageRoleJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.MessageRoleNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.MessageType2JsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.MessageType2NullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.HeliconeEventToolTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.HeliconeEventToolTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.HeliconeEventVectorDBTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.HeliconeEventVectorDBTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.HeliconeEventVectorDBOperationJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.HeliconeEventVectorDBOperationNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.HeliconeEventDataTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.HeliconeEventDataTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMRequestBodyReasoningEffortJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMRequestBodyReasoningEffortNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMRequestBodyVerbosityJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMRequestBodyVerbosityNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMRequestBodyToolChoiceTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMRequestBodyToolChoiceTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResponseTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResponseTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResponseRoleJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResponseRoleNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResponseType2JsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResponseType2NullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMResponseBodyDataDetailsResponseTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMResponseBodyDataDetailsResponseTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMResponseBodyVectorDBDetailsResponseTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMResponseBodyVectorDBDetailsResponseTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMResponseBodyToolDetailsResponseTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LLMResponseBodyToolDetailsResponseTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UserFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UserFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UserFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UserFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PSizeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PSizeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionNameQueryParamsPSizeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionNameQueryParamsPSizeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionMetricsQueryParamsPSizeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionMetricsQueryParamsPSizeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.TimeFrameJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.TimeFrameNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.FilterNodeEnum2JsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.FilterNodeEnum2NullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.FilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.FilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestClickhouseFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestClickhouseFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestClickhouseFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestClickhouseFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.TimeIncrementJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.TimeIncrementNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageAnnotationTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageAnnotationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageFunctionToolCallTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageFunctionToolCallTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageCustomToolCallTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageCustomToolCallTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageRoleJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageRoleNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionChoiceFinishReasonJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionChoiceFinishReasonNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionObjectJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionObjectNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionServiceTierJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionServiceTierNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.AuthorNameJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.AuthorNameNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.StandardParameterJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.StandardParameterNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PluginIdJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PluginIdNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.BodyMappingTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.BodyMappingTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResponseFormatJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResponseFormatNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ModelProviderConfigQuantizationJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ModelProviderConfigQuantizationNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.InputModalityJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.InputModalityNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OutputModalityJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OutputModalityNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ModelCapabilityJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ModelCapabilityNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OAIModelObjectJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OAIModelObjectNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OAIModelsResponseObjectJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.OAIModelsResponseObjectNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ExperimentFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ExperimentFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ExperimentFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ExperimentFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.NewDatasetParamsDatasetTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.NewDatasetParamsDatasetTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DatasetFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DatasetFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DatasetFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DatasetFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.EvalFilterNodeEnumJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.EvalFilterNodeEnumNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.EvalFilterBranchOperatorJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.EvalFilterBranchOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.AddOnsProductTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.AddOnsProductTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DeleteAddOnsProductTypeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DeleteAddOnsProductTypeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.GetSpendBreakdownTimeRangeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.GetSpendBreakdownTimeRangeNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DeleteProviderKeyResponseVariant1ProviderNameJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DeleteProviderKeyResponseVariant1ProviderNameNullableJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultIdStringProviderNameStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorResultStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultNullStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorExperimentArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultOnlineEvaluatorByEvaluatorIdArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultOutputStringTracesStringArrayStatusCode63NumberStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorScoreStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultScoreNumberInputStringOutputStringGroundTruth63StringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DataEntryJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.LastMileConfigFormJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorStatsStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025StringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultStringArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025InputStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptCreateResponseStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultIdStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultNumberStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025ArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025VersionStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025VersionArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionCountsStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025Version91PromptBody93StringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHasPromptsBooleanStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptsResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptsFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptResultStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultCreatePromptResponseStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultMetadataRecordStringAnyStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptInputRecordArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptVersionsFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultCompiledStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultFilledStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentIdStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentV2ArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExtendedExperimentDataStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.JsonJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentV2PromptVersionArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultBooleanStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultRecordStringScoreV2StringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultScoreV2OrNullStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultArrayIntegrationStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultIntegrationStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultArrayIdStringNameStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ProviderJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHeliconeRequestArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHeliconeRequestStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultInputsRecordStringAnyPromptIdStringVersionIdStringEnvironmentStringOrNullOrNullStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHeliconeRequestAssetStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultWrappedStatsStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHasDataBooleanStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultIdStringCreatedAtStringDestinationStringVersionStringConfigStringHmacKeyStringArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultSuccessBooleanMessageStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultDecryptedProviderKeyArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultDecryptedProviderKeyStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultRequestCountHistogramRowArrayUserCostHistogramRowArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.UserFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultUsersUserMetricsResultArrayCountNumberHasUsersBooleanStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultCountNumberPromptTokensNumberCompletionTokensNumberUserIdStringCostNumberArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultSessionResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.SessionFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultSessionsAggregateMetricsStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultSessionNameResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultSessionMetricsStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultStringOrNullStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultProviderMetricsArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultProviderMetricsStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultProviderMetricArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.FilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.RequestClickhouseFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPropertyArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultValueStringCostNumberArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultValueStringCountNumberArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageToolCallJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultChatCompletionOrContentStringReasoningStringCallsAnyStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultApiKeyStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultCostNumberCreatedAtTruncStringArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultModelRegistryResponseStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.TokenMetricStatsJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultModelArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultTokensPerRequestStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultRequestsOverTimeArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultCostOverTimeArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultTokensOverTimeArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultLatencyOverTimeArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultTimeToFirstTokenOverTimeArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultUsersOverTimeArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultThreatsOverTimeArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultErrorOverTimeArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultModelMetricArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultCountryDataArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultQuantilesArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultUnsafeBooleanStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultClickHouseTableSchemaArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExecuteSqlResponseStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultArrayHqlSavedQueryStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHqlSavedQueryOrNullStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultVoidStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHqlSavedQueryArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHqlSavedQueryStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultTableIdStringExperimentIdStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentTableStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentTableSimplifiedStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentTableSimplifiedArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHypothesisIdStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultRunsCountNumberScoresRecordStringScoreStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ExperimentFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultDatasetIdStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.DatasetFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultDatasetResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHeliconeDatasetRowArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHeliconeDatasetArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultEvalArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.EvalFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultScoreDistributionArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultCreditBalanceResponseStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPaginatedPurchasedCreditsStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultTotalSpendNumberStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultSpendBreakdownResponseStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPTBInvoiceArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultOrgDiscountArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultInAppThreadStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultSuccessBooleanStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultThreadSummaryArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.OpenAIChatRequestFunctionCall>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, global::System.DateTime?, string>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.MessageRole?>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.MetricsData, global::Helicone.ProviderMetricsMetrics>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, global::System.DateTime?, string>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DecryptedProviderKey, global::Helicone.GetProviderKeyResponse2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateProviderKeyResponseVariant1, global::Helicone.CreateProviderKeyResponseVariant2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Helicone.ProviderKeyRow>, global::Helicone.GetProviderKeysResponse2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateAPIKeyResponseVariant1, global::Helicone.CreateAPIKeyResponseVariant2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateProxyKeyResponseVariant1, global::Helicone.CreateProxyKeyResponseVariant2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DeleteAPIKeyResponseVariant1, global::Helicone.DeleteAPIKeyResponseVariant2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.UpdateAPIKeyResponseVariant1, global::Helicone.UpdateAPIKeyResponseVariant2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultSuccessUnknown, global::Helicone.ResultErrorUnknown>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ValidationResult, object>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.HidePropertyResponse2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.RestorePropertyResponse2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessUnknown>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>());
+            options.Converters.Add(new global::Helicone.JsonConverters.UnixTimestampJsonConverter());
+
+            return options;
+        }
     }
 }

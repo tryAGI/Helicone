@@ -29,6 +29,19 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSuccess(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ResultSuccessPromptInputRecordArray? value)
+        {
+            value = Success;
+            return IsSuccess;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? Error { get; init; }
 #else
@@ -42,6 +55,19 @@ namespace Helicone
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
 #endif
         public bool IsError => Error != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ResultErrorString? value)
+        {
+            value = Error;
+            return IsError;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Helicone
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Helicone.ResultSuccessPromptInputRecordArray?, TResult>? success = null,
-            global::System.Func<global::Helicone.ResultErrorString?, TResult>? error = null,
+            global::System.Func<global::Helicone.ResultSuccessPromptInputRecordArray, TResult>? success = null,
+            global::System.Func<global::Helicone.ResultErrorString, TResult>? error = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Helicone
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Helicone.ResultSuccessPromptInputRecordArray?>? success = null,
-            global::System.Action<global::Helicone.ResultErrorString?>? error = null,
+            global::System.Action<global::Helicone.ResultSuccessPromptInputRecordArray>? success = null,
+
+            global::System.Action<global::Helicone.ResultErrorString>? error = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSuccess)
+            {
+                success?.Invoke(Success!);
+            }
+            else if (IsError)
+            {
+                error?.Invoke(Error!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.ResultSuccessPromptInputRecordArray>? success = null,
+            global::System.Action<global::Helicone.ResultErrorString>? error = null,
             bool validate = true)
         {
             if (validate)
