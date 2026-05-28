@@ -77,5 +77,6 @@ namespace Helicone
         public OpenAIChatRequestMessage()
         {
         }
+
     }
 }

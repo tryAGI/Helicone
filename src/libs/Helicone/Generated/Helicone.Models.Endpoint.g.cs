@@ -159,5 +159,6 @@ namespace Helicone
         public Endpoint()
         {
         }
+
     }
 }

@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.BaseLastMileConfigForm PickBase() => IsBase
+            ? Base!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Base' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>? LastMileConfigFormVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Helicone
             value = LastMileConfigFormVariant2;
             return IsLastMileConfigFormVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2> PickLastMileConfigFormVariant2() => IsLastMileConfigFormVariant2
+            ? LastMileConfigFormVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'LastMileConfigFormVariant2' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static LastMileConfigForm FromBase(global::Helicone.BaseLastMileConfigForm? value) => new LastMileConfigForm(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LastMileConfigForm(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2> value) => new LastMileConfigForm((global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Helicone
         {
             LastMileConfigFormVariant2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LastMileConfigForm FromLastMileConfigFormVariant2(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>? value) => new LastMileConfigForm(value);
 
         /// <summary>
         /// 

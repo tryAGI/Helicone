@@ -51,5 +51,6 @@ namespace Helicone
         public DataEntryVariant3()
         {
         }
+
     }
 }

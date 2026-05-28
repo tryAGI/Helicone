@@ -66,5 +66,6 @@ namespace Helicone
         public ChatCompletionMessageCustomToolCall()
         {
         }
+
     }
 }

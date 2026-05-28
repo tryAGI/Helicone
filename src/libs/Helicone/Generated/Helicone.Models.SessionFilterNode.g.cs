@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.PickFilterLeafRequestResponseRmtOrSessionsRequestResponseRmt PickPickLeafRequestResponseRmtOrSessions() => IsPickLeafRequestResponseRmtOrSessions
+            ? PickLeafRequestResponseRmtOrSessions!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafRequestResponseRmtOrSessions' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.SessionFilterBranch? Branch { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.SessionFilterBranch PickBranch() => IsBranch
+            ? Branch!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.SessionFilterNodeEnum? Enum { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Helicone
             value = Enum;
             return IsEnum;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.SessionFilterNodeEnum PickEnum() => IsEnum
+            ? Enum!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Helicone
         {
             PickLeafRequestResponseRmtOrSessions = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SessionFilterNode FromPickLeafRequestResponseRmtOrSessions(global::Helicone.PickFilterLeafRequestResponseRmtOrSessionsRequestResponseRmt? value) => new SessionFilterNode(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static SessionFilterNode FromBranch(global::Helicone.SessionFilterBranch? value) => new SessionFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SessionFilterNode(global::Helicone.SessionFilterNodeEnum value) => new SessionFilterNode((global::Helicone.SessionFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SessionFilterNode FromEnum(global::Helicone.SessionFilterNodeEnum? value) => new SessionFilterNode(value);
 
         /// <summary>
         /// 

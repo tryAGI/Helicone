@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.PickFilterLeafPromptsVersions PickPickLeafPrompts() => IsPickLeafPrompts
+            ? PickLeafPrompts!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafPrompts' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.PromptVersionsFilterBranch? Branch { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.PromptVersionsFilterBranch PickBranch() => IsBranch
+            ? Branch!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.PromptVersionsFilterNodeEnum? Enum { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Helicone
             value = Enum;
             return IsEnum;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.PromptVersionsFilterNodeEnum PickEnum() => IsEnum
+            ? Enum!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Helicone
         {
             PickLeafPrompts = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptVersionsFilterNode FromPickLeafPrompts(global::Helicone.PickFilterLeafPromptsVersions? value) => new PromptVersionsFilterNode(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static PromptVersionsFilterNode FromBranch(global::Helicone.PromptVersionsFilterBranch? value) => new PromptVersionsFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator PromptVersionsFilterNode(global::Helicone.PromptVersionsFilterNodeEnum value) => new PromptVersionsFilterNode((global::Helicone.PromptVersionsFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static PromptVersionsFilterNode FromEnum(global::Helicone.PromptVersionsFilterNodeEnum? value) => new PromptVersionsFilterNode(value);
 
         /// <summary>
         /// 

@@ -202,5 +202,6 @@ namespace Helicone
         public EndpointConfig()
         {
         }
+
     }
 }

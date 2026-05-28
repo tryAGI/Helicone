@@ -40,5 +40,6 @@ namespace Helicone
         public RestorePropertyResponseData()
         {
         }
+
     }
 }

@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.PickFilterLeafRequestResponseRmt PickPickLeafResponseRmt() => IsPickLeafResponseRmt
+            ? PickLeafResponseRmt!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafResponseRmt' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.RequestClickhouseFilterBranch? Branch { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.RequestClickhouseFilterBranch PickBranch() => IsBranch
+            ? Branch!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.RequestClickhouseFilterNodeEnum? Enum { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Helicone
             value = Enum;
             return IsEnum;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.RequestClickhouseFilterNodeEnum PickEnum() => IsEnum
+            ? Enum!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Helicone
         {
             PickLeafResponseRmt = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RequestClickhouseFilterNode FromPickLeafResponseRmt(global::Helicone.PickFilterLeafRequestResponseRmt? value) => new RequestClickhouseFilterNode(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static RequestClickhouseFilterNode FromBranch(global::Helicone.RequestClickhouseFilterBranch? value) => new RequestClickhouseFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator RequestClickhouseFilterNode(global::Helicone.RequestClickhouseFilterNodeEnum value) => new RequestClickhouseFilterNode((global::Helicone.RequestClickhouseFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static RequestClickhouseFilterNode FromEnum(global::Helicone.RequestClickhouseFilterNodeEnum? value) => new RequestClickhouseFilterNode(value);
 
         /// <summary>
         /// 

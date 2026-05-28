@@ -95,5 +95,6 @@ namespace Helicone
         public ClickHouseTableColumn()
         {
         }
+
     }
 }

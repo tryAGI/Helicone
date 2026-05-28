@@ -74,5 +74,6 @@ namespace Helicone
         public PartialFeedbackTableToOperators()
         {
         }
+
     }
 }

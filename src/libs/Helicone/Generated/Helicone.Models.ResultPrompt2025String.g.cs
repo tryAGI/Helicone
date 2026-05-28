@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.ResultSuccessPrompt2025 PickSuccess() => IsSuccess
+            ? Success!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? Error { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Helicone
             value = Error;
             return IsError;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ResultErrorString PickError() => IsError
+            ? Error!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultPrompt2025String FromSuccess(global::Helicone.ResultSuccessPrompt2025? value) => new ResultPrompt2025String(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultPrompt2025String(global::Helicone.ResultErrorString value) => new ResultPrompt2025String((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultPrompt2025String FromError(global::Helicone.ResultErrorString? value) => new ResultPrompt2025String(value);
 
         /// <summary>
         /// 

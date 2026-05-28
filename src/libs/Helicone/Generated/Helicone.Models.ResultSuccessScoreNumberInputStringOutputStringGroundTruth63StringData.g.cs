@@ -69,5 +69,6 @@ namespace Helicone
         public ResultSuccessScoreNumberInputStringOutputStringGroundTruth63StringData()
         {
         }
+
     }
 }

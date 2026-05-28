@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.PickFilterLeafExperiment PickPickLeaf() => IsPickLeaf
+            ? PickLeaf!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeaf' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ExperimentFilterBranch? Branch { get; init; }
 #else
@@ -72,6 +79,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.ExperimentFilterBranch PickBranch() => IsBranch
+            ? Branch!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ExperimentFilterNodeEnum? Enum { get; init; }
 #else
@@ -98,6 +112,13 @@ namespace Helicone
             value = Enum;
             return IsEnum;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ExperimentFilterNodeEnum PickEnum() => IsEnum
+            ? Enum!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -115,6 +136,11 @@ namespace Helicone
         {
             PickLeaf = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExperimentFilterNode FromPickLeaf(global::Helicone.PickFilterLeafExperiment? value) => new ExperimentFilterNode(value);
 
         /// <summary>
         /// 
@@ -137,6 +163,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ExperimentFilterNode FromBranch(global::Helicone.ExperimentFilterBranch? value) => new ExperimentFilterNode(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ExperimentFilterNode(global::Helicone.ExperimentFilterNodeEnum value) => new ExperimentFilterNode((global::Helicone.ExperimentFilterNodeEnum?)value);
 
         /// <summary>
@@ -151,6 +182,11 @@ namespace Helicone
         {
             Enum = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ExperimentFilterNode FromEnum(global::Helicone.ExperimentFilterNodeEnum? value) => new ExperimentFilterNode(value);
 
         /// <summary>
         /// 

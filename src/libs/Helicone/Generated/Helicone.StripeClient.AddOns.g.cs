@@ -116,7 +116,7 @@ namespace Helicone
             {
 
                             var __pathBuilder = new global::Helicone.PathBuilder(
-                                path: $"/v1/stripe/subscription/add-ons/{productType}",
+                                path: $"/v1/stripe/subscription/add-ons/{(global::System.Uri.EscapeDataString(productType.ToValueString()))}",
                                 baseUri: ResolveBaseUri(
                                 servers: s_AddOnsServers,
                                 defaultBaseUrl: "https://api.helicone.ai/"));
@@ -179,7 +179,7 @@ namespace Helicone
                             context: global::Helicone.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "AddOns",
                                 methodName: "AddOnsAsync",
-                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{productType}\"",
+                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{(global::System.Uri.EscapeDataString(productType.ToValueString()))}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -213,7 +213,7 @@ namespace Helicone
                             context: global::Helicone.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "AddOns",
                                 methodName: "AddOnsAsync",
-                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{productType}\"",
+                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{(global::System.Uri.EscapeDataString(productType.ToValueString()))}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -254,7 +254,7 @@ namespace Helicone
                             context: global::Helicone.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "AddOns",
                                 methodName: "AddOnsAsync",
-                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{productType}\"",
+                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{(global::System.Uri.EscapeDataString(productType.ToValueString()))}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -302,7 +302,7 @@ namespace Helicone
                             context: global::Helicone.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "AddOns",
                                 methodName: "AddOnsAsync",
-                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{productType}\"",
+                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{(global::System.Uri.EscapeDataString(productType.ToValueString()))}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -324,7 +324,7 @@ namespace Helicone
                             context: global::Helicone.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "AddOns",
                                 methodName: "AddOnsAsync",
-                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{productType}\"",
+                                pathTemplate: "$\"/v1/stripe/subscription/add-ons/{(global::System.Uri.EscapeDataString(productType.ToValueString()))}\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -371,17 +371,15 @@ namespace Helicone
                                 }
                                 catch (global::System.Exception __ex)
                                 {
-                                    throw new global::Helicone.ApiException(
+                                    throw global::Helicone.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
                             else
@@ -418,17 +416,15 @@ namespace Helicone
                                     {
                                     }
 
-                                    throw new global::Helicone.ApiException(
+                                    throw global::Helicone.ApiException.Create(
+                                        statusCode: __response.StatusCode,
                                         message: __content ?? __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
-                                        statusCode: __response.StatusCode)
-                                    {
-                                        ResponseBody = __content,
-                                        ResponseHeaders = global::System.Linq.Enumerable.ToDictionary(
+                                        responseBody: __content,
+                                        responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                             __response.Headers,
                                             h => h.Key,
-                                            h => h.Value),
-                                    };
+                                            h => h.Value));
                                 }
                             }
 

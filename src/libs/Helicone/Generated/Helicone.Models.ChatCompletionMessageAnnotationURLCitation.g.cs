@@ -78,5 +78,6 @@ namespace Helicone
         public ChatCompletionMessageAnnotationURLCitation()
         {
         }
+
     }
 }

@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.ResultSuccessModelMetricArray PickSuccess() => IsSuccess
+            ? Success!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? Error { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Helicone
             value = Error;
             return IsError;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ResultErrorString PickError() => IsError
+            ? Error!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultModelMetricArrayString FromSuccess(global::Helicone.ResultSuccessModelMetricArray? value) => new ResultModelMetricArrayString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultModelMetricArrayString(global::Helicone.ResultErrorString value) => new ResultModelMetricArrayString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultModelMetricArrayString FromError(global::Helicone.ResultErrorString? value) => new ResultModelMetricArrayString(value);
 
         /// <summary>
         /// 

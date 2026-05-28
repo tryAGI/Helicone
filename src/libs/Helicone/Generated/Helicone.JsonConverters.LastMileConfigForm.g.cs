@@ -77,6 +77,7 @@ namespace Helicone.JsonConverters
             {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.BaseLastMileConfigForm), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.BaseLastMileConfigForm> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.BaseLastMileConfigForm).Name}");
                     @base = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
@@ -87,9 +88,13 @@ namespace Helicone.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+            }
 
+            if (@base == null && lastMileConfigFormVariant2 == null)
+            {
                 try
                 {
+
                     var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>> ??
                                    throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>).Name}");
                     lastMileConfigFormVariant2 = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);

@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::Helicone.ResultSuccessExperimentTable PickSuccess() => IsSuccess
+            ? Success!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? Error { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Helicone
             value = Error;
             return IsError;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Helicone.ResultErrorString PickError() => IsError
+            ? Error!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -89,6 +103,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static ResultExperimentTableString FromSuccess(global::Helicone.ResultSuccessExperimentTable? value) => new ResultExperimentTableString(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResultExperimentTableString(global::Helicone.ResultErrorString value) => new ResultExperimentTableString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
@@ -103,6 +122,11 @@ namespace Helicone
         {
             Error = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResultExperimentTableString FromError(global::Helicone.ResultErrorString? value) => new ResultExperimentTableString(value);
 
         /// <summary>
         /// 

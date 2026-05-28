@@ -75,5 +75,6 @@ namespace Helicone
         public PartialTimestampOperators()
         {
         }
+
     }
 }

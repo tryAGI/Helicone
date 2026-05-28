@@ -63,5 +63,6 @@ namespace Helicone
         public PartialPropertiesV3ToOperators()
         {
         }
+
     }
 }

@@ -115,5 +115,6 @@ namespace Helicone
         public PreviewInvoiceResponse()
         {
         }
+
     }
 }

@@ -42,6 +42,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public string PickJsonVariant1() => IsJsonVariant1
+            ? JsonVariant1!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant1' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public double? JsonVariant2 { get; init; }
 #else
@@ -68,6 +75,13 @@ namespace Helicone
             value = JsonVariant2;
             return IsJsonVariant2;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public double PickJsonVariant2() => IsJsonVariant2
+            ? JsonVariant2!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant2' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -102,6 +116,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public bool PickJsonVariant3() => IsJsonVariant3
+            ? JsonVariant3!.Value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant3' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>? JsonVariant4 { get; init; }
 #else
@@ -132,6 +153,13 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?> PickJsonVariant4() => IsJsonVariant4
+            ? JsonVariant4!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant4' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Helicone.Json>? JsonVariant5 { get; init; }
 #else
@@ -158,6 +186,13 @@ namespace Helicone
             value = JsonVariant5;
             return IsJsonVariant5;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Helicone.Json> PickJsonVariant5() => IsJsonVariant5
+            ? JsonVariant5!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant5' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -175,6 +210,11 @@ namespace Helicone
         {
             JsonVariant1 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Json FromJsonVariant1(string? value) => new Json(value);
 
         /// <summary>
         /// 
@@ -197,6 +237,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static Json FromJsonVariant2(double? value) => new Json(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Json(bool value) => new Json((bool?)value);
 
         /// <summary>
@@ -215,6 +260,11 @@ namespace Helicone
         /// <summary>
         /// 
         /// </summary>
+        public static Json FromJsonVariant3(bool? value) => new Json(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Json(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?> value) => new Json((global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>?)value);
 
         /// <summary>
@@ -229,6 +279,11 @@ namespace Helicone
         {
             JsonVariant4 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Json FromJsonVariant4(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>? value) => new Json(value);
 
         /// <summary>
         /// 
