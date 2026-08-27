@@ -4,19 +4,19 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ValidationResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isValid")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool IsValid { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errors")]
         [global::System.Text.Json.Serialization.JsonRequired]

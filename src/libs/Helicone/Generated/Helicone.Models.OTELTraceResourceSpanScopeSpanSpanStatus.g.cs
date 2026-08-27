@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class OTELTraceResourceSpanScopeSpanSpanStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         [global::System.Text.Json.Serialization.JsonRequired]

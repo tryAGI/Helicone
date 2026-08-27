@@ -5,7 +5,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct PromptsFilterNode : global::System.IEquatable<PromptsFilterNode>
     {
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PickLeafPromptV2))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsPickLeafPromptV2 => PickLeafPromptV2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPickLeafPromptV2(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.PickFilterLeafPromptV2 PickPickLeafPromptV2() => IsPickLeafPromptV2
             ? PickLeafPromptV2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafPromptV2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.PromptsFilterBranch? Branch { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Branch))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsBranch => Branch != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBranch(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.PromptsFilterBranch PickBranch() => IsBranch
             ? Branch!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.PromptsFilterNodeEnum? Enum { get; init; }
@@ -93,7 +93,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
@@ -101,7 +101,7 @@ namespace Helicone
         public bool IsEnum => Enum != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnum(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.PromptsFilterNodeEnum PickEnum() => IsEnum
             ? Enum!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptsFilterNode(global::Helicone.PickFilterLeafPromptV2 value) => new PromptsFilterNode((global::Helicone.PickFilterLeafPromptV2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.PickFilterLeafPromptV2?(PromptsFilterNode @this) => @this.PickLeafPromptV2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptsFilterNode(global::Helicone.PickFilterLeafPromptV2? value)
         {
@@ -138,22 +138,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptsFilterNode FromPickLeafPromptV2(global::Helicone.PickFilterLeafPromptV2? value) => new PromptsFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptsFilterNode(global::Helicone.PromptsFilterBranch value) => new PromptsFilterNode((global::Helicone.PromptsFilterBranch?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.PromptsFilterBranch?(PromptsFilterNode @this) => @this.Branch;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptsFilterNode(global::Helicone.PromptsFilterBranch? value)
         {
@@ -161,22 +161,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptsFilterNode FromBranch(global::Helicone.PromptsFilterBranch? value) => new PromptsFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator PromptsFilterNode(global::Helicone.PromptsFilterNodeEnum value) => new PromptsFilterNode((global::Helicone.PromptsFilterNodeEnum?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.PromptsFilterNodeEnum?(PromptsFilterNode @this) => @this.Enum;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptsFilterNode(global::Helicone.PromptsFilterNodeEnum? value)
         {
@@ -184,12 +184,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static PromptsFilterNode FromEnum(global::Helicone.PromptsFilterNodeEnum? value) => new PromptsFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptsFilterNode(
             global::Helicone.PickFilterLeafPromptV2? pickLeafPromptV2,
@@ -203,25 +203,25 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Enum as object ??
             Branch as object ??
-            PickLeafPromptV2 as object 
+            PickLeafPromptV2 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PickLeafPromptV2?.ToString() ??
             Branch?.ToString() ??
-            Enum?.ToValueString() 
+            Enum?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.PickFilterLeafPromptV2, TResult>? pickLeafPromptV2 = null,
@@ -259,7 +259,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.PickFilterLeafPromptV2>? pickLeafPromptV2 = null,
@@ -289,7 +289,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.PickFilterLeafPromptV2>? pickLeafPromptV2 = null,
@@ -317,7 +317,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(PromptsFilterNode other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.PickFilterLeafPromptV2?>.Default.Equals(PickLeafPromptV2, other.PickLeafPromptV2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.PromptsFilterBranch?>.Default.Equals(Branch, other.Branch) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.PromptsFilterNodeEnum?>.Default.Equals(Enum, other.Enum) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.PromptsFilterNodeEnum?>.Default.Equals(Enum, other.Enum)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(PromptsFilterNode obj1, PromptsFilterNode obj2)
         {
@@ -360,7 +360,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(PromptsFilterNode obj1, PromptsFilterNode obj2)
         {
@@ -368,7 +368,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class HidePropertyRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -20,7 +20,7 @@ namespace Helicone.JsonConverters
                     {
                         return global::Helicone.TimeFrameExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

@@ -4,20 +4,20 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BodyMappingType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoMapping,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Responses,
     }

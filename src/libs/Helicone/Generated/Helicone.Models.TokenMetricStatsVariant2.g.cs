@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TokenMetricStatsVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("medianPer1000Tokens")]
         [global::System.Text.Json.Serialization.JsonRequired]

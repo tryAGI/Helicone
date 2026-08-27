@@ -4,19 +4,19 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GetUserMetricsOverviewRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("useInterquartile")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool UseInterquartile { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pSize")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.PSizeJsonConverter))]
@@ -24,7 +24,7 @@ namespace Helicone
         public required global::Helicone.PSize PSize { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filter")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.UserFilterNodeJsonConverter))]

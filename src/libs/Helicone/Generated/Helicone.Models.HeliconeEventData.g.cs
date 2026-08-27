@@ -4,19 +4,19 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class HeliconeEventData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.HeliconeEventDataTypeJsonConverter))]
         public global::Helicone.HeliconeEventDataType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,76 +4,76 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AuthorName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alibaba,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amazon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anthropic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Baidu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deepseek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MetaLlama,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Microsoft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mistral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Moonshotai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nvidia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Passthrough,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Perplexity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Qwen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zai,
     }

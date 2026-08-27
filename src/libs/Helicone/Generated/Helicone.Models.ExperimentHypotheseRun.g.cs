@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ExperimentHypotheseRun
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("request")]
         public global::Helicone.RequestObj? Request { get; set; }
@@ -22,20 +22,20 @@ namespace Helicone
         public required global::System.Collections.Generic.Dictionary<string, global::Helicone.Score2> Scores { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response")]
         public global::Helicone.ResponseObj? Response { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resultRequestId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ResultRequestId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("datasetRowId")]
         [global::System.Text.Json.Serialization.JsonRequired]

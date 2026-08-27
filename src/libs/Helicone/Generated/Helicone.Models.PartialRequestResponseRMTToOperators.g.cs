@@ -135,25 +135,25 @@ namespace Helicone
         public global::Helicone.PartialTextOperators? TargetUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("property_key")]
         public global::Helicone.PartialRequestResponseRMTToOperatorsPropertyKey? PropertyKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>? Properties { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("search_properties")]
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>? SearchProperties { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scores")]
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>? Scores { get; set; }

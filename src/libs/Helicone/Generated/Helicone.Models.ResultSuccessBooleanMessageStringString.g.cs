@@ -5,12 +5,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ResultSuccessBooleanMessageStringString : global::System.IEquatable<ResultSuccessBooleanMessageStringString>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultSuccessSuccessBooleanMessageString? ResultSuccessSuccessBooleanMessageString { get; init; }
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ResultSuccessSuccessBooleanMessageString))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsResultSuccessSuccessBooleanMessageString => ResultSuccessSuccessBooleanMessageString != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickResultSuccessSuccessBooleanMessageString(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ResultSuccessSuccessBooleanMessageString PickResultSuccessSuccessBooleanMessageString() => IsResultSuccessSuccessBooleanMessageString
             ? ResultSuccessSuccessBooleanMessageString!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ResultSuccessSuccessBooleanMessageString' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? Error { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsError => Error != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickError(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ResultErrorString PickError() => IsError
             ? Error!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResultSuccessBooleanMessageStringString(global::Helicone.ResultSuccessSuccessBooleanMessageString value) => new ResultSuccessBooleanMessageStringString((global::Helicone.ResultSuccessSuccessBooleanMessageString?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ResultSuccessSuccessBooleanMessageString?(ResultSuccessBooleanMessageStringString @this) => @this.ResultSuccessSuccessBooleanMessageString;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResultSuccessBooleanMessageStringString(global::Helicone.ResultSuccessSuccessBooleanMessageString? value)
         {
@@ -101,22 +101,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResultSuccessBooleanMessageStringString FromResultSuccessSuccessBooleanMessageString(global::Helicone.ResultSuccessSuccessBooleanMessageString? value) => new ResultSuccessBooleanMessageStringString(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResultSuccessBooleanMessageStringString(global::Helicone.ResultErrorString value) => new ResultSuccessBooleanMessageStringString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ResultErrorString?(ResultSuccessBooleanMessageStringString @this) => @this.Error;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResultSuccessBooleanMessageStringString(global::Helicone.ResultErrorString? value)
         {
@@ -124,12 +124,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResultSuccessBooleanMessageStringString FromError(global::Helicone.ResultErrorString? value) => new ResultSuccessBooleanMessageStringString(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResultSuccessBooleanMessageStringString(
             global::Helicone.ResultSuccessSuccessBooleanMessageString? resultSuccessSuccessBooleanMessageString,
@@ -141,23 +141,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Error as object ??
-            ResultSuccessSuccessBooleanMessageString as object 
+            ResultSuccessSuccessBooleanMessageString as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ResultSuccessSuccessBooleanMessageString?.ToString() ??
-            Error?.ToString() 
+            Error?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.ResultSuccessSuccessBooleanMessageString, TResult>? resultSuccessSuccessBooleanMessageString = null,
@@ -190,7 +190,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.ResultSuccessSuccessBooleanMessageString>? resultSuccessSuccessBooleanMessageString = null,
@@ -214,7 +214,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.ResultSuccessSuccessBooleanMessageString>? resultSuccessSuccessBooleanMessageString = null,
@@ -237,7 +237,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ResultSuccessBooleanMessageStringString other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultSuccessSuccessBooleanMessageString?>.Default.Equals(ResultSuccessSuccessBooleanMessageString, other.ResultSuccessSuccessBooleanMessageString) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Error, other.Error) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Error, other.Error)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ResultSuccessBooleanMessageStringString obj1, ResultSuccessBooleanMessageStringString obj2)
         {
@@ -277,7 +277,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ResultSuccessBooleanMessageStringString obj1, ResultSuccessBooleanMessageStringString obj2)
         {
@@ -285,7 +285,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

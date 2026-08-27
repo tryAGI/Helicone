@@ -9,7 +9,7 @@ namespace Helicone
     public enum ChatCompletionMessageAnnotationType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UrlCitation,
     }

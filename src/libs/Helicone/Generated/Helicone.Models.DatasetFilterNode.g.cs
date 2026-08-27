@@ -5,7 +5,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct DatasetFilterNode : global::System.IEquatable<DatasetFilterNode>
     {
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PickLeafRequestOrPromptsVersions))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsPickLeafRequestOrPromptsVersions => PickLeafRequestOrPromptsVersions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPickLeafRequestOrPromptsVersions(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.PickFilterLeafRequestOrPromptsVersions PickPickLeafRequestOrPromptsVersions() => IsPickLeafRequestOrPromptsVersions
             ? PickLeafRequestOrPromptsVersions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafRequestOrPromptsVersions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DatasetFilterBranch? Branch { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Branch))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsBranch => Branch != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBranch(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.DatasetFilterBranch PickBranch() => IsBranch
             ? Branch!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DatasetFilterNodeEnum? Enum { get; init; }
@@ -93,7 +93,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
@@ -101,7 +101,7 @@ namespace Helicone
         public bool IsEnum => Enum != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnum(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.DatasetFilterNodeEnum PickEnum() => IsEnum
             ? Enum!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DatasetFilterNode(global::Helicone.PickFilterLeafRequestOrPromptsVersions value) => new DatasetFilterNode((global::Helicone.PickFilterLeafRequestOrPromptsVersions?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.PickFilterLeafRequestOrPromptsVersions?(DatasetFilterNode @this) => @this.PickLeafRequestOrPromptsVersions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetFilterNode(global::Helicone.PickFilterLeafRequestOrPromptsVersions? value)
         {
@@ -138,22 +138,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DatasetFilterNode FromPickLeafRequestOrPromptsVersions(global::Helicone.PickFilterLeafRequestOrPromptsVersions? value) => new DatasetFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DatasetFilterNode(global::Helicone.DatasetFilterBranch value) => new DatasetFilterNode((global::Helicone.DatasetFilterBranch?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.DatasetFilterBranch?(DatasetFilterNode @this) => @this.Branch;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetFilterNode(global::Helicone.DatasetFilterBranch? value)
         {
@@ -161,22 +161,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DatasetFilterNode FromBranch(global::Helicone.DatasetFilterBranch? value) => new DatasetFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DatasetFilterNode(global::Helicone.DatasetFilterNodeEnum value) => new DatasetFilterNode((global::Helicone.DatasetFilterNodeEnum?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.DatasetFilterNodeEnum?(DatasetFilterNode @this) => @this.Enum;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetFilterNode(global::Helicone.DatasetFilterNodeEnum? value)
         {
@@ -184,12 +184,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DatasetFilterNode FromEnum(global::Helicone.DatasetFilterNodeEnum? value) => new DatasetFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetFilterNode(
             global::Helicone.PickFilterLeafRequestOrPromptsVersions? pickLeafRequestOrPromptsVersions,
@@ -203,25 +203,25 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Enum as object ??
             Branch as object ??
-            PickLeafRequestOrPromptsVersions as object 
+            PickLeafRequestOrPromptsVersions as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PickLeafRequestOrPromptsVersions?.ToString() ??
             Branch?.ToString() ??
-            Enum?.ToValueString() 
+            Enum?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.PickFilterLeafRequestOrPromptsVersions, TResult>? pickLeafRequestOrPromptsVersions = null,
@@ -259,7 +259,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.PickFilterLeafRequestOrPromptsVersions>? pickLeafRequestOrPromptsVersions = null,
@@ -289,7 +289,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.PickFilterLeafRequestOrPromptsVersions>? pickLeafRequestOrPromptsVersions = null,
@@ -317,7 +317,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(DatasetFilterNode other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.PickFilterLeafRequestOrPromptsVersions?>.Default.Equals(PickLeafRequestOrPromptsVersions, other.PickLeafRequestOrPromptsVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.DatasetFilterBranch?>.Default.Equals(Branch, other.Branch) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.DatasetFilterNodeEnum?>.Default.Equals(Enum, other.Enum) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.DatasetFilterNodeEnum?>.Default.Equals(Enum, other.Enum)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(DatasetFilterNode obj1, DatasetFilterNode obj2)
         {
@@ -360,7 +360,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(DatasetFilterNode obj1, DatasetFilterNode obj2)
         {
@@ -368,7 +368,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

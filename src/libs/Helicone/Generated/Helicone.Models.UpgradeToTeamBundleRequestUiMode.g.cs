@@ -4,16 +4,16 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UpgradeToTeamBundleRequestUiMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Embedded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hosted,
     }

@@ -9,7 +9,7 @@ namespace Helicone
     public sealed partial class PartialBooleanOperators
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("equals")]
         public bool? EqualsValue { get; set; }

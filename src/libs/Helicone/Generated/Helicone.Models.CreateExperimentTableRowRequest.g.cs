@@ -4,7 +4,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateExperimentTableRowRequest
     {
@@ -15,13 +15,13 @@ namespace Helicone
         public global::System.Collections.Generic.Dictionary<string, string>? Inputs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceRequest")]
         public string? SourceRequest { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promptVersionId")]
         [global::System.Text.Json.Serialization.JsonRequired]

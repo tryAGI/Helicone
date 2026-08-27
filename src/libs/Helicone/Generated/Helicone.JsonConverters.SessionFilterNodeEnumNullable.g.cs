@@ -20,7 +20,7 @@ namespace Helicone.JsonConverters
                     {
                         return global::Helicone.SessionFilterNodeEnumExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

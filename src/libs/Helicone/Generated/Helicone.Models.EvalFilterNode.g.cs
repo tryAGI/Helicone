@@ -5,7 +5,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct EvalFilterNode : global::System.IEquatable<EvalFilterNode>
     {
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PickLeafRequestResponseRmt))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsPickLeafRequestResponseRmt => PickLeafRequestResponseRmt != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPickLeafRequestResponseRmt(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.PickFilterLeafRequestResponseRmt PickPickLeafRequestResponseRmt() => IsPickLeafRequestResponseRmt
             ? PickLeafRequestResponseRmt!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafRequestResponseRmt' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.EvalFilterBranch? Branch { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Branch))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsBranch => Branch != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBranch(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.EvalFilterBranch PickBranch() => IsBranch
             ? Branch!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.EvalFilterNodeEnum? Enum { get; init; }
@@ -93,7 +93,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
@@ -101,7 +101,7 @@ namespace Helicone
         public bool IsEnum => Enum != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnum(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.EvalFilterNodeEnum PickEnum() => IsEnum
             ? Enum!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EvalFilterNode(global::Helicone.PickFilterLeafRequestResponseRmt value) => new EvalFilterNode((global::Helicone.PickFilterLeafRequestResponseRmt?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.PickFilterLeafRequestResponseRmt?(EvalFilterNode @this) => @this.PickLeafRequestResponseRmt;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EvalFilterNode(global::Helicone.PickFilterLeafRequestResponseRmt? value)
         {
@@ -138,22 +138,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EvalFilterNode FromPickLeafRequestResponseRmt(global::Helicone.PickFilterLeafRequestResponseRmt? value) => new EvalFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EvalFilterNode(global::Helicone.EvalFilterBranch value) => new EvalFilterNode((global::Helicone.EvalFilterBranch?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.EvalFilterBranch?(EvalFilterNode @this) => @this.Branch;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EvalFilterNode(global::Helicone.EvalFilterBranch? value)
         {
@@ -161,22 +161,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EvalFilterNode FromBranch(global::Helicone.EvalFilterBranch? value) => new EvalFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EvalFilterNode(global::Helicone.EvalFilterNodeEnum value) => new EvalFilterNode((global::Helicone.EvalFilterNodeEnum?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.EvalFilterNodeEnum?(EvalFilterNode @this) => @this.Enum;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EvalFilterNode(global::Helicone.EvalFilterNodeEnum? value)
         {
@@ -184,12 +184,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EvalFilterNode FromEnum(global::Helicone.EvalFilterNodeEnum? value) => new EvalFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EvalFilterNode(
             global::Helicone.PickFilterLeafRequestResponseRmt? pickLeafRequestResponseRmt,
@@ -203,25 +203,25 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Enum as object ??
             Branch as object ??
-            PickLeafRequestResponseRmt as object 
+            PickLeafRequestResponseRmt as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PickLeafRequestResponseRmt?.ToString() ??
             Branch?.ToString() ??
-            Enum?.ToValueString() 
+            Enum?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.PickFilterLeafRequestResponseRmt, TResult>? pickLeafRequestResponseRmt = null,
@@ -259,7 +259,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.PickFilterLeafRequestResponseRmt>? pickLeafRequestResponseRmt = null,
@@ -289,7 +289,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.PickFilterLeafRequestResponseRmt>? pickLeafRequestResponseRmt = null,
@@ -317,7 +317,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(EvalFilterNode other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.PickFilterLeafRequestResponseRmt?>.Default.Equals(PickLeafRequestResponseRmt, other.PickLeafRequestResponseRmt) &&
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.EvalFilterBranch?>.Default.Equals(Branch, other.Branch) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.EvalFilterNodeEnum?>.Default.Equals(Enum, other.Enum) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.EvalFilterNodeEnum?>.Default.Equals(Enum, other.Enum)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(EvalFilterNode obj1, EvalFilterNode obj2)
         {
@@ -360,7 +360,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(EvalFilterNode obj1, EvalFilterNode obj2)
         {
@@ -368,7 +368,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

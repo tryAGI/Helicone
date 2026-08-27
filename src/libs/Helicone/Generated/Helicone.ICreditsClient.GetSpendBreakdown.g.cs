@@ -5,7 +5,7 @@ namespace Helicone
     public partial interface ICreditsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="timeRange"></param>
         /// <param name="startDate"></param>
@@ -20,7 +20,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="timeRange"></param>
         /// <param name="startDate"></param>

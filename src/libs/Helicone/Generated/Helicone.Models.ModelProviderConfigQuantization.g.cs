@@ -4,28 +4,28 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ModelProviderConfigQuantization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bf16,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fp16,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fp4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fp8,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Int4,
     }

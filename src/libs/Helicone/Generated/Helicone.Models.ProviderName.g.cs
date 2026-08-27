@@ -4,156 +4,156 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProviderName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x2yfv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Amdbartek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anthropic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anyscale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Avian,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aws,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Azure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Baseten,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bedrock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canopywave,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cerebras,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chutes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cloudflare,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cohere,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deepinfra,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deepseek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Firecrawl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fireworks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Google,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Groq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Helicone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lemonfox,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Llama,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Local,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mistral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nebius,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Novita,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nvidia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openpipe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openrouter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Perplexity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Qstash,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Together,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vercel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wisdominanutshell,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         X,
     }

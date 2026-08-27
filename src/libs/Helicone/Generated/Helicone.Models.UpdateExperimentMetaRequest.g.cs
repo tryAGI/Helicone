@@ -4,7 +4,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateExperimentMetaRequest
     {
@@ -16,7 +16,7 @@ namespace Helicone
         public required global::System.Collections.Generic.Dictionary<string, string> Meta { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentId")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LastMileConfigFormVariant2Variant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Faithfulness,
     }

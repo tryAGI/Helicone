@@ -4,19 +4,19 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PromptCreateSubversionParams
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("newHeliconeTemplate")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required object NewHeliconeTemplate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isMajorVersion")]
         public bool? IsMajorVersion { get; set; }
@@ -28,13 +28,13 @@ namespace Helicone
         public global::Helicone.RecordStringAny? Metadata { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentId")]
         public string? ExperimentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bumpForMajorPromptVersionId")]
         public string? BumpForMajorPromptVersionId { get; set; }

@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class OTELTraceResourceSpanResourceAttributeValueArrayValueValue
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stringValue")]
         [global::System.Text.Json.Serialization.JsonRequired]

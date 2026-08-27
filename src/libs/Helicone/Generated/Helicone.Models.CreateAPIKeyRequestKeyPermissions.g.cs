@@ -4,20 +4,20 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateAPIKeyRequestKeyPermissions
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         R,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         W,
     }

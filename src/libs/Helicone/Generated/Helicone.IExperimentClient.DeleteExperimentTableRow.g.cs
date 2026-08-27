@@ -5,7 +5,7 @@ namespace Helicone
     public partial interface IExperimentClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="experimentTableId"></param>
         /// <param name="rowIndex"></param>
@@ -18,7 +18,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="experimentTableId"></param>
         /// <param name="rowIndex"></param>

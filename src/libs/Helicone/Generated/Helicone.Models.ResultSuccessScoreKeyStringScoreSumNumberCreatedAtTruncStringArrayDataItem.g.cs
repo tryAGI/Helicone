@@ -4,26 +4,26 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ResultSuccessScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayDataItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created_at_trunc")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CreatedAtTrunc { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score_sum")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ScoreSum { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("score_key")]
         [global::System.Text.Json.Serialization.JsonRequired]

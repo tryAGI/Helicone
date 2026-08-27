@@ -4,120 +4,120 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StandardParameter
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FrequencyPenalty,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FunctionCall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Functions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IncludeReasoning,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         JsonMode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogitBias,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Logprobs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MaxCompletionTokens,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MaxTokens,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinP,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         N,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PresencePenalty,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Reasoning,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RepetitionPenalty,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ResponseFormat,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Seed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stream,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StructuredOutputs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Temperature,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Thinking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolChoice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tools,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopK,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopLogprobs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TopP,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Truncate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Verbosity,
     }

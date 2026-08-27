@@ -5,12 +5,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ResultProviderMetricsString : global::System.IEquatable<ResultProviderMetricsString>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultSuccessProviderMetrics? Success { get; init; }
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Success))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsSuccess => Success != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSuccess(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ResultSuccessProviderMetrics PickSuccess() => IsSuccess
             ? Success!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ResultErrorString? Error { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsError => Error != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickError(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ResultErrorString PickError() => IsError
             ? Error!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResultProviderMetricsString(global::Helicone.ResultSuccessProviderMetrics value) => new ResultProviderMetricsString((global::Helicone.ResultSuccessProviderMetrics?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ResultSuccessProviderMetrics?(ResultProviderMetricsString @this) => @this.Success;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResultProviderMetricsString(global::Helicone.ResultSuccessProviderMetrics? value)
         {
@@ -101,22 +101,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResultProviderMetricsString FromSuccess(global::Helicone.ResultSuccessProviderMetrics? value) => new ResultProviderMetricsString(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResultProviderMetricsString(global::Helicone.ResultErrorString value) => new ResultProviderMetricsString((global::Helicone.ResultErrorString?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ResultErrorString?(ResultProviderMetricsString @this) => @this.Error;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResultProviderMetricsString(global::Helicone.ResultErrorString? value)
         {
@@ -124,12 +124,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResultProviderMetricsString FromError(global::Helicone.ResultErrorString? value) => new ResultProviderMetricsString(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResultProviderMetricsString(
             global::Helicone.ResultSuccessProviderMetrics? success,
@@ -141,23 +141,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Error as object ??
-            Success as object 
+            Success as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Success?.ToString() ??
-            Error?.ToString() 
+            Error?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.ResultSuccessProviderMetrics, TResult>? success = null,
@@ -190,7 +190,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.ResultSuccessProviderMetrics>? success = null,
@@ -214,7 +214,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.ResultSuccessProviderMetrics>? success = null,
@@ -237,7 +237,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ResultProviderMetricsString other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultSuccessProviderMetrics?>.Default.Equals(Success, other.Success) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Error, other.Error) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Error, other.Error)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ResultProviderMetricsString obj1, ResultProviderMetricsString obj2)
         {
@@ -277,7 +277,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ResultProviderMetricsString obj1, ResultProviderMetricsString obj2)
         {
@@ -285,7 +285,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

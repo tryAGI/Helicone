@@ -4,47 +4,47 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UsageStatsResponseEstimatedCost
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectedMonthlyTotalCost")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ProjectedMonthlyTotalCost { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectedMonthlyGBCost")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ProjectedMonthlyGBCost { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectedMonthlyRequestsCost")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ProjectedMonthlyRequestsCost { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalCost")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalCost { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gbCost")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double GbCost { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestsCost")]
         [global::System.Text.Json.Serialization.JsonRequired]

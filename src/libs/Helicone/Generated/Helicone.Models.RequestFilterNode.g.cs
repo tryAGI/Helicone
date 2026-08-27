@@ -5,7 +5,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct RequestFilterNode : global::System.IEquatable<RequestFilterNode>
     {
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PickLeafFeedbackOrResponsePropertiesValuesRmtSessions))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsPickLeafFeedbackOrResponsePropertiesValuesRmtSessions => PickLeafFeedbackOrResponsePropertiesValuesRmtSessions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPickLeafFeedbackOrResponsePropertiesValuesRmtSessions(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt PickPickLeafFeedbackOrResponsePropertiesValuesRmtSessions() => IsPickLeafFeedbackOrResponsePropertiesValuesRmtSessions
             ? PickLeafFeedbackOrResponsePropertiesValuesRmtSessions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafFeedbackOrResponsePropertiesValuesRmtSessions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.RequestFilterBranch? Branch { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Branch))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsBranch => Branch != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBranch(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.RequestFilterBranch PickBranch() => IsBranch
             ? Branch!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.RequestFilterNodeEnum? Enum { get; init; }
@@ -93,7 +93,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
@@ -101,7 +101,7 @@ namespace Helicone
         public bool IsEnum => Enum != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnum(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.RequestFilterNodeEnum PickEnum() => IsEnum
             ? Enum!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator RequestFilterNode(global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt value) => new RequestFilterNode((global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt?(RequestFilterNode @this) => @this.PickLeafFeedbackOrResponsePropertiesValuesRmtSessions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RequestFilterNode(global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt? value)
         {
@@ -138,22 +138,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static RequestFilterNode FromPickLeafFeedbackOrResponsePropertiesValuesRmtSessions(global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt? value) => new RequestFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator RequestFilterNode(global::Helicone.RequestFilterBranch value) => new RequestFilterNode((global::Helicone.RequestFilterBranch?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.RequestFilterBranch?(RequestFilterNode @this) => @this.Branch;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RequestFilterNode(global::Helicone.RequestFilterBranch? value)
         {
@@ -161,22 +161,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static RequestFilterNode FromBranch(global::Helicone.RequestFilterBranch? value) => new RequestFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator RequestFilterNode(global::Helicone.RequestFilterNodeEnum value) => new RequestFilterNode((global::Helicone.RequestFilterNodeEnum?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.RequestFilterNodeEnum?(RequestFilterNode @this) => @this.Enum;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RequestFilterNode(global::Helicone.RequestFilterNodeEnum? value)
         {
@@ -184,12 +184,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static RequestFilterNode FromEnum(global::Helicone.RequestFilterNodeEnum? value) => new RequestFilterNode(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RequestFilterNode(
             global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions,
@@ -203,25 +203,25 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Enum as object ??
             Branch as object ??
-            PickLeafFeedbackOrResponsePropertiesValuesRmtSessions as object 
+            PickLeafFeedbackOrResponsePropertiesValuesRmtSessions as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             PickLeafFeedbackOrResponsePropertiesValuesRmtSessions?.ToString() ??
             Branch?.ToString() ??
-            Enum?.ToValueString() 
+            Enum?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt, TResult>? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions = null,
@@ -259,7 +259,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt>? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions = null,
@@ -289,7 +289,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt>? pickLeafFeedbackOrResponsePropertiesValuesRmtSessions = null,
@@ -317,7 +317,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(RequestFilterNode other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt?>.Default.Equals(PickLeafFeedbackOrResponsePropertiesValuesRmtSessions, other.PickLeafFeedbackOrResponsePropertiesValuesRmtSessions) &&
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.RequestFilterBranch?>.Default.Equals(Branch, other.Branch) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.RequestFilterNodeEnum?>.Default.Equals(Enum, other.Enum) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.RequestFilterNodeEnum?>.Default.Equals(Enum, other.Enum)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(RequestFilterNode obj1, RequestFilterNode obj2)
         {
@@ -360,7 +360,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(RequestFilterNode obj1, RequestFilterNode obj2)
         {
@@ -368,7 +368,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

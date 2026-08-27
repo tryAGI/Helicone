@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DataEntryVariant4Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OutputBody,
     }

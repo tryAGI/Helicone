@@ -5,7 +5,7 @@ namespace Helicone
     public partial interface IStripeClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="searchKind"></param>
         /// <param name="limit"></param>
@@ -20,7 +20,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="searchKind"></param>
         /// <param name="limit"></param>

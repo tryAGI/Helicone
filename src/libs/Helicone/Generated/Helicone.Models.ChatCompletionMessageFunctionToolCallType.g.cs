@@ -9,7 +9,7 @@ namespace Helicone
     public enum ChatCompletionMessageFunctionToolCallType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }

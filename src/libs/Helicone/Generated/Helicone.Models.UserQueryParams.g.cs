@@ -4,18 +4,18 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UserQueryParams
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userIds")]
         public global::System.Collections.Generic.IList<string>? UserIds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timeFilter")]
         public global::Helicone.UserQueryParamsTimeFilter? TimeFilter { get; set; }

@@ -5,12 +5,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct LastMileConfigForm : global::System.IEquatable<LastMileConfigForm>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.BaseLastMileConfigForm? Base { get; init; }
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Base))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsBase => Base != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBase(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.BaseLastMileConfigForm PickBase() => IsBase
             ? Base!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>? LastMileConfigFormVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(LastMileConfigFormVariant2))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsLastMileConfigFormVariant2 => LastMileConfigFormVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLastMileConfigFormVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2> PickLastMileConfigFormVariant2() => IsLastMileConfigFormVariant2
             ? LastMileConfigFormVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LastMileConfigFormVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LastMileConfigForm(global::Helicone.BaseLastMileConfigForm value) => new LastMileConfigForm((global::Helicone.BaseLastMileConfigForm?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.BaseLastMileConfigForm?(LastMileConfigForm @this) => @this.Base;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LastMileConfigForm(global::Helicone.BaseLastMileConfigForm? value)
         {
@@ -101,22 +101,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LastMileConfigForm FromBase(global::Helicone.BaseLastMileConfigForm? value) => new LastMileConfigForm(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LastMileConfigForm(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2> value) => new LastMileConfigForm((global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>?(LastMileConfigForm @this) => @this.LastMileConfigFormVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LastMileConfigForm(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>? value)
         {
@@ -124,12 +124,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LastMileConfigForm FromLastMileConfigFormVariant2(global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>? value) => new LastMileConfigForm(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LastMileConfigForm(
             global::Helicone.BaseLastMileConfigForm? @base,
@@ -141,23 +141,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             LastMileConfigFormVariant2 as object ??
-            Base as object 
+            Base as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Base?.ToString() ??
-            LastMileConfigFormVariant2?.ToString() 
+            LastMileConfigFormVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.BaseLastMileConfigForm, TResult>? @base = null,
@@ -190,7 +190,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.BaseLastMileConfigForm>? @base = null,
@@ -214,7 +214,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.BaseLastMileConfigForm>? @base = null,
@@ -237,7 +237,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(LastMileConfigForm other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.BaseLastMileConfigForm?>.Default.Equals(Base, other.Base) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>?>.Default.Equals(LastMileConfigFormVariant2, other.LastMileConfigFormVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>?>.Default.Equals(LastMileConfigFormVariant2, other.LastMileConfigFormVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(LastMileConfigForm obj1, LastMileConfigForm obj2)
         {
@@ -277,7 +277,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(LastMileConfigForm obj1, LastMileConfigForm obj2)
         {
@@ -285,7 +285,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

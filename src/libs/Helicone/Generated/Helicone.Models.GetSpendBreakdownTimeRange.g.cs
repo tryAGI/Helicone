@@ -4,24 +4,24 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GetSpendBreakdownTimeRange
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x30d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x7d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x90d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
     }

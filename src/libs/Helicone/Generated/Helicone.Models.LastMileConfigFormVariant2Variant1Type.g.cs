@@ -4,16 +4,16 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LastMileConfigFormVariant2Variant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContextRelevance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Relevance,
     }

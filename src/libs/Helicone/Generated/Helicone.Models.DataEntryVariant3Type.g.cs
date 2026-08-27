@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DataEntryVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InputBody,
     }

@@ -5,7 +5,7 @@ namespace Helicone
     public partial interface IIntegrationClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="integrationId"></param>
         /// <param name="request"></param>
@@ -19,7 +19,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="integrationId"></param>
         /// <param name="request"></param>
@@ -33,7 +33,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="integrationId"></param>
         /// <param name="integrationName"></param>

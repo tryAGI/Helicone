@@ -5,7 +5,7 @@ namespace Helicone
     public partial interface IPrompt2025Client
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="promptId"></param>
         /// <param name="versionId"></param>
@@ -18,7 +18,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="promptId"></param>
         /// <param name="versionId"></param>

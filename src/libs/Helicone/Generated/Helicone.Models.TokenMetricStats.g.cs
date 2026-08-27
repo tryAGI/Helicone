@@ -5,12 +5,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct TokenMetricStats : global::System.IEquatable<TokenMetricStats>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.MetricStats? MetricStats { get; init; }
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MetricStats))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsMetricStats => MetricStats != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMetricStats(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.MetricStats PickMetricStats() => IsMetricStats
             ? MetricStats!
             : throw new global::System.InvalidOperationException($"Expected union variant 'MetricStats' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.TokenMetricStatsVariant2? TokenMetricStatsVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(TokenMetricStatsVariant2))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsTokenMetricStatsVariant2 => TokenMetricStatsVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTokenMetricStatsVariant2(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.TokenMetricStatsVariant2 PickTokenMetricStatsVariant2() => IsTokenMetricStatsVariant2
             ? TokenMetricStatsVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'TokenMetricStatsVariant2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TokenMetricStats(global::Helicone.MetricStats value) => new TokenMetricStats((global::Helicone.MetricStats?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.MetricStats?(TokenMetricStats @this) => @this.MetricStats;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TokenMetricStats(global::Helicone.MetricStats? value)
         {
@@ -101,22 +101,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TokenMetricStats FromMetricStats(global::Helicone.MetricStats? value) => new TokenMetricStats(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TokenMetricStats(global::Helicone.TokenMetricStatsVariant2 value) => new TokenMetricStats((global::Helicone.TokenMetricStatsVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.TokenMetricStatsVariant2?(TokenMetricStats @this) => @this.TokenMetricStatsVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TokenMetricStats(global::Helicone.TokenMetricStatsVariant2? value)
         {
@@ -124,12 +124,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TokenMetricStats FromTokenMetricStatsVariant2(global::Helicone.TokenMetricStatsVariant2? value) => new TokenMetricStats(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TokenMetricStats(
             global::Helicone.MetricStats? metricStats,
@@ -141,23 +141,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             TokenMetricStatsVariant2 as object ??
-            MetricStats as object 
+            MetricStats as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             MetricStats?.ToString() ??
-            TokenMetricStatsVariant2?.ToString() 
+            TokenMetricStatsVariant2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.MetricStats, TResult>? metricStats = null,
@@ -190,7 +190,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.MetricStats>? metricStats = null,
@@ -214,7 +214,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.MetricStats>? metricStats = null,
@@ -237,7 +237,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TokenMetricStats other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.MetricStats?>.Default.Equals(MetricStats, other.MetricStats) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.TokenMetricStatsVariant2?>.Default.Equals(TokenMetricStatsVariant2, other.TokenMetricStatsVariant2) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.TokenMetricStatsVariant2?>.Default.Equals(TokenMetricStatsVariant2, other.TokenMetricStatsVariant2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TokenMetricStats obj1, TokenMetricStats obj2)
         {
@@ -277,7 +277,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TokenMetricStats obj1, TokenMetricStats obj2)
         {
@@ -285,7 +285,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

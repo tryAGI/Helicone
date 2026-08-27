@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateProviderKeyRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("byokEnabled")]
         public bool? ByokEnabled { get; set; }
@@ -21,13 +21,13 @@ namespace Helicone
         public global::System.Collections.Generic.Dictionary<string, string>? Config { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerSecretKey")]
         public string? ProviderSecretKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerKey")]
         public string? ProviderKey { get; set; }

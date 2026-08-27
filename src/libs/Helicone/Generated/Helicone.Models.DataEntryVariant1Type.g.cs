@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DataEntryVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SystemPrompt,
     }

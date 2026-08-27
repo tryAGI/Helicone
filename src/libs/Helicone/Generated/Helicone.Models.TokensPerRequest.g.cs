@@ -4,26 +4,26 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TokensPerRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("average_prompt_tokens_per_response")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double AveragePromptTokensPerResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("average_completion_tokens_per_response")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double AverageCompletionTokensPerResponse { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("average_total_tokens_per_response")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -5,12 +5,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct Provider : global::System.IEquatable<Provider>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ProviderName? Name { get; init; }
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Name))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsName => Name != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickName(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ProviderName PickName() => IsName
             ? Name!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Name' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ModelProviderName? ModelName { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ModelName))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsModelName => ModelName != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickModelName(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ModelProviderName PickModelName() => IsModelName
             ? ModelName!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ModelName' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.ProviderEnum? Enum { get; init; }
@@ -93,7 +93,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Enum))]
@@ -101,7 +101,7 @@ namespace Helicone
         public bool IsEnum => Enum != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEnum(
 #if NET6_0_OR_GREATER
@@ -114,23 +114,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ProviderEnum PickEnum() => IsEnum
             ? Enum!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Provider(global::Helicone.ProviderName value) => new Provider((global::Helicone.ProviderName?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ProviderName?(Provider @this) => @this.Name;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Provider(global::Helicone.ProviderName? value)
         {
@@ -138,22 +138,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Provider FromName(global::Helicone.ProviderName? value) => new Provider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Provider(global::Helicone.ModelProviderName value) => new Provider((global::Helicone.ModelProviderName?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ModelProviderName?(Provider @this) => @this.ModelName;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Provider(global::Helicone.ModelProviderName? value)
         {
@@ -161,22 +161,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Provider FromModelName(global::Helicone.ModelProviderName? value) => new Provider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Provider(global::Helicone.ProviderEnum value) => new Provider((global::Helicone.ProviderEnum?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ProviderEnum?(Provider @this) => @this.Enum;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Provider(global::Helicone.ProviderEnum? value)
         {
@@ -184,12 +184,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Provider FromEnum(global::Helicone.ProviderEnum? value) => new Provider(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Provider(
             global::Helicone.ProviderName? name,
@@ -203,25 +203,25 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Enum as object ??
             ModelName as object ??
-            Name as object 
+            Name as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Name?.ToValueString() ??
             ModelName?.ToValueString() ??
-            Enum?.ToValueString() 
+            Enum?.ToValueString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -229,7 +229,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.ProviderName?, TResult>? name = null,
@@ -259,7 +259,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.ProviderName?>? name = null,
@@ -289,7 +289,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.ProviderName?>? name = null,
@@ -317,7 +317,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -340,19 +340,19 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Provider other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.ProviderName?>.Default.Equals(Name, other.Name) &&
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.ModelProviderName?>.Default.Equals(ModelName, other.ModelName) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ProviderEnum?>.Default.Equals(Enum, other.Enum) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ProviderEnum?>.Default.Equals(Enum, other.Enum)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Provider obj1, Provider obj2)
         {
@@ -360,7 +360,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Provider obj1, Provider obj2)
         {
@@ -368,7 +368,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PromptVersionsFilterBranch
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("right")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.PromptVersionsFilterNodeJsonConverter))]
@@ -17,7 +17,7 @@ namespace Helicone
         public required global::Helicone.PromptVersionsFilterNode Right { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("operator")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorJsonConverter))]
@@ -25,7 +25,7 @@ namespace Helicone
         public required global::Helicone.PromptVersionsFilterBranchOperator Operator { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("left")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.PromptVersionsFilterNodeJsonConverter))]

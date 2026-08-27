@@ -4,16 +4,16 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DataEntryVariant3Content
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jsonify,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Message,
     }

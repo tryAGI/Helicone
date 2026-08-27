@@ -55,7 +55,7 @@ namespace Helicone
             ref string content);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="promptVersionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -75,7 +75,7 @@ namespace Helicone
             return __response.Body;
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="promptVersionId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -147,7 +147,7 @@ namespace Helicone
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Helicone.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

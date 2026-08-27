@@ -59,7 +59,7 @@ namespace Helicone
             ref string content);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="datasetId"></param>
         /// <param name="promptVersionId"></param>
@@ -87,7 +87,7 @@ namespace Helicone
             return __response.Body;
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="datasetId"></param>
         /// <param name="promptVersionId"></param>
@@ -168,7 +168,7 @@ namespace Helicone
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                             var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
@@ -465,7 +465,7 @@ namespace Helicone
             }
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="datasetId"></param>
         /// <param name="promptVersionId"></param>

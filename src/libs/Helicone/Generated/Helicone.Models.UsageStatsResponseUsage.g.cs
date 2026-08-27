@@ -4,26 +4,26 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UsageStatsResponseUsage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalGB")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalGB { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalBytes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalBytes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
         [global::System.Text.Json.Serialization.JsonRequired]

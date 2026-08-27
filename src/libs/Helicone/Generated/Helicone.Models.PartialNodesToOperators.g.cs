@@ -57,7 +57,7 @@ namespace Helicone
         public global::Helicone.PartialNumberOperators? TimeoutSeconds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("custom_properties")]
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>? CustomProperties { get; set; }

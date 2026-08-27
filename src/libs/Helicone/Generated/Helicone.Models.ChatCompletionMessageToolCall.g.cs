@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Function))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsFunction => Function != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickFunction(
 #if NET6_0_OR_GREATER
@@ -40,7 +40,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ChatCompletionMessageFunctionToolCall PickFunction() => IsFunction
             ? Function!
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Custom))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsCustom => Custom != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCustom(
 #if NET6_0_OR_GREATER
@@ -77,23 +77,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.ChatCompletionMessageCustomToolCall PickCustom() => IsCustom
             ? Custom!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Custom' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageToolCall(global::Helicone.ChatCompletionMessageFunctionToolCall value) => new ChatCompletionMessageToolCall((global::Helicone.ChatCompletionMessageFunctionToolCall?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ChatCompletionMessageFunctionToolCall?(ChatCompletionMessageToolCall @this) => @this.Function;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageToolCall(global::Helicone.ChatCompletionMessageFunctionToolCall? value)
         {
@@ -101,22 +101,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageToolCall FromFunction(global::Helicone.ChatCompletionMessageFunctionToolCall? value) => new ChatCompletionMessageToolCall(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ChatCompletionMessageToolCall(global::Helicone.ChatCompletionMessageCustomToolCall value) => new ChatCompletionMessageToolCall((global::Helicone.ChatCompletionMessageCustomToolCall?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.ChatCompletionMessageCustomToolCall?(ChatCompletionMessageToolCall @this) => @this.Custom;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageToolCall(global::Helicone.ChatCompletionMessageCustomToolCall? value)
         {
@@ -124,12 +124,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ChatCompletionMessageToolCall FromCustom(global::Helicone.ChatCompletionMessageCustomToolCall? value) => new ChatCompletionMessageToolCall(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatCompletionMessageToolCall(
             global::Helicone.ChatCompletionMessageFunctionToolCall? function,
@@ -141,23 +141,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Custom as object ??
-            Function as object 
+            Function as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Function?.ToString() ??
-            Custom?.ToString() 
+            Custom?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -165,7 +165,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.ChatCompletionMessageFunctionToolCall, TResult>? function = null,
@@ -190,7 +190,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.ChatCompletionMessageFunctionToolCall>? function = null,
@@ -214,7 +214,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.ChatCompletionMessageFunctionToolCall>? function = null,
@@ -237,7 +237,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -258,18 +258,18 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ChatCompletionMessageToolCall other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.ChatCompletionMessageFunctionToolCall?>.Default.Equals(Function, other.Function) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.ChatCompletionMessageCustomToolCall?>.Default.Equals(Custom, other.Custom) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ChatCompletionMessageCustomToolCall?>.Default.Equals(Custom, other.Custom)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ChatCompletionMessageToolCall obj1, ChatCompletionMessageToolCall obj2)
         {
@@ -277,7 +277,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ChatCompletionMessageToolCall obj1, ChatCompletionMessageToolCall obj2)
         {
@@ -285,7 +285,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

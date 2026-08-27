@@ -5,7 +5,7 @@ namespace Helicone
     public partial interface ICustomerClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="customerId"></param>
         /// <param name="request"></param>
@@ -19,7 +19,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="customerId"></param>
         /// <param name="request"></param>
@@ -33,7 +33,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="customerId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

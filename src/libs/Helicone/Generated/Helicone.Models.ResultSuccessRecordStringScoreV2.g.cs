@@ -4,7 +4,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ResultSuccessRecordStringScoreV2
     {
@@ -16,7 +16,7 @@ namespace Helicone
         public required global::System.Collections.Generic.Dictionary<string, global::Helicone.ScoreV2> Data { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         public double? Error { get; set; }

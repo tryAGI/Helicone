@@ -4,31 +4,31 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ModelSpendPricing
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheWritePer1M")]
         public double? CacheWritePer1M { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheReadPer1M")]
         public double? CacheReadPer1M { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("outputPer1M")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double OutputPer1M { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inputPer1M")]
         [global::System.Text.Json.Serialization.JsonRequired]

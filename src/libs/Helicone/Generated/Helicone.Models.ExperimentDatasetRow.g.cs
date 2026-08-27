@@ -4,33 +4,33 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ExperimentDatasetRow
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rowId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string RowId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inputRecord")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Helicone.ExperimentDatasetRowInputRecord InputRecord { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rowIndex")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double RowIndex { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("columnId")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,20 +4,20 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TimeFrame
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x24h,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x30d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x7d,
     }

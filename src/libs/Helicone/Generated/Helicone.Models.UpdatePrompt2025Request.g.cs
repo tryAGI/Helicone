@@ -4,7 +4,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdatePrompt2025Request
     {
@@ -16,34 +16,34 @@ namespace Helicone
         public required global::Helicone.OpenAIChatRequest PromptBody { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("commitMessage")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CommitMessage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
         public string? Environment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("newMajorVersion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool NewMajorVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promptVersionId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PromptVersionId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promptId")]
         [global::System.Text.Json.Serialization.JsonRequired]
