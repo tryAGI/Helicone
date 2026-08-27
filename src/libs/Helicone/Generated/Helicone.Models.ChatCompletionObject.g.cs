@@ -9,7 +9,7 @@ namespace Helicone
     public enum ChatCompletionObject
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatCompletion,
     }

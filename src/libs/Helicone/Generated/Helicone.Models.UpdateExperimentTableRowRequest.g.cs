@@ -4,7 +4,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateExperimentTableRowRequest
     {
@@ -16,7 +16,7 @@ namespace Helicone
         public required global::System.Collections.Generic.Dictionary<string, string> Inputs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inputRecordId")]
         [global::System.Text.Json.Serialization.JsonRequired]

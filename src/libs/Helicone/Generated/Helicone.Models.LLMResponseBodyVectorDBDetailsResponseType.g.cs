@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LLMResponseBodyVectorDBDetailsResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VectorDb,
     }

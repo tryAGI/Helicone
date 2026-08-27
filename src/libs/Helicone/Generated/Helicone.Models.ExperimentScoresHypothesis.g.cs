@@ -4,7 +4,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ExperimentScoresHypothesis
     {
@@ -16,7 +16,7 @@ namespace Helicone
         public required global::System.Collections.Generic.Dictionary<string, global::Helicone.Score2> Scores { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("runsCount")]
         [global::System.Text.Json.Serialization.JsonRequired]

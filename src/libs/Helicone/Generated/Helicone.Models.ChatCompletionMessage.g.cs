@@ -45,7 +45,7 @@ namespace Helicone
         public global::Helicone.ChatCompletionAudio? Audio { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("function_call")]
         [global::System.Obsolete("This property marked as deprecated.")]

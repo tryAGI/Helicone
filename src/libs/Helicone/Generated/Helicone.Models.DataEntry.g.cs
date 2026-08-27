@@ -5,12 +5,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct DataEntry : global::System.IEquatable<DataEntry>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DataEntryVariant1? DataEntryVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DataEntryVariant1))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsDataEntryVariant1 => DataEntryVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDataEntryVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.DataEntryVariant1 PickDataEntryVariant1() => IsDataEntryVariant1
             ? DataEntryVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DataEntryVariant2? DataEntryVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DataEntryVariant2))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsDataEntryVariant2 => DataEntryVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDataEntryVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.DataEntryVariant2 PickDataEntryVariant2() => IsDataEntryVariant2
             ? DataEntryVariant2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DataEntryVariant3? DataEntryVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DataEntryVariant3))]
@@ -101,7 +101,7 @@ namespace Helicone
         public bool IsDataEntryVariant3 => DataEntryVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDataEntryVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.DataEntryVariant3 PickDataEntryVariant3() => IsDataEntryVariant3
             ? DataEntryVariant3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Helicone.DataEntryVariant4? DataEntryVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(DataEntryVariant4))]
@@ -138,7 +138,7 @@ namespace Helicone
         public bool IsDataEntryVariant4 => DataEntryVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDataEntryVariant4(
 #if NET6_0_OR_GREATER
@@ -151,23 +151,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Helicone.DataEntryVariant4 PickDataEntryVariant4() => IsDataEntryVariant4
             ? DataEntryVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'DataEntryVariant4' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DataEntry(global::Helicone.DataEntryVariant1 value) => new DataEntry((global::Helicone.DataEntryVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.DataEntryVariant1?(DataEntry @this) => @this.DataEntryVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DataEntry(global::Helicone.DataEntryVariant1? value)
         {
@@ -175,22 +175,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DataEntry FromDataEntryVariant1(global::Helicone.DataEntryVariant1? value) => new DataEntry(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DataEntry(global::Helicone.DataEntryVariant2 value) => new DataEntry((global::Helicone.DataEntryVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.DataEntryVariant2?(DataEntry @this) => @this.DataEntryVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DataEntry(global::Helicone.DataEntryVariant2? value)
         {
@@ -198,22 +198,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DataEntry FromDataEntryVariant2(global::Helicone.DataEntryVariant2? value) => new DataEntry(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DataEntry(global::Helicone.DataEntryVariant3 value) => new DataEntry((global::Helicone.DataEntryVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.DataEntryVariant3?(DataEntry @this) => @this.DataEntryVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DataEntry(global::Helicone.DataEntryVariant3? value)
         {
@@ -221,22 +221,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DataEntry FromDataEntryVariant3(global::Helicone.DataEntryVariant3? value) => new DataEntry(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator DataEntry(global::Helicone.DataEntryVariant4 value) => new DataEntry((global::Helicone.DataEntryVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Helicone.DataEntryVariant4?(DataEntry @this) => @this.DataEntryVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DataEntry(global::Helicone.DataEntryVariant4? value)
         {
@@ -244,12 +244,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static DataEntry FromDataEntryVariant4(global::Helicone.DataEntryVariant4? value) => new DataEntry(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DataEntry(
             global::Helicone.DataEntryVariant1? dataEntryVariant1,
@@ -265,27 +265,27 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             DataEntryVariant4 as object ??
             DataEntryVariant3 as object ??
             DataEntryVariant2 as object ??
-            DataEntryVariant1 as object 
+            DataEntryVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             DataEntryVariant1?.ToString() ??
             DataEntryVariant2?.ToString() ??
             DataEntryVariant3?.ToString() ??
-            DataEntryVariant4?.ToString() 
+            DataEntryVariant4?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -293,7 +293,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Helicone.DataEntryVariant1, TResult>? dataEntryVariant1 = null,
@@ -328,7 +328,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Helicone.DataEntryVariant1>? dataEntryVariant1 = null,
@@ -364,7 +364,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Helicone.DataEntryVariant1>? dataEntryVariant1 = null,
@@ -397,7 +397,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -422,7 +422,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(DataEntry other)
         {
@@ -430,12 +430,12 @@ namespace Helicone
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.DataEntryVariant1?>.Default.Equals(DataEntryVariant1, other.DataEntryVariant1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.DataEntryVariant2?>.Default.Equals(DataEntryVariant2, other.DataEntryVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<global::Helicone.DataEntryVariant3?>.Default.Equals(DataEntryVariant3, other.DataEntryVariant3) &&
-                global::System.Collections.Generic.EqualityComparer<global::Helicone.DataEntryVariant4?>.Default.Equals(DataEntryVariant4, other.DataEntryVariant4) 
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.DataEntryVariant4?>.Default.Equals(DataEntryVariant4, other.DataEntryVariant4)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(DataEntry obj1, DataEntry obj2)
         {
@@ -443,7 +443,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(DataEntry obj1, DataEntry obj2)
         {
@@ -451,7 +451,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

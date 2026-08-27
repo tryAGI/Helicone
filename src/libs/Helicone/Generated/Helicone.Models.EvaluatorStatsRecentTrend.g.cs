@@ -4,20 +4,20 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EvaluatorStatsRecentTrend
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Down,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Up,
     }

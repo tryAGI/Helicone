@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OpenAIChatRequestToolChoiceEnumFunctionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }

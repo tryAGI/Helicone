@@ -4,7 +4,7 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateProviderKeyRequest
     {
@@ -16,34 +16,34 @@ namespace Helicone
         public required global::System.Collections.Generic.Dictionary<string, string> Config { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("byokEnabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool ByokEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerKeyName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderKeyName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerSecretKey")]
         public string? ProviderSecretKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerKey")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProviderKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("providerName")]
         [global::System.Text.Json.Serialization.JsonRequired]

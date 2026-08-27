@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExperimentFilterNodeEnum
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
     }

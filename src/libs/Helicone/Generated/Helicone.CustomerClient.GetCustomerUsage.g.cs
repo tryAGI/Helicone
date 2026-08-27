@@ -57,7 +57,7 @@ namespace Helicone
             ref string content);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="customerId"></param>
         /// <param name="request"></param>
@@ -82,7 +82,7 @@ namespace Helicone
             return __response.Body;
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="customerId"></param>
         /// <param name="request"></param>
@@ -160,7 +160,7 @@ namespace Helicone
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                             var __httpRequestContentBody = global::System.Text.Json.JsonSerializer.Serialize(request, request.GetType(), JsonSerializerContext);
                             var __httpRequestContent = new global::System.Net.Http.StringContent(
@@ -456,7 +456,7 @@ namespace Helicone
             }
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="customerId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

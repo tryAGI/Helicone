@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum OAIModelObject
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Model,
     }

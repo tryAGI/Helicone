@@ -4,89 +4,89 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class MetricsData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalRequests")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalRequests { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestCountPrevious24h")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double RequestCountPrevious24h { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requestVolumeChange")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double RequestVolumeChange { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorRate24h")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ErrorRate24h { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorRatePrevious24h")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ErrorRatePrevious24h { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorRateChange")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double ErrorRateChange { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("averageLatency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double AverageLatency { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("averageLatencyPerToken")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double AverageLatencyPerToken { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latencyChange")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double LatencyChange { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latencyPerTokenChange")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double LatencyPerTokenChange { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recentRequestCount")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double RecentRequestCount { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recentErrorCount")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,19 +4,19 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UserQueryParamsTimeFilter
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("endTimeUnixSeconds")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double EndTimeUnixSeconds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startTimeUnixSeconds")]
         [global::System.Text.Json.Serialization.JsonRequired]

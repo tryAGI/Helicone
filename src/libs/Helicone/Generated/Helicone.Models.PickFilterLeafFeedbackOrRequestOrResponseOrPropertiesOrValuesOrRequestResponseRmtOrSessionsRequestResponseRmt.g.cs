@@ -9,7 +9,7 @@ namespace Helicone
     public sealed partial class PickFilterLeafFeedbackOrRequestOrResponseOrPropertiesOrValuesOrRequestResponseRmtOrSessionsRequestResponseRmt
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("values")]
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>? Values { get; set; }
@@ -45,7 +45,7 @@ namespace Helicone
         public global::Helicone.PartialSessionsRequestResponseRMTToOperators? SessionsRequestResponseRmt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>? Properties { get; set; }

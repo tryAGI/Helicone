@@ -4,19 +4,19 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DataOverTimeRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timeFilter")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Helicone.DataOverTimeRequestTimeFilter TimeFilter { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userFilter")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.RequestClickhouseFilterNodeJsonConverter))]
@@ -24,7 +24,7 @@ namespace Helicone
         public required global::Helicone.RequestClickhouseFilterNode UserFilter { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dbIncrement")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.TimeIncrementJsonConverter))]
@@ -32,7 +32,7 @@ namespace Helicone
         public required global::Helicone.TimeIncrement DbIncrement { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timeZoneDifference")]
         [global::System.Text.Json.Serialization.JsonRequired]

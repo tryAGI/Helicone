@@ -5,12 +5,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct Json : global::System.IEquatable<Json>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public string? JsonVariant1 { get; init; }
@@ -19,7 +19,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonVariant1))]
@@ -27,7 +27,7 @@ namespace Helicone
         public bool IsJsonVariant1 => JsonVariant1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonVariant1(
 #if NET6_0_OR_GREATER
@@ -40,14 +40,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public string PickJsonVariant1() => IsJsonVariant1
             ? JsonVariant1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public double? JsonVariant2 { get; init; }
@@ -56,7 +56,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonVariant2))]
@@ -64,7 +64,7 @@ namespace Helicone
         public bool IsJsonVariant2 => JsonVariant2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonVariant2(
 #if NET6_0_OR_GREATER
@@ -77,14 +77,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public double PickJsonVariant2() => IsJsonVariant2
             ? JsonVariant2!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public bool? JsonVariant3 { get; init; }
@@ -93,7 +93,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonVariant3))]
@@ -101,7 +101,7 @@ namespace Helicone
         public bool IsJsonVariant3 => JsonVariant3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonVariant3(
 #if NET6_0_OR_GREATER
@@ -114,14 +114,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool PickJsonVariant3() => IsJsonVariant3
             ? JsonVariant3!.Value
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant3' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>? JsonVariant4 { get; init; }
@@ -130,7 +130,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonVariant4))]
@@ -138,7 +138,7 @@ namespace Helicone
         public bool IsJsonVariant4 => JsonVariant4 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonVariant4(
 #if NET6_0_OR_GREATER
@@ -151,14 +151,14 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?> PickJsonVariant4() => IsJsonVariant4
             ? JsonVariant4!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant4' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Helicone.Json>? JsonVariant5 { get; init; }
@@ -167,7 +167,7 @@ namespace Helicone
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonVariant5))]
@@ -175,7 +175,7 @@ namespace Helicone
         public bool IsJsonVariant5 => JsonVariant5 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonVariant5(
 #if NET6_0_OR_GREATER
@@ -188,23 +188,23 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Collections.Generic.IList<global::Helicone.Json> PickJsonVariant5() => IsJsonVariant5
             ? JsonVariant5!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant5' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Json(string value) => new Json((string?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator string?(Json @this) => @this.JsonVariant1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Json(string? value)
         {
@@ -212,22 +212,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Json FromJsonVariant1(string? value) => new Json(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Json(double value) => new Json((double?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator double?(Json @this) => @this.JsonVariant2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Json(double? value)
         {
@@ -235,22 +235,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Json FromJsonVariant2(double? value) => new Json(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Json(bool value) => new Json((bool?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator bool?(Json @this) => @this.JsonVariant3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Json(bool? value)
         {
@@ -258,22 +258,22 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Json FromJsonVariant3(bool? value) => new Json(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Json(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?> value) => new Json((global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>?(Json @this) => @this.JsonVariant4;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Json(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>? value)
         {
@@ -281,12 +281,12 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Json FromJsonVariant4(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>? value) => new Json(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Json(
             string? jsonVariant1,
@@ -304,29 +304,29 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             JsonVariant5 as object ??
             JsonVariant4 as object ??
             JsonVariant3 as object ??
             JsonVariant2 as object ??
-            JsonVariant1 as object 
+            JsonVariant1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             JsonVariant1?.ToString() ??
             JsonVariant2?.ToString() ??
             JsonVariant3?.ToString().ToLowerInvariant() ??
             JsonVariant4?.ToString() ??
-            JsonVariant5?.ToString() 
+            JsonVariant5?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -334,7 +334,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<string, TResult>? jsonVariant1 = null,
@@ -374,7 +374,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<string>? jsonVariant1 = null,
@@ -416,7 +416,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<string>? jsonVariant1 = null,
@@ -454,7 +454,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -481,7 +481,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Json other)
         {
@@ -490,12 +490,12 @@ namespace Helicone
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(JsonVariant2, other.JsonVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(JsonVariant3, other.JsonVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>?>.Default.Equals(JsonVariant4, other.JsonVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Helicone.Json>?>.Default.Equals(JsonVariant5, other.JsonVariant5) 
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Helicone.Json>?>.Default.Equals(JsonVariant5, other.JsonVariant5)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Json obj1, Json obj2)
         {
@@ -503,7 +503,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Json obj1, Json obj2)
         {
@@ -511,7 +511,7 @@ namespace Helicone
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

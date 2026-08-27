@@ -4,19 +4,19 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TimeFilterMs
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startTimeUnixMs")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double StartTimeUnixMs { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("endTimeUnixMs")]
         [global::System.Text.Json.Serialization.JsonRequired]

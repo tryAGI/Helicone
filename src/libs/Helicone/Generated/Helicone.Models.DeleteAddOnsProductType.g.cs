@@ -4,24 +4,24 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DeleteAddOnsProductType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alerts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Evals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Experiments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prompts,
     }

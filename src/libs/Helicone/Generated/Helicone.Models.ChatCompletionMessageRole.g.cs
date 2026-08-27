@@ -9,7 +9,7 @@ namespace Helicone
     public enum ChatCompletionMessageRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
     }

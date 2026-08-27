@@ -10,7 +10,7 @@ namespace Helicone
     public sealed partial class HeliconeClient : global::Helicone.IHeliconeClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.helicone.ai/";
 
@@ -40,7 +40,7 @@ namespace Helicone
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Helicone.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -50,7 +50,7 @@ namespace Helicone
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentClient Agent => new AgentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -60,7 +60,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApiKeyClient ApiKey => new ApiKeyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -70,7 +70,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ComparisonClient Comparison => new ComparisonClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -80,7 +80,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CreditsClient Credits => new CreditsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -90,7 +90,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public CustomerClient Customer => new CustomerClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -100,7 +100,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DashboardClient Dashboard => new DashboardClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -110,7 +110,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DatasetClient Dataset => new DatasetClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -120,7 +120,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EvalsClient Evals => new EvalsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -130,7 +130,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EvaluatorClient Evaluator => new EvaluatorClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -140,7 +140,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ExperimentClient Experiment => new ExperimentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -150,7 +150,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public HeliconeSqlClient HeliconeSql => new HeliconeSqlClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -160,7 +160,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IntegrationClient Integration => new IntegrationClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -170,7 +170,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MetricsClient Metrics => new MetricsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -180,7 +180,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelRegistryClient ModelRegistry => new ModelRegistryClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -190,7 +190,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelsClient Models => new ModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -200,7 +200,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PiClient Pi => new PiClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -210,7 +210,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PlaygroundClient Playground => new PlaygroundClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -220,7 +220,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PromptClient Prompt => new PromptClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -230,7 +230,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Prompt2025Client Prompt2025 => new Prompt2025Client(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -240,7 +240,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Prompt2025V2Client Prompt2025V2 => new Prompt2025V2Client(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -250,7 +250,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PropertyClient Property => new PropertyClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -260,7 +260,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProvidersClient Providers => new ProvidersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -270,7 +270,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RequestClient Request => new RequestClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -280,7 +280,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SecurityClient Security => new SecurityClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -290,7 +290,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SessionClient Session => new SessionClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -300,7 +300,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StatusClient Status => new StatusClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -310,7 +310,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StripeClient Stripe => new StripeClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -320,7 +320,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TestClient Test => new TestClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -330,7 +330,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TraceClient Trace => new TraceClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -340,7 +340,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserClient User => new UserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -350,7 +350,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VaultClient Vault => new VaultClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -360,7 +360,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WebhooksClient Webhooks => new WebhooksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -370,7 +370,7 @@ namespace Helicone
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public WrappedClient Wrapped => new WrappedClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

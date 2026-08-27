@@ -4,28 +4,28 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SessionMetricsQueryParamsPSize
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P50,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P75,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P95,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P99,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P999,
     }

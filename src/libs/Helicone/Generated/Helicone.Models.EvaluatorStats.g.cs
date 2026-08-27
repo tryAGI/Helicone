@@ -4,26 +4,26 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class EvaluatorStats
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("averageScore")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double AverageScore { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalUses")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalUses { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recentTrend")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Helicone.JsonConverters.EvaluatorStatsRecentTrendJsonConverter))]
@@ -31,14 +31,14 @@ namespace Helicone
         public required global::Helicone.EvaluatorStatsRecentTrend RecentTrend { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scoreDistribution")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Helicone.EvaluatorStatsScoreDistributionItem> ScoreDistribution { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("timeSeriesData")]
         [global::System.Text.Json.Serialization.JsonRequired]

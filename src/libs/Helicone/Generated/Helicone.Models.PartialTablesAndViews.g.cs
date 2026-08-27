@@ -141,13 +141,13 @@ namespace Helicone
         public global::Helicone.PartialOrganizationPropertiesToOperators? OrganizationProperties { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>? Properties { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("values")]
         public global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>? Values { get; set; }

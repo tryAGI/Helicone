@@ -59,7 +59,7 @@ namespace Helicone
             ref string content);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="experimentId"></param>
         /// <param name="requestId"></param>
@@ -85,7 +85,7 @@ namespace Helicone
             return __response.Body;
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="experimentId"></param>
         /// <param name="requestId"></param>
@@ -163,7 +163,7 @@ namespace Helicone
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::Helicone.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

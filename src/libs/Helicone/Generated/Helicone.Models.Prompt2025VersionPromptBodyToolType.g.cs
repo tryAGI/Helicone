@@ -4,12 +4,12 @@
 namespace Helicone
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum Prompt2025VersionPromptBodyToolType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }
