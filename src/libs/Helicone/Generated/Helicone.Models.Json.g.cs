@@ -161,9 +161,9 @@ namespace Helicone
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::System.Collections.Generic.IList<global::Helicone.Json>? JsonVariant5 { get; init; }
+        public global::System.Collections.Generic.IList<global::Helicone.Json?>? JsonVariant5 { get; init; }
 #else
-        public global::System.Collections.Generic.IList<global::Helicone.Json>? JsonVariant5 { get; }
+        public global::System.Collections.Generic.IList<global::Helicone.Json?>? JsonVariant5 { get; }
 #endif
 
         /// <summary>
@@ -181,7 +181,7 @@ namespace Helicone
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::System.Collections.Generic.IList<global::Helicone.Json>? value)
+            out global::System.Collections.Generic.IList<global::Helicone.Json?>? value)
         {
             value = JsonVariant5;
             return IsJsonVariant5;
@@ -190,7 +190,7 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.Json> PickJsonVariant5() => IsJsonVariant5
+        public global::System.Collections.Generic.IList<global::Helicone.Json?> PickJsonVariant5() => IsJsonVariant5
             ? JsonVariant5!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonVariant5' but the value was {ToString()}.");
         /// <summary>
@@ -293,7 +293,7 @@ namespace Helicone
             double? jsonVariant2,
             bool? jsonVariant3,
             global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>? jsonVariant4,
-            global::System.Collections.Generic.IList<global::Helicone.Json>? jsonVariant5
+            global::System.Collections.Generic.IList<global::Helicone.Json?>? jsonVariant5
             )
         {
             JsonVariant1 = jsonVariant1;
@@ -341,7 +341,7 @@ namespace Helicone
             global::System.Func<double?, TResult>? jsonVariant2 = null,
             global::System.Func<bool?, TResult>? jsonVariant3 = null,
             global::System.Func<global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>, TResult>? jsonVariant4 = null,
-            global::System.Func<global::System.Collections.Generic.IList<global::Helicone.Json>, TResult>? jsonVariant5 = null,
+            global::System.Func<global::System.Collections.Generic.IList<global::Helicone.Json?>, TResult>? jsonVariant5 = null,
             bool validate = true)
         {
             if (validate)
@@ -385,7 +385,7 @@ namespace Helicone
 
             global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>>? jsonVariant4 = null,
 
-            global::System.Action<global::System.Collections.Generic.IList<global::Helicone.Json>>? jsonVariant5 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Helicone.Json?>>? jsonVariant5 = null,
             bool validate = true)
         {
             if (validate)
@@ -423,7 +423,7 @@ namespace Helicone
             global::System.Action<double?>? jsonVariant2 = null,
             global::System.Action<bool?>? jsonVariant3 = null,
             global::System.Action<global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>>? jsonVariant4 = null,
-            global::System.Action<global::System.Collections.Generic.IList<global::Helicone.Json>>? jsonVariant5 = null,
+            global::System.Action<global::System.Collections.Generic.IList<global::Helicone.Json?>>? jsonVariant5 = null,
             bool validate = true)
         {
             if (validate)
@@ -469,7 +469,7 @@ namespace Helicone
                 JsonVariant4,
                 typeof(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>),
                 JsonVariant5,
-                typeof(global::System.Collections.Generic.IList<global::Helicone.Json>),
+                typeof(global::System.Collections.Generic.IList<global::Helicone.Json?>),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -490,7 +490,7 @@ namespace Helicone
                 global::System.Collections.Generic.EqualityComparer<double?>.Default.Equals(JsonVariant2, other.JsonVariant2) &&
                 global::System.Collections.Generic.EqualityComparer<bool?>.Default.Equals(JsonVariant3, other.JsonVariant3) &&
                 global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>?>.Default.Equals(JsonVariant4, other.JsonVariant4) &&
-                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Helicone.Json>?>.Default.Equals(JsonVariant5, other.JsonVariant5)
+                global::System.Collections.Generic.EqualityComparer<global::System.Collections.Generic.IList<global::Helicone.Json?>?>.Default.Equals(JsonVariant5, other.JsonVariant5)
                 ;
         }
 
