@@ -22,6 +22,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateProviderKeyRequest))]
@@ -513,7 +514,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TimeFrame), TypeInfoPropertyName = "TimeFrame2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ProviderMetric))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessProviderMetricArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ProviderMetric>))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -532,6 +532,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ProviderMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultProviderMetricArrayString), TypeInfoPropertyName = "ResultProviderMetricArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialUserMetricsToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialUserApiKeysTableToOperators))]
@@ -1025,7 +1026,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateAPIKeyResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateAPIKeyResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateCloudGatewayCheckoutSessionResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponse))]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1044,6 +1044,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.LLMUsage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponseDiscount))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponseDiscountCoupon))]
@@ -1340,7 +1341,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.List<string>, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestTool>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessageToolCall>))]
