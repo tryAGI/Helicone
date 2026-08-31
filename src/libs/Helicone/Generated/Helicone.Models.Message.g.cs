@@ -115,7 +115,7 @@ namespace Helicone
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_calls")]
-        public global::System.Collections.Generic.IList<global::Helicone.FunctionCall2>? ToolCalls { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.FunctionCall>? ToolCalls { get; set; }
 
         /// <summary>
         ///
@@ -218,7 +218,7 @@ namespace Helicone
             string? imageUrl,
             string? timestamp,
             string? toolCallId,
-            global::System.Collections.Generic.IList<global::Helicone.FunctionCall2>? toolCalls,
+            global::System.Collections.Generic.IList<global::Helicone.FunctionCall>? toolCalls,
             string? mimeType,
             string? content,
             string? name,

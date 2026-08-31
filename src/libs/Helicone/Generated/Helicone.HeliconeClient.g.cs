@@ -142,16 +142,6 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public ExperimentClient Experiment => new ExperimentClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
-        {
-            ReadResponseAsString = ReadResponseAsString,
-            JsonSerializerContextProvider = JsonSerializerContextProvider,
-            AutoSDKServerConfiguration = AutoSDKServerConfiguration,
-        };
-
-        /// <summary>
-        ///
-        /// </summary>
         public HeliconeSqlClient HeliconeSql => new HeliconeSqlClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

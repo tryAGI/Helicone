@@ -6,7 +6,7 @@ namespace Helicone
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class FunctionCall2
+    public sealed partial class FunctionCall
     {
         /// <summary>
         ///
@@ -35,7 +35,7 @@ namespace Helicone
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FunctionCall2" /> class.
+        /// Initializes a new instance of the <see cref="FunctionCall" /> class.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="arguments">
@@ -45,7 +45,7 @@ namespace Helicone
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public FunctionCall2(
+        public FunctionCall(
             string name,
             global::Helicone.RecordStringAny arguments,
             string? id)
@@ -56,9 +56,9 @@ namespace Helicone
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FunctionCall2" /> class.
+        /// Initializes a new instance of the <see cref="FunctionCall" /> class.
         /// </summary>
-        public FunctionCall2()
+        public FunctionCall()
         {
         }
 
