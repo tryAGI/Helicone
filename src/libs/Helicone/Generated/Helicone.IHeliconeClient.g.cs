@@ -113,11 +113,6 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public ExperimentClient Experiment { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
         public HeliconeSqlClient HeliconeSql { get; }
 
         /// <summary>
