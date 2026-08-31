@@ -47,10 +47,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateEvaluatorParams))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessNull))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultNullString), TypeInfoPropertyName = "ResultNullString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.EvaluatorExperiment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessEvaluatorExperimentArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.EvaluatorExperiment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultEvaluatorExperimentArrayString), TypeInfoPropertyName = "ResultEvaluatorExperimentArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OnlineEvaluatorByEvaluatorId))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessOnlineEvaluatorByEvaluatorIdArray))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OnlineEvaluatorByEvaluatorId>))]
@@ -96,182 +92,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.EvaluatorStatsTimeSeriesDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessEvaluatorStats))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultEvaluatorStatsString), TypeInfoPropertyName = "ResultEvaluatorStatsString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025String), TypeInfoPropertyName = "ResultPrompt2025String2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessStringArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultStringArrayString), TypeInfoPropertyName = "ResultStringArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025Input))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025Input))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025InputString), TypeInfoPropertyName = "ResultPrompt2025InputString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptCreateResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptCreateResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptCreateResponseString), TypeInfoPropertyName = "ResultPromptCreateResponseString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, double>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageToolCall>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCall))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCallType), TypeInfoPropertyName = "OpenAIChatRequestMessageToolCallType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCallFunction))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>), TypeInfoPropertyName = "AnyOfStringIListOpenAIChatRequestMessageContentVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageContentVariant2Item))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageContentVariant2ItemImageUrl))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.IList<string>, string>), TypeInfoPropertyName = "AnyOfIListStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestTool>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestTool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolFunction))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolType), TypeInfoPropertyName = "OpenAIChatRequestToolType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>), TypeInfoPropertyName = "AnyOfOpenAIChatRequestToolChoiceEnumOpenAIChatRequestToolChoiceEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunction))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType), TypeInfoPropertyName = "OpenAIChatRequestToolChoiceEnumFunctionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2), TypeInfoPropertyName = "OpenAIChatRequestToolChoiceEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestReasoningEffort), TypeInfoPropertyName = "OpenAIChatRequestReasoningEffort2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestVerbosity), TypeInfoPropertyName = "OpenAIChatRequestVerbosity2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestResponseFormat))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.OpenAIChatRequestFunctionCall>), TypeInfoPropertyName = "AnyOfStringOpenAIChatRequestFunctionCall2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestFunctionCall))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessIdString))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessIdStringData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultIdStringString), TypeInfoPropertyName = "ResultIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessNumber))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultNumberString), TypeInfoPropertyName = "ResultNumberString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025Array))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025ArrayString), TypeInfoPropertyName = "ResultPrompt2025ArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RecordStringUnknown))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBody))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageToolCall>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCall))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType), TypeInfoPropertyName = "Prompt2025VersionPromptBodyMessageToolCallType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallFunction))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>), TypeInfoPropertyName = "AnyOfStringIListPrompt2025VersionPromptBodyMessageContentVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2ItemImageUrl))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyTool>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyTool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolFunction))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolType), TypeInfoPropertyName = "Prompt2025VersionPromptBodyToolType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>), TypeInfoPropertyName = "AnyOfStringPrompt2025VersionPromptBodyToolChoice2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoice))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunction))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType), TypeInfoPropertyName = "Prompt2025VersionPromptBodyToolChoiceFunctionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025Version))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025Version))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025VersionString), TypeInfoPropertyName = "ResultPrompt2025VersionString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025VersionArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025Version>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025VersionArrayString), TypeInfoPropertyName = "ResultPrompt2025VersionArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionCounts))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionCounts))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionCountsString), TypeInfoPropertyName = "ResultPromptVersionCountsString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025Version91PromptBody93))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025Version91PromptBody93String), TypeInfoPropertyName = "ResultPrompt2025Version91PromptBody93String2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessHasPromptsBoolean))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessHasPromptsBooleanData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHasPromptsBooleanString), TypeInfoPropertyName = "ResultHasPromptsBooleanString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsResult))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptsResultArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.PromptsResult>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptsResultArrayString), TypeInfoPropertyName = "ResultPromptsResultArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialTextOperators))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialPromptToOperators))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PickFilterLeafPromptV2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterNode), TypeInfoPropertyName = "PromptsFilterNode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterBranch))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterNodeEnum), TypeInfoPropertyName = "PromptsFilterNodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterBranchOperator), TypeInfoPropertyName = "PromptsFilterBranchOperator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsQueryParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptResult))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptResult))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptResultString), TypeInfoPropertyName = "ResultPromptResultString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptQueryParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptQueryParamsTimeFilter))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreatePromptResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessCreatePromptResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultCreatePromptResponseString), TypeInfoPropertyName = "ResultCreatePromptResponseString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessMetadataRecordStringAny))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessMetadataRecordStringAnyData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultMetadataRecordStringAnyString), TypeInfoPropertyName = "ResultMetadataRecordStringAnyString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptEditSubversionLabelParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptEditSubversionTemplateParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionResult))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionResult))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultString), TypeInfoPropertyName = "ResultPromptVersionResultString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptCreateSubversionParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptInputRecord))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptInputRecordArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.PromptInputRecord>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptInputRecordArrayString), TypeInfoPropertyName = "ResultPromptInputRecordArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayDataItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayString), TypeInfoPropertyName = "ResultIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionResultArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.PromptVersionResult>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultArrayString), TypeInfoPropertyName = "ResultPromptVersionResultArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialNumberOperators))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialPromptVersionsToOperators))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PickFilterLeafPromptsVersions))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterNode), TypeInfoPropertyName = "PromptVersionsFilterNode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterBranch))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterNodeEnum), TypeInfoPropertyName = "PromptVersionsFilterNodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterBranchOperator), TypeInfoPropertyName = "PromptVersionsFilterBranchOperator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsQueryParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionResultCompiled))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionResultCompiled))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultCompiledString), TypeInfoPropertyName = "ResultPromptVersionResultCompiledString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersiosQueryParamsCompiled))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionResultFilled))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionResultFilled))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultFilledString), TypeInfoPropertyName = "ResultPromptVersionResultFilledString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExperimentIdString))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExperimentIdStringData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentIdStringString), TypeInfoPropertyName = "ResultExperimentIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentV2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExperimentV2Array))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentV2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentV2ArrayString), TypeInfoPropertyName = "ResultExperimentV2ArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentV2Output))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentV2Row))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentV2Output>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExtendedExperimentData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentV2Row>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExtendedExperimentData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExtendedExperimentDataString), TypeInfoPropertyName = "ResultExtendedExperimentDataString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateNewPromptVersionForExperimentParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Json), TypeInfoPropertyName = "Json2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Json?>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentV2PromptVersion))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExperimentV2PromptVersionArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentV2PromptVersion>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentV2PromptVersionArrayString), TypeInfoPropertyName = "ResultExperimentV2PromptVersionArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessString))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultStringString), TypeInfoPropertyName = "ResultStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessBoolean))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultBooleanString), TypeInfoPropertyName = "ResultBooleanString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ScoreV2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<double?, global::System.DateTime?, string>), TypeInfoPropertyName = "AnyOfDoubleDateTimeString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Helicone.ScoreV2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessRecordStringScoreV2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultRecordStringScoreV2String), TypeInfoPropertyName = "ResultRecordStringScoreV2String2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessScoreV2OrNull))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultScoreV2OrNullString), TypeInfoPropertyName = "ResultScoreV2OrNullString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateCloudGatewayCheckoutSessionRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpgradeToProRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpgradeToProRequestAddons))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpgradeToProRequestUiMode), TypeInfoPropertyName = "UpgradeToProRequestUiMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpgradeToTeamBundleRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpgradeToTeamBundleRequestUiMode), TypeInfoPropertyName = "UpgradeToTeamBundleRequestUiMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMUsage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMUsageTotalCost))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PaymentIntentRecord))]
@@ -287,6 +108,12 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UsageStatsResponseUsage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.DailyUsageDataPoint>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UsageStatsResponseEstimatedCost))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessIdString))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessIdStringData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultIdStringString), TypeInfoPropertyName = "ResultIdStringString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Json), TypeInfoPropertyName = "Json2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Helicone.Json?>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Json?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.IntegrationCreateParams))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Integration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessArrayIntegration))]
@@ -299,13 +126,20 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessArrayIdStringNameStringDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessArrayIdStringNameStringDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultArrayIdStringNameStringString), TypeInfoPropertyName = "ResultArrayIdStringNameStringString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessString))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultStringString), TypeInfoPropertyName = "ResultStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TestStripeMeterEventRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialResponseTableToOperators))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessNumber))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultNumberString), TypeInfoPropertyName = "ResultNumberString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialTextOperators))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialNumberOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialTimestampOperators))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialRequestTableToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialBooleanOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialFeedbackTableToOperators))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialRequestTableToOperators))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialResponseTableToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialTimestampOperatorsTyped))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialRequestResponseRMTToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialRequestResponseRMTToOperatorsPropertyKey))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Helicone.PartialTextOperators>))]
@@ -324,14 +158,14 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Provider), TypeInfoPropertyName = "Provider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ProviderEnum), TypeInfoPropertyName = "ProviderEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LlmType), TypeInfoPropertyName = "LlmType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.FunctionCall2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.FunctionCall))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Message))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.MessageAnnotation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.MessageAnnotation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.MessageAnnotationType), TypeInfoPropertyName = "MessageAnnotationType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Message>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.MessageType), TypeInfoPropertyName = "MessageType2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.FunctionCall2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.FunctionCall>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.MessageRole?>), TypeInfoPropertyName = "AnyOfStringMessageRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.MessageRole), TypeInfoPropertyName = "MessageRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.MessageType2), TypeInfoPropertyName = "MessageType22")]
@@ -346,6 +180,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HeliconeEventData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HeliconeEventDataType), TypeInfoPropertyName = "HeliconeEventDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMRequestBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.IList<string>, string>), TypeInfoPropertyName = "AnyOfIListStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMRequestBodyReasoningEffort), TypeInfoPropertyName = "LLMRequestBodyReasoningEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMRequestBodyVerbosity), TypeInfoPropertyName = "LLMRequestBodyVerbosity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Tool>))]
@@ -370,6 +205,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMResponseBodyToolDetailsResponseMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMResponseBodyError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LlmSchema))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, double>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HeliconeRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessHeliconeRequestArray))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.HeliconeRequest>))]
@@ -444,6 +280,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ValidationError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ValidationResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ValidationError>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RecordStringUnknown))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TypedProviderRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TypedProviderResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TypedTiming))]
@@ -455,6 +292,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OTELTraceResourceSpanScopeSpan))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OTELTraceResourceSpanScopeSpanSpan>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OTELTraceResourceSpanScopeSpanSpan))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OTELTraceResourceSpanScopeSpanSpanStatus))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OTELTraceResourceSpanScopeSpanSpanAttribute>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OTELTraceResourceSpanScopeSpanSpanAttribute))]
@@ -514,29 +352,13 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TimeFrame), TypeInfoPropertyName = "TimeFrame2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ProviderMetric))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessProviderMetricArray))]
-    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArray), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_c61c916e4634eed4")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_3dc749edd663c095")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_4cfba64094b5bdd5")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ProviderMetric>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultProviderMetricArrayString), TypeInfoPropertyName = "ResultProviderMetricArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialUserMetricsToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialUserApiKeysTableToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialPropertiesTableToOperators))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialPromptToOperators))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialPromptVersionsToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialExperimentToOperators))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialExperimentHypothesisRunToOperator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PartialScoreValueToOperator))]
@@ -572,6 +394,8 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Property>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPropertyArrayString), TypeInfoPropertyName = "ResultPropertyArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessUnknownArray))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessStringArray))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultStringArrayString), TypeInfoPropertyName = "ResultStringArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessValueStringCostNumberArray))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessValueStringCostNumberArrayDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessValueStringCostNumberArrayDataItem))]
@@ -582,6 +406,141 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessValueStringCountNumberArrayDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessValueStringCountNumberArrayDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultValueStringCountNumberArrayString), TypeInfoPropertyName = "ResultValueStringCountNumberArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025String), TypeInfoPropertyName = "ResultPrompt2025String2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025Input))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025Input))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025InputString), TypeInfoPropertyName = "ResultPrompt2025InputString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptCreateResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptCreateResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptCreateResponseString), TypeInfoPropertyName = "ResultPromptCreateResponseString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessage))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageToolCall>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCall))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCallType), TypeInfoPropertyName = "OpenAIChatRequestMessageToolCallType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCallFunction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>), TypeInfoPropertyName = "AnyOfStringIListOpenAIChatRequestMessageContentVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageContentVariant2Item))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageContentVariant2ItemImageUrl))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestTool>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestTool))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolFunction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolType), TypeInfoPropertyName = "OpenAIChatRequestToolType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>), TypeInfoPropertyName = "AnyOfOpenAIChatRequestToolChoiceEnumOpenAIChatRequestToolChoiceEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType), TypeInfoPropertyName = "OpenAIChatRequestToolChoiceEnumFunctionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2), TypeInfoPropertyName = "OpenAIChatRequestToolChoiceEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestReasoningEffort), TypeInfoPropertyName = "OpenAIChatRequestReasoningEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestVerbosity), TypeInfoPropertyName = "OpenAIChatRequestVerbosity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestResponseFormat))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.OpenAIChatRequestFunctionCall>), TypeInfoPropertyName = "AnyOfStringOpenAIChatRequestFunctionCall2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestFunctionCall))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025Array))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025ArrayString), TypeInfoPropertyName = "ResultPrompt2025ArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBody))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessage))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageToolCall>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCall))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType), TypeInfoPropertyName = "Prompt2025VersionPromptBodyMessageToolCallType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallFunction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>), TypeInfoPropertyName = "AnyOfStringIListPrompt2025VersionPromptBodyMessageContentVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2ItemImageUrl))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyTool>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyTool))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolFunction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolType), TypeInfoPropertyName = "Prompt2025VersionPromptBodyToolType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>), TypeInfoPropertyName = "AnyOfStringPrompt2025VersionPromptBodyToolChoice2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoice))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType), TypeInfoPropertyName = "Prompt2025VersionPromptBodyToolChoiceFunctionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025Version))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025Version))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025VersionString), TypeInfoPropertyName = "ResultPrompt2025VersionString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025VersionArray))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Prompt2025Version>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025VersionArrayString), TypeInfoPropertyName = "ResultPrompt2025VersionArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionCounts))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionCounts))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionCountsString), TypeInfoPropertyName = "ResultPromptVersionCountsString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPrompt2025Version91PromptBody93))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025Version91PromptBody93String), TypeInfoPropertyName = "ResultPrompt2025Version91PromptBody93String2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessHasPromptsBoolean))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessHasPromptsBooleanData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHasPromptsBooleanString), TypeInfoPropertyName = "ResultHasPromptsBooleanString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptsResultArray))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.PromptsResult>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptsResultArrayString), TypeInfoPropertyName = "ResultPromptsResultArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PickFilterLeafPromptV2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterNode), TypeInfoPropertyName = "PromptsFilterNode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterBranch))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterNodeEnum), TypeInfoPropertyName = "PromptsFilterNodeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterBranchOperator), TypeInfoPropertyName = "PromptsFilterBranchOperator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsQueryParams))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptResultString), TypeInfoPropertyName = "ResultPromptResultString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptQueryParams))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptQueryParamsTimeFilter))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreatePromptResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessCreatePromptResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultCreatePromptResponseString), TypeInfoPropertyName = "ResultCreatePromptResponseString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessMetadataRecordStringAny))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessMetadataRecordStringAnyData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultMetadataRecordStringAnyString), TypeInfoPropertyName = "ResultMetadataRecordStringAnyString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptEditSubversionLabelParams))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptEditSubversionTemplateParams))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultString), TypeInfoPropertyName = "ResultPromptVersionResultString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptCreateSubversionParams))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptInputRecord))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptInputRecordArray))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.PromptInputRecord>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptInputRecordArrayString), TypeInfoPropertyName = "ResultPromptInputRecordArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionResultArray))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.PromptVersionResult>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultArrayString), TypeInfoPropertyName = "ResultPromptVersionResultArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PickFilterLeafPromptsVersions))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterNode), TypeInfoPropertyName = "PromptVersionsFilterNode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterBranch))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterNodeEnum), TypeInfoPropertyName = "PromptVersionsFilterNodeEnum2")]
+    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArray), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_c61c916e4634eed4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_3dc749edd663c095")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_4cfba64094b5bdd5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterBranchOperator), TypeInfoPropertyName = "PromptVersionsFilterBranchOperator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsQueryParams))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionResultCompiled))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionResultCompiled))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultCompiledString), TypeInfoPropertyName = "ResultPromptVersionResultCompiledString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersiosQueryParamsCompiled))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionResultFilled))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessPromptVersionResultFilled))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultFilledString), TypeInfoPropertyName = "ResultPromptVersionResultFilledString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ChatCompletionTokenLogprobTopLogprob))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ChatCompletionTokenLogprob))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ChatCompletionTokenLogprobTopLogprob>))]
@@ -616,6 +575,8 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>), TypeInfoPropertyName = "AnyOfChatCompletionResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultChatCompletionOrContentStringReasoningStringCallsAnyString), TypeInfoPropertyName = "ResultChatCompletionOrContentStringReasoningStringCallsAnyString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessBoolean))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultBooleanString), TypeInfoPropertyName = "ResultBooleanString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyString))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyStringData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyStringString), TypeInfoPropertyName = "ResultApiKeyStringString2")]
@@ -769,78 +730,9 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateSavedQueryRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessHqlSavedQuery))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHqlSavedQueryString), TypeInfoPropertyName = "ResultHqlSavedQueryString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessTableIdStringExperimentIdString))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessTableIdStringExperimentIdStringData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultTableIdStringExperimentIdStringString), TypeInfoPropertyName = "ResultTableIdStringExperimentIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentTableParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentTableColumn))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentTableColumnCell>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentTableColumnCell))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentTable))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentTableColumn>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExperimentTable))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentTableString), TypeInfoPropertyName = "ResultExperimentTableString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentTableSimplified))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentTableSimplifiedColumn>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentTableSimplifiedColumn))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExperimentTableSimplified))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentTableSimplifiedString), TypeInfoPropertyName = "ResultExperimentTableSimplifiedString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExperimentTableSimplifiedArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentTableSimplified>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentTableSimplifiedArrayString), TypeInfoPropertyName = "ResultExperimentTableSimplifiedArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.NewExperimentParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessHypothesisIdString))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessHypothesisIdStringData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHypothesisIdStringString), TypeInfoPropertyName = "ResultHypothesisIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Score2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Helicone.Score2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessRunsCountNumberScoresRecordStringScore))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessRunsCountNumberScoresRecordStringScoreData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultRunsCountNumberScoresRecordStringScoreString), TypeInfoPropertyName = "ResultRunsCountNumberScoresRecordStringScoreString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResponseObj))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestObj))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentDatasetRow))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentDatasetRowInputRecord))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Collections.Generic.Dictionary<string, string>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentScores))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentScoresDataset))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentScoresHypothesis))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Experiment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentDataset))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentDatasetRow>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentHypothese>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentHypothese))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ExperimentHypotheseRun>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentHypotheseRun))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentHypotheseParentPromptVersion))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentHypothesePromptVersion))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessExperimentArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Experiment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentArrayString), TypeInfoPropertyName = "ResultExperimentArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PickFilterLeafExperiment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentFilterNode), TypeInfoPropertyName = "ExperimentFilterNode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentFilterBranch))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentFilterNodeEnum), TypeInfoPropertyName = "ExperimentFilterNodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentFilterBranchOperator), TypeInfoPropertyName = "ExperimentFilterBranchOperator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.IncludeExperimentKeys))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessDatasetIdString))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessDatasetIdStringData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultDatasetIdStringString), TypeInfoPropertyName = "ResultDatasetIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetMetadata))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.NewDatasetParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.NewDatasetParamsDatasetType), TypeInfoPropertyName = "NewDatasetParamsDatasetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PickFilterLeafRequestOrPromptsVersions))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetFilterNode), TypeInfoPropertyName = "DatasetFilterNode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetFilterBranch))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetFilterNodeEnum), TypeInfoPropertyName = "DatasetFilterNodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetFilterBranchOperator), TypeInfoPropertyName = "DatasetFilterBranchOperator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RandomDatasetParams))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetResult))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessDatasetResultArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.DatasetResult>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultDatasetResultArrayString), TypeInfoPropertyName = "ResultDatasetResultArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessArray))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultArrayString), TypeInfoPropertyName = "ResultArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HeliconeDatasetMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.NewHeliconeDatasetParams))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.MutateParams))]
@@ -922,6 +814,18 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TestPythonEvaluatorRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TestLLMEvaluatorRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TestLastMileEvaluatorRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetRequestsByIdsRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.FeedbackRequestRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PutPropertyRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateKeyRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetUserMetricsOverviewRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateSessionFeedbackRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateSessionTagRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>), TypeInfoPropertyName = "AllOfDataOverTimeRequestGetPropertiesOverTimeRequest22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetPropertiesOverTimeRequest2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HidePropertyRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RestorePropertyRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.SearchPropertiesRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RenamePrompt2025Request))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdatePrompt2025TagsRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreatePrompt2025Request))]
@@ -941,28 +845,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdatePromptUserDefinedIdRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromotePromptVersionToProductionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetInputsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateNewExperimentRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AddManualRowToExperimentRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AddManualRowsToExperimentBatchRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DeleteExperimentTableRowsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentTableRowBatchRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.CreateExperimentTableRowBatchRequestRow>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentTableRowBatchRequestRow))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateExperimentTableRowRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RunHypothesisRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentEvaluatorRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetRequestsByIdsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.FeedbackRequestRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PutPropertyRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateKeyRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetUserMetricsOverviewRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateSessionFeedbackRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateSessionTagRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>), TypeInfoPropertyName = "AllOfDataOverTimeRequestGetPropertiesOverTimeRequest22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetPropertiesOverTimeRequest2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HidePropertyRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RestorePropertyRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.SearchPropertiesRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>), TypeInfoPropertyName = "AllOfOpenAIChatRequestGenerateRequest22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GenerateRequest2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestsThroughHeliconeRequest))]
@@ -970,25 +852,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AddSessionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ModelsToCompare>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetSecurityRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateNewEmptyExperimentRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentCellRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateExperimentCellRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentColumnRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentTableRowRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentTableRowWithCellsBatchRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.CreateExperimentTableRowWithCellsBatchRequestRow>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentTableRowWithCellsBatchRequestRow))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.CreateExperimentTableRowWithCellsBatchRequestRowCell>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentTableRowWithCellsBatchRequestRowCell))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateExperimentMetaRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateNewExperimentHypothesisRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateNewExperimentHypothesisRequestStatus), TypeInfoPropertyName = "CreateNewExperimentHypothesisRequestStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateExperimentEvaluatorOldRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetExperimentsOldRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetDatasetsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.InsertDatasetRowRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateDatasetRowRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.MutateDatasetRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.QueryHeliconeDatasetRowsRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.QueryHeliconeDatasetRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateHeliconeDatasetRequestRequest))]
@@ -998,8 +861,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpsertThreadMessageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpsertThreadMessageRequestMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.SearchDocsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AddOnsProductType), TypeInfoPropertyName = "AddOnsProductType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DeleteAddOnsProductType), TypeInfoPropertyName = "DeleteAddOnsProductType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetSpendBreakdownTimeRange), TypeInfoPropertyName = "GetSpendBreakdownTimeRange2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>), TypeInfoPropertyName = "AnyOfDeleteProviderKeyResponseVariant1DeleteProviderKeyResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DeleteProviderKeyResponseVariant1))]
@@ -1026,24 +887,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateAPIKeyResponseVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateAPIKeyResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateCloudGatewayCheckoutSessionResponse))]
-    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArray), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_c61c916e4634eed4")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_3dc749edd663c095")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_4cfba64094b5bdd5")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.LLMUsage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PreviewInvoiceResponseDiscount))]
@@ -1068,7 +911,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.RestorePropertyResponse2>), TypeInfoPropertyName = "AnyOfResultErrorStringResultSuccessStringResultSuccessUnknownArrayRestorePropertyResponse22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RestorePropertyResponse2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RestorePropertyResponseData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessUnknown>), TypeInfoPropertyName = "AnyOfResultErrorStringResultSuccessUnknown2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>), TypeInfoPropertyName = "AnyOfResultErrorUnknownResultSuccessAny2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.Customer>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
@@ -1077,7 +919,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultEvaluatorResultString?), TypeInfoPropertyName = "NullableResultEvaluatorResultString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultEvaluatorResultArrayString?), TypeInfoPropertyName = "NullableResultEvaluatorResultArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultNullString?), TypeInfoPropertyName = "NullableResultNullString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultEvaluatorExperimentArrayString?), TypeInfoPropertyName = "NullableResultEvaluatorExperimentArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultOnlineEvaluatorByEvaluatorIdArrayString?), TypeInfoPropertyName = "NullableResultOnlineEvaluatorByEvaluatorIdArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultOutputStringTracesStringArrayStatusCode63NumberString?), TypeInfoPropertyName = "NullableResultOutputStringTracesStringArrayStatusCode63NumberString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<double?, bool?>?), TypeInfoPropertyName = "NullableAnyOfDoubleBoolean2")]
@@ -1096,65 +937,14 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LastMileConfigFormVariant2Variant2Type?), TypeInfoPropertyName = "NullableLastMileConfigFormVariant2Variant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.EvaluatorStatsRecentTrend?), TypeInfoPropertyName = "NullableEvaluatorStatsRecentTrend2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultEvaluatorStatsString?), TypeInfoPropertyName = "NullableResultEvaluatorStatsString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025String?), TypeInfoPropertyName = "NullableResultPrompt2025String2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultStringArrayString?), TypeInfoPropertyName = "NullableResultStringArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025InputString?), TypeInfoPropertyName = "NullableResultPrompt2025InputString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptCreateResponseString?), TypeInfoPropertyName = "NullableResultPromptCreateResponseString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCallType?), TypeInfoPropertyName = "NullableOpenAIChatRequestMessageToolCallType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListOpenAIChatRequestMessageContentVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.IList<string>, string>?), TypeInfoPropertyName = "NullableAnyOfIListStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolType?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>?), TypeInfoPropertyName = "NullableAnyOfOpenAIChatRequestToolChoiceEnumOpenAIChatRequestToolChoiceEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolChoiceEnumFunctionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolChoiceEnum22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestReasoningEffort?), TypeInfoPropertyName = "NullableOpenAIChatRequestReasoningEffort2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestVerbosity?), TypeInfoPropertyName = "NullableOpenAIChatRequestVerbosity2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.OpenAIChatRequestFunctionCall>?), TypeInfoPropertyName = "NullableAnyOfStringOpenAIChatRequestFunctionCall2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultIdStringString?), TypeInfoPropertyName = "NullableResultIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultNumberString?), TypeInfoPropertyName = "NullableResultNumberString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025ArrayString?), TypeInfoPropertyName = "NullableResultPrompt2025ArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType?), TypeInfoPropertyName = "NullablePrompt2025VersionPromptBodyMessageToolCallType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListPrompt2025VersionPromptBodyMessageContentVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolType?), TypeInfoPropertyName = "NullablePrompt2025VersionPromptBodyToolType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>?), TypeInfoPropertyName = "NullableAnyOfStringPrompt2025VersionPromptBodyToolChoice2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType?), TypeInfoPropertyName = "NullablePrompt2025VersionPromptBodyToolChoiceFunctionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025VersionString?), TypeInfoPropertyName = "NullableResultPrompt2025VersionString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025VersionArrayString?), TypeInfoPropertyName = "NullableResultPrompt2025VersionArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionCountsString?), TypeInfoPropertyName = "NullableResultPromptVersionCountsString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025Version91PromptBody93String?), TypeInfoPropertyName = "NullableResultPrompt2025Version91PromptBody93String2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHasPromptsBooleanString?), TypeInfoPropertyName = "NullableResultHasPromptsBooleanString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptsResultArrayString?), TypeInfoPropertyName = "NullableResultPromptsResultArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterNode?), TypeInfoPropertyName = "NullablePromptsFilterNode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterNodeEnum?), TypeInfoPropertyName = "NullablePromptsFilterNodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterBranchOperator?), TypeInfoPropertyName = "NullablePromptsFilterBranchOperator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptResultString?), TypeInfoPropertyName = "NullableResultPromptResultString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultCreatePromptResponseString?), TypeInfoPropertyName = "NullableResultCreatePromptResponseString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultMetadataRecordStringAnyString?), TypeInfoPropertyName = "NullableResultMetadataRecordStringAnyString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultString?), TypeInfoPropertyName = "NullableResultPromptVersionResultString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptInputRecordArrayString?), TypeInfoPropertyName = "NullableResultPromptInputRecordArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayString?), TypeInfoPropertyName = "NullableResultIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultArrayString?), TypeInfoPropertyName = "NullableResultPromptVersionResultArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterNode?), TypeInfoPropertyName = "NullablePromptVersionsFilterNode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterNodeEnum?), TypeInfoPropertyName = "NullablePromptVersionsFilterNodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterBranchOperator?), TypeInfoPropertyName = "NullablePromptVersionsFilterBranchOperator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultCompiledString?), TypeInfoPropertyName = "NullableResultPromptVersionResultCompiledString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultFilledString?), TypeInfoPropertyName = "NullableResultPromptVersionResultFilledString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentIdStringString?), TypeInfoPropertyName = "NullableResultExperimentIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentV2ArrayString?), TypeInfoPropertyName = "NullableResultExperimentV2ArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExtendedExperimentDataString?), TypeInfoPropertyName = "NullableResultExtendedExperimentDataString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Json?), TypeInfoPropertyName = "NullableJson2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentV2PromptVersionArrayString?), TypeInfoPropertyName = "NullableResultExperimentV2PromptVersionArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultStringString?), TypeInfoPropertyName = "NullableResultStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultBooleanString?), TypeInfoPropertyName = "NullableResultBooleanString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<double?, global::System.DateTime?, string>?), TypeInfoPropertyName = "NullableAnyOfDoubleDateTimeString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultRecordStringScoreV2String?), TypeInfoPropertyName = "NullableResultRecordStringScoreV2String2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultScoreV2OrNullString?), TypeInfoPropertyName = "NullableResultScoreV2OrNullString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpgradeToProRequestUiMode?), TypeInfoPropertyName = "NullableUpgradeToProRequestUiMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpgradeToTeamBundleRequestUiMode?), TypeInfoPropertyName = "NullableUpgradeToTeamBundleRequestUiMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultArrayIntegrationString?), TypeInfoPropertyName = "NullableResultArrayIntegrationString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultIntegrationString?), TypeInfoPropertyName = "NullableResultIntegrationString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultArrayIdStringNameStringString?), TypeInfoPropertyName = "NullableResultArrayIdStringNameStringString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultStringString?), TypeInfoPropertyName = "NullableResultStringString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultNumberString?), TypeInfoPropertyName = "NullableResultNumberString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestFilterNode?), TypeInfoPropertyName = "NullableRequestFilterNode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestFilterNodeEnum?), TypeInfoPropertyName = "NullableRequestFilterNodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestFilterBranchOperator?), TypeInfoPropertyName = "NullableRequestFilterBranchOperator2")]
@@ -1173,6 +963,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HeliconeEventVectorDBType?), TypeInfoPropertyName = "NullableHeliconeEventVectorDBType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HeliconeEventVectorDBOperation?), TypeInfoPropertyName = "NullableHeliconeEventVectorDBOperation2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.HeliconeEventDataType?), TypeInfoPropertyName = "NullableHeliconeEventDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.IList<string>, string>?), TypeInfoPropertyName = "NullableAnyOfIListStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMRequestBodyReasoningEffort?), TypeInfoPropertyName = "NullableLLMRequestBodyReasoningEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMRequestBodyVerbosity?), TypeInfoPropertyName = "NullableLLMRequestBodyVerbosity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.LLMRequestBodyToolChoiceType?), TypeInfoPropertyName = "NullableLLMRequestBodyToolChoiceType2")]
@@ -1224,8 +1015,65 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestClickhouseFilterBranchOperator?), TypeInfoPropertyName = "NullableRequestClickhouseFilterBranchOperator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TimeIncrement?), TypeInfoPropertyName = "NullableTimeIncrement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPropertyArrayString?), TypeInfoPropertyName = "NullableResultPropertyArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultStringArrayString?), TypeInfoPropertyName = "NullableResultStringArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultValueStringCostNumberArrayString?), TypeInfoPropertyName = "NullableResultValueStringCostNumberArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultValueStringCountNumberArrayString?), TypeInfoPropertyName = "NullableResultValueStringCountNumberArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025String?), TypeInfoPropertyName = "NullableResultPrompt2025String2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025InputString?), TypeInfoPropertyName = "NullableResultPrompt2025InputString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptCreateResponseString?), TypeInfoPropertyName = "NullableResultPromptCreateResponseString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCallType?), TypeInfoPropertyName = "NullableOpenAIChatRequestMessageToolCallType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListOpenAIChatRequestMessageContentVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolType?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>?), TypeInfoPropertyName = "NullableAnyOfOpenAIChatRequestToolChoiceEnumOpenAIChatRequestToolChoiceEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolChoiceEnumFunctionType2")]
+    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArray), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_c61c916e4634eed4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_3dc749edd663c095")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_4cfba64094b5bdd5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolChoiceEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestReasoningEffort?), TypeInfoPropertyName = "NullableOpenAIChatRequestReasoningEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestVerbosity?), TypeInfoPropertyName = "NullableOpenAIChatRequestVerbosity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.OpenAIChatRequestFunctionCall>?), TypeInfoPropertyName = "NullableAnyOfStringOpenAIChatRequestFunctionCall2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025ArrayString?), TypeInfoPropertyName = "NullableResultPrompt2025ArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType?), TypeInfoPropertyName = "NullablePrompt2025VersionPromptBodyMessageToolCallType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListPrompt2025VersionPromptBodyMessageContentVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolType?), TypeInfoPropertyName = "NullablePrompt2025VersionPromptBodyToolType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>?), TypeInfoPropertyName = "NullableAnyOfStringPrompt2025VersionPromptBodyToolChoice2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType?), TypeInfoPropertyName = "NullablePrompt2025VersionPromptBodyToolChoiceFunctionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025VersionString?), TypeInfoPropertyName = "NullableResultPrompt2025VersionString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025VersionArrayString?), TypeInfoPropertyName = "NullableResultPrompt2025VersionArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionCountsString?), TypeInfoPropertyName = "NullableResultPromptVersionCountsString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025Version91PromptBody93String?), TypeInfoPropertyName = "NullableResultPrompt2025Version91PromptBody93String2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHasPromptsBooleanString?), TypeInfoPropertyName = "NullableResultHasPromptsBooleanString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptsResultArrayString?), TypeInfoPropertyName = "NullableResultPromptsResultArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterNode?), TypeInfoPropertyName = "NullablePromptsFilterNode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterNodeEnum?), TypeInfoPropertyName = "NullablePromptsFilterNodeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptsFilterBranchOperator?), TypeInfoPropertyName = "NullablePromptsFilterBranchOperator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptResultString?), TypeInfoPropertyName = "NullableResultPromptResultString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultCreatePromptResponseString?), TypeInfoPropertyName = "NullableResultCreatePromptResponseString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultMetadataRecordStringAnyString?), TypeInfoPropertyName = "NullableResultMetadataRecordStringAnyString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultString?), TypeInfoPropertyName = "NullableResultPromptVersionResultString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptInputRecordArrayString?), TypeInfoPropertyName = "NullableResultPromptInputRecordArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultArrayString?), TypeInfoPropertyName = "NullableResultPromptVersionResultArrayString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterNode?), TypeInfoPropertyName = "NullablePromptVersionsFilterNode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterNodeEnum?), TypeInfoPropertyName = "NullablePromptVersionsFilterNodeEnum2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromptVersionsFilterBranchOperator?), TypeInfoPropertyName = "NullablePromptVersionsFilterBranchOperator2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultCompiledString?), TypeInfoPropertyName = "NullableResultPromptVersionResultCompiledString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptVersionResultFilledString?), TypeInfoPropertyName = "NullableResultPromptVersionResultFilledString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ChatCompletionMessageAnnotationType?), TypeInfoPropertyName = "NullableChatCompletionMessageAnnotationType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ChatCompletionMessageFunctionToolCallType?), TypeInfoPropertyName = "NullableChatCompletionMessageFunctionToolCallType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ChatCompletionMessageCustomToolCallType?), TypeInfoPropertyName = "NullableChatCompletionMessageCustomToolCallType2")]
@@ -1236,6 +1084,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ChatCompletionServiceTier?), TypeInfoPropertyName = "NullableChatCompletionServiceTier2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>?), TypeInfoPropertyName = "NullableAnyOfChatCompletionResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultChatCompletionOrContentStringReasoningStringCallsAnyString?), TypeInfoPropertyName = "NullableResultChatCompletionOrContentStringReasoningStringCallsAnyString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultBooleanString?), TypeInfoPropertyName = "NullableResultBooleanString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyStringString?), TypeInfoPropertyName = "NullableResultApiKeyStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultCostNumberCreatedAtTruncStringArrayString?), TypeInfoPropertyName = "NullableResultCostNumberCreatedAtTruncStringArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AuthorName?), TypeInfoPropertyName = "NullableAuthorName2")]
@@ -1272,23 +1121,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultVoidString?), TypeInfoPropertyName = "NullableResultVoidString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHqlSavedQueryArrayString?), TypeInfoPropertyName = "NullableResultHqlSavedQueryArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHqlSavedQueryString?), TypeInfoPropertyName = "NullableResultHqlSavedQueryString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultTableIdStringExperimentIdStringString?), TypeInfoPropertyName = "NullableResultTableIdStringExperimentIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentTableString?), TypeInfoPropertyName = "NullableResultExperimentTableString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentTableSimplifiedString?), TypeInfoPropertyName = "NullableResultExperimentTableSimplifiedString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentTableSimplifiedArrayString?), TypeInfoPropertyName = "NullableResultExperimentTableSimplifiedArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHypothesisIdStringString?), TypeInfoPropertyName = "NullableResultHypothesisIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultRunsCountNumberScoresRecordStringScoreString?), TypeInfoPropertyName = "NullableResultRunsCountNumberScoresRecordStringScoreString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultExperimentArrayString?), TypeInfoPropertyName = "NullableResultExperimentArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentFilterNode?), TypeInfoPropertyName = "NullableExperimentFilterNode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentFilterNodeEnum?), TypeInfoPropertyName = "NullableExperimentFilterNodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ExperimentFilterBranchOperator?), TypeInfoPropertyName = "NullableExperimentFilterBranchOperator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultDatasetIdStringString?), TypeInfoPropertyName = "NullableResultDatasetIdStringString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.NewDatasetParamsDatasetType?), TypeInfoPropertyName = "NullableNewDatasetParamsDatasetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetFilterNode?), TypeInfoPropertyName = "NullableDatasetFilterNode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetFilterNodeEnum?), TypeInfoPropertyName = "NullableDatasetFilterNodeEnum2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DatasetFilterBranchOperator?), TypeInfoPropertyName = "NullableDatasetFilterBranchOperator2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultDatasetResultArrayString?), TypeInfoPropertyName = "NullableResultDatasetResultArrayString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultArrayString?), TypeInfoPropertyName = "NullableResultArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHeliconeDatasetRowArrayString?), TypeInfoPropertyName = "NullableResultHeliconeDatasetRowArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultHeliconeDatasetArrayString?), TypeInfoPropertyName = "NullableResultHeliconeDatasetArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultEvalArrayString?), TypeInfoPropertyName = "NullableResultEvalArrayString2")]
@@ -1309,10 +1142,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateAPIKeyRequestKeyPermissions?), TypeInfoPropertyName = "NullableCreateAPIKeyRequestKeyPermissions2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>?), TypeInfoPropertyName = "NullableAllOfDataOverTimeRequestGetPropertiesOverTimeRequest22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>?), TypeInfoPropertyName = "NullableAllOfOpenAIChatRequestGenerateRequest22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateNewExperimentHypothesisRequestStatus?), TypeInfoPropertyName = "NullableCreateNewExperimentHypothesisRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>?), TypeInfoPropertyName = "NullableAllOfOpenAIChatRequestGenerateRequest42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AddOnsProductType?), TypeInfoPropertyName = "NullableAddOnsProductType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DeleteAddOnsProductType?), TypeInfoPropertyName = "NullableDeleteAddOnsProductType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetSpendBreakdownTimeRange?), TypeInfoPropertyName = "NullableGetSpendBreakdownTimeRange2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>?), TypeInfoPropertyName = "NullableAnyOfDeleteProviderKeyResponseVariant1DeleteProviderKeyResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DeleteProviderKeyResponseVariant1ProviderName?), TypeInfoPropertyName = "NullableDeleteProviderKeyResponseVariant1ProviderName2")]
@@ -1327,44 +1157,22 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ValidationResult, object>?), TypeInfoPropertyName = "NullableAnyOfValidationResultObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.HidePropertyResponse2>?), TypeInfoPropertyName = "NullableAnyOfResultErrorStringResultSuccessStringResultSuccessUnknownArrayHidePropertyResponse22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.RestorePropertyResponse2>?), TypeInfoPropertyName = "NullableAnyOfResultErrorStringResultSuccessStringResultSuccessUnknownArrayRestorePropertyResponse22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessUnknown>?), TypeInfoPropertyName = "NullableAnyOfResultErrorStringResultSuccessUnknown2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>?), TypeInfoPropertyName = "NullableAnyOfResultErrorUnknownResultSuccessAny2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.EvaluatorResult>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.EvaluatorExperiment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OnlineEvaluatorByEvaluatorId>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.EvaluatorStatsScoreDistributionItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.EvaluatorStatsTimeSeriesDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessageToolCall>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.List<string>, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestTool>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessageToolCall>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyTool>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025Version>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PromptsResult>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PromptInputRecord>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PromptVersionResult>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentV2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentV2Output>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentV2Row>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Json?>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentV2PromptVersion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PaymentIntentRecord>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.DailyUsageDataPoint>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Json?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Integration>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessArrayIdStringNameStringDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.MessageAnnotation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Message>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.FunctionCall2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.FunctionCall>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.List<string>, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Tool>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.List<string>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Response>))]
@@ -1394,6 +1202,21 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Property>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessValueStringCostNumberArrayDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessValueStringCountNumberArrayDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessageToolCall>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OpenAIChatRequestTool>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessageToolCall>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025VersionPromptBodyTool>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Prompt2025Version>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PromptsResult>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PromptInputRecord>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PromptVersionResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ChatCompletionTokenLogprobTopLogprob>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ChatCompletionTokenLogprob>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ChatCompletionMessageAnnotation>))]
@@ -1430,16 +1253,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ClickHouseTableSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.RecordStringAny>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.HqlSavedQuery>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentTableColumnCell>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentTableColumn>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentTableSimplifiedColumn>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentTableSimplified>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Collections.Generic.Dictionary<string, string>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentDatasetRow>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentHypothese>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ExperimentHypotheseRun>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.Experiment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.DatasetResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.HeliconeDatasetRow>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.HeliconeDataset>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.EvalOverTimeItem>))]
@@ -1453,10 +1266,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.PTBInvoice>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.OrgDiscount>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ThreadSummary>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.CreateExperimentTableRowBatchRequestRow>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ModelsToCompare>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.CreateExperimentTableRowWithCellsBatchRequestRow>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.CreateExperimentTableRowWithCellsBatchRequestRowCell>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.List<global::Helicone.ProviderKeyRow>, global::Helicone.GetProviderKeysResponse2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ProviderKeyRow>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.LLMUsage>))]
@@ -1507,7 +1317,6 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorResultStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorResultArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultNullStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorExperimentArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultOnlineEvaluatorByEvaluatorIdArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultOutputStringTracesStringArrayStatusCode63NumberStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorScoreStringJsonConverter());
@@ -1515,42 +1324,13 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.DataEntryJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.LastMileConfigFormJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultEvaluatorStatsStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025StringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultStringArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025InputStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptCreateResponseStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultIdStringStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultNumberStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025ArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025VersionStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025VersionArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionCountsStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025Version91PromptBody93StringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultHasPromptsBooleanStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptsResultArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.PromptsFilterNodeJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptResultStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultCreatePromptResponseStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultMetadataRecordStringAnyStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptInputRecordArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultIdStringCreatedAtStringNumHypothesesNumberDatasetStringMetaRecordStringAnyArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.PromptVersionsFilterNodeJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultCompiledStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultFilledStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentIdStringStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentV2ArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultExtendedExperimentDataStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.JsonJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentV2PromptVersionArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultStringStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultBooleanStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultRecordStringScoreV2StringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultScoreV2OrNullStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultArrayIntegrationStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultIntegrationStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultArrayIdStringNameStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultStringStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultNumberStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.RequestFilterNodeJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ProviderJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultHeliconeRequestArrayStringJsonConverter());
@@ -1580,10 +1360,32 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.ResultPropertyStringTotalCostNumberRequestCountNumberCreatedAtTruncStringArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.RequestClickhouseFilterNodeJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultPropertyArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultStringArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultValueStringCostNumberArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultValueStringCountNumberArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025StringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025InputStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptCreateResponseStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025ArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025VersionStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025VersionArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionCountsStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPrompt2025Version91PromptBody93StringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultHasPromptsBooleanStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptsResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptsFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptResultStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultCreatePromptResponseStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultMetadataRecordStringAnyStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptInputRecordArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultArrayStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.PromptVersionsFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultCompiledStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultPromptVersionResultFilledStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ChatCompletionMessageToolCallJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultChatCompletionOrContentStringReasoningStringCallsAnyStringJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultBooleanStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultApiKeyStringStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultCostNumberCreatedAtTruncStringArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultModelRegistryResponseStringJsonConverter());
@@ -1609,18 +1411,7 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.ResultVoidStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultHqlSavedQueryArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultHqlSavedQueryStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultTableIdStringExperimentIdStringStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentTableStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentTableSimplifiedStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentTableSimplifiedArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultHypothesisIdStringStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultRunsCountNumberScoresRecordStringScoreStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultExperimentArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ExperimentFilterNodeJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultDatasetIdStringStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.DatasetFilterNodeJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultDatasetResultArrayStringJsonConverter());
-            options.Converters.Add(new global::Helicone.JsonConverters.ResultArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultHeliconeDatasetRowArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultHeliconeDatasetArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultEvalArrayStringJsonConverter());
@@ -1638,20 +1429,18 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.ResultThreadSummaryArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.MessageRole?>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.MetricsData, global::Helicone.ProviderMetricsMetrics>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.OpenAIChatRequestFunctionCall>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Helicone.Prompt2025VersionPromptBodyMessageContentVariant2Item>>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, global::System.DateTime?, string>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.MessageRole?>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.MetricsData, global::Helicone.ProviderMetricsMetrics>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, global::System.DateTime?, string>());
             options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>());
             options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>());
             options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>());
@@ -1667,7 +1456,6 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ValidationResult, object>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.HidePropertyResponse2>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.RestorePropertyResponse2>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessUnknown>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>());
             options.Converters.Add(new global::Helicone.JsonConverters.UnixTimestampJsonConverter());
 
@@ -1717,66 +1505,6 @@ namespace Helicone
                     || typeToConvert == typeof(global::Helicone.EvaluatorStatsRecentTrend)
 
                     || typeToConvert == typeof(global::Helicone.EvaluatorStatsRecentTrend?)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestMessageToolCallType)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestMessageToolCallType?)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolType)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolType?)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType?)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2?)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestReasoningEffort)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestReasoningEffort?)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestVerbosity)
-
-                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestVerbosity?)
-
-                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType)
-
-                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType?)
-
-                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolType)
-
-                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolType?)
-
-                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType)
-
-                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType?)
-
-                    || typeToConvert == typeof(global::Helicone.PromptsFilterNodeEnum)
-
-                    || typeToConvert == typeof(global::Helicone.PromptsFilterNodeEnum?)
-
-                    || typeToConvert == typeof(global::Helicone.PromptsFilterBranchOperator)
-
-                    || typeToConvert == typeof(global::Helicone.PromptsFilterBranchOperator?)
-
-                    || typeToConvert == typeof(global::Helicone.PromptVersionsFilterNodeEnum)
-
-                    || typeToConvert == typeof(global::Helicone.PromptVersionsFilterNodeEnum?)
-
-                    || typeToConvert == typeof(global::Helicone.PromptVersionsFilterBranchOperator)
-
-                    || typeToConvert == typeof(global::Helicone.PromptVersionsFilterBranchOperator?)
-
-                    || typeToConvert == typeof(global::Helicone.UpgradeToProRequestUiMode)
-
-                    || typeToConvert == typeof(global::Helicone.UpgradeToProRequestUiMode?)
-
-                    || typeToConvert == typeof(global::Helicone.UpgradeToTeamBundleRequestUiMode)
-
-                    || typeToConvert == typeof(global::Helicone.UpgradeToTeamBundleRequestUiMode?)
 
                     || typeToConvert == typeof(global::Helicone.RequestFilterNodeEnum)
 
@@ -1926,6 +1654,58 @@ namespace Helicone
 
                     || typeToConvert == typeof(global::Helicone.TimeIncrement?)
 
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestMessageToolCallType)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestMessageToolCallType?)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolType)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolType?)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType?)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2?)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestReasoningEffort)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestReasoningEffort?)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestVerbosity)
+
+                    || typeToConvert == typeof(global::Helicone.OpenAIChatRequestVerbosity?)
+
+                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType)
+
+                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType?)
+
+                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolType)
+
+                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolType?)
+
+                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType)
+
+                    || typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType?)
+
+                    || typeToConvert == typeof(global::Helicone.PromptsFilterNodeEnum)
+
+                    || typeToConvert == typeof(global::Helicone.PromptsFilterNodeEnum?)
+
+                    || typeToConvert == typeof(global::Helicone.PromptsFilterBranchOperator)
+
+                    || typeToConvert == typeof(global::Helicone.PromptsFilterBranchOperator?)
+
+                    || typeToConvert == typeof(global::Helicone.PromptVersionsFilterNodeEnum)
+
+                    || typeToConvert == typeof(global::Helicone.PromptVersionsFilterNodeEnum?)
+
+                    || typeToConvert == typeof(global::Helicone.PromptVersionsFilterBranchOperator)
+
+                    || typeToConvert == typeof(global::Helicone.PromptVersionsFilterBranchOperator?)
+
                     || typeToConvert == typeof(global::Helicone.ChatCompletionMessageAnnotationType)
 
                     || typeToConvert == typeof(global::Helicone.ChatCompletionMessageAnnotationType?)
@@ -1998,26 +1778,6 @@ namespace Helicone
 
                     || typeToConvert == typeof(global::Helicone.OAIModelsResponseObject?)
 
-                    || typeToConvert == typeof(global::Helicone.ExperimentFilterNodeEnum)
-
-                    || typeToConvert == typeof(global::Helicone.ExperimentFilterNodeEnum?)
-
-                    || typeToConvert == typeof(global::Helicone.ExperimentFilterBranchOperator)
-
-                    || typeToConvert == typeof(global::Helicone.ExperimentFilterBranchOperator?)
-
-                    || typeToConvert == typeof(global::Helicone.NewDatasetParamsDatasetType)
-
-                    || typeToConvert == typeof(global::Helicone.NewDatasetParamsDatasetType?)
-
-                    || typeToConvert == typeof(global::Helicone.DatasetFilterNodeEnum)
-
-                    || typeToConvert == typeof(global::Helicone.DatasetFilterNodeEnum?)
-
-                    || typeToConvert == typeof(global::Helicone.DatasetFilterBranchOperator)
-
-                    || typeToConvert == typeof(global::Helicone.DatasetFilterBranchOperator?)
-
                     || typeToConvert == typeof(global::Helicone.EvalFilterNodeEnum)
 
                     || typeToConvert == typeof(global::Helicone.EvalFilterNodeEnum?)
@@ -2029,18 +1789,6 @@ namespace Helicone
                     || typeToConvert == typeof(global::Helicone.CreateAPIKeyRequestKeyPermissions)
 
                     || typeToConvert == typeof(global::Helicone.CreateAPIKeyRequestKeyPermissions?)
-
-                    || typeToConvert == typeof(global::Helicone.CreateNewExperimentHypothesisRequestStatus)
-
-                    || typeToConvert == typeof(global::Helicone.CreateNewExperimentHypothesisRequestStatus?)
-
-                    || typeToConvert == typeof(global::Helicone.AddOnsProductType)
-
-                    || typeToConvert == typeof(global::Helicone.AddOnsProductType?)
-
-                    || typeToConvert == typeof(global::Helicone.DeleteAddOnsProductType)
-
-                    || typeToConvert == typeof(global::Helicone.DeleteAddOnsProductType?)
 
                     || typeToConvert == typeof(global::Helicone.GetSpendBreakdownTimeRange)
 
@@ -2143,156 +1891,6 @@ namespace Helicone
                 if (typeToConvert == typeof(global::Helicone.EvaluatorStatsRecentTrend?))
                 {
                     return new global::Helicone.JsonConverters.EvaluatorStatsRecentTrendNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestMessageToolCallType))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestMessageToolCallType?))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolType))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolType?))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType?))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2?))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestReasoningEffort))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestReasoningEffort?))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestVerbosity))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestVerbosityJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestVerbosity?))
-                {
-                    return new global::Helicone.JsonConverters.OpenAIChatRequestVerbosityNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType))
-                {
-                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType?))
-                {
-                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolType))
-                {
-                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolType?))
-                {
-                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType))
-                {
-                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType?))
-                {
-                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.PromptsFilterNodeEnum))
-                {
-                    return new global::Helicone.JsonConverters.PromptsFilterNodeEnumJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.PromptsFilterNodeEnum?))
-                {
-                    return new global::Helicone.JsonConverters.PromptsFilterNodeEnumNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.PromptsFilterBranchOperator))
-                {
-                    return new global::Helicone.JsonConverters.PromptsFilterBranchOperatorJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.PromptsFilterBranchOperator?))
-                {
-                    return new global::Helicone.JsonConverters.PromptsFilterBranchOperatorNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.PromptVersionsFilterNodeEnum))
-                {
-                    return new global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.PromptVersionsFilterNodeEnum?))
-                {
-                    return new global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.PromptVersionsFilterBranchOperator))
-                {
-                    return new global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.PromptVersionsFilterBranchOperator?))
-                {
-                    return new global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.UpgradeToProRequestUiMode))
-                {
-                    return new global::Helicone.JsonConverters.UpgradeToProRequestUiModeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.UpgradeToProRequestUiMode?))
-                {
-                    return new global::Helicone.JsonConverters.UpgradeToProRequestUiModeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.UpgradeToTeamBundleRequestUiMode))
-                {
-                    return new global::Helicone.JsonConverters.UpgradeToTeamBundleRequestUiModeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.UpgradeToTeamBundleRequestUiMode?))
-                {
-                    return new global::Helicone.JsonConverters.UpgradeToTeamBundleRequestUiModeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Helicone.RequestFilterNodeEnum))
@@ -2665,6 +2263,136 @@ namespace Helicone
                     return new global::Helicone.JsonConverters.TimeIncrementNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestMessageToolCallType))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestMessageToolCallType?))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestMessageToolCallTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolType))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolType?))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType?))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnumFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2?))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestToolChoiceEnum2NullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestReasoningEffort))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestReasoningEffort?))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestReasoningEffortNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestVerbosity))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestVerbosityJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.OpenAIChatRequestVerbosity?))
+                {
+                    return new global::Helicone.JsonConverters.OpenAIChatRequestVerbosityNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType))
+                {
+                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyMessageToolCallType?))
+                {
+                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyMessageToolCallTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolType))
+                {
+                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolType?))
+                {
+                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType))
+                {
+                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.Prompt2025VersionPromptBodyToolChoiceFunctionType?))
+                {
+                    return new global::Helicone.JsonConverters.Prompt2025VersionPromptBodyToolChoiceFunctionTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.PromptsFilterNodeEnum))
+                {
+                    return new global::Helicone.JsonConverters.PromptsFilterNodeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.PromptsFilterNodeEnum?))
+                {
+                    return new global::Helicone.JsonConverters.PromptsFilterNodeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.PromptsFilterBranchOperator))
+                {
+                    return new global::Helicone.JsonConverters.PromptsFilterBranchOperatorJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.PromptsFilterBranchOperator?))
+                {
+                    return new global::Helicone.JsonConverters.PromptsFilterBranchOperatorNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.PromptVersionsFilterNodeEnum))
+                {
+                    return new global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.PromptVersionsFilterNodeEnum?))
+                {
+                    return new global::Helicone.JsonConverters.PromptVersionsFilterNodeEnumNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.PromptVersionsFilterBranchOperator))
+                {
+                    return new global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Helicone.PromptVersionsFilterBranchOperator?))
+                {
+                    return new global::Helicone.JsonConverters.PromptVersionsFilterBranchOperatorNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Helicone.ChatCompletionMessageAnnotationType))
                 {
                     return new global::Helicone.JsonConverters.ChatCompletionMessageAnnotationTypeJsonConverter();
@@ -2845,56 +2573,6 @@ namespace Helicone
                     return new global::Helicone.JsonConverters.OAIModelsResponseObjectNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Helicone.ExperimentFilterNodeEnum))
-                {
-                    return new global::Helicone.JsonConverters.ExperimentFilterNodeEnumJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.ExperimentFilterNodeEnum?))
-                {
-                    return new global::Helicone.JsonConverters.ExperimentFilterNodeEnumNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.ExperimentFilterBranchOperator))
-                {
-                    return new global::Helicone.JsonConverters.ExperimentFilterBranchOperatorJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.ExperimentFilterBranchOperator?))
-                {
-                    return new global::Helicone.JsonConverters.ExperimentFilterBranchOperatorNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.NewDatasetParamsDatasetType))
-                {
-                    return new global::Helicone.JsonConverters.NewDatasetParamsDatasetTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.NewDatasetParamsDatasetType?))
-                {
-                    return new global::Helicone.JsonConverters.NewDatasetParamsDatasetTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.DatasetFilterNodeEnum))
-                {
-                    return new global::Helicone.JsonConverters.DatasetFilterNodeEnumJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.DatasetFilterNodeEnum?))
-                {
-                    return new global::Helicone.JsonConverters.DatasetFilterNodeEnumNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.DatasetFilterBranchOperator))
-                {
-                    return new global::Helicone.JsonConverters.DatasetFilterBranchOperatorJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.DatasetFilterBranchOperator?))
-                {
-                    return new global::Helicone.JsonConverters.DatasetFilterBranchOperatorNullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Helicone.EvalFilterNodeEnum))
                 {
                     return new global::Helicone.JsonConverters.EvalFilterNodeEnumJsonConverter();
@@ -2923,36 +2601,6 @@ namespace Helicone
                 if (typeToConvert == typeof(global::Helicone.CreateAPIKeyRequestKeyPermissions?))
                 {
                     return new global::Helicone.JsonConverters.CreateAPIKeyRequestKeyPermissionsNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.CreateNewExperimentHypothesisRequestStatus))
-                {
-                    return new global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.CreateNewExperimentHypothesisRequestStatus?))
-                {
-                    return new global::Helicone.JsonConverters.CreateNewExperimentHypothesisRequestStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.AddOnsProductType))
-                {
-                    return new global::Helicone.JsonConverters.AddOnsProductTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.AddOnsProductType?))
-                {
-                    return new global::Helicone.JsonConverters.AddOnsProductTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.DeleteAddOnsProductType))
-                {
-                    return new global::Helicone.JsonConverters.DeleteAddOnsProductTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Helicone.DeleteAddOnsProductType?))
-                {
-                    return new global::Helicone.JsonConverters.DeleteAddOnsProductTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Helicone.GetSpendBreakdownTimeRange))
