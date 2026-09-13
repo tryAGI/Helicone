@@ -37,7 +37,7 @@ namespace Helicone
 
         internal global::Helicone.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Helicone.AutoSDKServerConfiguration();
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Helicone.SourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Helicone.CustomerSourceGenerationContext.Default);
 
         /// <summary>
         ///
