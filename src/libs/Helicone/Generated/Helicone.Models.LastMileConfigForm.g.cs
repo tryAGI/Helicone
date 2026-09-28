@@ -42,8 +42,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.BaseLastMileConfigForm PickBase() => IsBase
-            ? Base!
+        public global::Helicone.BaseLastMileConfigForm PickBase() => Base is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2> PickLastMileConfigFormVariant2() => IsLastMileConfigFormVariant2
-            ? LastMileConfigFormVariant2!.Value
+        public global::Helicone.AnyOf<global::Helicone.LastMileConfigFormVariant2Variant1, global::Helicone.LastMileConfigFormVariant2Variant2> PickLastMileConfigFormVariant2() => LastMileConfigFormVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'LastMileConfigFormVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsBase && @base != null)
+            if (Base is { } __value0 && @base != null)
             {
-                return @base(Base!);
+                return @base(__value0);
             }
-            else if (IsLastMileConfigFormVariant2 && lastMileConfigFormVariant2 != null)
+            else if (LastMileConfigFormVariant2 is { } __value1 && lastMileConfigFormVariant2 != null)
             {
-                return lastMileConfigFormVariant2(LastMileConfigFormVariant2!);
+                return lastMileConfigFormVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsBase)
+            if (Base is { } __value0)
             {
-                @base?.Invoke(Base!);
+                @base?.Invoke(__value0);
             }
-            else if (IsLastMileConfigFormVariant2)
+            else if (LastMileConfigFormVariant2 is { } __value1)
             {
-                lastMileConfigFormVariant2?.Invoke(LastMileConfigFormVariant2!);
+                lastMileConfigFormVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsBase)
+            if (Base is { } __value0)
             {
-                @base?.Invoke(Base!);
+                @base?.Invoke(__value0);
             }
-            else if (IsLastMileConfigFormVariant2)
+            else if (LastMileConfigFormVariant2 is { } __value1)
             {
-                lastMileConfigFormVariant2?.Invoke(LastMileConfigFormVariant2!);
+                lastMileConfigFormVariant2?.Invoke(__value1);
             }
         }
 

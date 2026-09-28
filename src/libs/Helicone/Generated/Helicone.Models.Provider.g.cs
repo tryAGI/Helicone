@@ -42,8 +42,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ProviderName PickName() => IsName
-            ? Name!.Value
+        public global::Helicone.ProviderName PickName() => Name is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Name' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelProviderName PickModelName() => IsModelName
-            ? ModelName!.Value
+        public global::Helicone.ModelProviderName PickModelName() => ModelName is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ModelName' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ProviderEnum PickEnum() => IsEnum
-            ? Enum!.Value
+        public global::Helicone.ProviderEnum PickEnum() => Enum is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsName && name != null)
+            if (Name is { } __value0 && name != null)
             {
-                return name(Name!);
+                return name(__value0);
             }
-            else if (IsModelName && modelName != null)
+            else if (ModelName is { } __value1 && modelName != null)
             {
-                return modelName(ModelName!);
+                return modelName(__value1);
             }
-            else if (IsEnum && @enum != null)
+            else if (Enum is { } __value2 && @enum != null)
             {
-                return @enum(Enum!);
+                return @enum(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsName)
+            if (Name is { } __value0)
             {
-                name?.Invoke(Name!);
+                name?.Invoke(__value0);
             }
-            else if (IsModelName)
+            else if (ModelName is { } __value1)
             {
-                modelName?.Invoke(ModelName!);
+                modelName?.Invoke(__value1);
             }
-            else if (IsEnum)
+            else if (Enum is { } __value2)
             {
-                @enum?.Invoke(Enum!);
+                @enum?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsName)
+            if (Name is { } __value0)
             {
-                name?.Invoke(Name!);
+                name?.Invoke(__value0);
             }
-            else if (IsModelName)
+            else if (ModelName is { } __value1)
             {
-                modelName?.Invoke(ModelName!);
+                modelName?.Invoke(__value1);
             }
-            else if (IsEnum)
+            else if (Enum is { } __value2)
             {
-                @enum?.Invoke(Enum!);
+                @enum?.Invoke(__value2);
             }
         }
 
