@@ -176,19 +176,19 @@ namespace Helicone.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafPromptV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafPromptV2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafPromptV2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLeafPromptV2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPickLeafPromptV2(), typeInfo);
             }
             else if (value.IsBranch)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PromptsFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PromptsFilterBranch?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PromptsFilterBranch).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Branch!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBranch(), typeInfo);
             }
             else if (value.IsEnum)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PromptsFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PromptsFilterNodeEnum> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PromptsFilterNodeEnum).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEnum(), typeInfo);
             }
         }
     }

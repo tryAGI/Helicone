@@ -139,13 +139,13 @@ namespace Helicone.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultSuccessSuccessBooleanMessageString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultSuccessSuccessBooleanMessageString?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultSuccessSuccessBooleanMessageString).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ResultSuccessSuccessBooleanMessageString!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickResultSuccessSuccessBooleanMessageString(), typeInfo);
             }
             else if (value.IsError)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.ResultErrorString), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.ResultErrorString?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.ResultErrorString).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Error!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickError(), typeInfo);
             }
         }
     }

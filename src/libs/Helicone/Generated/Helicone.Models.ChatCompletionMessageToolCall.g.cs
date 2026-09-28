@@ -42,8 +42,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ChatCompletionMessageFunctionToolCall PickFunction() => IsFunction
-            ? Function!
+        public global::Helicone.ChatCompletionMessageFunctionToolCall PickFunction() => Function is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Function' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ChatCompletionMessageCustomToolCall PickCustom() => IsCustom
-            ? Custom!
+        public global::Helicone.ChatCompletionMessageCustomToolCall PickCustom() => Custom is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Custom' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsFunction && function != null)
+            if (Function is { } __value0 && function != null)
             {
-                return function(Function!);
+                return function(__value0);
             }
-            else if (IsCustom && custom != null)
+            else if (Custom is { } __value1 && custom != null)
             {
-                return custom(Custom!);
+                return custom(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsFunction)
+            if (Function is { } __value0)
             {
-                function?.Invoke(Function!);
+                function?.Invoke(__value0);
             }
-            else if (IsCustom)
+            else if (Custom is { } __value1)
             {
-                custom?.Invoke(Custom!);
+                custom?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsFunction)
+            if (Function is { } __value0)
             {
-                function?.Invoke(Function!);
+                function?.Invoke(__value0);
             }
-            else if (IsCustom)
+            else if (Custom is { } __value1)
             {
-                custom?.Invoke(Custom!);
+                custom?.Invoke(__value1);
             }
         }
 

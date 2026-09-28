@@ -179,7 +179,7 @@ namespace Helicone
                 PrepareUpdateSessionFeedbackRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sessionId: sessionId!,
+                    sessionId: sessionId,
                     request: request);
 
                 return __httpRequest;
@@ -202,7 +202,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/session/{sessionId}/feedback\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -236,7 +236,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/session/{sessionId}/feedback\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -277,7 +277,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/session/{sessionId}/feedback\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -325,7 +325,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/session/{sessionId}/feedback\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -347,7 +347,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/session/{sessionId}/feedback\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

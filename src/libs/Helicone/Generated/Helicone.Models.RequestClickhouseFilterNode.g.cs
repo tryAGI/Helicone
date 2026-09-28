@@ -42,8 +42,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PickFilterLeafRequestResponseRmt PickPickLeafResponseRmt() => IsPickLeafResponseRmt
-            ? PickLeafResponseRmt!
+        public global::Helicone.PickFilterLeafRequestResponseRmt PickPickLeafResponseRmt() => PickLeafResponseRmt is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PickLeafResponseRmt' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RequestClickhouseFilterBranch PickBranch() => IsBranch
-            ? Branch!
+        public global::Helicone.RequestClickhouseFilterBranch PickBranch() => Branch is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RequestClickhouseFilterNodeEnum PickEnum() => IsEnum
-            ? Enum!.Value
+        public global::Helicone.RequestClickhouseFilterNodeEnum PickEnum() => Enum is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsPickLeafResponseRmt && pickLeafResponseRmt != null)
+            if (PickLeafResponseRmt is { } __value0 && pickLeafResponseRmt != null)
             {
-                return pickLeafResponseRmt(PickLeafResponseRmt!);
+                return pickLeafResponseRmt(__value0);
             }
-            else if (IsBranch && branch != null)
+            else if (Branch is { } __value1 && branch != null)
             {
-                return branch(Branch!);
+                return branch(__value1);
             }
-            else if (IsEnum && @enum != null)
+            else if (Enum is { } __value2 && @enum != null)
             {
-                return @enum(Enum!);
+                return @enum(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsPickLeafResponseRmt)
+            if (PickLeafResponseRmt is { } __value0)
             {
-                pickLeafResponseRmt?.Invoke(PickLeafResponseRmt!);
+                pickLeafResponseRmt?.Invoke(__value0);
             }
-            else if (IsBranch)
+            else if (Branch is { } __value1)
             {
-                branch?.Invoke(Branch!);
+                branch?.Invoke(__value1);
             }
-            else if (IsEnum)
+            else if (Enum is { } __value2)
             {
-                @enum?.Invoke(Enum!);
+                @enum?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsPickLeafResponseRmt)
+            if (PickLeafResponseRmt is { } __value0)
             {
-                pickLeafResponseRmt?.Invoke(PickLeafResponseRmt!);
+                pickLeafResponseRmt?.Invoke(__value0);
             }
-            else if (IsBranch)
+            else if (Branch is { } __value1)
             {
-                branch?.Invoke(Branch!);
+                branch?.Invoke(__value1);
             }
-            else if (IsEnum)
+            else if (Enum is { } __value2)
             {
-                @enum?.Invoke(Enum!);
+                @enum?.Invoke(__value2);
             }
         }
 

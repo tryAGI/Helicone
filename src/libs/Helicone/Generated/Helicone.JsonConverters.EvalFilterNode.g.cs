@@ -211,19 +211,19 @@ namespace Helicone.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PickFilterLeafRequestResponseRmt), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PickFilterLeafRequestResponseRmt?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PickFilterLeafRequestResponseRmt).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickLeafRequestResponseRmt!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPickLeafRequestResponseRmt(), typeInfo);
             }
             else if (value.IsBranch)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.EvalFilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.EvalFilterBranch?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.EvalFilterBranch).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Branch!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBranch(), typeInfo);
             }
             else if (value.IsEnum)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.EvalFilterNodeEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.EvalFilterNodeEnum> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.EvalFilterNodeEnum).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEnum(), typeInfo);
             }
         }
     }

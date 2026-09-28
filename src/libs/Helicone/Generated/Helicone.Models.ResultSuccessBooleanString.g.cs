@@ -42,8 +42,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessSuccessBoolean PickResultSuccessSuccessBoolean() => IsResultSuccessSuccessBoolean
-            ? ResultSuccessSuccessBoolean!
+        public global::Helicone.ResultSuccessSuccessBoolean PickResultSuccessSuccessBoolean() => ResultSuccessSuccessBoolean is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ResultSuccessSuccessBoolean' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultErrorString PickError() => IsError
-            ? Error!
+        public global::Helicone.ResultErrorString PickError() => Error is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsResultSuccessSuccessBoolean && resultSuccessSuccessBoolean != null)
+            if (ResultSuccessSuccessBoolean is { } __value0 && resultSuccessSuccessBoolean != null)
             {
-                return resultSuccessSuccessBoolean(ResultSuccessSuccessBoolean!);
+                return resultSuccessSuccessBoolean(__value0);
             }
-            else if (IsError && error != null)
+            else if (Error is { } __value1 && error != null)
             {
-                return error(Error!);
+                return error(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsResultSuccessSuccessBoolean)
+            if (ResultSuccessSuccessBoolean is { } __value0)
             {
-                resultSuccessSuccessBoolean?.Invoke(ResultSuccessSuccessBoolean!);
+                resultSuccessSuccessBoolean?.Invoke(__value0);
             }
-            else if (IsError)
+            else if (Error is { } __value1)
             {
-                error?.Invoke(Error!);
+                error?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsResultSuccessSuccessBoolean)
+            if (ResultSuccessSuccessBoolean is { } __value0)
             {
-                resultSuccessSuccessBoolean?.Invoke(ResultSuccessSuccessBoolean!);
+                resultSuccessSuccessBoolean?.Invoke(__value0);
             }
-            else if (IsError)
+            else if (Error is { } __value1)
             {
-                error?.Invoke(Error!);
+                error?.Invoke(__value1);
             }
         }
 

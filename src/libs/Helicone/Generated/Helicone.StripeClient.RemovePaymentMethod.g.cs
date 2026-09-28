@@ -160,7 +160,7 @@ namespace Helicone
                 PrepareRemovePaymentMethodRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    paymentMethodId: paymentMethodId!);
+                    paymentMethodId: paymentMethodId);
 
                 return __httpRequest;
             }
@@ -182,7 +182,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/stripe/payment-methods/{paymentMethodId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -216,7 +216,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/stripe/payment-methods/{paymentMethodId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -257,7 +257,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/stripe/payment-methods/{paymentMethodId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -305,7 +305,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/stripe/payment-methods/{paymentMethodId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -327,7 +327,7 @@ namespace Helicone
                                 pathTemplate: "$\"/v1/stripe/payment-methods/{paymentMethodId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

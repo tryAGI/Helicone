@@ -395,25 +395,25 @@ namespace Helicone.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.PartialTablesAndViews), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.PartialTablesAndViews?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.PartialTablesAndViews).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PartialTablesAndViews!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPartialTablesAndViews(), typeInfo);
             }
             else if (value.IsBranch)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.FilterBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.FilterBranch?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.FilterBranch).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Branch!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBranch(), typeInfo);
             }
             else if (value.IsEnum)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEnum(), typeInfo);
             }
             else if (value.IsEnum2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Helicone.FilterNodeEnum2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Helicone.FilterNodeEnum2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Helicone.FilterNodeEnum2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum2!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEnum2(), typeInfo);
             }
         }
     }

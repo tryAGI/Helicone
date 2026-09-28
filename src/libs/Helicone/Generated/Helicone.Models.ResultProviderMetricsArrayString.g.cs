@@ -42,8 +42,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessProviderMetricsArray PickSuccess() => IsSuccess
-            ? Success!
+        public global::Helicone.ResultSuccessProviderMetricsArray PickSuccess() => Success is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultErrorString PickError() => IsError
-            ? Error!
+        public global::Helicone.ResultErrorString PickError() => Error is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsSuccess && success != null)
+            if (Success is { } __value0 && success != null)
             {
-                return success(Success!);
+                return success(__value0);
             }
-            else if (IsError && error != null)
+            else if (Error is { } __value1 && error != null)
             {
-                return error(Error!);
+                return error(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsSuccess)
+            if (Success is { } __value0)
             {
-                success?.Invoke(Success!);
+                success?.Invoke(__value0);
             }
-            else if (IsError)
+            else if (Error is { } __value1)
             {
-                error?.Invoke(Error!);
+                error?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Helicone
                 Validate();
             }
 
-            if (IsSuccess)
+            if (Success is { } __value0)
             {
-                success?.Invoke(Success!);
+                success?.Invoke(__value0);
             }
-            else if (IsError)
+            else if (Error is { } __value1)
             {
-                error?.Invoke(Error!);
+                error?.Invoke(__value1);
             }
         }
 
