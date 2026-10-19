@@ -56,7 +56,7 @@ namespace Helicone
 
         /// <summary>
         /// Returns provider key metadata with the secret values MASKED. Plaintext<br/>
-        /// provider keys are never returned over HTTP (INC-710). Requires a signed-in<br/>
+        /// provider keys are never returned over HTTP. Requires a signed-in<br/>
         /// organization owner or admin; Helicone API keys are rejected.
         /// </summary>
         /// <param name="providerKeyId"></param>
@@ -78,7 +78,7 @@ namespace Helicone
         }
         /// <summary>
         /// Returns provider key metadata with the secret values MASKED. Plaintext<br/>
-        /// provider keys are never returned over HTTP (INC-710). Requires a signed-in<br/>
+        /// provider keys are never returned over HTTP. Requires a signed-in<br/>
         /// organization owner or admin; Helicone API keys are rejected.
         /// </summary>
         /// <param name="providerKeyId"></param>

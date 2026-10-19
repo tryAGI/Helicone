@@ -1,0 +1,295 @@
+#pragma warning disable CS0618 // Type or member is obsolete
+
+#nullable enable
+
+namespace Helicone
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public readonly partial struct ResultSessionUUIDStringString : global::System.IEquatable<ResultSessionUUIDStringString>
+    {
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Helicone.ResultSuccessSessionUUIDString? Success { get; init; }
+#else
+        public global::Helicone.ResultSuccessSessionUUIDString? Success { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Success))]
+#endif
+        public bool IsSuccess => Success != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickSuccess(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ResultSuccessSessionUUIDString? value)
+        {
+            value = Success;
+            return IsSuccess;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Helicone.ResultSuccessSessionUUIDString PickSuccess() => Success is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Success' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Helicone.ResultErrorString? Error { get; init; }
+#else
+        public global::Helicone.ResultErrorString? Error { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
+#endif
+        public bool IsError => Error != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickError(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Helicone.ResultErrorString? value)
+        {
+            value = Error;
+            return IsError;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Helicone.ResultErrorString PickError() => Error is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator ResultSessionUUIDStringString(global::Helicone.ResultSuccessSessionUUIDString value) => new ResultSessionUUIDStringString((global::Helicone.ResultSuccessSessionUUIDString?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Helicone.ResultSuccessSessionUUIDString?(ResultSessionUUIDStringString @this) => @this.Success;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public ResultSessionUUIDStringString(global::Helicone.ResultSuccessSessionUUIDString? value)
+        {
+            Success = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static ResultSessionUUIDStringString FromSuccess(global::Helicone.ResultSuccessSessionUUIDString? value) => new ResultSessionUUIDStringString(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator ResultSessionUUIDStringString(global::Helicone.ResultErrorString value) => new ResultSessionUUIDStringString((global::Helicone.ResultErrorString?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Helicone.ResultErrorString?(ResultSessionUUIDStringString @this) => @this.Error;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public ResultSessionUUIDStringString(global::Helicone.ResultErrorString? value)
+        {
+            Error = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static ResultSessionUUIDStringString FromError(global::Helicone.ResultErrorString? value) => new ResultSessionUUIDStringString(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public ResultSessionUUIDStringString(
+            global::Helicone.ResultSuccessSessionUUIDString? success,
+            global::Helicone.ResultErrorString? error
+            )
+        {
+            Success = success;
+            Error = error;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public object? Object =>
+            Error as object ??
+            Success as object
+            ;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public override string? ToString() =>
+            Success?.ToString() ??
+            Error?.ToString()
+            ;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool Validate()
+        {
+            return IsSuccess || IsError;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public TResult? Match<TResult>(
+            global::System.Func<global::Helicone.ResultSuccessSessionUUIDString, TResult>? success = null,
+            global::System.Func<global::Helicone.ResultErrorString, TResult>? error = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (Success is { } __value0 && success != null)
+            {
+                return success(__value0);
+            }
+            else if (Error is { } __value1 && error != null)
+            {
+                return error(__value1);
+            }
+
+            return default(TResult);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public void Match(
+            global::System.Action<global::Helicone.ResultSuccessSessionUUIDString>? success = null,
+
+            global::System.Action<global::Helicone.ResultErrorString>? error = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (Success is { } __value0)
+            {
+                success?.Invoke(__value0);
+            }
+            else if (Error is { } __value1)
+            {
+                error?.Invoke(__value1);
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Helicone.ResultSuccessSessionUUIDString>? success = null,
+            global::System.Action<global::Helicone.ResultErrorString>? error = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (Success is { } __value0)
+            {
+                success?.Invoke(__value0);
+            }
+            else if (Error is { } __value1)
+            {
+                error?.Invoke(__value1);
+            }
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public override int GetHashCode()
+        {
+            var fields = new object?[]
+            {
+                Success,
+                typeof(global::Helicone.ResultSuccessSessionUUIDString),
+                Error,
+                typeof(global::Helicone.ResultErrorString),
+            };
+            const int offset = unchecked((int)2166136261);
+            const int prime = 16777619;
+            static int HashCodeAggregator(int hashCode, object? value) => value == null
+                ? (hashCode ^ 0) * prime
+                : (hashCode ^ value.GetHashCode()) * prime;
+
+            return global::System.Linq.Enumerable.Aggregate(fields, offset, HashCodeAggregator);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool Equals(ResultSessionUUIDStringString other)
+        {
+            return
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultSuccessSessionUUIDString?>.Default.Equals(Success, other.Success) &&
+                global::System.Collections.Generic.EqualityComparer<global::Helicone.ResultErrorString?>.Default.Equals(Error, other.Error)
+                ;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static bool operator ==(ResultSessionUUIDStringString obj1, ResultSessionUUIDStringString obj2)
+        {
+            return global::System.Collections.Generic.EqualityComparer<ResultSessionUUIDStringString>.Default.Equals(obj1, obj2);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static bool operator !=(ResultSessionUUIDStringString obj1, ResultSessionUUIDStringString obj2)
+        {
+            return !(obj1 == obj2);
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public override bool Equals(object? obj)
+        {
+            return obj is ResultSessionUUIDStringString o && Equals(o);
+        }
+    }
+}

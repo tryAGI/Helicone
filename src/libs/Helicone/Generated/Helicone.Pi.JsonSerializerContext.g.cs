@@ -37,6 +37,9 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TimeIncrement), TypeInfoPropertyName = "TimeIncrement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DataOverTimeRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DataOverTimeRequestTimeFilter))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessSessionUUIDString))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessSessionUUIDStringData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSessionUUIDStringString), TypeInfoPropertyName = "ResultSessionUUIDStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyString))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessApiKeyStringData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyStringString), TypeInfoPropertyName = "ResultApiKeyStringString2")]
@@ -55,6 +58,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestClickhouseFilterNodeEnum?), TypeInfoPropertyName = "NullableRequestClickhouseFilterNodeEnum2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestClickhouseFilterBranchOperator?), TypeInfoPropertyName = "NullableRequestClickhouseFilterBranchOperator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.TimeIncrement?), TypeInfoPropertyName = "NullableTimeIncrement2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSessionUUIDStringString?), TypeInfoPropertyName = "NullableResultSessionUUIDStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyStringString?), TypeInfoPropertyName = "NullableResultApiKeyStringString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultCostNumberCreatedAtTruncStringArrayString?), TypeInfoPropertyName = "NullableResultCostNumberCreatedAtTruncStringArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessCostNumberCreatedAtTruncStringArrayDataItem>))]
@@ -108,6 +112,7 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.ResultStringStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultNumberStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.RequestClickhouseFilterNodeJsonConverter());
+            options.Converters.Add(new global::Helicone.JsonConverters.ResultSessionUUIDStringStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultApiKeyStringStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.ResultCostNumberCreatedAtTruncStringArrayStringJsonConverter());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<double?, bool?>());

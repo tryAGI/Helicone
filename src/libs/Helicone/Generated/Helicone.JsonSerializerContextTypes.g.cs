@@ -2181,1347 +2181,1359 @@ namespace Helicone
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessApiKeyString? Type537 { get; set; }
+        public global::Helicone.ResultSuccessSessionUUIDString? Type537 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessApiKeyStringData? Type538 { get; set; }
+        public global::Helicone.ResultSuccessSessionUUIDStringData? Type538 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultApiKeyStringString? Type539 { get; set; }
+        public global::Helicone.ResultSessionUUIDStringString? Type539 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessCostNumberCreatedAtTruncStringArray? Type540 { get; set; }
+        public global::Helicone.ResultSuccessApiKeyString? Type540 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ResultSuccessCostNumberCreatedAtTruncStringArrayDataItem>? Type541 { get; set; }
+        public global::Helicone.ResultSuccessApiKeyStringData? Type541 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessCostNumberCreatedAtTruncStringArrayDataItem? Type542 { get; set; }
+        public global::Helicone.ResultApiKeyStringString? Type542 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultCostNumberCreatedAtTruncStringArrayString? Type543 { get; set; }
+        public global::Helicone.ResultSuccessCostNumberCreatedAtTruncStringArray? Type543 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AuthorName? Type544 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ResultSuccessCostNumberCreatedAtTruncStringArrayDataItem>? Type544 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.StandardParameter? Type545 { get; set; }
+        public global::Helicone.ResultSuccessCostNumberCreatedAtTruncStringArrayDataItem? Type545 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PluginId? Type546 { get; set; }
+        public global::Helicone.ResultCostNumberCreatedAtTruncStringArrayString? Type546 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RateLimits? Type547 { get; set; }
+        public global::Helicone.AuthorName? Type547 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModalityPricing? Type548 { get; set; }
+        public global::Helicone.StandardParameter? Type548 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelPricing? Type549 { get; set; }
+        public global::Helicone.PluginId? Type549 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelPricingCacheMultipliers? Type550 { get; set; }
+        public global::Helicone.RateLimits? Type550 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.BodyMappingType? Type551 { get; set; }
+        public global::Helicone.ModalityPricing? Type551 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EndpointConfig? Type552 { get; set; }
+        public global::Helicone.ModelPricing? Type552 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelPricing>? Type553 { get; set; }
+        public global::Helicone.ModelPricingCacheMultipliers? Type553 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Helicone.EndpointConfig>? Type554 { get; set; }
+        public global::Helicone.BodyMappingType? Type554 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResponseFormat? Type555 { get; set; }
+        public global::Helicone.EndpointConfig? Type555 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelProviderConfig? Type556 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelPricing>? Type556 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.StandardParameter>? Type557 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Helicone.EndpointConfig>? Type557 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.PluginId>? Type558 { get; set; }
+        public global::Helicone.ResponseFormat? Type558 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelProviderConfigQuantization? Type559 { get; set; }
+        public global::Helicone.ModelProviderConfig? Type559 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UserEndpointConfig? Type560 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.StandardParameter>? Type560 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.Endpoint? Type561 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.PluginId>? Type561 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.SimplifiedModalityPricing? Type562 { get; set; }
+        public global::Helicone.ModelProviderConfigQuantization? Type562 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.SimplifiedPricing? Type563 { get; set; }
+        public global::Helicone.UserEndpointConfig? Type563 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelEndpoint? Type564 { get; set; }
+        public global::Helicone.Endpoint? Type564 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.SimplifiedPricing>? Type565 { get; set; }
+        public global::Helicone.SimplifiedModalityPricing? Type565 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.InputModality? Type566 { get; set; }
+        public global::Helicone.SimplifiedPricing? Type566 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.OutputModality? Type567 { get; set; }
+        public global::Helicone.ModelEndpoint? Type567 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelRegistryItem? Type568 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.SimplifiedPricing>? Type568 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelEndpoint>? Type569 { get; set; }
+        public global::Helicone.InputModality? Type569 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.InputModality>? Type570 { get; set; }
+        public global::Helicone.OutputModality? Type570 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.OutputModality>? Type571 { get; set; }
+        public global::Helicone.ModelRegistryItem? Type571 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelCapability? Type572 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelEndpoint>? Type572 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelRegistryResponse? Type573 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.InputModality>? Type573 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelRegistryItem>? Type574 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.OutputModality>? Type574 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelRegistryResponseFilters? Type575 { get; set; }
+        public global::Helicone.ModelCapability? Type575 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelCapability>? Type576 { get; set; }
+        public global::Helicone.ModelRegistryResponse? Type576 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelRegistryResponseFiltersProvider>? Type577 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelRegistryItem>? Type577 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelRegistryResponseFiltersProvider? Type578 { get; set; }
+        public global::Helicone.ModelRegistryResponseFilters? Type578 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessModelRegistryResponse? Type579 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelCapability>? Type579 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultModelRegistryResponseString? Type580 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelRegistryResponseFiltersProvider>? Type580 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.OAIModel? Type581 { get; set; }
+        public global::Helicone.ModelRegistryResponseFiltersProvider? Type581 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.OAIModelObject? Type582 { get; set; }
+        public global::Helicone.ResultSuccessModelRegistryResponse? Type582 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.OAIModelsResponse? Type583 { get; set; }
+        public global::Helicone.ResultModelRegistryResponseString? Type583 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.OAIModelsResponseObject? Type584 { get; set; }
+        public global::Helicone.OAIModel? Type584 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.OAIModel>? Type585 { get; set; }
+        public global::Helicone.OAIModelObject? Type585 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.MetricStats? Type586 { get; set; }
+        public global::Helicone.OAIModelsResponse? Type586 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TokenMetricStats? Type587 { get; set; }
+        public global::Helicone.OAIModelsResponseObject? Type587 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TokenMetricStatsVariant2? Type588 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.OAIModel>? Type588 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TimeSeriesMetric? Type589 { get; set; }
+        public global::Helicone.MetricStats? Type589 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.Model? Type590 { get; set; }
+        public global::Helicone.TokenMetricStats? Type590 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelTimeSeriesData? Type591 { get; set; }
+        public global::Helicone.TokenMetricStatsVariant2? Type591 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.TimeSeriesMetric>? Type592 { get; set; }
+        public global::Helicone.TimeSeriesMetric? Type592 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelRequestStatus? Type593 { get; set; }
+        public global::Helicone.Model? Type593 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelGeographicTtftItem>? Type594 { get; set; }
+        public global::Helicone.ModelTimeSeriesData? Type594 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelGeographicTtftItem? Type595 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.TimeSeriesMetric>? Type595 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelGeographicLatencyItem>? Type596 { get; set; }
+        public global::Helicone.ModelRequestStatus? Type596 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelGeographicLatencyItem? Type597 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelGeographicTtftItem>? Type597 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelFeedback? Type598 { get; set; }
+        public global::Helicone.ModelGeographicTtftItem? Type598 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelCosts? Type599 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelGeographicLatencyItem>? Type599 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessModelArray? Type600 { get; set; }
+        public global::Helicone.ModelGeographicLatencyItem? Type600 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.Model>? Type601 { get; set; }
+        public global::Helicone.ModelFeedback? Type601 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultModelArrayString? Type602 { get; set; }
+        public global::Helicone.ModelCosts? Type602 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelsToCompare? Type603 { get; set; }
+        public global::Helicone.ResultSuccessModelArray? Type603 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.MetricsFilterBody? Type604 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.Model>? Type604 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.MetricsFilterBodyTimeFilter? Type605 { get; set; }
+        public global::Helicone.ResultModelArrayString? Type605 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TokensPerRequest? Type606 { get; set; }
+        public global::Helicone.ModelsToCompare? Type606 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessTokensPerRequest? Type607 { get; set; }
+        public global::Helicone.MetricsFilterBody? Type607 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultTokensPerRequestString? Type608 { get; set; }
+        public global::Helicone.MetricsFilterBodyTimeFilter? Type608 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RequestsOverTime? Type609 { get; set; }
+        public global::Helicone.TokensPerRequest? Type609 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessRequestsOverTimeArray? Type610 { get; set; }
+        public global::Helicone.ResultSuccessTokensPerRequest? Type610 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.RequestsOverTime>? Type611 { get; set; }
+        public global::Helicone.ResultTokensPerRequestString? Type611 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultRequestsOverTimeArrayString? Type612 { get; set; }
+        public global::Helicone.RequestsOverTime? Type612 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.MetricsOverTimeBody? Type613 { get; set; }
+        public global::Helicone.ResultSuccessRequestsOverTimeArray? Type613 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.MetricsOverTimeBodyTimeFilter? Type614 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.RequestsOverTime>? Type614 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CostOverTime? Type615 { get; set; }
+        public global::Helicone.ResultRequestsOverTimeArrayString? Type615 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessCostOverTimeArray? Type616 { get; set; }
+        public global::Helicone.MetricsOverTimeBody? Type616 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.CostOverTime>? Type617 { get; set; }
+        public global::Helicone.MetricsOverTimeBodyTimeFilter? Type617 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultCostOverTimeArrayString? Type618 { get; set; }
+        public global::Helicone.CostOverTime? Type618 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TokensOverTime? Type619 { get; set; }
+        public global::Helicone.ResultSuccessCostOverTimeArray? Type619 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessTokensOverTimeArray? Type620 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.CostOverTime>? Type620 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.TokensOverTime>? Type621 { get; set; }
+        public global::Helicone.ResultCostOverTimeArrayString? Type621 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultTokensOverTimeArrayString? Type622 { get; set; }
+        public global::Helicone.TokensOverTime? Type622 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.LatencyOverTime? Type623 { get; set; }
+        public global::Helicone.ResultSuccessTokensOverTimeArray? Type623 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessLatencyOverTimeArray? Type624 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.TokensOverTime>? Type624 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.LatencyOverTime>? Type625 { get; set; }
+        public global::Helicone.ResultTokensOverTimeArrayString? Type625 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultLatencyOverTimeArrayString? Type626 { get; set; }
+        public global::Helicone.LatencyOverTime? Type626 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TimeToFirstTokenOverTime? Type627 { get; set; }
+        public global::Helicone.ResultSuccessLatencyOverTimeArray? Type627 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessTimeToFirstTokenOverTimeArray? Type628 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.LatencyOverTime>? Type628 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.TimeToFirstTokenOverTime>? Type629 { get; set; }
+        public global::Helicone.ResultLatencyOverTimeArrayString? Type629 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultTimeToFirstTokenOverTimeArrayString? Type630 { get; set; }
+        public global::Helicone.TimeToFirstTokenOverTime? Type630 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UsersOverTime? Type631 { get; set; }
+        public global::Helicone.ResultSuccessTimeToFirstTokenOverTimeArray? Type631 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessUsersOverTimeArray? Type632 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.TimeToFirstTokenOverTime>? Type632 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.UsersOverTime>? Type633 { get; set; }
+        public global::Helicone.ResultTimeToFirstTokenOverTimeArrayString? Type633 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultUsersOverTimeArrayString? Type634 { get; set; }
+        public global::Helicone.UsersOverTime? Type634 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ThreatsOverTime? Type635 { get; set; }
+        public global::Helicone.ResultSuccessUsersOverTimeArray? Type635 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessThreatsOverTimeArray? Type636 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.UsersOverTime>? Type636 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ThreatsOverTime>? Type637 { get; set; }
+        public global::Helicone.ResultUsersOverTimeArrayString? Type637 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultThreatsOverTimeArrayString? Type638 { get; set; }
+        public global::Helicone.ThreatsOverTime? Type638 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ErrorOverTime? Type639 { get; set; }
+        public global::Helicone.ResultSuccessThreatsOverTimeArray? Type639 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessErrorOverTimeArray? Type640 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ThreatsOverTime>? Type640 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ErrorOverTime>? Type641 { get; set; }
+        public global::Helicone.ResultThreatsOverTimeArrayString? Type641 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultErrorOverTimeArrayString? Type642 { get; set; }
+        public global::Helicone.ErrorOverTime? Type642 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RequestCountBody? Type643 { get; set; }
+        public global::Helicone.ResultSuccessErrorOverTimeArray? Type643 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelMetric? Type644 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ErrorOverTime>? Type644 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessModelMetricArray? Type645 { get; set; }
+        public global::Helicone.ResultErrorOverTimeArrayString? Type645 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelMetric>? Type646 { get; set; }
+        public global::Helicone.RequestCountBody? Type646 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultModelMetricArrayString? Type647 { get; set; }
+        public global::Helicone.ModelMetric? Type647 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelMetricsBody? Type648 { get; set; }
+        public global::Helicone.ResultSuccessModelMetricArray? Type648 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelMetricsBodyTimeFilter? Type649 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelMetric>? Type649 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CountryData? Type650 { get; set; }
+        public global::Helicone.ResultModelMetricArrayString? Type650 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessCountryDataArray? Type651 { get; set; }
+        public global::Helicone.ModelMetricsBody? Type651 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.CountryData>? Type652 { get; set; }
+        public global::Helicone.ModelMetricsBodyTimeFilter? Type652 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultCountryDataArrayString? Type653 { get; set; }
+        public global::Helicone.CountryData? Type653 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CountryMetricsBody? Type654 { get; set; }
+        public global::Helicone.ResultSuccessCountryDataArray? Type654 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CountryMetricsBodyTimeFilter? Type655 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.CountryData>? Type655 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.Quantiles? Type656 { get; set; }
+        public global::Helicone.ResultCountryDataArrayString? Type656 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessQuantilesArray? Type657 { get; set; }
+        public global::Helicone.CountryMetricsBody? Type657 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.Quantiles>? Type658 { get; set; }
+        public global::Helicone.CountryMetricsBodyTimeFilter? Type658 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultQuantilesArrayString? Type659 { get; set; }
+        public global::Helicone.Quantiles? Type659 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.QuantilesBody? Type660 { get; set; }
+        public global::Helicone.ResultSuccessQuantilesArray? Type660 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.QuantilesBodyTimeFilter? Type661 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.Quantiles>? Type661 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessUnsafeBoolean? Type662 { get; set; }
+        public global::Helicone.ResultQuantilesArrayString? Type662 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessUnsafeBooleanData? Type663 { get; set; }
+        public global::Helicone.QuantilesBody? Type663 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultUnsafeBooleanString? Type664 { get; set; }
+        public global::Helicone.QuantilesBodyTimeFilter? Type664 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ClickHouseTableColumn? Type665 { get; set; }
+        public global::Helicone.ResultSuccessUnsafeBoolean? Type665 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ClickHouseTableSchema? Type666 { get; set; }
+        public global::Helicone.ResultSuccessUnsafeBooleanData? Type666 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ClickHouseTableColumn>? Type667 { get; set; }
+        public global::Helicone.ResultUnsafeBooleanString? Type667 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessClickHouseTableSchemaArray? Type668 { get; set; }
+        public global::Helicone.ClickHouseTableColumn? Type668 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ClickHouseTableSchema>? Type669 { get; set; }
+        public global::Helicone.ClickHouseTableSchema? Type669 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultClickHouseTableSchemaArrayString? Type670 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ClickHouseTableColumn>? Type670 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ExecuteSqlResponse? Type671 { get; set; }
+        public global::Helicone.ResultSuccessClickHouseTableSchemaArray? Type671 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.RecordStringAny>? Type672 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ClickHouseTableSchema>? Type672 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessExecuteSqlResponse? Type673 { get; set; }
+        public global::Helicone.ResultClickHouseTableSchemaArrayString? Type673 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultExecuteSqlResponseString? Type674 { get; set; }
+        public global::Helicone.ExecuteSqlResponse? Type674 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ExecuteSqlRequest? Type675 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.RecordStringAny>? Type675 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.HqlSavedQuery? Type676 { get; set; }
+        public global::Helicone.ResultSuccessExecuteSqlResponse? Type676 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessArrayHqlSavedQuery? Type677 { get; set; }
+        public global::Helicone.ResultExecuteSqlResponseString? Type677 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.HqlSavedQuery>? Type678 { get; set; }
+        public global::Helicone.ExecuteSqlRequest? Type678 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultArrayHqlSavedQueryString? Type679 { get; set; }
+        public global::Helicone.HqlSavedQuery? Type679 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessHqlSavedQueryOrNull? Type680 { get; set; }
+        public global::Helicone.ResultSuccessArrayHqlSavedQuery? Type680 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultHqlSavedQueryOrNullString? Type681 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.HqlSavedQuery>? Type681 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessVoid? Type682 { get; set; }
+        public global::Helicone.ResultArrayHqlSavedQueryString? Type682 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultVoidString? Type683 { get; set; }
+        public global::Helicone.ResultSuccessHqlSavedQueryOrNull? Type683 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.BulkDeleteSavedQueriesRequest? Type684 { get; set; }
+        public global::Helicone.ResultHqlSavedQueryOrNullString? Type684 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessHqlSavedQueryArray? Type685 { get; set; }
+        public global::Helicone.ResultSuccessVoid? Type685 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultHqlSavedQueryArrayString? Type686 { get; set; }
+        public global::Helicone.ResultVoidString? Type686 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateSavedQueryRequest? Type687 { get; set; }
+        public global::Helicone.BulkDeleteSavedQueriesRequest? Type687 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessHqlSavedQuery? Type688 { get; set; }
+        public global::Helicone.ResultSuccessHqlSavedQueryArray? Type688 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultHqlSavedQueryString? Type689 { get; set; }
+        public global::Helicone.ResultHqlSavedQueryArrayString? Type689 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessDatasetIdString? Type690 { get; set; }
+        public global::Helicone.CreateSavedQueryRequest? Type690 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessDatasetIdStringData? Type691 { get; set; }
+        public global::Helicone.ResultSuccessHqlSavedQuery? Type691 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultDatasetIdStringString? Type692 { get; set; }
+        public global::Helicone.ResultHqlSavedQueryString? Type692 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.HeliconeDatasetMetadata? Type693 { get; set; }
+        public global::Helicone.ResultSuccessDatasetIdString? Type693 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.NewHeliconeDatasetParams? Type694 { get; set; }
+        public global::Helicone.ResultSuccessDatasetIdStringData? Type694 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.MutateParams? Type695 { get; set; }
+        public global::Helicone.ResultDatasetIdStringString? Type695 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.HeliconeDatasetRow? Type696 { get; set; }
+        public global::Helicone.HeliconeDatasetMetadata? Type696 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessHeliconeDatasetRowArray? Type697 { get; set; }
+        public global::Helicone.NewHeliconeDatasetParams? Type697 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.HeliconeDatasetRow>? Type698 { get; set; }
+        public global::Helicone.MutateParams? Type698 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultHeliconeDatasetRowArrayString? Type699 { get; set; }
+        public global::Helicone.HeliconeDatasetRow? Type699 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.HeliconeDataset? Type700 { get; set; }
+        public global::Helicone.ResultSuccessHeliconeDatasetRowArray? Type700 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessHeliconeDatasetArray? Type701 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.HeliconeDatasetRow>? Type701 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.HeliconeDataset>? Type702 { get; set; }
+        public global::Helicone.ResultHeliconeDatasetRowArrayString? Type702 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultHeliconeDatasetArrayString? Type703 { get; set; }
+        public global::Helicone.HeliconeDataset? Type703 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessAny? Type704 { get; set; }
+        public global::Helicone.ResultSuccessHeliconeDatasetArray? Type704 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.Eval? Type705 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.HeliconeDataset>? Type705 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.EvalOverTimeItem>? Type706 { get; set; }
+        public global::Helicone.ResultHeliconeDatasetArrayString? Type706 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EvalOverTimeItem? Type707 { get; set; }
+        public global::Helicone.ResultSuccessAny? Type707 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.EvalAverageOverTimeItem>? Type708 { get; set; }
+        public global::Helicone.Eval? Type708 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EvalAverageOverTimeItem? Type709 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.EvalOverTimeItem>? Type709 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessEvalArray? Type710 { get; set; }
+        public global::Helicone.EvalOverTimeItem? Type710 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.Eval>? Type711 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.EvalAverageOverTimeItem>? Type711 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultEvalArrayString? Type712 { get; set; }
+        public global::Helicone.EvalAverageOverTimeItem? Type712 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EvalFilterNode? Type713 { get; set; }
+        public global::Helicone.ResultSuccessEvalArray? Type713 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EvalFilterBranch? Type714 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.Eval>? Type714 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EvalFilterNodeEnum? Type715 { get; set; }
+        public global::Helicone.ResultEvalArrayString? Type715 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EvalFilterBranchOperator? Type716 { get; set; }
+        public global::Helicone.EvalFilterNode? Type716 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EvalQueryParams? Type717 { get; set; }
+        public global::Helicone.EvalFilterBranch? Type717 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.EvalQueryParamsTimeFilter? Type718 { get; set; }
+        public global::Helicone.EvalFilterNodeEnum? Type718 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ScoreDistribution? Type719 { get; set; }
+        public global::Helicone.EvalFilterBranchOperator? Type719 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ScoreDistributionDistributionItem>? Type720 { get; set; }
+        public global::Helicone.EvalQueryParams? Type720 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ScoreDistributionDistributionItem? Type721 { get; set; }
+        public global::Helicone.EvalQueryParamsTimeFilter? Type721 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessScoreDistributionArray? Type722 { get; set; }
+        public global::Helicone.ScoreDistribution? Type722 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ScoreDistribution>? Type723 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ScoreDistributionDistributionItem>? Type723 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultScoreDistributionArrayString? Type724 { get; set; }
+        public global::Helicone.ScoreDistributionDistributionItem? Type724 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessScoreKeyStringScoreSumNumberCreatedAtTruncStringArray? Type725 { get; set; }
+        public global::Helicone.ResultSuccessScoreDistributionArray? Type725 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ResultSuccessScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayDataItem>? Type726 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ScoreDistribution>? Type726 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayDataItem? Type727 { get; set; }
+        public global::Helicone.ResultScoreDistributionArrayString? Type727 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayString? Type728 { get; set; }
+        public global::Helicone.ResultSuccessScoreKeyStringScoreSumNumberCreatedAtTruncStringArray? Type728 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CustomerUsage? Type729 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ResultSuccessScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayDataItem>? Type729 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.Customer? Type730 { get; set; }
+        public global::Helicone.ResultSuccessScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayDataItem? Type730 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreditBalanceResponse? Type731 { get; set; }
+        public global::Helicone.ResultScoreKeyStringScoreSumNumberCreatedAtTruncStringArrayString? Type731 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessCreditBalanceResponse? Type732 { get; set; }
+        public global::Helicone.CustomerUsage? Type732 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultCreditBalanceResponseString? Type733 { get; set; }
+        public global::Helicone.Customer? Type733 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PurchasedCredits? Type734 { get; set; }
+        public global::Helicone.CreditBalanceResponse? Type734 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PaginatedPurchasedCredits? Type735 { get; set; }
+        public global::Helicone.ResultSuccessCreditBalanceResponse? Type735 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.PurchasedCredits>? Type736 { get; set; }
+        public global::Helicone.ResultCreditBalanceResponseString? Type736 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessPaginatedPurchasedCredits? Type737 { get; set; }
+        public global::Helicone.PurchasedCredits? Type737 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultPaginatedPurchasedCreditsString? Type738 { get; set; }
+        public global::Helicone.PaginatedPurchasedCredits? Type738 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessTotalSpendNumber? Type739 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.PurchasedCredits>? Type739 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessTotalSpendNumberData? Type740 { get; set; }
+        public global::Helicone.ResultSuccessPaginatedPurchasedCredits? Type740 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultTotalSpendNumberString? Type741 { get; set; }
+        public global::Helicone.ResultPaginatedPurchasedCreditsString? Type741 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelSpend? Type742 { get; set; }
+        public global::Helicone.ResultSuccessTotalSpendNumber? Type742 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ModelSpendPricing? Type743 { get; set; }
+        public global::Helicone.ResultSuccessTotalSpendNumberData? Type743 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.SpendBreakdownResponse? Type744 { get; set; }
+        public global::Helicone.ResultTotalSpendNumberString? Type744 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelSpend>? Type745 { get; set; }
+        public global::Helicone.ModelSpend? Type745 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.SpendBreakdownResponseTimeRange? Type746 { get; set; }
+        public global::Helicone.ModelSpendPricing? Type746 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessSpendBreakdownResponse? Type747 { get; set; }
+        public global::Helicone.SpendBreakdownResponse? Type747 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSpendBreakdownResponseString? Type748 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelSpend>? Type748 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PTBInvoice? Type749 { get; set; }
+        public global::Helicone.SpendBreakdownResponseTimeRange? Type749 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessPTBInvoiceArray? Type750 { get; set; }
+        public global::Helicone.ResultSuccessSpendBreakdownResponse? Type750 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.PTBInvoice>? Type751 { get; set; }
+        public global::Helicone.ResultSpendBreakdownResponseString? Type751 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultPTBInvoiceArrayString? Type752 { get; set; }
+        public global::Helicone.PTBInvoice? Type752 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.OrgDiscount? Type753 { get; set; }
+        public global::Helicone.ResultSuccessPTBInvoiceArray? Type753 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessOrgDiscountArray? Type754 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.PTBInvoice>? Type754 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.OrgDiscount>? Type755 { get; set; }
+        public global::Helicone.ResultPTBInvoiceArrayString? Type755 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultOrgDiscountArrayString? Type756 { get; set; }
+        public global::Helicone.OrgDiscount? Type756 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.InAppThread? Type757 { get; set; }
+        public global::Helicone.ResultSuccessOrgDiscountArray? Type757 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessInAppThread? Type758 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.OrgDiscount>? Type758 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultInAppThreadString? Type759 { get; set; }
+        public global::Helicone.ResultOrgDiscountArrayString? Type759 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessSuccessBoolean? Type760 { get; set; }
+        public global::Helicone.InAppThread? Type760 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessSuccessBooleanData? Type761 { get; set; }
+        public global::Helicone.ResultSuccessInAppThread? Type761 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessBooleanString? Type762 { get; set; }
+        public global::Helicone.ResultInAppThreadString? Type762 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ThreadSummary? Type763 { get; set; }
+        public global::Helicone.ResultSuccessSuccessBoolean? Type763 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultSuccessThreadSummaryArray? Type764 { get; set; }
+        public global::Helicone.ResultSuccessSuccessBooleanData? Type764 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ThreadSummary>? Type765 { get; set; }
+        public global::Helicone.ResultSuccessBooleanString? Type765 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.ResultThreadSummaryArrayString? Type766 { get; set; }
+        public global::Helicone.ThreadSummary? Type766 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateAPIKeyRequest? Type767 { get; set; }
+        public global::Helicone.ResultSuccessThreadSummaryArray? Type767 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateAPIKeyRequestKeyPermissions? Type768 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ThreadSummary>? Type768 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateProxyKeyRequest? Type769 { get; set; }
+        public global::Helicone.ResultThreadSummaryArrayString? Type769 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdateAPIKeyRequest? Type770 { get; set; }
+        public global::Helicone.CreateAPIKeyRequest? Type770 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TestPythonEvaluatorRequest? Type771 { get; set; }
+        public global::Helicone.CreateAPIKeyRequestKeyPermissions? Type771 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TestLLMEvaluatorRequest? Type772 { get; set; }
+        public global::Helicone.CreateProxyKeyRequest? Type772 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.TestLastMileEvaluatorRequest? Type773 { get; set; }
+        public global::Helicone.UpdateAPIKeyRequest? Type773 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetRequestsByIdsRequest? Type774 { get; set; }
+        public global::Helicone.TestPythonEvaluatorRequest? Type774 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.FeedbackRequestRequest? Type775 { get; set; }
+        public global::Helicone.TestLLMEvaluatorRequest? Type775 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PutPropertyRequest? Type776 { get; set; }
+        public global::Helicone.TestLastMileEvaluatorRequest? Type776 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdateKeyRequest? Type777 { get; set; }
+        public global::Helicone.GetRequestsByIdsRequest? Type777 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetUserMetricsOverviewRequest? Type778 { get; set; }
+        public global::Helicone.FeedbackRequestRequest? Type778 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdateSessionFeedbackRequest? Type779 { get; set; }
+        public global::Helicone.PutPropertyRequest? Type779 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdateSessionTagRequest? Type780 { get; set; }
+        public global::Helicone.UpdateKeyRequest? Type780 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AllOf<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>? Type781 { get; set; }
+        public global::Helicone.GetUserMetricsOverviewRequest? Type781 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPropertiesOverTimeRequest2? Type782 { get; set; }
+        public global::Helicone.UpdateSessionFeedbackRequest? Type782 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.HidePropertyRequest? Type783 { get; set; }
+        public global::Helicone.UpdateSessionTagRequest? Type783 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RestorePropertyRequest? Type784 { get; set; }
+        public global::Helicone.AllOf<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>? Type784 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.SearchPropertiesRequest? Type785 { get; set; }
+        public global::Helicone.GetPropertiesOverTimeRequest2? Type785 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RenamePrompt2025Request? Type786 { get; set; }
+        public global::Helicone.HidePropertyRequest? Type786 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdatePrompt2025TagsRequest? Type787 { get; set; }
+        public global::Helicone.RestorePropertyRequest? Type787 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreatePrompt2025Request? Type788 { get; set; }
+        public global::Helicone.SearchPropertiesRequest? Type788 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdatePrompt2025Request? Type789 { get; set; }
+        public global::Helicone.RenamePrompt2025Request? Type789 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.SetPromptVersionEnvironmentRequest? Type790 { get; set; }
+        public global::Helicone.UpdatePrompt2025TagsRequest? Type790 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RemoveEnvironmentFromVersionRequest? Type791 { get; set; }
+        public global::Helicone.CreatePrompt2025Request? Type791 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompts2025Request? Type792 { get; set; }
+        public global::Helicone.UpdatePrompt2025Request? Type792 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompt2025VersionRequest? Type793 { get; set; }
+        public global::Helicone.SetPromptVersionEnvironmentRequest? Type793 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompt2025EnvironmentVersionRequest? Type794 { get; set; }
+        public global::Helicone.RemoveEnvironmentFromVersionRequest? Type794 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompt2025VersionsRequest? Type795 { get; set; }
+        public global::Helicone.GetPrompts2025Request? Type795 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompt2025ProductionVersionRequest? Type796 { get; set; }
+        public global::Helicone.GetPrompt2025VersionRequest? Type796 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompt2025TotalVersionsRequest? Type797 { get; set; }
+        public global::Helicone.GetPrompt2025EnvironmentVersionRequest? Type797 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompt2025VersionRequest2? Type798 { get; set; }
+        public global::Helicone.GetPrompt2025VersionsRequest? Type798 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompt2025EnvironmentVersionRequest2? Type799 { get; set; }
+        public global::Helicone.GetPrompt2025ProductionVersionRequest? Type799 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetPrompt2025ProductionVersionRequest2? Type800 { get; set; }
+        public global::Helicone.GetPrompt2025TotalVersionsRequest? Type800 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreatePromptRequest? Type801 { get; set; }
+        public global::Helicone.GetPrompt2025VersionRequest2? Type801 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdatePromptUserDefinedIdRequest? Type802 { get; set; }
+        public global::Helicone.GetPrompt2025EnvironmentVersionRequest2? Type802 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PromotePromptVersionToProductionRequest? Type803 { get; set; }
+        public global::Helicone.GetPrompt2025ProductionVersionRequest2? Type803 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetInputsRequest? Type804 { get; set; }
+        public global::Helicone.CreatePromptRequest? Type804 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>? Type805 { get; set; }
+        public global::Helicone.UpdatePromptUserDefinedIdRequest? Type805 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GenerateRequest2? Type806 { get; set; }
+        public global::Helicone.PromotePromptVersionToProductionRequest? Type806 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RequestsThroughHeliconeRequest? Type807 { get; set; }
+        public global::Helicone.GetInputsRequest? Type807 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetApiKeyRequest? Type808 { get; set; }
+        public global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>? Type808 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AddSessionRequest? Type809 { get; set; }
+        public global::Helicone.GenerateRequest2? Type809 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ModelsToCompare>? Type810 { get; set; }
+        public global::Helicone.RequestsThroughHeliconeRequest? Type810 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetSecurityRequest? Type811 { get; set; }
+        public global::Helicone.GetApiKeyRequest? Type811 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.QueryHeliconeDatasetRowsRequest? Type812 { get; set; }
+        public global::Helicone.AddSessionRequest? Type812 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.QueryHeliconeDatasetRequest? Type813 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ModelsToCompare>? Type813 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdateHeliconeDatasetRequestRequest? Type814 { get; set; }
+        public global::Helicone.GetSecurityRequest? Type814 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AddEvalRequest? Type815 { get; set; }
+        public global::Helicone.QueryHeliconeDatasetRowsRequest? Type815 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>? Type816 { get; set; }
+        public global::Helicone.QueryHeliconeDatasetRequest? Type816 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GenerateRequest4? Type817 { get; set; }
+        public global::Helicone.UpdateHeliconeDatasetRequestRequest? Type817 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpsertThreadMessageRequest? Type818 { get; set; }
+        public global::Helicone.AddEvalRequest? Type818 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpsertThreadMessageRequestMetadata? Type819 { get; set; }
+        public global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>? Type819 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.SearchDocsRequest? Type820 { get; set; }
+        public global::Helicone.GenerateRequest4? Type820 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetSpendBreakdownTimeRange? Type821 { get; set; }
+        public global::Helicone.UpsertThreadMessageRequest? Type821 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>? Type822 { get; set; }
+        public global::Helicone.UpsertThreadMessageRequestMetadata? Type822 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.DeleteProviderKeyResponseVariant1? Type823 { get; set; }
+        public global::Helicone.SearchDocsRequest? Type823 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.DeleteProviderKeyResponseVariant1ProviderName? Type824 { get; set; }
+        public global::Helicone.GetSpendBreakdownTimeRange? Type824 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.DeleteProviderKeyResponseVariant2? Type825 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>? Type825 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.MaskedProviderKey, global::Helicone.GetProviderKeyResponse2>? Type826 { get; set; }
+        public global::Helicone.DeleteProviderKeyResponseVariant1? Type826 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetProviderKeyResponse2? Type827 { get; set; }
+        public global::Helicone.DeleteProviderKeyResponseVariant1ProviderName? Type827 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.CreateProviderKeyResponseVariant1, global::Helicone.CreateProviderKeyResponseVariant2>? Type828 { get; set; }
+        public global::Helicone.DeleteProviderKeyResponseVariant2? Type828 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateProviderKeyResponseVariant1? Type829 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.MaskedProviderKey, global::Helicone.GetProviderKeyResponse2>? Type829 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateProviderKeyResponseVariant2? Type830 { get; set; }
+        public global::Helicone.GetProviderKeyResponse2? Type830 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::System.Collections.Generic.IList<global::Helicone.ProviderKeyRow>, global::Helicone.GetProviderKeysResponse2>? Type831 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.CreateProviderKeyResponseVariant1, global::Helicone.CreateProviderKeyResponseVariant2>? Type831 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.ProviderKeyRow>? Type832 { get; set; }
+        public global::Helicone.CreateProviderKeyResponseVariant1? Type832 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetProviderKeysResponse2? Type833 { get; set; }
+        public global::Helicone.CreateProviderKeyResponseVariant2? Type833 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.CreateAPIKeyResponseVariant1, global::Helicone.CreateAPIKeyResponseVariant2>? Type834 { get; set; }
+        public global::Helicone.AnyOf<global::System.Collections.Generic.IList<global::Helicone.ProviderKeyRow>, global::Helicone.GetProviderKeysResponse2>? Type834 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateAPIKeyResponseVariant1? Type835 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.ProviderKeyRow>? Type835 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateAPIKeyResponseVariant2? Type836 { get; set; }
+        public global::Helicone.GetProviderKeysResponse2? Type836 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.CreateProxyKeyResponseVariant1, global::Helicone.CreateProxyKeyResponseVariant2>? Type837 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.CreateAPIKeyResponseVariant1, global::Helicone.CreateAPIKeyResponseVariant2>? Type837 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateProxyKeyResponseVariant1? Type838 { get; set; }
+        public global::Helicone.CreateAPIKeyResponseVariant1? Type838 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateProxyKeyResponseVariant2? Type839 { get; set; }
+        public global::Helicone.CreateAPIKeyResponseVariant2? Type839 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.DeleteAPIKeyResponseVariant1, global::Helicone.DeleteAPIKeyResponseVariant2>? Type840 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.CreateProxyKeyResponseVariant1, global::Helicone.CreateProxyKeyResponseVariant2>? Type840 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.DeleteAPIKeyResponseVariant1? Type841 { get; set; }
+        public global::Helicone.CreateProxyKeyResponseVariant1? Type841 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.DeleteAPIKeyResponseVariant2? Type842 { get; set; }
+        public global::Helicone.CreateProxyKeyResponseVariant2? Type842 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.UpdateAPIKeyResponseVariant1, global::Helicone.UpdateAPIKeyResponseVariant2>? Type843 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.DeleteAPIKeyResponseVariant1, global::Helicone.DeleteAPIKeyResponseVariant2>? Type843 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdateAPIKeyResponseVariant1? Type844 { get; set; }
+        public global::Helicone.DeleteAPIKeyResponseVariant1? Type844 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.UpdateAPIKeyResponseVariant2? Type845 { get; set; }
+        public global::Helicone.DeleteAPIKeyResponseVariant2? Type845 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateCloudGatewayCheckoutSessionResponse? Type846 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.UpdateAPIKeyResponseVariant1, global::Helicone.UpdateAPIKeyResponseVariant2>? Type846 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PreviewInvoiceResponse? Type847 { get; set; }
+        public global::Helicone.UpdateAPIKeyResponseVariant1? Type847 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.LLMUsage>? Type848 { get; set; }
+        public global::Helicone.UpdateAPIKeyResponseVariant2? Type848 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PreviewInvoiceResponseDiscount? Type849 { get; set; }
+        public global::Helicone.CreateCloudGatewayCheckoutSessionResponse? Type849 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PreviewInvoiceResponseDiscountCoupon? Type850 { get; set; }
+        public global::Helicone.PreviewInvoiceResponse? Type850 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PreviewInvoiceResponseLines? Type851 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.LLMUsage>? Type851 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.PreviewInvoiceResponseLinesDataItem>? Type852 { get; set; }
+        public global::Helicone.PreviewInvoiceResponseDiscount? Type852 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.PreviewInvoiceResponseLinesDataItem? Type853 { get; set; }
+        public global::Helicone.PreviewInvoiceResponseDiscountCoupon? Type853 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetSubscriptionResponse? Type854 { get; set; }
+        public global::Helicone.PreviewInvoiceResponseLines? Type854 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.GetSubscriptionResponseItem>? Type855 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.PreviewInvoiceResponseLinesDataItem>? Type855 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetSubscriptionResponseItem? Type856 { get; set; }
+        public global::Helicone.PreviewInvoiceResponseLinesDataItem? Type856 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetSubscriptionResponseItemPrice? Type857 { get; set; }
+        public global::Helicone.GetSubscriptionResponse? Type857 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.GetSubscriptionResponseItemPriceProduct? Type858 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.GetSubscriptionResponseItem>? Type858 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.DisableAutoTopoffResponse? Type859 { get; set; }
+        public global::Helicone.GetSubscriptionResponseItem? Type859 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.PaymentMethod>? Type860 { get; set; }
+        public global::Helicone.GetSubscriptionResponseItemPrice? Type860 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.CreateSetupSessionResponse? Type861 { get; set; }
+        public global::Helicone.GetSubscriptionResponseItemPriceProduct? Type861 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RemovePaymentMethodResponse? Type862 { get; set; }
+        public global::Helicone.DisableAutoTopoffResponse? Type862 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.ResultSuccessUnknown, global::Helicone.ResultErrorUnknown>? Type863 { get; set; }
+        public global::System.Collections.Generic.IList<global::Helicone.PaymentMethod>? Type863 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.ValidationResult, object>? Type864 { get; set; }
+        public global::Helicone.CreateSetupSessionResponse? Type864 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.HidePropertyResponse2>? Type865 { get; set; }
+        public global::Helicone.RemovePaymentMethodResponse? Type865 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.HidePropertyResponse2? Type866 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.ResultSuccessUnknown, global::Helicone.ResultErrorUnknown>? Type866 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.HidePropertyResponseData? Type867 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.ValidationResult, object>? Type867 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.RestorePropertyResponse2>? Type868 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.HidePropertyResponse2>? Type868 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RestorePropertyResponse2? Type869 { get; set; }
+        public global::Helicone.HidePropertyResponse2? Type869 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.RestorePropertyResponseData? Type870 { get; set; }
+        public global::Helicone.HidePropertyResponseData? Type870 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Helicone.AnyOf<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>? Type871 { get; set; }
+        public global::Helicone.AnyOf<global::Helicone.ResultErrorString, global::Helicone.ResultSuccessString, global::Helicone.ResultSuccessUnknownArray, global::Helicone.RestorePropertyResponse2>? Type871 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Helicone.Customer>? Type872 { get; set; }
+        public global::Helicone.RestorePropertyResponse2? Type872 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Helicone.RestorePropertyResponseData? Type873 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::Helicone.AnyOf<global::Helicone.ResultErrorUnknown, global::Helicone.ResultSuccessAny>? Type874 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Helicone.Customer>? Type875 { get; set; }
 
         /// <summary>
         ///
