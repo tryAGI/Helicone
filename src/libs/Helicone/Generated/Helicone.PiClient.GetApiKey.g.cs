@@ -55,7 +55,7 @@ namespace Helicone
             ref string content);
 
         /// <summary>
-        ///
+        /// Redeems a linked session once for a short-lived, write-only API key.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -77,7 +77,7 @@ namespace Helicone
             return __response.Body;
         }
         /// <summary>
-        ///
+        /// Redeems a linked session once for a short-lived, write-only API key.
         /// </summary>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -447,7 +447,7 @@ namespace Helicone
             }
         }
         /// <summary>
-        ///
+        /// Redeems a linked session once for a short-lived, write-only API key.
         /// </summary>
         /// <param name="sessionUUID"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

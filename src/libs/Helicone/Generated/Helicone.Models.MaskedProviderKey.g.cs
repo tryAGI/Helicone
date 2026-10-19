@@ -5,7 +5,7 @@ namespace Helicone
 {
     /// <summary>
     /// Provider key as returned to API callers. The secret values are masked and<br/>
-    /// can never be used to call the provider (INC-710).
+    /// can never be used to call the provider.
     /// </summary>
     public sealed partial class MaskedProviderKey
     {
