@@ -37,14 +37,14 @@ namespace Helicone
 
         internal global::Helicone.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Helicone.AutoSDKServerConfiguration();
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Helicone.EvalsSourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext>? JsonSerializerContextProvider { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
-            get => JsonSerializerContextProvider.Value;
+            get => JsonSerializerContextProvider?.Value ?? global::Helicone.EvalsSourceGenerationContext.Default;
             set => JsonSerializerContextProvider = new(() => value);
         }
 
