@@ -16,10 +16,10 @@ fetch_spec() {
 # OpenAPI spec: https://raw.githubusercontent.com/Helicone/helicone/main/docs/swagger.json
 install_autosdk_cli
 rm -rf Generated
-fetch_spec --fail --silent --show-error -L -o openapi.yaml https://raw.githubusercontent.com/Helicone/helicone/main/docs/swagger.json
+fetch_spec --fail --silent --show-error -L -o openapi.json https://raw.githubusercontent.com/Helicone/helicone/main/docs/swagger.json
 
 # Auth: --security-scheme overrides the spec's apiKey auth with standard HTTP bearer.
-autosdk generate openapi.yaml \
+autosdk generate openapi.json \
   --namespace Helicone \
   --clientClassName HeliconeClient \
   --targetFramework net10.0 \

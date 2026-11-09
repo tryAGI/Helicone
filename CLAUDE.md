@@ -22,7 +22,9 @@ var client = new HeliconeClient(apiKey); // HELICONE_API_KEY env var
 
 ## Key Files
 
-- `src/libs/Helicone/openapi.yaml` — OpenAPI spec (downloaded from Helicone/helicone)
+- `src/libs/Helicone/openapi.json` — OpenAPI spec (downloaded from Helicone/helicone, which serves
+  it as `docs/swagger.json`). It is JSON, and was named `.yaml` until 2026-11-09 — tab-indented JSON
+  is valid JSON and invalid YAML, so YAML-based tooling could not read it.
 - `src/libs/Helicone/generate.sh` — Downloads spec, runs autosdk with `--security-scheme Http:Header:Bearer`
 - `src/libs/Helicone/Generated/` — **Never edit** — auto-generated code (~2800 files)
 - `src/tests/IntegrationTests/Tests.cs` — Test helper with bearer auth
