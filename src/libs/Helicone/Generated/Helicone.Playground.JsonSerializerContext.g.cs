@@ -90,8 +90,8 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultChatCompletionOrContentStringReasoningStringCallsAnyString), TypeInfoPropertyName = "ResultChatCompletionOrContentStringReasoningStringCallsAnyString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultSuccessBoolean))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultBooleanString), TypeInfoPropertyName = "ResultBooleanString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>), TypeInfoPropertyName = "AllOfOpenAIChatRequestGenerateRequest22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GenerateRequest2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>), TypeInfoPropertyName = "AllOfOpenAIChatRequestGenerateRequest42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GenerateRequest4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestsThroughHeliconeRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
@@ -117,7 +117,7 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>?), TypeInfoPropertyName = "NullableAnyOfChatCompletionResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultChatCompletionOrContentStringReasoningStringCallsAnyString?), TypeInfoPropertyName = "NullableResultChatCompletionOrContentStringReasoningStringCallsAnyString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultBooleanString?), TypeInfoPropertyName = "NullableResultBooleanString2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>?), TypeInfoPropertyName = "NullableAllOfOpenAIChatRequestGenerateRequest22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>?), TypeInfoPropertyName = "NullableAllOfOpenAIChatRequestGenerateRequest42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::System.Collections.Generic.List<string>, string>))]
@@ -191,7 +191,7 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.OpenAIChatRequestFunctionCall>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>());
             options.Converters.Add(new global::Helicone.JsonConverters.UnixTimestampJsonConverter());
             options.Converters.Add(new LazyEnumJsonConverterFactory());
         }

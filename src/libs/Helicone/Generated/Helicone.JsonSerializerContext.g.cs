@@ -838,15 +838,12 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetPrompt2025VersionsRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetPrompt2025ProductionVersionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetPrompt2025TotalVersionsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetPrompt2025VersionRequest2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetPrompt2025EnvironmentVersionRequest2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetPrompt2025ProductionVersionRequest2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreatePromptRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdatePromptUserDefinedIdRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.PromotePromptVersionToProductionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetInputsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>), TypeInfoPropertyName = "AllOfOpenAIChatRequestGenerateRequest22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GenerateRequest2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>), TypeInfoPropertyName = "AllOfOpenAIChatRequestGenerateRequest42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GenerateRequest4))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.RequestsThroughHeliconeRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetApiKeyRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AddSessionRequest))]
@@ -856,8 +853,8 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.QueryHeliconeDatasetRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpdateHeliconeDatasetRequestRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AddEvalRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>), TypeInfoPropertyName = "AllOfOpenAIChatRequestGenerateRequest42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GenerateRequest4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>), TypeInfoPropertyName = "AllOfOpenAIChatRequestGenerateRequest22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GenerateRequest2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpsertThreadMessageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.UpsertThreadMessageRequestMetadata))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.SearchDocsRequest))]
@@ -1021,6 +1018,9 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025String?), TypeInfoPropertyName = "NullableResultPrompt2025String2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPrompt2025InputString?), TypeInfoPropertyName = "NullableResultPrompt2025InputString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultPromptCreateResponseString?), TypeInfoPropertyName = "NullableResultPromptCreateResponseString2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCallType?), TypeInfoPropertyName = "NullableOpenAIChatRequestMessageToolCallType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListOpenAIChatRequestMessageContentVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolType?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolType2")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1037,9 +1037,6 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_cf349a6cf523295d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayString?), TypeInfoPropertyName = "ResultApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrgan_ff3f6ffbba0c1639")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Helicone.ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStringOrganizationIdStringSoftDeleteBooleanTempKeyBooleanUpdatedAtStringUserIdStringArrayDataItem>), TypeInfoPropertyName = "ResultSuccessApiKeyHashStringApiKeyNameStringCreatedAtStringGovernanceBooleanIdNumberKeyPermissionsStri_8e953b8e000805f0")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestMessageToolCallType?), TypeInfoPropertyName = "NullableOpenAIChatRequestMessageToolCallType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<string, global::System.Collections.Generic.IList<global::Helicone.OpenAIChatRequestMessageContentVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListOpenAIChatRequestMessageContentVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolType?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.OpenAIChatRequestToolChoiceEnum, global::Helicone.OpenAIChatRequestToolChoiceEnum2?>?), TypeInfoPropertyName = "NullableAnyOfOpenAIChatRequestToolChoiceEnumOpenAIChatRequestToolChoiceEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnumFunctionType?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolChoiceEnumFunctionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.OpenAIChatRequestToolChoiceEnum2?), TypeInfoPropertyName = "NullableOpenAIChatRequestToolChoiceEnum22")]
@@ -1140,8 +1137,8 @@ namespace Helicone
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.ResultThreadSummaryArrayString?), TypeInfoPropertyName = "NullableResultThreadSummaryArrayString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.CreateAPIKeyRequestKeyPermissions?), TypeInfoPropertyName = "NullableCreateAPIKeyRequestKeyPermissions2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>?), TypeInfoPropertyName = "NullableAllOfDataOverTimeRequestGetPropertiesOverTimeRequest22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>?), TypeInfoPropertyName = "NullableAllOfOpenAIChatRequestGenerateRequest22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>?), TypeInfoPropertyName = "NullableAllOfOpenAIChatRequestGenerateRequest42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>?), TypeInfoPropertyName = "NullableAllOfOpenAIChatRequestGenerateRequest22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.GetSpendBreakdownTimeRange?), TypeInfoPropertyName = "NullableGetSpendBreakdownTimeRange2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.AnyOf<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>?), TypeInfoPropertyName = "NullableAnyOfDeleteProviderKeyResponseVariant1DeleteProviderKeyResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Helicone.DeleteProviderKeyResponseVariant1ProviderName?), TypeInfoPropertyName = "NullableDeleteProviderKeyResponseVariant1ProviderName2")]
@@ -1441,8 +1438,8 @@ namespace Helicone
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<string, global::Helicone.Prompt2025VersionPromptBodyToolChoice>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.ChatCompletion, global::Helicone.ResultSuccessChatCompletionOrContentStringReasoningStringCallsAnyData>());
             options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.DataOverTimeRequest, global::Helicone.GetPropertiesOverTimeRequest2>());
-            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>());
             options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4>());
+            options.Converters.Add(new global::Helicone.JsonConverters.AllOfJsonConverter<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.DeleteProviderKeyResponseVariant1, global::Helicone.DeleteProviderKeyResponseVariant2>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.MaskedProviderKey, global::Helicone.GetProviderKeyResponse2>());
             options.Converters.Add(new global::Helicone.JsonConverters.AnyOfJsonConverter<global::Helicone.CreateProviderKeyResponseVariant1, global::Helicone.CreateProviderKeyResponseVariant2>());

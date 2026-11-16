@@ -13,7 +13,7 @@ namespace Helicone
         /// <exception cref="global::Helicone.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Helicone.ResultPrompt2025VersionString> GetPrompt2025ProductionVersionAsync(
 
-            global::Helicone.GetPrompt2025ProductionVersionRequest2 request,
+            global::Helicone.GetPrompt2025ProductionVersionRequest request,
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -25,7 +25,7 @@ namespace Helicone
         /// <exception cref="global::Helicone.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Helicone.AutoSDKHttpResponse<global::Helicone.ResultPrompt2025VersionString>> GetPrompt2025ProductionVersionAsResponseAsync(
 
-            global::Helicone.GetPrompt2025ProductionVersionRequest2 request,
+            global::Helicone.GetPrompt2025ProductionVersionRequest request,
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
