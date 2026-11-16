@@ -40,11 +40,11 @@ namespace Helicone
             };
         partial void PrepareGetPrompt2025ProductionVersionArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::Helicone.GetPrompt2025ProductionVersionRequest2 request);
+            global::Helicone.GetPrompt2025ProductionVersionRequest request);
         partial void PrepareGetPrompt2025ProductionVersionRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::Helicone.GetPrompt2025ProductionVersionRequest2 request);
+            global::Helicone.GetPrompt2025ProductionVersionRequest request);
         partial void ProcessGetPrompt2025ProductionVersionResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -63,7 +63,7 @@ namespace Helicone
         /// <exception cref="global::Helicone.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Helicone.ResultPrompt2025VersionString> GetPrompt2025ProductionVersionAsync(
 
-            global::Helicone.GetPrompt2025ProductionVersionRequest2 request,
+            global::Helicone.GetPrompt2025ProductionVersionRequest request,
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -85,7 +85,7 @@ namespace Helicone
         /// <exception cref="global::Helicone.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Helicone.AutoSDKHttpResponse<global::Helicone.ResultPrompt2025VersionString>> GetPrompt2025ProductionVersionAsResponseAsync(
 
-            global::Helicone.GetPrompt2025ProductionVersionRequest2 request,
+            global::Helicone.GetPrompt2025ProductionVersionRequest request,
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -458,7 +458,7 @@ namespace Helicone
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Helicone.GetPrompt2025ProductionVersionRequest2
+            var __request = new global::Helicone.GetPrompt2025ProductionVersionRequest
             {
                 PromptId = promptId,
             };

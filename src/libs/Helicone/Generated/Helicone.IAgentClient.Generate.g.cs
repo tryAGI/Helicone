@@ -13,7 +13,7 @@ namespace Helicone
         /// <exception cref="global::Helicone.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Helicone.ResultChatCompletionOrContentStringReasoningStringCallsAnyString> GenerateAsync(
 
-            global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4> request,
+            global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2> request,
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -25,7 +25,7 @@ namespace Helicone
         /// <exception cref="global::Helicone.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Helicone.AutoSDKHttpResponse<global::Helicone.ResultChatCompletionOrContentStringReasoningStringCallsAnyString>> GenerateAsResponseAsync(
 
-            global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest4> request,
+            global::Helicone.AllOf<global::Helicone.OpenAIChatRequest, global::Helicone.GenerateRequest2> request,
             global::Helicone.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
